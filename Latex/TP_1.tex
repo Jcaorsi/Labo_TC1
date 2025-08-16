@@ -1,0 +1,74 @@
+
+\documentclass{article}
+
+%%%%%%%%%%%%%%% LIBRERIAS %%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{titletoc}
+
+
+%%%%%%%%%%%%%%%%%%% VARIABLES %%%%%%%%%%%%%%%%%%%%
+\newcommand{\Facultad}{Instituto Tecnológico \\de\\ Buenos Aires} %constantes
+\newcommand{\TPn}{Trabajo Práctico N° 1}
+\newcommand{\TPtema}{Corriente Continua}
+
+
+%%%%%%%%%%%%%%%%%% FORMATO TíTULO %%%%%%%%%%%%%%%%%%%
+\titleformat{\section}
+  {\huge\bfseries}   % formato aplicado al número + título
+  {\thesection}      % cómo mostrar el número
+  {1em}              % espacio entre número y título
+  {}
+
+\title
+
+
+%%%%%%%%%%%%%%%%%%% ARCHIVO %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+    %%%CARATULA%%%
+    \begin{titlepage} %creo portada
+        \centering
+            
+        {\scshape\LARGE \Facultad \par} %\par sirve para indicar un final de parrafo
+        \vspace{1cm}                    %esto hace un espacio entre lineas de 1cm
+
+
+        {\huge\bfseries \TPn \par}
+        \vspace{1.5cm}
+        {\Large Materia: Teoría de Circuitos I\\ 25.10 \par}
+        \vfill                      %sirve para rellenar el espacio y quede simétrico. Si se añaden otros, se dividen el espacio de forma equitativa
+        {\Large \bfseries Grupo N° 5 \par}
+        \vspace{1cm}
+        {\large Juan Bautista Correa Uranga \hfill Legajo: 65016 \par} %\hfill sirve para hacerlo simétrico
+        {\large Juan Ignacio Caorsi \hfill Legajo: 65532  \par}
+        {\large Rita Moschini \hfill Legajo: 67026 \par} 
+        \vfill
+        {\large \today\par}
+        \vfil
+
+    \end{titlepage}
+
+
+    %%%RESUMEN%%%
+    {\centering \LARGE \bfseries Resumen \par}
+        Aca va el resumen del tp. \par
+    \newpage
+
+    %%%INDICE%%%
+    \tableofcontents %esto sirve para crear el índice
+    \newpage
+
+    %%%Introduccion%%%
+    \section{Introducción}
+
+    %%%Desarrollo%%%
+    \section{Desarrollo}
+
+    %%%Conclusiones%%%
+    \section{Conclusiones}
+
+    %%%Anexos%%%
+    \section{Anexos}
+
+\end{document}
