@@ -10,6 +10,7 @@
 \usepackage{hyperref}                % cargar después de babel
 
 
+
 %%%%%%%%%%%%%%%%%%% VARIABLES %%%%%%%%%%%%%%%%%%%%
 \newcommand{\Facultad}{Instituto Tecnológico \\de\\ Buenos Aires} %constantes
 \newcommand{\TPn}{Trabajo Práctico N° 1}
@@ -127,10 +128,10 @@
             \begin{tabular}{|l|c|c|}
             \hline
             Ri & \multicolumn{1}{l|}{Nominales} & \multicolumn{1}{l|}{Valores medidos} \\ \hline
-            R1 & 200                            & 223                                  \\ \hline
-            R2 & 220                            & 219                                  \\ \hline
-            R3 & 680                            & 667                                  \\ \hline
-            R4 & 100                            & 99                                   \\ \hline
+            R1 & 200  $ \Omega $       & 223     $ \Omega $       \\ \hline
+            R2 & 220  $ \Omega $       & 219 $ \Omega $           \\ \hline
+            R3 & 680  $ \Omega $       & 667 $ \Omega $           \\ \hline
+            R4 & 100  $ \Omega $      & 99 $ \Omega $              \\ \hline
             \end{tabular}
             \caption{Resistencias: nominales vs. medidos}
             \label{tab:resistencias}
@@ -158,7 +159,7 @@
 
             \subsubsection{Medición}
 
-            \quad Para esta parte, se añadió la resistencia variable al circuito. Seguidamente, se conectaron un osciloscopio en paralelo con la resistencia variable (RL), para medir el voltaje, y un multímetro en modo amperímetro en serie con el circuito y la resistencia.\par
+            \quad Para esta parte, se añadió la resistencia variable al circuito. Seguidamente, se conectaron un osciloscopio en paralelo con la resistencia variable ($R_{L}$), para medir el voltaje, y un multímetro en modo amperímetro en serie con el circuito y la resistencia.\par
             Luego de esto, se realizó la medición empezando con el potenciómetro en su mínimo valor de resistencia. Luego de anotar los valores de corriente y voltaje, se siguió repitiendo el proceso aumentando el valor de resistencia del potenciómetro hasta llegar al valor máximo.\par
             
 
@@ -166,21 +167,21 @@
             
             \quad Los resultados recolectados fueron los siguientes. Observar \autoref{tab:Valores medidos}
 
-            \begin{table}[]
+            \begin{table}[h!]
             \centering
                 \begin{tabular}{|l|c|c|}
                 \hline
                 Corriente & Voltaje & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Resistencia \\ (calculada teoricamente)\end{tabular}} \\ \hline
-                22 mA     & 500mV   & mod                                                                                                  \\ \hline
-                20 mA     & 1 V     & mod                                                                                                  \\ \hline
-                19,1 mA   & 1,375 V & mod                                                                                                  \\ \hline
-                18,3 mA   & 2 V     & mod                                                                                                  \\ \hline
-                16,9 mA   & 2,5 V   & mod                                                                                                  \\ \hline
-                15,1 mA   & 3 V     & mod                                                                                                  \\ \hline
-                13,6 mA   & 3,25V   & mod                                                                                                  \\ \hline
-                12 mA     & 3,875 V & mod                                                                                                  \\ \hline
-                11,4 mA   & 4,5 V   & mod                                                                                                  \\ \hline
-                11,3 mA   & 4,625 V & mod                                                                                                  \\ \hline
+                22 mA     & 500mV   & 22,73 $ \Omega $                                                                \\ \hline
+                20 mA     & 1 V     & 50 $ \Omega $                                                                         \\ \hline
+                19,1 mA   & 1,375 V &   71,99 $ \Omega $                                                              \\ \hline
+                18,3 mA   & 2 V     & 109,29 $ \Omega $                                                                 \\ \hline
+                16,9 mA   & 2,5 V   & 147,93  $ \Omega $                                                               \\ \hline
+                15,1 mA   & 3 V     &  198,68  $ \Omega $                                                               \\ \hline
+                13,6 mA   & 3,25V   & 238,97 $ \Omega $                                                               \\ \hline
+                12 mA     & 3,875 V & 322,92 $ \Omega $                                                               \\ \hline
+                11,4 mA   & 4,5 V   & 394,74 $ \Omega $                                                                \\ \hline
+                11,3 mA   & 4,625 V & 409,29 $ \Omega $                                                              \\ \hline
                 \end{tabular}
             \caption{Valores medidos}
             \label{tab:Valores medidos}
