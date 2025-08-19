@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1755624881.98412 "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/TC1/Labo_TC1/TP1_CorrienteContinua/TP_1.tex" "TP_1.pdf" "TP_1" 1755624883.7664 0
+["pdflatex"] 1755629092.23781 "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/TC1/Labo_TC1/TP1_CorrienteContinua/TP_1.tex" "TP_1.pdf" "TP_1" 1755629094.16798 0
   "C:/Users/ritam/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1755621881 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/ritam/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1440.pk" 1755438494 18748 2822502a5d65f882009fdd7f32795fd1 ""
   "C:/Users/ritam/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx2074.pk" 1755438496 28420 9c8b253034f91495cc0ea426149bd669 ""
@@ -73,13 +73,14 @@
   "C:/Users/ritam/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1736608268 48766 87a17a4ef312a39cd43896e34a679a56 ""
   "C:/Users/ritam/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titletoc.sty" 1736608268 16594 e070b7268023b1ec1b45c44617ea64f9 ""
   "C:/Users/ritam/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Logo_ITBA.png" 1755621588 34082 18565f2ade26fe38705e2ad93c029b27 ""
-  "TP_1.aux" 1755624883 3199 6b12ff284250724c288371f7496bad31 "pdflatex"
-  "TP_1.out" 1755624883 1743 04951efb13176cacf4c9e40b037cb231 "pdflatex"
-  "TP_1.tex" 1755624878 11266 fc891327599a15424f2ec518b8e6c96a ""
-  "TP_1.toc" 1755624883 1382 827a7f85f831847174034865fd7e6407 "pdflatex"
-  "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/TC1/Labo_TC1/TP1_CorrienteContinua/TP_1.tex" 1755624878 11266 fc891327599a15424f2ec518b8e6c96a ""
-  "lab1.png" 1755621588 14963 32599a47f15d3f4beb8843ecf7933f21 ""
+  "TP_1.aux" 1755629093 3457 407cffa900b84e032c18eec3029073a0 "pdflatex"
+  "TP_1.out" 1755629093 1743 04951efb13176cacf4c9e40b037cb231 "pdflatex"
+  "TP_1.tex" 1755629088 11785 42e27b42d5b4224c3e4d080881c70d81 ""
+  "TP_1.toc" 1755629093 1382 f5a7215122942d8e50612260ce920581 "pdflatex"
+  "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/TC1/Labo_TC1/TP1_CorrienteContinua/TP_1.tex" 1755629088 11785 42e27b42d5b4224c3e4d080881c70d81 ""
+  "graficoCuentasTeoricas.png" 1755628686 24017 1c88fa4d0d202e73d5abd6ff2f22bfcb ""
+  "imagenes&matlab/Logo_ITBA.png" 1755621588 34082 18565f2ade26fe38705e2ad93c029b27 ""
+  "imagenes&matlab/circuitoLTSpice.png" 1755621588 14963 32599a47f15d3f4beb8843ecf7933f21 ""
   (generated)
   "TP_1.aux"
   "TP_1.log"

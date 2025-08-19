@@ -9,8 +9,6 @@
 \usepackage[spanish,es-tabla]{babel} % 'es-tabla' cambia Cuadro→Tabla
 \usepackage{hyperref}                % cargar después de babel
 
-
-
 %%%%%%%%%%%%%%%%%%% VARIABLES %%%%%%%%%%%%%%%%%%%%
 \newcommand{\Facultad}{Instituto Tecnológico \\de\\ Buenos Aires} %constantes
 \newcommand{\TPn}{Trabajo Práctico N° 1}
@@ -18,6 +16,7 @@
 \renewcommand{\thesection}{\arabic{section}}          % 2
 \renewcommand{\thesubsection}{\quad \alph{subsection}}   % a
 \renewcommand{\thesubsubsection}{\quad \thesubsection.~\roman{subsubsection}} % a. i
+\graphicspath{{imagenes&matlab/}} %para que acceda a las fotos en la carpeta directamente
 
 %%%%%%%%%%%%%%%%%% FORMATO TíTULO %%%%%%%%%%%%%%%%%%%
 \titleformat{\section} %formato secciónn
@@ -108,7 +107,7 @@
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=0.5\textwidth]{lab1.png}
+  \includegraphics[width=0.5\textwidth]{circuitoLTSpice.png}
   \caption{Esquemática del circuito}
   \label{fig:esquemática}
 \end{figure}
@@ -154,7 +153,7 @@
                 \end{itemize}
 
             \subsubsection{Análisis}
-            \quad Los valores teóricos calculados según lo explayado en el anexo A son los siguientes:
+            \quad Los valores teóricos calculados son los siguientes:
             	\begin{itemize}
                 \item $V_{Th}$ = 9,25 V
                 \item $N_{Nt}$ = 25,19 mA
@@ -220,10 +219,18 @@
                 450                         & 57,66                 \\ \hline
                 480                         & 57,23                 \\ \hline
                 \end{tabular}
-            \caption{Valores teóricos (para más información, ver anexo B)}
+            \caption{Valores teóricos}
             \label{tab:ValoresTeoricos2daParte}
             \end{table}
 
+            \begin{figure}[!h]
+                \centering
+                \includegraphics[width=1\textwidth]{graficoCuentasTeoricas.png}
+                \caption{Potencia $P_L$ disipada por el resistor variable $R_L$ en función del valor del mismo.}
+                \label{fig:esquemática}
+            \end{figure}
+
+            \quad Se puede observar en la tabla que el valor de la máxima potencia disipada por el resistor se corresponde con el valor de $ 360 \Omega $ del mismo.
 
     %%%Conclusiones%%%
     \section{Conclusiones}

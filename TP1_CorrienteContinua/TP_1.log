@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.17)  19 AUG 2025 14:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.17)  19 AUG 2025 15:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -331,27 +331,31 @@ LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 11.
+
+
+LaTeX Warning: Label `fig:esquemática' multiply defined.
+
 )
 \openout1 = `TP_1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 (C:\Users\ritam\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -378,31 +382,31 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \. on input line 46.
-LaTeX Info: Redefining \% on input line 46.
-Package hyperref Info: Link coloring OFF on input line 46.
+LaTeX Info: Redefining \. on input line 45.
+LaTeX Info: Redefining \% on input line 45.
+Package hyperref Info: Link coloring OFF on input line 45.
  (TP_1.out) (TP_1.out)
 \@outlinefile=\write3
 \openout3 = `TP_1.out'.
 
-<Logo_ITBA.png, id=51, 557.08125pt x 220.825pt>
-File: Logo_ITBA.png Graphic file (type png)
-<use Logo_ITBA.png>
-Package pdftex.def Info: Logo_ITBA.png  used on input line 53.
+<imagenes&matlab/Logo_ITBA.png, id=51, 557.08125pt x 220.825pt>
+File: imagenes&matlab/Logo_ITBA.png Graphic file (type png)
+<use imagenes&matlab/Logo_ITBA.png>
+Package pdftex.def Info: imagenes&matlab/Logo_ITBA.png  used on input line 52.
 (pdftex.def)             Requested size: 103.50105pt x 41.02719pt.
 
 
 [1
 
-{C:/Users/ritam/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Logo_ITBA.
-png>]
+{C:/Users/ritam/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./imagenes&m
+atlab/Logo_ITBA.png>]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81     \newpage
+l.80     \newpage
                   [1] (TP_1.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -443,45 +447,54 @@ Overfull \hbox (10.8444pt too wide) detected at line 11
 
 
 [2]
-<lab1.png, id=88, 377.41pt x 254.9525pt>
-File: lab1.png Graphic file (type png)
-<use lab1.png>
-Package pdftex.def Info: lab1.png  used on input line 111.
+<imagenes&matlab/circuitoLTSpice.png, id=88, 377.41pt x 254.9525pt>
+File: imagenes&matlab/circuitoLTSpice.png Graphic file (type png)
+<use imagenes&matlab/circuitoLTSpice.png>
+Package pdftex.def Info: imagenes&matlab/circuitoLTSpice.png  used on input lin
+e 110.
 (pdftex.def)             Requested size: 172.5pt x 116.52873pt.
 
 
-[3 <./lab1.png>]
+[3 <./imagenes&matlab/circuitoLTSpice.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 141.
+(Font)              using `OT1/cmr/bx/n' instead on input line 140.
 
 
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 141.
+(spanish)                faked small caps on input line 140.
 
 
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 147.
+(spanish)                faked small caps on input line 146.
 
 
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 156.
+(spanish)                faked small caps on input line 155.
 
 
 
 [4]
 
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 166.
+(spanish)                faked small caps on input line 165.
 
 
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 172.
+(spanish)                faked small caps on input line 171.
 
 
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 198.
+(spanish)                faked small caps on input line 197.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<graficoCuentasTeoricas.png, id=110, 759.58781pt x 405.76593pt>
+File: graficoCuentasTeoricas.png Graphic file (type png)
+<use graficoCuentasTeoricas.png>
+Package pdftex.def Info: graficoCuentasTeoricas.png  used on input line 228.
+(pdftex.def)             Requested size: 345.0pt x 184.30182pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -489,7 +502,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5]
 
-[6] (TP_1.aux
+[6 <./graficoCuentasTeoricas.png>]
+
+[7] (TP_1.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -501,17 +516,20 @@ L3 programming layer <2025-07-20>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `TP_1.out' has not changed.
 (rerunfilecheck)             Checksum: 04951EFB13176CACF4C9E40B037CB231;1743.
  ) 
 Here is how much of TeX's memory you used:
- 11015 strings out of 468134
- 172612 string characters out of 5430740
- 607694 words of memory out of 5000000
- 39502 multiletter control sequences out of 15000+600000
+ 11028 strings out of 468134
+ 173245 string characters out of 5430740
+ 608776 words of memory out of 5000000
+ 39513 multiletter control sequences out of 15000+600000
  632208 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,79p,645b,525s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,79p,645b,535s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ritam\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx
 1440.pk> <C:\Users\ritam\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcbx2074.pk><C:/Users/ritam/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -527,9 +545,9 @@ pfb><C:/Users/ritam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmr12.pfb><C:/Users/ritam/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmr5.pfb><C:/Users/ritam/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmr7.pfb>
-Output written on TP_1.pdf (7 pages, 189089 bytes).
+Output written on TP_1.pdf (8 pages, 209088 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 189 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 112 words of extra memory for PDF output out of 10000 (max. 10000000)
 
