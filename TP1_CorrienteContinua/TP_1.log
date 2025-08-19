@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.17)  19 AUG 2025 13:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.17)  19 AUG 2025 14:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -468,10 +468,6 @@ Package spanish Warning: Replacing `OT1/cmr/bx/sc' by
 (spanish)                faked small caps on input line 156.
 
 
-Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 160.
-
-
 
 [4]
 
@@ -480,11 +476,20 @@ Package spanish Warning: Replacing `OT1/cmr/bx/sc' by
 
 
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
-(spanish)                faked small caps on input line 192.
+(spanish)                faked small caps on input line 172.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 198.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[5] (TP_1.aux
+[5]
+
+[6] (TP_1.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -500,13 +505,13 @@ Package rerunfilecheck Info: File `TP_1.out' has not changed.
 (rerunfilecheck)             Checksum: 04951EFB13176CACF4C9E40B037CB231;1743.
  ) 
 Here is how much of TeX's memory you used:
- 11012 strings out of 468134
- 172563 string characters out of 5430740
- 602582 words of memory out of 5000000
- 39501 multiletter control sequences out of 15000+600000
+ 11015 strings out of 468134
+ 172612 string characters out of 5430740
+ 607694 words of memory out of 5000000
+ 39502 multiletter control sequences out of 15000+600000
  632208 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,645b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,79p,645b,525s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ritam\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx
 1440.pk> <C:\Users\ritam\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcbx2074.pk><C:/Users/ritam/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -522,9 +527,9 @@ pfb><C:/Users/ritam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmr12.pfb><C:/Users/ritam/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmr5.pfb><C:/Users/ritam/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmr7.pfb>
-Output written on TP_1.pdf (6 pages, 185866 bytes).
+Output written on TP_1.pdf (7 pages, 189089 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
+ 181 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
  107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
