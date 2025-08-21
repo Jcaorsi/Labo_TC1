@@ -1,14 +1,14 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Introducción}{3}{section.1}%
-\contentsline {section}{\numberline {2}Desarrollo}{3}{section.2}%
-\contentsline {subsection}{\numberline {\hskip 1em\relax a}Medición de corriente de Norton, voltaje de Thevenin y resistencia de Norton/Thevenin}{4}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {\hskip 1em\relax \hskip 1em\relax a.~\es@scroman {i}}Medición}{4}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {\hskip 1em\relax \hskip 1em\relax a.~\es@scroman {ii}}Resultados}{4}{subsubsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {\hskip 1em\relax \hskip 1em\relax a.~\es@scroman {iii}}Análisis}{5}{subsubsection.2.1.3}%
-\contentsline {subsection}{\numberline {\hskip 1em\relax b}Mediciones de potencia}{5}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {\hskip 1em\relax \hskip 1em\relax b.~\es@scroman {i}}Medición}{5}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {\hskip 1em\relax \hskip 1em\relax b.~\es@scroman {ii}}Resultados}{5}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {\hskip 1em\relax \hskip 1em\relax b.~\es@scroman {iii}}Análisis}{5}{subsubsection.2.2.3}%
-\contentsline {section}{\numberline {3}Conclusiones}{7}{section.3}%
-\contentsline {section}{\numberline {4}Anexos}{7}{section.4}%
+\contentsline {section}{\numberline {1.}Introducción}{3}{section.1}%
+\contentsline {section}{\numberline {2.}Desarrollo}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Medición de corriente de Norton, voltaje de Thevenin y resistencia de Norton/Thevenin}{4}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {$a)$}Medición}{4}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {$b)$}Resultados}{4}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {$c)$}Análisis}{5}{subsubsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.2}Mediciones de potencia}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {$a)$}Medición}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {$b)$}Resultados}{5}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {$c)$}Análisis}{7}{subsubsection.2.2.3}%
+\contentsline {section}{\numberline {3.}Conclusiones}{7}{section.3}%
+\contentsline {section}{\numberline {4.}Anexos}{7}{section.4}%
 \contentsfinish 

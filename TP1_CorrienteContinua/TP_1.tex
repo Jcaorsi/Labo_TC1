@@ -8,7 +8,7 @@
 \usepackage{graphicx}
 \usepackage[spanish,es-tabla]{babel} % 'es-tabla' cambia Cuadro→Tabla
 \usepackage{hyperref}                % cargar después de babel
-
+\usepackage{float}
 %%%%%%%%%%%%%%%%%%% VARIABLES %%%%%%%%%%%%%%%%%%%%
 \newcommand{\Facultad}{Instituto Tecnológico \\de\\ Buenos Aires} %constantes
 \newcommand{\TPn}{Trabajo Práctico N° 1}
@@ -18,26 +18,20 @@
 \renewcommand{\thesubsubsection}{\quad \thesubsection.~\roman{subsubsection}} % a. i
 \graphicspath{{imagenes&matlab/}} %para que acceda a las fotos en la carpeta directamente
 
-%%%%%%%%%%%%%%%%%% FORMATO TíTULO %%%%%%%%%%%%%%%%%%%
-\titleformat{\section} %formato secciónn
-  {\Huge \bfseries}   % formato aplicado al número + título
-  {\thesection}      % cómo mostrar el número
-  {1em}              % espacio entre número y título
-  {}
 
+%%%%%%%%%%%%%%%%%% FORMATO TÍTULO Y NUMERACIÓN %%%%%%%%%%%%%%%%%%%
+% Numeración de secciones
+\renewcommand{\thesection}{\arabic{section}.}          
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}}       
+\renewcommand{\thesubsubsection}{$\alph{subsubsection})$}
 
-\titleformat{\subsection} % formato de subsección
-{\LARGE \bfseries}
-{\thesubsection}
-{1em}
-{}
+% Numerar hasta subsubsecciones
+\setcounter{secnumdepth}{3}
 
-\titleformat{\subsubsection} %formato subsubsección
-{\large \bfseries}
-{\thesubsubsection}
-{1em}
-{}
-
+% Formato de títulos
+\titleformat{\section}{\Huge\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\LARGE\bfseries}{\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}{\large\bfseries}{\thesubsubsection}{0.5em}{}
 
 
 
@@ -122,15 +116,15 @@
 
         Finalmente se midieron con el multímetro los siguientes valores para compararlos con los teoricos. \autoref{tab:resistencias}\par
         
-        \begin{table}[h!]
+        \begin{table}[H]
             \centering
             \begin{tabular}{|l|c|c|}
             \hline
-            Ri & \multicolumn{1}{l|}{Nominales} & \multicolumn{1}{l|}{Valores medidos} \\ \hline
-            R1 & 200  $ \Omega $       & 223     $ \Omega $       \\ \hline
-            R2 & 220  $ \Omega $       & 219 $ \Omega $           \\ \hline
-            R3 & 680  $ \Omega $       & 667 $ \Omega $           \\ \hline
-            R4 & 100  $ \Omega $      & 99 $ \Omega $              \\ \hline
+            $R_i$ & \multicolumn{1}{l|}{Nominales $ [\Omega] $} & \multicolumn{1}{l|}{Valores medidos $ [\Omega] $}\\ \hline
+            $R_1$ & 200         & 223         \\ \hline
+            $R_2$ & 220         & 219         \\ \hline
+            $R_3$ & 680         & 667         \\ \hline
+            $R_4$ & 100         & 99          \\ \hline
             \end{tabular}
             \caption{Resistencias: nominales vs. medidos}
             \label{tab:resistencias}
@@ -145,38 +139,51 @@
 
             \subsubsection{Resultados}
 
-                \quad Para esta primera parte se consiguieron los siguientes valores:
+                \quad Los valores teóricos calculados son los siguientes:
+            	\begin{itemize}
+                \item $V_{Th}$ = 9,25 V
+                \item $I_{Nt}$ = 25,19 mA
+                \item $R_{Th/Nt} = 367,1436$ $\Omega$
+                \end{itemize}
+
+                \quad Para esta primera parte se consiguieron los siguientes valores experimentales:
             	\begin{itemize}
                 \item $V_{Th}$ = 9,29V
-                \item $N_{Nt}$ = 24,6 mA
-                \item $R_{Th/Nt} = 388  \Omega $
+                \item $I_{Nt}$ = 24,6 mA
+                \item $R_{Th/Nt} = 388$ $\Omega$
                 \end{itemize}
 
             \subsubsection{Análisis}
-            \quad Los valores teóricos calculados son los siguientes:
-            	\begin{itemize}
-                \item $V_{Th}$ = 9,25 V
-                \item $N_{Nt}$ = 25,19 mA
-                \item $R_{Th/Nt} = 367,1436  \Omega $
-                \end{itemize}
-        
+
+            \quad Luego de realizar repetidas mediciones, se puede observar que los valores medidos y los teóricos son bastante similares, 
+            con un error relativo máximo del 5,7\% en el caso de la resistencia de Thevenin/Norton. 
+            Este error puede explicarse principalmente por la tolerancia de las resistencias utilizadas en el circuito, 
+            que es del 5\%, y por pequeñas imprecisiones en la medición. Además, influyó la precisión del multímetro empleado, 
+            que es de $\pm(0,5\% + 1)$ para la medición de tensión de corriente continua y de $\pm (0,8\% + 1)$ para la medición 
+            de resistencia y corriente continua. 
+            Factores adicionales, como la calidad de las conexiones y las condiciones ambientales, pudieron haber contribuido 
+            levemente al error, aunque sin afectar la validez del modelo de Thevenin/Norton.
         \subsection{Mediciones de potencia}
 
             \subsubsection{Medición}
 
-            \quad Para esta parte, se añadió la resistencia variable al circuito. Seguidamente, se conectaron un osciloscopio en paralelo con la resistencia variable ($R_{L}$), para medir el voltaje, y un multímetro en modo amperímetro en serie con el circuito y la resistencia.\par
-            Luego de esto, se realizó la medición empezando con el potenciómetro en su mínimo valor de resistencia. Luego de anotar los valores de corriente y voltaje, se siguió repitiendo el proceso aumentando el valor de resistencia del potenciómetro hasta llegar al valor máximo.\par
+            \quad Para esta parte, se añadió la resistencia variable al circuito. Seguidamente, se conectaron 
+            un osciloscopio en paralelo con la resistencia variable ($R_{L}$), para medir el voltaje, y un 
+            multímetro en modo amperímetro en serie con el circuito y la resistencia.\par
+            Luego de esto, se realizó la medición empezando con el potenciómetro en su mínimo valor de 
+            resistencia. Luego de anotar los valores de corriente y voltaje, se siguió repitiendo el 
+            proceso aumentando el valor de resistencia del potenciómetro hasta llegar al valor máximo.\par
             
 
             \subsubsection{Resultados}
             
-            \quad Los resultados recolectados fueron los siguientes. Observar \autoref{tab:ValoresMedidos2daParte}
+            \quad Los resultados recolectados fueron los señalados en la \autoref{tab:ValoresTeoricos2daParte}. Para información adicional, se puede observar la \autoref{tab:ValoresMedidos2daParte} en el apéndice.\par
 
-            \begin{table}[h!]
+            \begin{table}[H]
             \centering
-                \begin{tabular}{|l|c|c|}
+                \begin{tabular}{|c|c|c|}
                 \hline
-                Corriente $[mA]$    & Voltaje [V] & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Resistencia $ [\Omega] $ \\ (calculada teoricamente)\end{tabular}} \\ \hline
+                Corriente [mA]    & Voltaje [V] & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Resistencia $ [\Omega] $ \\ (calculada teóricamente)\end{tabular}} \\ \hline
                 22                  & 0,5   & 22,73                                                                 \\ \hline
                 20                  & 1      & 50                                                                          \\ \hline
                 19,1                & 1,375  &   71,99                                                               \\ \hline
@@ -193,11 +200,9 @@
             \end{table}
 
             
-            
-            \subsubsection{Análisis}
-                \quad Los resultados recolectados fueron los siguientes. Observar \autoref{tab:ValoresTeoricos2daParte}
+            \quad Los resultados recolectados fueron los siguientes. Observar \autoref{tab:ValoresTeoricos2daParte}
 
-            \begin{table}[h!]
+            \begin{table}[H]
             \centering
                 \begin{tabular}{|c|c|c|}
                 \hline
@@ -223,15 +228,20 @@
             \label{tab:ValoresTeoricos2daParte}
             \end{table}
 
-            \begin{figure}[!h]
+            \begin{figure}[H]
                 \centering
                 \includegraphics[width=1\textwidth]{graficoCuentasTeoricas.png}
                 \caption{Potencia $P_L$ disipada por el resistor variable $R_L$ en función del valor del mismo.}
-                \label{fig:esquemática}
+                \label{fig:esquemáticaPotencia}
             \end{figure}
 
             \quad Se puede observar en la tabla que el valor de la máxima potencia disipada por el resistor se corresponde con el valor de $ 360 \Omega $ del mismo.
 
+            \subsubsection{Análisis}
+            \quad Se puede observar que los valores teóricos y los medidos son lo suficientemente cercanos para confirmar 
+            la validez del valor de teórica de la resistencia de carga $R_L$ que maximiza la potencia disipada.
+            Aún así, debemos remarcar que la desviación que hay en la práctica se puede deber a la precisión del multímetro utilizado como también la del osciloscopio
+            y por supuesto, a la tolerancia de las resistencias utilizadas en el circuito (5\%).
     %%%Conclusiones%%%
     \section{Conclusiones}
 
