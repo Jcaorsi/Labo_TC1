@@ -70,7 +70,24 @@
 
     %%%RESUMEN%%%
     {\centering \LARGE \bfseries Resumen \par}
-        Aca va el resumen del tp. \par
+        Este trabajo práctico consiste de dos partes, la primera teniendo como objetivo verificar los análisis de Thevenin y Norton para el estudio
+        de circuitos, y la segunda buscando comprobar la máxima transferencia de potencia para el valor de resistencia de Thevenin/Norton correspondiente. \par
+        
+
+        En la primera parte de la práctica se ensambló el circuito indicado por la consigna con los nodos A y B formando un circuito abierto. Luego, se
+        realizaron las mediciones de la tensión de Thevenin y la corriente de Norton entre los mismos, así como la resistencia de Thevenin/Norton. 
+        Se considera que los resultados medidos durante la práctica ($V_{Th} = 9,29V$, $I_{Nt} = 24,6 mA$ y $R_{Th/Nt} = 388 \Omega$) son suficientemente 
+        semejantes a los teóricos ($V_{Th} = 9,25 V$, $I_{Nt} = 25,19 mA$ y $R_{Th/Nt} = 367,1436 \Omega$) como para considerarlos coherentes con lo 
+        estudiado en las teóricas de la materia.  \par
+
+        En la segunda parte de la práctica se conectó una resistencia variable entre los nodos A y B y se fue aumentando su valor de entre su mínimo 
+        ($0 \Omega$) y su máximo ($500 \Omega$), a la vez que se medían con cada variación de la resistencia el valor de la misma, la caida de
+        tensión entre los nodos A y B y la corriente que circulaba en aquella rama. Para visualizar la semejanza entre los resultados teóricos y los 
+        prácticos, se recomienda ver la figura \ref{fig:graficoTransferenciaPotencia}, la cual muestra que los valores medidos en su mayoría se asemejan
+        satisfactoriamente a los previstos teóricamente. \par
+
+
+
     \newpage
 
     %%%INDICE%%%
@@ -130,7 +147,7 @@
             \label{tab:resistencias}
         \end{table}
 
-        \subsection{Medición de corriente de Norton, voltaje de Thevenin y resistencia de Norton/Thevenin}
+        \subsection{Equivalentes de Thevenin y Norton}
             \subsubsection{Medición}
                 \quad Para la primera parte del trabajo, se procedió a la medición de la resistencia de Thevenin, Corriente de Norton y el Voltaje de Thevenin. Para toda esta sección se desconectó la resistencia variable (RL).\par
                 En primer lugar, se midió el voltaje de Thevenin. Esto se realizó conectando el voltímetro en paralelo con el nodo A y el nodo B.\par
@@ -163,7 +180,7 @@
             de resistencia y corriente continua. 
             Factores adicionales, como la calidad de las conexiones y las condiciones ambientales, pudieron haber contribuido 
             levemente al error, aunque sin afectar la validez del modelo de Thevenin/Norton.
-        \subsection{Mediciones de potencia}
+        \subsection{Máxima transferencia de potencia}
 
             \subsubsection{Medición}
 
@@ -230,9 +247,9 @@
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width=1\textwidth]{graficoCuentasTeoricas.png}
+                \includegraphics[width=1\textwidth]{graficoPotencia.png}
                 \caption{Potencia $P_L$ disipada por el resistor variable $R_L$ en función del valor del mismo.}
-                \label{fig:esquemáticaPotencia}
+                \label{fig:graficoTransferenciaPotencia}
             \end{figure}
 
             \quad Se puede observar en la tabla que el valor de la máxima potencia disipada por el resistor se corresponde con el valor de $ 360 \Omega $ del mismo.
