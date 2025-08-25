@@ -1,14 +1,17 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {1.}Introducción}{3}{section.1}%
-\contentsline {section}{\numberline {2.}Desarrollo}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Equivalentes de Thevenin y Norton}{4}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {$a)$}Medición}{4}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {$b)$}Resultados}{4}{subsubsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {$c)$}Análisis}{5}{subsubsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.2}Máxima transferencia de potencia}{5}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {$a)$}Medición}{5}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {$b)$}Resultados}{5}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {$c)$}Análisis}{7}{subsubsection.2.2.3}%
-\contentsline {section}{\numberline {3.}Conclusiones}{7}{section.3}%
-\contentsline {section}{\numberline {4.}Anexos}{7}{section.4}%
+\contentsline {subsection}{\numberline {1.1}Resistencias equivalentes}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Ley de Ohm y Kirchoff}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Circuito de Thevenin y Norton}{4}{subsection.1.3}%
+\contentsline {section}{\numberline {2.}Desarrollo}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Equivalentes de Thevenin y Norton}{6}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {$a)$}Medición}{6}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {$b)$}Resultados}{6}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {$c)$}Análisis}{7}{subsubsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.2}Máxima transferencia de potencia}{7}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {$a)$}Medición}{7}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {$b)$}Resultados}{7}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {$c)$}Análisis}{9}{subsubsection.2.2.3}%
+\contentsline {section}{\numberline {3.}Conclusiones}{9}{section.3}%
+\contentsline {section}{\numberline {4.}Anexos}{9}{section.4}%
 \contentsfinish 
