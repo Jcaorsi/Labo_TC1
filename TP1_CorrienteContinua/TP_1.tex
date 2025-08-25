@@ -9,6 +9,7 @@
 \usepackage[spanish,es-tabla]{babel} % 'es-tabla' cambia Cuadro→Tabla
 \usepackage{hyperref}                % cargar después de babel
 \usepackage{float}
+\usepackage{circuitikz}
 %%%%%%%%%%%%%%%%%%% VARIABLES %%%%%%%%%%%%%%%%%%%%
 \newcommand{\Facultad}{Instituto Tecnológico \\de\\ Buenos Aires} %constantes
 \newcommand{\TPn}{Trabajo Práctico N° 1}
@@ -96,6 +97,115 @@
 
     %%%Introduccion%%%
     \section{Introducción}
+
+        En este trabajo práctico se estudió la variación de la potencia de un circuito en función de la variación de la resistencia brindada por el potenciometro. 
+        Para esto se usaron los siguientes conceptos teóricos, los cuales tienen como objetivo simplificar circuitos complejos, para facilitar su estudio.
+
+        \subsection{Resistencias equivalentes}
+
+        Para poder simplificar el análisis de circuitos más complejos, se puede remplazar varias resistencias $R_{N}$ en una sola
+         resistencia equivalente $R_{eq}$. Para realizar esto es necesario analizar en que caso nos encontramos. El primer caso es el que observa en la Figura \ref{fig:Resis_equiv_1},
+        y viene dado por la ecuacion $R_{eq}=R_{1}+R_{2}+...+R_{N}$. El segundo caso, es cuando tenemos resistencias en paralelo, observar Figura \ref{fig:Resis_equiv_2}. Este caso viene dado por la siguiente ecuación
+        $\frac{1}{R_{eq}}= \frac{1}{R_{1}} + \frac{1}{R_{2}} +...+ \frac{1}{R_{N}}$.\par
+
+
+        \begin{figure}[H]
+            \centering
+            \begin{circuitikz}
+            % Resistencias en serie
+            \draw (0,0) to[R=$R_1$] (2,0)
+                    to[R=$R_2$] (4,0);
+
+            % símbolo =>
+            \node at (5,0) {$\Rightarrow$};
+
+            % Resistencia equivalente
+            \draw (6,0) to[R=$R_{eq}$] (8,0);
+            \end{circuitikz}
+            \caption{Equivalencia de dos resistencias en serie}
+              \label{fig:Resis_equiv_1}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \begin{circuitikz}
+            \draw (0,0) to[short] (0,2)
+                    to[R=$R_1$] (2,2)
+                    -- (2,0)
+                    to[R=$R_2$] (0,0);
+            \node at (3,1) {$\Rightarrow$};
+            \draw (4,0) to[short] (4,2)
+                    to[R=$R_{eq}$] (6,2)
+                    -- (6,0) -- (4,0);
+            \end{circuitikz}
+            \caption{Equivalencia de dos resistencias en paralelo}
+            \label{fig:Resis_equiv_2}
+        \end{figure}
+
+        \subsection{Ley de Ohm y Kirchoff}
+
+        Para el análisis de circuitos, existen 3 leyes de gran importancia.\par
+
+        La primera es \textbf{la Ley de Ohm}, la cual establece una relación lineal entre la tension, la corriente y la resistencia para los elementos pasivos.
+        Matematicamente $V=R \cdot I$. \par
+
+        Las otra es  \textbf{la primera ley de Kirchoff} la cual establece que la suma de las corrientes entrantes a un nodo, es igual a la suma de las corrientes salientes del nodo.
+        Matematicamente $\sum I_{n}=0$, siendo $I_{n}$ las corrientes que entran o salen de un nodo. \par
+
+        Por último tenemos \textbf{la segunda ley de Kirchoff} la cual establece que la suma de las tensiones sobre una malla es igual a 0. Matematicamente $\sum V_{n}=0$, 
+        siendo $V_{n}=0$ todas las tensiones de la malla recorrida.\par
+
+        \subsection{Circuito de Thevenin y Norton}
+
+            Muchas veces, a la hora de analizar un circuito complejo, lo único que interesan son las tensiones, corrientes y resistencias en la salida del mismo.
+            Un ejemplo de esto a la hora de analizar un circuito integrado, donde muchas veces se miran solo las salidas y entradas del mismo. Para tal motivo, existen dos
+            teoremas equivalentes, el \textbf{Teorema de Thevenin} y el \textbf{Teorema de Norton} (observar Figura \ref{fig:Norton}), los cuales son muy útiles para simplificar circuitos mas complejos.\par
+
+        \begin{figure}[H]
+            \centering
+            \begin{circuitikz}
+            \node[label=left:$a$] (aL) at (2.5,2) {};
+            \node[label=left:$b$] (aL) at (2.5,0) {};
+            \draw (2,2) to [short] (1.8, 2) to [R=$R_{Th}$] (0,2) to [battery,l=$V_b$] (0,0) to [short] (2,0);
+
+            \node at (3,1) {$\Rightarrow$};
+            
+            \node[label=left:$a$] (aL) at (6.5,2) {};
+            \node[label=left:$b$] (aL) at (6.5,0) {};
+            \draw (6,2) to [short] (4,2) 
+            to [american current source,l=$I_N$, invert] (4,0) to [short] (6,0);
+            \draw (5.4,2) to [R=$R_{N}$] (5.4,0);
+
+            \end{circuitikz}
+            \caption{Equivalencia de Norton.}
+            \label{fig:Norton}
+        \end{figure}   
+
+        En ambos casos, se pueden establecer la siguientes igualdades:
+
+        \begin{enumerate}
+            \item $R_{N} = R_{Th}$
+            \item $V_{ab}$ es igual en ambos casos.
+            \item $V_{Th} = I_{N}\cdot R_{N} = I_{N}\cdot R_{Th}$
+        \end{enumerate}
+
+        Es importante mencionar que para poder conseguir los valores equivalente, se puede seguir 3 metodos:
+
+        \begin{enumerate}
+            \item Si en el circuito existen solo resistencia y fuentes de tensión/corriente no dependientes
+                se puede pasivar las fuentes, esto es dejar las fuentes de tensión en cortocircuito y las fuentes de corriente en circuito abierto.
+                Una vez hecho eso, se obtiene la resistencia equivalente según lo dicho en la sección de resistencia equivalentes.
+                Por último se busca la corriente de Norton, dejando las puntas A-B en cortocircuito o la tension dejando las puntas en circuito abierto.
+            \item En caso de existir fuentes no dependientes y fuente dependientes, es importante mencionar que estas últimas no se pueden pasivar. 
+            Por tal motivo lo que se debe hacer es calcular la corriente de Norton y la tensión de Thevenin
+                para luego, mediante la ley de ohm, calcular la resistencia equivalente.
+            \item En caso de tener solo fuentes dependientes y ninguna fuente no dependientes, lo que se hace es conectar una fuente al borde A-B y resolver para conseguir o la corriente o la tension.
+                Finalmente, con esos datos, se despeja la resistencia equivalente, mediante la ley de ohm.
+        \end{enumerate}
+
+        Por último, muchas veces este método sirve para calcular rapidamente la potencia transferida a la carga. En particular, \textbf{el máximo de potencia transferida} ocurre cuando $R_{\textit{Carga}} = R_{Th/N} $.
+
+
 
     %%%Desarrollo%%%
     \indent
