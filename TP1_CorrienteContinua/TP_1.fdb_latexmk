@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1756423892.5799 "c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP1_CorrienteContinua/TP_1.tex" "TP_1.pdf" "TP_1" 1756423894.70952 0
+["pdflatex"] 1756424734.93643 "c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP1_CorrienteContinua/TP_1.tex" "TP_1.pdf" "TP_1" 1756424737.38109 0
   "C:/Users/caorsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1756421681 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/caorsi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1440.pk" 1755787232 18748 faf8ce1ff2bbf2571d449f4bcf9cc49f ""
   "C:/Users/caorsi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx2074.pk" 1755787235 28420 b088c4556d4ba2557f8f41b00bbbda39 ""
@@ -179,11 +179,11 @@
   "C:/Users/caorsi/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titletoc.sty" 1736608268 16594 e070b7268023b1ec1b45c44617ea64f9 ""
   "C:/Users/caorsi/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/caorsi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "TP_1.aux" 1756423894 3889 d137457a3b6d6d754176206eb7687628 "pdflatex"
-  "TP_1.out" 1756423894 2017 36dd1843890d601907fe60a88c4558a6 "pdflatex"
-  "TP_1.tex" 1756423891 19721 0bfc17875f24c9dd0914ae12444ec3ac ""
-  "TP_1.toc" 1756423894 1230 d57ae51737c87e5a2789b869649b7ea9 "pdflatex"
-  "c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP1_CorrienteContinua/TP_1.tex" 1756423891 19721 0bfc17875f24c9dd0914ae12444ec3ac ""
+  "TP_1.aux" 1756424737 3889 d137457a3b6d6d754176206eb7687628 "pdflatex"
+  "TP_1.out" 1756424737 2017 36dd1843890d601907fe60a88c4558a6 "pdflatex"
+  "TP_1.tex" 1756424733 19989 a0f3254bf28e915a90e959d67fe32507 ""
+  "TP_1.toc" 1756424737 1230 d57ae51737c87e5a2789b869649b7ea9 "pdflatex"
+  "c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP1_CorrienteContinua/TP_1.tex" 1756424733 19989 a0f3254bf28e915a90e959d67fe32507 ""
   "imagenes&matlab/Logo_ITBA.png" 1755787000 34082 18565f2ade26fe38705e2ad93c029b27 ""
   "imagenes&matlab/circuitoLTSpice.png" 1756423767 21309 607b70b4f8ce6ccf2b0ce0b195794138 ""
   "imagenes&matlab/graficoPotencia.png" 1756421669 23036 0f7ef23727204c7195bf44f84b7d79b3 ""
