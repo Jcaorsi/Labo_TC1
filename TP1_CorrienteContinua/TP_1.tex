@@ -71,16 +71,17 @@
 
     %%%RESUMEN%%%
     {\centering \LARGE \bfseries Resumen \par}
+    \vspace{0.5cm} 
         Este trabajo práctico consiste de dos partes, la primera teniendo como objetivo verificar los análisis de Thevenin y Norton para el estudio
         de circuitos, y la segunda buscando comprobar la máxima transferencia de potencia para el valor de resistencia de Thevenin/Norton correspondiente. \par
         
-
+    \vspace{0.5cm} 
         En la primera parte de la práctica se ensambló el circuito indicado por la consigna con los nodos A y B formando un circuito abierto. Luego, se
         realizaron las mediciones de la tensión de Thevenin y la corriente de Norton entre los mismos, así como la resistencia de Thevenin/Norton. 
         Se considera que los resultados medidos durante la práctica ($V_{Th} = 9,29V$, $I_{Nt} = 24,6 mA$ y $R_{Th/Nt} = 388 \Omega$) son suficientemente 
         semejantes a los teóricos ($V_{Th} = 9,25 V$, $I_{Nt} = 25,19 mA$ y $R_{Th/Nt} = 367,1436 \Omega$) como para considerarlos coherentes con lo 
         estudiado en las teóricas de la materia.  \par
-
+    \vspace{0.5cm} 
         En la segunda parte de la práctica se conectó una resistencia variable entre los nodos A y B y se fue aumentando su valor de entre su mínimo 
         ($0 \Omega$) y su máximo ($500 \Omega$), a la vez que se medían con cada variación de la resistencia el valor de la misma, la caida de
         tensión entre los nodos A y B y la corriente que circulaba en aquella rama. Para visualizar la semejanza entre los resultados teóricos y los 
@@ -224,8 +225,7 @@
                 \end{itemize}
         
         
-        Primero, se procedió a la construcción del circuito según lo indicado por la esquemática \autoref{fig:esquemática}.\par %falta añadir foto
-
+        
 \begin{figure}[!h]
   \centering
   \includegraphics[width=0.5\textwidth]{circuitoLTSpice.png}
@@ -289,7 +289,7 @@
             que es de $\pm(0,5\% + 1)$ para la medición de tensión de corriente continua y de $\pm (0,8\% + 1)$ para la medición 
             de resistencia y corriente continua. 
             Factores adicionales, como la calidad de las conexiones y las condiciones ambientales, pudieron haber contribuido 
-            levemente al error, aunque sin afectar la validez del modelo de Thevenin/Norton.
+            levemente al error.
         \subsection{Máxima transferencia de potencia}
 
             \subsubsection{Medición}
@@ -326,34 +326,7 @@
             \label{tab:ValoresMedidos2daParte}
             \end{table}
 
-            
-            \quad Los resultados recolectados fueron los siguientes. Observar \autoref{tab:ValoresTeoricos2daParte}
-
-            \begin{table}[H]
-            \centering
-                \begin{tabular}{|c|c|c|}
-                \hline
-                Resistencia  $[\Omega]$     & Potencia [mW]         \\ \hline
-                30                          & 16,27                 \\ \hline
-                60                          & 28,14                 \\ \hline
-                90                          & 36,85                 \\ \hline
-                120                         & 43,27                 \\ \hline
-                150                         & 47,99                 \\ \hline
-                180                         & 51,45                 \\ \hline
-                210                         & 53,94                 \\ \hline
-                240                         & 55,71                 \\ \hline
-                270                         & 56,91                 \\ \hline
-                300                         & 57,67                 \\ \hline
-                330                         & 58,10                 \\ \hline
-                360                         & 58,26                 \\ \hline
-                390                         & 58,21                 \\ \hline
-                420                         & 58,00                 \\ \hline
-                450                         & 57,66                 \\ \hline
-                480                         & 57,23                 \\ \hline
-                \end{tabular}
-            \caption{Valores teóricos}
-            \label{tab:ValoresTeoricos2daParte}
-            \end{table}
+        
 
             \begin{figure}[H]
                 \centering
@@ -362,7 +335,7 @@
                 \label{fig:graficoTransferenciaPotencia}
             \end{figure}
 
-            \quad Se puede observar en la tabla que el valor de la máxima potencia disipada por el resistor se corresponde con el valor de $ 360 \Omega $ del mismo.
+            
 
             \subsubsection{Análisis}
             \quad Se puede observar que los valores teóricos y los medidos son lo suficientemente cercanos para confirmar 
@@ -378,7 +351,5 @@
      eléctricos sobre una protoboard. Como resultado de esta práctiva, se comprobó la efectividad 
      del teorema de máxima transferencia de potencia identificando la resistencia de carga óptima.
 
-    %%%Anexos%%%
-    \section{Anexos}
 
 \end{document}
