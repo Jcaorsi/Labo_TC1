@@ -10,6 +10,7 @@
 \usepackage{hyperref}                % cargar después de babel
 \usepackage{float}
 \usepackage{circuitikz}
+\usepackage[a4paper, margin=3cm]{geometry}
 %%%%%%%%%%%%%%%%%%% VARIABLES %%%%%%%%%%%%%%%%%%%%
 \newcommand{\Facultad}{Instituto Tecnológico \\de\\ Buenos Aires} %constantes
 \newcommand{\TPn}{Trabajo Práctico N° 1}
@@ -81,51 +82,54 @@
     %%%Introduccion%%%
     \section{Introducción}
 
+        Para esta practica se usó corriente alterna para el estudio de la potencia en AC. 
     
 
-        \subsection{Subseccion 1}
+        \subsection{Instrumental}
 
+        En esta experiencia se utilizaron los siguientes instrumentos:
 
-        \begin{figure}[H]
-            \centering
-            \begin{circuitikz}
-            % Resistencias en serie
-            \draw (0,0) to[R=$R_1$] (2,0)
-                    to[R=$R_2$] (4,0);
+        \begin{itemize}
+            \renewcommand{\labelitemi}{$\bullet$}
+            \item {\bfseries Variac}: Fuente de tensión AC regulable. 
+            \item {\bfseries Vatímetro analógico}: El mismo sirve para poder medir la potencia activa (P) consumido por el circuito.
+                    Para calcular los valores, el mismo debe medir la tensión y la corriente del circuito. Para ello se conecta de la siguiente forma (observar figura). \par
+                
+            \item {\bfseries Amperímetro analógico}
+            \item {\bfseries Voltímetro analógico}
+            \item {\bfseries Inductor}: Consta de un armazón plastico hueco, al cual se le enrrolla un alambre sucesivas veces. El mismo tiene asociado una resistencia y un valor L inductivo. 
+                Este tenía un hueco en el medio donde se podía intrucir un nucleo de material sólido. 
+        \end{itemize}
+        
+        \subsection{Marco teórico}
 
-            % símbolo =>
-            \node at (5,0) {$\Rightarrow$};
+        En esta practica se usaron los siguientes conocimientos teoricos:
 
-            % Resistencia equivalente
-            \draw (6,0) to[R=$R_{eq}$] (8,0);
-            \end{circuitikz}
-            \caption{Equivalencia de dos resistencias en serie}
-              \label{fig:Resis_equiv_1}
-        \end{figure}
+        \subsubsection{Inductor}
 
-        \begin{figure}[H]
-            \centering
-            \begin{circuitikz}
-            \draw (0,0) to[short] (0,2)
-                    to[R=$R_1$] (2,2)
-                    -- (2,0)
-                    to[R=$R_2$] (0,0);
-            \node at (3,1) {$\Rightarrow$};
-            \draw (4,0) to[short] (4,2)
-                    to[R=$R_{eq}$] (6,2)
-                    -- (6,0) -- (4,0);
-            \end{circuitikz}
-            \caption{Equivalencia de dos resistencias en paralelo}
-            \label{fig:Resis_equiv_2}
-        \end{figure}
+        Como se mencionó anteriormente, un inductor consta de un alambre enrrollado. El mismo es capaz de almacenar energía electrica en forma de energía magnética.
+         La ecuación del mismo viene dada por:
+        \begin{equation*}
+            V=L \frac{dI}{dT}
+        \end{equation*}
+        De esta ecuacion se puede deducir que el inductor no puede tener cambios bruscos en la corriente de un instante al otro, por lo que debe ser continua en todo instante.
 
-        \subsection{subseccion 2}
+        Usando cambio de variable a números complejos, se puede llegar a la siguiente ecuación.
+        \begin{equation*}
+            V=j\cdot \omega\cdot L
+        \end{equation*}
+        con j la constante compleja, $\omega$ la frecuencia en $\frac{rads}{seg}$ y L la constante inductiva en H.
 
-      
-        \subsection{subseccion 3}
+        \subsubsection{Potencia compleja}
 
+        Al analizar la potencia asociada a circuitos AC, se debe tener en consideración los siguientes aspectos.\par
+        La potencia total se llama { \bfseries potencia compleja} $\vec{S}= V \cdot I^{*}$ [VA], y es la potencia total del sistema. No obstante, es importante mencionar que este número no representa la potencia total usada por el sistema.
+        La potencia compleja se puede describir de la siguiente forma $\vec{S}=P + j \cdot Q$, donde P es la { \bfseries potencia activa} y Q es la {\bfseries potencia reactiva}. \par
 
+        La potencia activa (P) es la potencia que es efectivamente usada por el sistema. Esta representa la parte real de la potencia compleja.
+        Más aun, la misma se puede descomponer en $P= |I_{rms}| \cdot |V_{rms}| \cdot \cos (\varphi)$. De esto se puede deducir lo siguiente, la misma es máxima cuando el desfasaje $\varphi = \theta_{V} - \theta_I $ es cero. \par
 
+        Por otra parte, la potencia reactiva es la parte imaginaria de $\vec{s}$. Esta representa la potencia inductiva o capacitiva. Esta se puede descomponer en $ Q = |I_{rms}| \cdot |V_{rms}| \cdot \sen (\varphi)= $
     %%%Desarrollo%%%
     \indent
     \section{Desarrollo}
