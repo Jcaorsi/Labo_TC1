@@ -3,9 +3,9 @@
 \contentsline {subsection}{\numberline {1.1}Instrumental}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Marco teórico}{3}{subsection.1.2}%
 \contentsline {subsubsection}{\numberline {$a)$}Inductor}{3}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {$b)$}Potencia compleja}{3}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {$b)$}Potencia compleja}{4}{subsubsection.1.2.2}%
 \contentsline {section}{\numberline {2.}Desarrollo}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Procedimiento}{4}{subsection.2.1}%
-\contentsline {section}{\numberline {3.}Conclusiones}{4}{section.3}%
-\contentsline {section}{\numberline {4.}Anexos}{4}{section.4}%
+\contentsline {section}{\numberline {3.}Conclusiones}{5}{section.3}%
+\contentsline {section}{\numberline {4.}Anexos}{5}{section.4}%
 \contentsfinish 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.14)  14 SEP 2025 23:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.14)  15 SEP 2025 10:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -521,24 +521,24 @@ LaTeX Info: Redefining \% on input line 11.
 )
 \openout1 = `TP_2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count327
@@ -558,9 +558,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \. on input line 41.
-LaTeX Info: Redefining \% on input line 41.
-Package hyperref Info: Link coloring OFF on input line 41.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+Package hyperref Info: Link coloring OFF on input line 40.
  (./TP_2.out) (./TP_2.out)
 \@outlinefile=\write4
 \openout4 = `TP_2.out'.
@@ -603,7 +603,7 @@ Package hyperref Info: Link coloring OFF on input line 41.
 <imagenes&matlab/Logo_ITBA.png, id=43, 557.08125pt x 220.825pt>
 File: imagenes&matlab/Logo_ITBA.png Graphic file (type png)
 <use imagenes&matlab/Logo_ITBA.png>
-Package pdftex.def Info: imagenes&matlab/Logo_ITBA.png  used on input line 48.
+Package pdftex.def Info: imagenes&matlab/Logo_ITBA.png  used on input line 47.
 (pdftex.def)             Requested size: 128.0387pt x 50.7516pt.
 
 
@@ -615,7 +615,7 @@ Package pdftex.def Info: imagenes&matlab/Logo_ITBA.png  used on input line 48.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.76     \newpage
+l.75     \newpage
                   [1] (./TP_2.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -627,20 +627,36 @@ LaTeX Info: Redefining \% on input line 1.
 
 [2]
 
-[3]
-<imagenes&matlab/Trojkat-mocy.png, id=85, 192.72pt x 100.6962pt>
-File: imagenes&matlab/Trojkat-mocy.png Graphic file (type png)
-<use imagenes&matlab/Trojkat-mocy.png>
-Package pdftex.def Info: imagenes&matlab/Trojkat-mocy.png  used on input line 142.
-(pdftex.def)             Requested size: 213.39568pt x 111.49905pt.
-
-
-[4
+[3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.159 \end{document}
-                     <./imagenes&matlab/Trojkat-mocy.png>] (./TP_2.aux
+l.142 ...es la {\bfseries potencia reactiva}. \par
+                                                  ]
+<imagenes&matlab/Trojkat-mocy.png, id=85, 192.72pt x 100.6962pt>
+File: imagenes&matlab/Trojkat-mocy.png Graphic file (type png)
+<use imagenes&matlab/Trojkat-mocy.png>
+Package pdftex.def Info: imagenes&matlab/Trojkat-mocy.png  used on input line 157.
+(pdftex.def)             Requested size: 213.39568pt x 111.49905pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.195 \end{document}
+                     <./imagenes&matlab/Trojkat-mocy.png>]
+
+[5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.195 \end{document}
+                    ] (./TP_2.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -652,18 +668,18 @@ Package rerunfilecheck Info: File `TP_2.out' has not changed.
 (rerunfilecheck)             Checksum: 32DE452BE29156B7FE1C3884BBC80AA5;1004.
  ) 
 Here is how much of TeX's memory you used:
- 40097 strings out of 473190
- 950385 string characters out of 5715800
- 1598453 words of memory out of 5000000
- 62930 multiletter control sequences out of 15000+600000
+ 40745 strings out of 473190
+ 968353 string characters out of 5715800
+ 1600600 words of memory out of 5000000
+ 63575 multiletter control sequences out of 15000+600000
  567023 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,7n,105p,527b,493s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb>
-Output written on TP_2.pdf (5 pages, 175088 bytes).
+ 99i,9n,105p,527b,1037s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb>
+Output written on TP_2.pdf (6 pages, 188598 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
- 15 named destinations out of 1000 (max. 500000)
+ 167 PDF objects out of 1000 (max. 8388607)
+ 125 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
  95 words of extra memory for PDF output out of 10000 (max. 10000000)
 

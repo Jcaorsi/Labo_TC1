@@ -1,4 +1,3 @@
-
 \documentclass{article}
 
 %%%%%%%%%%%%%%% LIBRERIAS %%%%%%%%%%%%%%%%%%%%%
@@ -82,7 +81,8 @@
     %%%Introduccion%%%
     \section{Introducción}
 
-        Para esta practica se usó corriente alterna para el estudio de la potencia en AC. 
+        El objetivo principal de este trabajo practico fue estudiar la relación entre la potencia activa, real y aparente, en un circuito que contenia un inductor.
+        Para esta practica se usó corriente alterna. 
     
 
         \subsection{Instrumental}
@@ -93,8 +93,23 @@
             \renewcommand{\labelitemi}{$\bullet$}
             \item {\bfseries Variac}: Fuente de tensión AC regulable. 
             \item {\bfseries Vatímetro analógico}: El mismo sirve para poder medir la potencia activa (P) consumido por el circuito.
-                    Para calcular los valores, el mismo debe medir la tensión y la corriente del circuito. Para ello se conecta de la siguiente forma (observar figura). \par
-                
+                    Para calcular los valores, el mismo debe medir la tensión y la corriente del circuito. Para ello se conecta su voltímetro en paralelo con el circuito y su amperímetro en serie con el circuito (observar Figura \ref{fig:vatimetro}). \par
+
+                    \begin{figure}[h!] % el [h!] fuerza a ponerlo aquí
+                        \centering
+                        \begin{tikzpicture}
+                            % Paths, nodes and wires:
+                            \node[oscillator] at (21.49, -15.26){};
+                            \draw (21, -14) to[qpprobe] (26, -14);
+                            \draw (21, -14) -- (21, -14.77);
+                            \draw (21, -15.75) -| (21, -16.5) -- (26, -16.5);
+                            \draw (26, -14) to[cute inductor] (26, -16.5);
+                            \draw (23.248, -14.28) -| (23.25, -14.75) -- (22.5, -14.75) -| (22.5, -14);
+                            \draw (23.752, -14.28) |- (23.75, -16.5);
+                        \end{tikzpicture}
+                        \caption{Esquema de coneccionado de vatímetro}
+                        \label{fig:vatimetro}
+                    \end{figure}
             \item {\bfseries Amperímetro analógico}
             \item {\bfseries Voltímetro analógico}
             \item {\bfseries Inductor}: Consta de un armazón plastico hueco, al cual se le enrrolla un alambre sucesivas veces. El mismo tiene asociado una resistencia y un valor L inductivo. 
@@ -103,7 +118,7 @@
         
         \subsection{Marco teórico}
 
-        En esta practica se usaron los siguientes conocimientos teoricos:
+        En esta práctica se usaron los siguientes conocimientos teoricos:
 
         \subsubsection{Inductor}
 
@@ -112,31 +127,31 @@
         \begin{equation*}
             V=L \frac{dI}{dT}
         \end{equation*}
-        De esta ecuacion se puede deducir que el inductor no puede tener cambios bruscos en la corriente de un instante al otro, por lo que debe ser continua en todo instante.
+        Donde V es la tensión, L es la constante inductiva en [H] e I es la corriente que circula por el inductor.
 
         Usando cambio de variable a números complejos, se puede llegar a la siguiente ecuación.
         \begin{equation*}
             V=j\cdot \omega\cdot L
         \end{equation*}
-        con j la constante compleja, $\omega$ la frecuencia en $\frac{rads}{seg}$ y L la constante inductiva en H.
+        con j la constante compleja, $\omega$ la frecuencia en [$\frac{rads}{seg}$] y L la constante inductiva en [H].
 
         \subsubsection{Potencia compleja}
 
         Al analizar la potencia asociada a circuitos AC, se debe tener en consideración los siguientes aspectos.\par
-        La potencia total se llama { \bfseries potencia compleja} $\vec{S}= V \cdot I^{*}$ [VA], y es la potencia total del sistema. No obstante, es importante mencionar que este número no representa la potencia total usada por el sistema.
+        La potencia total se llama { \bfseries potencia compleja} $\vec{S}= V \cdot I^{*}$ [VA], y es la potencia total del sistema. El módulo de la misma, se llama {\bfseries potencia aparente} S en [VA]. No obstante, es importante mencionar que este número no representa la potencia total usada por el sistema.
         La potencia compleja se puede describir de la siguiente forma $\vec{S}=P + j \cdot Q$, donde P es la { \bfseries potencia activa} y Q es la {\bfseries potencia reactiva}. \par
 
         La potencia activa (P) es la potencia que es efectivamente usada por el sistema. Esta representa la parte real de la potencia compleja.
         Más aun, la misma se puede descomponer en $P= |I_{rms}| \cdot |V_{rms}| \cdot \cos (\varphi)$. De esto se puede deducir lo siguiente, la misma es máxima cuando el desfasaje $\varphi = \theta_{V} - \theta_I $ es cero. \par
 
         Por otra parte, la potencia reactiva es la parte imaginaria de $\vec{s}$. Esta representa la potencia inductiva o capacitiva. Esta se puede descomponer en $ Q = |I_{rms}| \cdot |V_{rms}| \cdot \sen (\varphi)= \pm \frac{V_\text{rms}^2}{X}$ donde es + si es inductivo o - si es capacitivo.
-        De esta formula se puede deducir que el mismo es minimo cuando el desfasaje entre la corriente y la tension se acerca a cero, 
+        De esta formula se puede deducir que el mismo es mínimo cuando el desfasaje entre la corriente y la tensión se acerca a cero, 
         la potencia reactiva se reduce. La potencia reactiva, a diferencia de la potencia activa, es una potencia la cual no puede ser aprovechada por el sistema, 
-        ya que la misma esta asociada (como se pudo observar en la ecuacion que la define) a la energia almacenada por los inductores y los capacitores.\par
+        ya que la misma esta asociada (como se pudo observar en la ecuación que la define) a la energía almacenada por los inductores y los capacitores.\par
 
         En consecuencia, este último tipo de potencia se suele reducir al mínimo posible, por motivos económicos.
 
-        Por último, P y Q se pueden relacionar usando el triangulo de potencia (observar Figura \ref{fig:triangulo_de_potencia}). 
+        Por último, P y Q se pueden relacionar usando el triangulo de potencia (observar Figura \ref{fig:triangulo_de_potencia}) mediante la fórmula $S^2=Q^2+P^2$. 
         \begin{figure}[h!] % h! = aquí, lo más forzado posible
             \centering
             \includegraphics[width=0.5\textwidth]{Trojkat-mocy.png} % nombre del archivo
@@ -149,6 +164,27 @@
     \section{Desarrollo}
 
     \subsection{Procedimiento}
+
+        Para esta experiencia se conectaron los instrumentos de medición junto con el variac y el inductor de la siguiente forma (Observar Figura: \ref{fig:circuito-inductor}). Luego se setió el variac a 120 V. Finalmente se procedió a la toma de mediciones de tensión, de corriente y la potencia usando el instrumental . 
+        \begin{figure}[h!]
+            \centering
+            \begin{tikzpicture}
+                % Paths, nodes and wires:
+                \draw (22.5, -14.5) to[voltmeter] (22.5, -17.25);
+                \draw (24.25, -17.25) to[cute inductor] (24.25, -14.5);
+                \draw (17.75, -14.5) to[ammeter] (20.25, -14.5);
+                \draw (20.25, -14.5) to[qpprobe] (21.75, -14.5);
+                \draw (21.75, -14.5) -- (22.5, -14.5);
+                \draw (17.75, -14.5) to[sinusoidal voltage source, l={$V_s$}] (17.75, -17.25);
+                \draw (22.5, -14.5) -- (24.25, -14.5);
+                \draw (17.75, -17.25) -- (24.25, -17.25);
+            \end{tikzpicture}
+            \caption{Circuito con fuente senoidal, amperímetro, voltímetro e inductor}
+            \label{fig:circuito-inductor}
+        \end{figure}
+
+        Este procedimiento se realizo tres veces: 1) Con el nucleo del inductor vacío. 2) Una barra parcialmente introducida en el nucleo. 3) Con la barra totalmente introducida en el nucleo.
+
    
     %%%Conclusiones%%%
     \section{Conclusiones}

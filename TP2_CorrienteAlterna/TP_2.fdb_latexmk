@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1757903795.93806 "/Users/juanbautista/Desktop/Teoria_De_Circuitos/Labo_TC1/TP2_CorrienteAlterna/TP_2.tex" "TP_2.pdf" "TP_2" 1757903796.5584 0
-  "/Users/juanbautista/Desktop/Teoria_De_Circuitos/Labo_TC1/TP2_CorrienteAlterna/TP_2.tex" 1757903795.13669 7310 f5b9bb9da64c6b03bc50fbae7cc560d1 ""
+["pdflatex"] 1757941459.06095 "/Users/juanbautista/Desktop/Teoria_De_Circuitos/Labo_TC1/TP2_CorrienteAlterna/TP_2.tex" "TP_2.pdf" "TP_2" 1757941459.74075 0
+  "/Users/juanbautista/Desktop/Teoria_De_Circuitos/Labo_TC1/TP2_CorrienteAlterna/TP_2.tex" 1757941458.86194 9844 50615bdd6a1640093ed184fb0b491324 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcbx1440.tfm" 1136768653 1536 31d7b1d6f1ef88de2aa925487cab16c7 ""
@@ -30,6 +30,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1215737283 135942 859a90cad7494a1e79c94baf546d7de5 ""
@@ -180,10 +181,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1755201014 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1755200955 3345736 dbbf8696646a4b5b3ebab9aec11437cc ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "TP_2.aux" 1757903796.50611 1659 02a2b3daadd93272ec88d7eb0c46e7f7 "pdflatex"
-  "TP_2.out" 1757903796.50707 1004 32de452be29156b7fe1c3884bbc80aa5 "pdflatex"
-  "TP_2.tex" 1757903795.13669 7310 f5b9bb9da64c6b03bc50fbae7cc560d1 ""
-  "TP_2.toc" 1757903796.50722 728 016a1f285ad442f57db3f3f03aac2314 "pdflatex"
+  "TP_2.aux" 1757941459.68919 2189 7d3186be5c989a65caede8ba3a6eb130 "pdflatex"
+  "TP_2.out" 1757941459.69022 1004 32de452be29156b7fe1c3884bbc80aa5 "pdflatex"
+  "TP_2.tex" 1757941458.86194 9844 50615bdd6a1640093ed184fb0b491324 ""
+  "TP_2.toc" 1757941459.69037 728 44328f0423da4ed46090248638bfbafe "pdflatex"
   "imagenes&matlab/Logo_ITBA.png" 1757280828.05532 34082 5068038dde45397e603b47826c8b3214 ""
   "imagenes&matlab/Trojkat-mocy.png" 1757903333.17395 2782 6a3862f6d39e8fde7a024cfa77cc0e45 ""
   (generated)
