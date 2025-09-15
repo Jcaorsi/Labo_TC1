@@ -5,6 +5,7 @@
 \contentsline {subsubsection}{\numberline {$a)$}Inductor}{3}{subsubsection.1.2.1}%
 \contentsline {subsubsection}{\numberline {$b)$}Potencia compleja}{3}{subsubsection.1.2.2}%
 \contentsline {section}{\numberline {2.}Desarrollo}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Procedimiento}{4}{subsection.2.1}%
 \contentsline {section}{\numberline {3.}Conclusiones}{4}{section.3}%
 \contentsline {section}{\numberline {4.}Anexos}{4}{section.4}%
 \contentsfinish 

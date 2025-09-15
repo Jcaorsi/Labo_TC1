@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.14)  14 SEP 2025 22:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.14)  14 SEP 2025 23:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -600,7 +600,7 @@ Package hyperref Info: Link coloring OFF on input line 41.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<imagenes&matlab/Logo_ITBA.png, id=39, 557.08125pt x 220.825pt>
+<imagenes&matlab/Logo_ITBA.png, id=43, 557.08125pt x 220.825pt>
 File: imagenes&matlab/Logo_ITBA.png Graphic file (type png)
 <use imagenes&matlab/Logo_ITBA.png>
 Package pdftex.def Info: imagenes&matlab/Logo_ITBA.png  used on input line 48.
@@ -628,8 +628,19 @@ LaTeX Info: Redefining \% on input line 1.
 [2]
 
 [3]
+<imagenes&matlab/Trojkat-mocy.png, id=85, 192.72pt x 100.6962pt>
+File: imagenes&matlab/Trojkat-mocy.png Graphic file (type png)
+<use imagenes&matlab/Trojkat-mocy.png>
+Package pdftex.def Info: imagenes&matlab/Trojkat-mocy.png  used on input line 142.
+(pdftex.def)             Requested size: 213.39568pt x 111.49905pt.
 
-[4] (./TP_2.aux
+
+[4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.159 \end{document}
+                     <./imagenes&matlab/Trojkat-mocy.png>] (./TP_2.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -638,21 +649,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `TP_2.out' has not changed.
-(rerunfilecheck)             Checksum: DB97E47715D6BCD79B0479F624A632A8;882.
+(rerunfilecheck)             Checksum: 32DE452BE29156B7FE1C3884BBC80AA5;1004.
  ) 
 Here is how much of TeX's memory you used:
- 40080 strings out of 473190
- 949922 string characters out of 5715800
- 1597396 words of memory out of 5000000
- 62915 multiletter control sequences out of 15000+600000
+ 40097 strings out of 473190
+ 950385 string characters out of 5715800
+ 1598453 words of memory out of 5000000
+ 62930 multiletter control sequences out of 15000+600000
  567023 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,5n,105p,527b,493s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb>
-Output written on TP_2.pdf (5 pages, 160107 bytes).
+ 99i,7n,105p,527b,493s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb>
+Output written on TP_2.pdf (5 pages, 175088 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
- 13 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 154 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 15 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 

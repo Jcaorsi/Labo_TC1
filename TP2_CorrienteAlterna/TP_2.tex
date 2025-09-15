@@ -129,10 +129,26 @@
         La potencia activa (P) es la potencia que es efectivamente usada por el sistema. Esta representa la parte real de la potencia compleja.
         Más aun, la misma se puede descomponer en $P= |I_{rms}| \cdot |V_{rms}| \cdot \cos (\varphi)$. De esto se puede deducir lo siguiente, la misma es máxima cuando el desfasaje $\varphi = \theta_{V} - \theta_I $ es cero. \par
 
-        Por otra parte, la potencia reactiva es la parte imaginaria de $\vec{s}$. Esta representa la potencia inductiva o capacitiva. Esta se puede descomponer en $ Q = |I_{rms}| \cdot |V_{rms}| \cdot \sen (\varphi)= $
+        Por otra parte, la potencia reactiva es la parte imaginaria de $\vec{s}$. Esta representa la potencia inductiva o capacitiva. Esta se puede descomponer en $ Q = |I_{rms}| \cdot |V_{rms}| \cdot \sen (\varphi)= \pm \frac{V_\text{rms}^2}{X}$ donde es + si es inductivo o - si es capacitivo.
+        De esta formula se puede deducir que el mismo es minimo cuando el desfasaje entre la corriente y la tension se acerca a cero, 
+        la potencia reactiva se reduce. La potencia reactiva, a diferencia de la potencia activa, es una potencia la cual no puede ser aprovechada por el sistema, 
+        ya que la misma esta asociada (como se pudo observar en la ecuacion que la define) a la energia almacenada por los inductores y los capacitores.\par
+
+        En consecuencia, este último tipo de potencia se suele reducir al mínimo posible, por motivos económicos.
+
+        Por último, P y Q se pueden relacionar usando el triangulo de potencia (observar Figura \ref{fig:triangulo_de_potencia}). 
+        \begin{figure}[h!] % h! = aquí, lo más forzado posible
+            \centering
+            \includegraphics[width=0.5\textwidth]{Trojkat-mocy.png} % nombre del archivo
+            \caption{Triangulo de potencia inductivo}
+            \label{fig:triangulo_de_potencia} % etiqueta para referencias
+        \end{figure}
+
     %%%Desarrollo%%%
     \indent
     \section{Desarrollo}
+
+    \subsection{Procedimiento}
    
     %%%Conclusiones%%%
     \section{Conclusiones}
