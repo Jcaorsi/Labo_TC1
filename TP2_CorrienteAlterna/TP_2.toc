@@ -6,6 +6,14 @@
 \contentsline {subsubsection}{\numberline {$b)$}Potencia compleja}{4}{subsubsection.1.2.2}%
 \contentsline {section}{\numberline {2.}Desarrollo}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Procedimiento}{4}{subsection.2.1}%
-\contentsline {section}{\numberline {3.}Conclusiones}{5}{section.3}%
-\contentsline {section}{\numberline {4.}Anexos}{5}{section.4}%
+\contentsline {subsection}{\numberline {2.2}Mediciones}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {$a)$}Nucleo vacío}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {$b)$}Nucleo de hierro parcialmente introducido}{5}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {$c)$}Nucleo totalmente introducido de hierro}{5}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Cálculos}{6}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {$a)$}Nucleo vacío}{6}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {$b)$}Nucleo de hierro parcialmente introducido}{6}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {$c)$}Nucleo de hierro totalmente introducido}{7}{subsubsection.2.3.3}%
+\contentsline {section}{\numberline {3.}Conclusiones}{7}{section.3}%
+\contentsline {section}{\numberline {4.}Anexos}{7}{section.4}%
 \contentsfinish 

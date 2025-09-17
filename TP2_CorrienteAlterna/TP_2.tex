@@ -91,7 +91,7 @@
 
         \begin{itemize}
             \renewcommand{\labelitemi}{$\bullet$}
-            \item {\bfseries Variac}: Fuente de tensión AC regulable. 
+            \item {\bfseries Variac}: Fuente de tensión AC regulable, 50 Hz.
             \item {\bfseries Vatímetro analógico}: El mismo sirve para poder medir la potencia activa (P) consumido por el circuito.
                     Para calcular los valores, el mismo debe medir la tensión y la corriente del circuito. Para ello se conecta su voltímetro en paralelo con el circuito y su amperímetro en serie con el circuito (observar Figura \ref{fig:vatimetro}). \par
 
@@ -185,7 +185,74 @@
 
         Este procedimiento se realizo tres veces: 1) Con el nucleo del inductor vacío. 2) Una barra parcialmente introducida en el nucleo. 3) Con la barra totalmente introducida en el nucleo.
 
-   
+    \subsection{Mediciones}
+        
+        A continuación se presentan las mediciones tomadas en cada una de las tres instancias del experimento.
+
+        \subsubsection{Nucleo vacío}
+
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{|c|c|c|c|}
+                \hline
+                $V_{rms} $[V] & $I_{rms} $[A] & $P $[W]  \\ \hline
+                120           & 1.175         & 29     \\ \hline
+            \end{tabular}
+            \caption{Mediciones con núcleo vacío}
+            \label{tab:mediciones-nucleo-vacio}
+        \end{table}
+
+        \subsubsection{Nucleo de hierro parcialmente introducido}
+
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{|c|c|c|}
+                \hline
+                $V_{rms} $[V] & $I_{rms} $[A] & $P $[W] \\ \hline
+                122           & 0.6         & 16    \\ \hline
+            \end{tabular}
+            \caption{Mediciones con núcleo parcialmente introducido de hierro}
+            \label{tab:mediciones-nucleo-parcialmente-introducido-hierro}
+        \end{table}
+
+        \subsubsection{Nucleo totalmente introducido de hierro}
+
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{|c|c|c|c|}
+                \hline
+                $V_{rms} $[V] & $I_{rms} $[A] & $P $[W] \\ \hline
+                124           & 0.25         & 12    \\ \hline
+            \end{tabular}
+            \caption{Mediciones con núcleo totalmente introducido de hierro}
+            \label{tab:mediciones-nucleo-totalmente-introducido-hierro}
+        \end{table}
+
+    \subsection{Cálculos}
+        \subsubsection{Nucleo vacío}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.8\textwidth]{graficoAire.png}
+                \caption{Triángulo de Potencias para el circuito con núcleo de aire.}
+                \label{fig:graficoAire}
+            \end{figure}
+        
+        \subsubsection{Nucleo de hierro parcialmente introducido}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.8\textwidth]{graficoParcialHierro.png}
+                \caption{Triángulo de Potencias para el circuito con núcleo parcialmente introducido de hierro.}
+                \label{fig:graficoParcialHierro}
+            \end{figure}
+
+        \subsubsection{Nucleo de hierro totalmente introducido}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.8\textwidth]{graficoTotalHierro.png}
+                \caption{Triángulo de Potencias para el circuito con núcleo totalmente introducido de hierro.}
+                \label{fig:graficoTotalHierro}
+            \end{figure}
+
     %%%Conclusiones%%%
     \section{Conclusiones}
 
