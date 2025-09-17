@@ -315,6 +315,8 @@ INPUT .\imagenes&matlab\Trojkat-mocy.png
 INPUT .\imagenes&matlab\Trojkat-mocy.png
 INPUT .\imagenes&matlab\Trojkat-mocy.png
 INPUT .\imagenes&matlab\Trojkat-mocy.png
+INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT .\imagenes&matlab\graficoAire.png
 INPUT .\imagenes&matlab\graficoAire.png
 INPUT .\imagenes&matlab\graficoAire.png
@@ -333,9 +335,17 @@ INPUT .\imagenes&matlab\graficoTotalHierro.png
 INPUT .\imagenes&matlab\graficoTotalHierro.png
 INPUT .\imagenes&matlab\graficoTotalHierro.png
 INPUT .\imagenes&matlab\graficoTotalHierro.png
+INPUT .\imagenes&matlab\graficoTotalAluminio.png
+INPUT .\imagenes&matlab\graficoTotalAluminio.png
+INPUT .\imagenes&matlab\graficoTotalAluminio.png
+INPUT .\imagenes&matlab\graficoTotalAluminio.png
+INPUT .\imagenes&matlab\graficoTotalAluminio.png
+INPUT .\imagenes&matlab\graficoTotalAluminio.png
 INPUT TP_2.aux
 INPUT .\TP_2.out
 INPUT .\TP_2.out
+INPUT C:\Users\caorsi\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\caorsi\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\caorsi\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1440.pk
 INPUT C:\Users\caorsi\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1440.pk
 INPUT C:\Users\caorsi\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx2074.pk
@@ -346,6 +356,8 @@ INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
+INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
@@ -364,3 +376,5 @@ INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.10)  17 SEP 2025 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.10)  17 SEP 2025 15:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -608,7 +608,7 @@ Package hyperref Info: Link coloring OFF on input line 40.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<imagenes&matlab/Logo_ITBA.png, id=74, 557.08125pt x 220.825pt>
+<imagenes&matlab/Logo_ITBA.png, id=82, 557.08125pt x 220.825pt>
 File: imagenes&matlab/Logo_ITBA.png Graphic file (type png)
 <use imagenes&matlab/Logo_ITBA.png>
 Package pdftex.def Info: imagenes&matlab/Logo_ITBA.png  used on input line 47.
@@ -641,7 +641,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has
                                                   \__shipout_drop_firstpage_...
 l.142 ...es la {\bfseries potencia reactiva}. \par
                                                   ]
-<imagenes&matlab/Trojkat-mocy.png, id=124, 192.72pt x 100.6962pt>
+<imagenes&matlab/Trojkat-mocy.png, id=134, 192.72pt x 100.6962pt>
 File: imagenes&matlab/Trojkat-mocy.png Graphic file (type png)
 <use imagenes&matlab/Trojkat-mocy.png>
 Package pdftex.def Info: imagenes&matlab/Trojkat-mocy.png  used on input line 157.
@@ -658,64 +658,87 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has
                                                   \__shipout_drop_firstpage_...
 l.192         \subsubsection{Nucleo vacío}
                                             <./imagenes&matlab/Trojkat-mocy.png>]
-<imagenes&matlab/graficoAire.png, id=136, 1750.54pt x 1312.905pt>
-File: imagenes&matlab/graficoAire.png Graphic file (type png)
-<use imagenes&matlab/graficoAire.png>
-Package pdftex.def Info: imagenes&matlab/graficoAire.png  used on input line 235.
-(pdftex.def)             Requested size: 341.43437pt x 256.06552pt.
-
 
 [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.239 
-      
+l.259     \item \textbf
+                       {Potencia reactiva:}
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.239 
-      
+l.259     \item \textbf
+                       {Potencia reactiva:}
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.239 
-      
+l.259     \item \textbf
+                       {Potencia reactiva:}
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.239 
-      ]
-<imagenes&matlab/graficoParcialHierro.png, id=144, 1750.54pt x 1312.905pt>
+l.259     \item \textbf
+                       {Potencia reactiva:}
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.259     \item \textbf
+                       {Potencia reactiva:}]
+<imagenes&matlab/graficoAire.png, id=154, 1750.54pt x 1312.905pt>
+File: imagenes&matlab/graficoAire.png Graphic file (type png)
+<use imagenes&matlab/graficoAire.png>
+Package pdftex.def Info: imagenes&matlab/graficoAire.png  used on input line 301.
+(pdftex.def)             Requested size: 341.43437pt x 256.06552pt.
+
+
+[6]
+<imagenes&matlab/graficoParcialHierro.png, id=167, 1750.54pt x 1312.905pt>
 File: imagenes&matlab/graficoParcialHierro.png Graphic file (type png)
 <use imagenes&matlab/graficoParcialHierro.png>
-Package pdftex.def Info: imagenes&matlab/graficoParcialHierro.png  used on input line 243.
-(pdftex.def)             Requested size: 341.43437pt x 256.06552pt.
-<imagenes&matlab/graficoTotalHierro.png, id=145, 1750.54pt x 1312.905pt>
-File: imagenes&matlab/graficoTotalHierro.png Graphic file (type png)
-<use imagenes&matlab/graficoTotalHierro.png>
-Package pdftex.def Info: imagenes&matlab/graficoTotalHierro.png  used on input line 251.
+Package pdftex.def Info: imagenes&matlab/graficoParcialHierro.png  used on input line 318.
 (pdftex.def)             Requested size: 341.43437pt x 256.06552pt.
 
 
-[6
+[7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.255 
-      
+l.322 
+       <./imagenes&matlab/graficoAire.png (PNG copy)>]
+<imagenes&matlab/graficoTotalHierro.png, id=173, 1750.54pt x 1312.905pt>
+File: imagenes&matlab/graficoTotalHierro.png Graphic file (type png)
+<use imagenes&matlab/graficoTotalHierro.png>
+Package pdftex.def Info: imagenes&matlab/graficoTotalHierro.png  used on input line 336.
+(pdftex.def)             Requested size: 341.43437pt x 256.06552pt.
+
+
+[8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.255 
-       <./imagenes&matlab/graficoAire.png (PNG copy)> <./imagenes&matlab/graficoParcialHierro.png (PNG copy)>]
+l.340 
+       <./imagenes&matlab/graficoParcialHierro.png (PNG copy)>]
+<imagenes&matlab/graficoTotalAluminio.png, id=179, 1750.54pt x 1312.905pt>
+File: imagenes&matlab/graficoTotalAluminio.png Graphic file (type png)
+<use imagenes&matlab/graficoTotalAluminio.png>
+Package pdftex.def Info: imagenes&matlab/graficoTotalAluminio.png  used on input line 354.
+(pdftex.def)             Requested size: 341.43437pt x 256.06552pt.
 
-[7
+
+[9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.262 \end{document}
-                     <./imagenes&matlab/graficoTotalHierro.png (PNG copy)>] (TP_2.aux
+l.358 
+       <./imagenes&matlab/graficoTotalHierro.png (PNG copy)>]
+
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.368 \end{document}
+                     <./imagenes&matlab/graficoTotalAluminio.png (PNG copy)>] (TP_2.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -724,20 +747,20 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `TP_2.out' has not changed.
-(rerunfilecheck)             Checksum: 5E996221B1E48E1356E1E7333C5A3B75;2601.
+(rerunfilecheck)             Checksum: E87BAEEFCAE3D9DF7EBEA7861069E01B;3171.
  ) 
 Here is how much of TeX's memory you used:
- 40989 strings out of 473522
- 979867 string characters out of 5714125
- 1616727 words of memory out of 5000000
- 63773 multiletter control sequences out of 15000+600000
- 567023 words of font info for 64 fonts, out of 8000000 for 9000
+ 41021 strings out of 473522
+ 980592 string characters out of 5714125
+ 1619917 words of memory out of 5000000
+ 63792 multiletter control sequences out of 15000+600000
+ 567704 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,10n,105p,525b,1039s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\caorsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1440.pk> <C:\Users\caorsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx2074.pk><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on TP_2.pdf (8 pages, 484142 bytes).
+ <C:\Users\caorsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\caorsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1440.pk> <C:\Users\caorsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx2074.pk><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on TP_2.pdf (11 pages, 609242 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 273 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
+ 195 words of extra memory for PDF output out of 10000 (max. 10000000)
 

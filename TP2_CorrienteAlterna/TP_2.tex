@@ -228,8 +228,74 @@
             \label{tab:mediciones-nucleo-totalmente-introducido-hierro}
         \end{table}
 
+        \subsubsection{Nucleo totalmente introducido de aluminio}
+
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{|c|c|c|c|}
+                \hline
+                $V_{rms} $[V] & $I_{rms} $[A] & $P $[W] \\ \hline
+                124           & 0.25         & 6    \\ \hline
+            \end{tabular}
+            \caption{Mediciones con núcleo totalmente introducido de aluminio}
+            \label{tab:mediciones-nucleo-totalmente-introducido-aluminio}
+        \end{table}
+
     \subsection{Cálculos}
+
+    \subsubsection*{Fórmulas utilizadas}
+
+A partir de las magnitudes medidas de potencia activa $P$ (en watts), 
+tensión $V$ (en volts) y corriente $I$ (en amperes), se calcularon las 
+siguientes variables eléctricas:
+
+\begin{enumerate}
+    \item \textbf{Potencia aparente:}
+    \[
+        S = V \cdot I
+    \]
+    donde $S$ se mide en volt–amperes (VA).
+
+    \item \textbf{Potencia reactiva:}
+    \[
+        Q = \sqrt{S^{2} - P^{2}}
+    \]
+    expresada en volt–amperes reactivos (VAR).
+
+    \item \textbf{Factor de potencia:}
+    \[
+        \cos \varphi = \frac{P}{S}
+    \]
+
+    \item \textbf{Ángulo de desfase:}
+    \[
+        \varphi = \arccos\left( \frac{P}{S} \right)
+    \]
+    donde $\varphi$ se expresa en grados al convertir el resultado de 
+    radianes:
+    \[
+        \varphi \,[^\circ] = \arccos\left( \frac{P}{S} \right) \cdot 
+        \frac{180}{\pi}
+    \]
+\end{enumerate}
+
+        Estas expresiones permiten representar el \textit{triángulo de potencias}, 
+        donde la potencia activa $P$ se ubica en el eje horizontal, la potencia 
+        reactiva $Q$ en el eje vertical, y la potencia aparente $S$ corresponde a 
+        la hipotenusa.
+
+        A continuación se presentan los triángulos de potencia de cada una de las configuraciones estudiadas, y en adición,
+        la configuración con núcleo totalmente introducido de aluminio. 
+
         \subsubsection{Nucleo vacío}
+            Se obtuvieron los siguientes resultados:
+            \begin{itemize}
+                \item Potencia aparente (S): 73.20 VA.
+                \item Potencia reactiva (Q): 71.43 VAR.
+                \item Factor de potencia (cos $\phi$): 0.219.
+                \item Ángulo de desfase $\phi$: 77.37°.
+            \end{itemize}
+
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.8\textwidth]{graficoAire.png}
@@ -238,6 +304,15 @@
             \end{figure}
         
         \subsubsection{Nucleo de hierro parcialmente introducido}
+            
+            Se obtuvieron los siguientes resultados:
+            \begin{itemize}
+                \item Potencia aparente (S): 141.00 VA.
+                \item Potencia reactiva (Q): 137.99 VAR.
+                \item Factor de potencia (cos $\phi$): 0.206.
+                \item Ángulo de desfase $\phi$: 78.13°.
+            \end{itemize}
+
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.8\textwidth]{graficoParcialHierro.png}
@@ -245,7 +320,17 @@
                 \label{fig:graficoParcialHierro}
             \end{figure}
 
+
         \subsubsection{Nucleo de hierro totalmente introducido}
+
+            Se obtuvieron los siguientes resultados:
+            \begin{itemize}
+                \item Potencia aparente (S): 31.00 VA.
+                \item Potencia reactiva (Q): 28.58 VAR.
+                \item Factor de potencia (cos $\phi$): 0.387.
+                \item Ángulo de desfase $\phi$: 67.23°.
+            \end{itemize}
+
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.8\textwidth]{graficoTotalHierro.png}
@@ -253,6 +338,27 @@
                 \label{fig:graficoTotalHierro}
             \end{figure}
 
+
+        \subsubsection{Nucleo de aluminio totalmente introducido}
+
+                 Se obtuvieron los siguientes resultados:
+            \begin{itemize}
+                \item Potencia aparente (S): 31.00 VA.
+                \item Potencia reactiva (Q): 30.41 VAR.
+                \item Factor de potencia (cos $\phi$): 0.194.
+                \item Ángulo de desfase $\phi$: 78.84°.
+            \end{itemize}
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.8\textwidth]{graficoTotalAluminio.png}
+                \caption{Triángulo de Potencias para el circuito con núcleo totalmente introducido de aluminio.}
+                \label{fig:graficoTotalAluminio}
+            \end{figure}
+   
+            
+            
+            
     %%%Conclusiones%%%
     \section{Conclusiones}
 
