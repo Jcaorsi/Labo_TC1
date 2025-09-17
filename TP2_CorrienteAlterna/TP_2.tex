@@ -57,7 +57,7 @@
         \vspace{1.5cm}
         {\Large Teoría de Circuitos I\\ 25.10 \par}
         \vfill                      %sirve para rellenar el espacio y quede simétrico. Si se añaden otros, se dividen el espacio de forma equitativa
-        {\Large \bfseries Grupo N° 5 \par}
+        {\Large \bfseries Grupo N° 2 \par}
         \vspace{1cm}
         {\large Juan Bautista Correa Uranga \hfill Legajo: 65016 \par} %\hfill sirve para hacerlo simétrico
         {\large Juan Ignacio Caorsi \hfill Legajo: 65532  \par}
@@ -81,7 +81,7 @@
     %%%Introduccion%%%
     \section{Introducción}
 
-        El objetivo principal de este trabajo practico fue estudiar la relación entre la potencia activa, real y aparente, en un circuito que contenia un inductor.
+        El objetivo principal de este trabajo practico fue estudiar la relación entre la potencia activa, real y aparente, en un circuito que contenía un inductor.
         Para esta practica se usó corriente alterna. 
     
 
@@ -107,22 +107,22 @@
                             \draw (23.248, -14.28) -| (23.25, -14.75) -- (22.5, -14.75) -| (22.5, -14);
                             \draw (23.752, -14.28) |- (23.75, -16.5);
                         \end{tikzpicture}
-                        \caption{Esquema de coneccionado de vatímetro}
+                        \caption{Esquema de conexionado de vatímetro}
                         \label{fig:vatimetro}
                     \end{figure}
             \item {\bfseries Amperímetro analógico}
             \item {\bfseries Voltímetro analógico}
-            \item {\bfseries Inductor}: Consta de un armazón plastico hueco, al cual se le enrrolla un alambre sucesivas veces. El mismo tiene asociado una resistencia y un valor L inductivo. 
-                Este tenía un hueco en el medio donde se podía intrucir un nucleo de material sólido. 
+            \item {\bfseries Inductor}: Consta de un armazón plástico hueco, al cual se le enrolla un alambre sucesivas veces. El mismo tiene asociado una resistencia y un valor L inductivo. 
+                Este tenía un hueco en el medio donde se podía introducir un núcleo de material sólido. 
         \end{itemize}
         
         \subsection{Marco teórico}
 
-        En esta práctica se usaron los siguientes conocimientos teoricos:
+        En esta práctica se usaron los siguientes conocimientos teóricos:
 
         \subsubsection{Inductor}
 
-        Como se mencionó anteriormente, un inductor consta de un alambre enrrollado. El mismo es capaz de almacenar energía electrica en forma de energía magnética.
+        Como se mencionó anteriormente, un inductor consta de un alambre enrollado. El mismo es capaz de almacenar energía eléctrica en forma de energía magnética.
          La ecuación del mismo viene dada por:
         \begin{equation*}
             V=L \frac{dI}{dT}
@@ -130,21 +130,23 @@
         Donde V es la tensión, L es la constante inductiva en [H] e I es la corriente que circula por el inductor.
 
         Usando cambio de variable a números complejos, se puede llegar a la siguiente ecuación.
-        \begin{equation*}
+        \begin{equation}
             V=j\cdot \omega\cdot L
-        \end{equation*}
-        con j la constante compleja, $\omega$ la frecuencia en [$\frac{rads}{seg}$] y L la constante inductiva en [H].
+            \label{induct}
+        \end{equation}
+        con j la constante compleja, $\omega$ la frecuencia en [$\frac{rads}{seg}$] y L la constante inductiva en [H].\par
+        Esta ecuación \eqref{induct} fue usada para el cálculo de la constante del inductor.
 
         \subsubsection{Potencia compleja}
 
         Al analizar la potencia asociada a circuitos AC, se debe tener en consideración los siguientes aspectos.\par
-        La potencia total se llama { \bfseries potencia compleja} $\vec{S}= V \cdot I^{*}$ [VA], y es la potencia total del sistema. El módulo de la misma, se llama {\bfseries potencia aparente} S en [VA]. No obstante, es importante mencionar que este número no representa la potencia total usada por el sistema.
-        La potencia compleja se puede describir de la siguiente forma $\vec{S}=P + j \cdot Q$, donde P es la { \bfseries potencia activa} y Q es la {\bfseries potencia reactiva}. \par
+        La potencia total se llama { \bfseries potencia compleja} $\vec{S}= V \cdot I^{*}$ [VA], y es la potencia total del sistema. El módulo de la misma, se llama {\bfseries potencia aparente} $S=|I_{rms}| \cdot |V_{rms}|$ [VA]. No obstante, es importante mencionar que este número no representa la potencia total usada por el sistema.
+        La potencia compleja se puede describir de la siguiente forma $\vec{S}=P + j \cdot Q$, donde P es la { \bfseries potencia activa}  [W] y Q es la {\bfseries potencia reactiva} [VAR]. \par
 
         La potencia activa (P) es la potencia que es efectivamente usada por el sistema. Esta representa la parte real de la potencia compleja.
-        Más aun, la misma se puede descomponer en $P= |I_{rms}| \cdot |V_{rms}| \cdot \cos (\varphi)$. De esto se puede deducir lo siguiente, la misma es máxima cuando el desfasaje $\varphi = \theta_{V} - \theta_I $ es cero. \par
+        Más aun, la misma se puede descomponer en $P= S \cdot \cos (\varphi)$. De esto se puede deducir lo siguiente, la misma es máxima cuando el desfasaje $\varphi = \theta_{V} - \theta_I $ es cero. \par
 
-        Por otra parte, la potencia reactiva es la parte imaginaria de $\vec{s}$. Esta representa la potencia inductiva o capacitiva. Esta se puede descomponer en $ Q = |I_{rms}| \cdot |V_{rms}| \cdot \sen (\varphi)= \pm \frac{V_\text{rms}^2}{X}$ donde es + si es inductivo o - si es capacitivo.
+        Por otra parte, la potencia reactiva es la parte imaginaria de $\vec{S}$. Esta representa la potencia inductiva o capacitiva. Esta se puede descomponer en $ Q = S \cdot \sen (\varphi)= \pm \frac{V_\text{rms}^2}{X}$ donde es (+) si es inductivo o (-) si es capacitivo.
         De esta formula se puede deducir que el mismo es mínimo cuando el desfasaje entre la corriente y la tensión se acerca a cero, 
         la potencia reactiva se reduce. La potencia reactiva, a diferencia de la potencia activa, es una potencia la cual no puede ser aprovechada por el sistema, 
         ya que la misma esta asociada (como se pudo observar en la ecuación que la define) a la energía almacenada por los inductores y los capacitores.\par
