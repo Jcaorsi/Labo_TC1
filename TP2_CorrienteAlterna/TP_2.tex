@@ -252,7 +252,7 @@
                 \label{tab:mediciones-nucleo-totalmente-introducido-aluminio}
             \end{table}
 
-        \subsection{Cálculos}
+        \subsection{Cálculos} \label{sec:Cálculos}
 
             \subsubsection*{Fórmulas utilizadas}
 
@@ -271,7 +271,12 @@
                 \[
                     Q = \sqrt{S^{2} - P^{2}}
                 \]
-                expresada en volt–amperes reactivos (VAR).
+                expresada en volt–amperes reactivos (VAR). \par
+                
+                La ecuación presentada aquí permite calcular el módulo de la potencia reactiva, pero como se dijo
+                anteriormente esta puede tomar valores tanto positivos como negativos. En este trabajo práctico, 
+                tomamos $Q=|Q|$ a sabiendas de que, dado que el único componente pasivo de nuestro circuito es inductivo, 
+                la potencia reactiva sera inductiva también.
 
                 \item \textbf{Factor de potencia:}
                 \[
@@ -399,7 +404,51 @@
             
                         
         \subsection{Análisis}
+        
+            Se puede ver en los resultados de la sección \ref{sec:Cálculos} o en la tabla \ref{tab:ConstantesDelInductor} que el valor de la inductancia L de la bobina varía acorde considerablemente en función no del material del núcleo, sino según qué tan introducido está el mismo dentro del inductor. Dado que la inductancia de la bobina aporta a la impedancia del circuito, este comportamiento se ve reflejado en todas las mediciones indirectas; esto se puede observar en la sección \ref{sec:Cálculos}, o en las tablas \ref{tab:PotenciasAparentes} y \ref{tab:PotenciasComplejas}.
             
+             \begin{table}[H]
+                \centering
+                \begin{tabular}{|l|c|c|c|}
+                \hline
+                Constante del inductor               & Aire (sin núcleo)     & Núcleo de hierro & Núcleo de aluminio \\ \hline
+                                                    & 316,208 mH             &                  &                     \\ \hline
+                Núcleo parcialmente introducido     &                        & 642,82 mH        & 671,14 mH            \\ \hline
+                Núcleo totalmente introducido       &                        & 1577 mH          & 1577 mH                \\ \hline
+                \end{tabular}
+                \caption{Constantes de inductores medidas con diferentes núcleos}
+                \label{tab:ConstantesDelInductor}
+            \end{table}
+
+            
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|l|c|c|c|}
+                \hline
+                Potencia aparente                    & Aire (sin núcleo)  & Núcleo de hierro & Núcleo de aluminio \\ \hline
+                                                    & 141 VA             &                  &                     \\ \hline
+                Núcleo parcialmente introducido     &                    &  73,2 VA         &  70,15 VA           \\ \hline
+                Núcleo totalmente introducido       &                    &  31.00 VA        &  31.00 VA           \\ \hline
+                \end{tabular}
+                \caption{Potencias aparentes  en diferentes configuraciones y núcleos.}
+                \label{tab:PotenciasAparentes}
+            \end{table}
+
+
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|l|c|c|c|}
+                \hline
+                Potencia compleja                    & Aire (sin núcleo)  & Núcleo de hierro & Núcleo de aluminio \\ \hline
+                                                    &  137,98 VAR        &                  &                     \\ \hline
+                Núcleo parcialmente introducido     &                    &  71,43 VAR       &  63,43 VAR          \\ \hline
+                Núcleo totalmente introducido       &                    &   28.58 VAR      &  30.41 VAR           \\ \hline
+                \end{tabular}
+                \caption{Potencias complejas en diferentes configuraciones y núcleos.}
+                \label{tab:PotenciasComplejas}
+            \end{table}
+
+
     %%%Conclusiones%%%
     \section{Conclusiones}
 

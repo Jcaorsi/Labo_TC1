@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1758206479.50835 "c:/Users/Cesica/Documents/RITA/Labo_TC1/TP2_CorrienteAlterna/TP_2.tex" "TP_2.pdf" "TP_2" 1758206482.50108 0
+["pdflatex"] 1758217528.02435 "c:/Users/Cesica/Documents/RITA/Labo_TC1/TP2_CorrienteAlterna/TP_2.tex" "TP_2.pdf" "TP_2" 1758217532.58683 0
   "C:/Users/Cesica/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1758164923 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Cesica/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1440.pk" 1758164936 18748 49e31a82e7430f57070d000c4fc08eeb ""
   "C:/Users/Cesica/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx2074.pk" 1758164938 28420 ef3ccb401d21afd14f1413fe2e2a4c14 ""
@@ -179,11 +179,11 @@
   "C:/Users/Cesica/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titletoc.sty" 1736608268 16594 e070b7268023b1ec1b45c44617ea64f9 ""
   "C:/Users/Cesica/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Cesica/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "TP_2.aux" 1758206481 6769 fead6461e9e14930c0396febd09d7eee "pdflatex"
-  "TP_2.out" 1758206481 3791 b7316a0d523cd72385ad76102e74c975 "pdflatex"
-  "TP_2.tex" 1758206474 18721 aec3fee872117f08eca0567a4c959ac2 ""
-  "TP_2.toc" 1758206481 1995 1feadc612306800a1b1529c2541697c3 "pdflatex"
-  "c:/Users/Cesica/Documents/RITA/Labo_TC1/TP2_CorrienteAlterna/TP_2.tex" 1758206474 18721 aec3fee872117f08eca0567a4c959ac2 ""
+  "TP_2.aux" 1758217531 7805 ac9efc85a1264f6c0af20f417d1304da "pdflatex"
+  "TP_2.out" 1758217531 3892 d20d5957ea78017637947abdf5bfac5d "pdflatex"
+  "TP_2.tex" 1758217521 24090 4002fc7601e02a656c94c1202b5c39d3 ""
+  "TP_2.toc" 1758217531 2071 ce974d197fe213901a02161956d8bc2d "pdflatex"
+  "c:/Users/Cesica/Documents/RITA/Labo_TC1/TP2_CorrienteAlterna/TP_2.tex" 1758217521 24090 4002fc7601e02a656c94c1202b5c39d3 ""
   "imagenes&matlab/Logo_ITBA.png" 1758164480 34082 18565f2ade26fe38705e2ad93c029b27 ""
   "imagenes&matlab/Trojkat-mocy.png" 1758164480 2782 26b3083f0e8252972bf2ce3f55fb77ee ""
   "imagenes&matlab/graficoAire.png" 1758164480 94383 5451d541026d95df746d2ea01053db83 ""

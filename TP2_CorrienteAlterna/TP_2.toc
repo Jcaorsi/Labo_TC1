@@ -18,6 +18,7 @@
 \contentsline {subsubsection}{\numberline {$c)$}Núcleo de hierro totalmente introducido}{8}{subsubsection.2.3.3}%
 \contentsline {subsubsection}{\numberline {$d)$}Núcleo de aluminio parcialmente introducido}{9}{subsubsection.2.3.4}%
 \contentsline {subsubsection}{\numberline {$e)$}Núcleo de aluminio totalmente introducido}{9}{subsubsection.2.3.5}%
-\contentsline {section}{\numberline {3.}Conclusiones}{10}{section.3}%
-\contentsline {section}{\numberline {4.}Anexos}{10}{section.4}%
+\contentsline {subsection}{\numberline {2.4}Análisis}{10}{subsection.2.4}%
+\contentsline {section}{\numberline {3.}Conclusiones}{11}{section.3}%
+\contentsline {section}{\numberline {4.}Anexos}{11}{section.4}%
 \contentsfinish 
