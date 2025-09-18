@@ -81,9 +81,7 @@
     %%%Introduccion%%%
     \section{Introducción}
 
-        El objetivo principal de este trabajo practico fue estudiar la relación entre la potencia activa, real y aparente, en un circuito que contenía un inductor.
-        Para esta practica se usó corriente alterna. 
-    
+        El objetivo principal de este trabajo practico fue utilizar nuestros conocimientos de corriente alterna para estudiar la relación entre la potencia activa, real y aparente, así como el efecto que tiene la introducción de un núcleo en un inductor.
 
         \subsection{Instrumental}
 
@@ -139,16 +137,15 @@
         \subsubsection{Potencia compleja}
 
         Al analizar la potencia asociada a circuitos AC, se debe tener en consideración los siguientes aspectos.\par
-        La potencia total se llama { \bfseries potencia compleja} $\vec{S}= V \cdot I^{*}$ [VA], y es la potencia total del sistema. El módulo de la misma, se llama {\bfseries potencia aparente} $S=|I_{rms}| \cdot |V_{rms}|$ [VA]. No obstante, es importante mencionar que este número no representa la potencia total usada por el sistema.
+        La potencia total se llama { \bfseries potencia compleja} $\vec{S}= V \cdot I^{*}$ [VA], y es la potencia total del sistema. El módulo de la misma, se llama {\bfseries potencia aparente} $S=|I_{rms}| \cdot |V_{rms}|$ [VA]. No obstante, este número no representa la potencia total usada por el sistema.
         La potencia compleja se puede describir de la siguiente forma $\vec{S}=P + j \cdot Q$, donde P es la { \bfseries potencia activa}  [W] y Q es la {\bfseries potencia reactiva} [VAR]. \par
 
         La potencia activa (P) es la potencia que es efectivamente usada por el sistema. Esta representa la parte real de la potencia compleja.
-        Más aun, la misma se puede descomponer en $P= S \cdot \cos (\varphi)$. De esto se puede deducir lo siguiente, la misma es máxima cuando el desfasaje $\varphi = \theta_{V} - \theta_I $ es cero. \par
+        Más aun, la misma se puede descomponer en $P= S \cdot \cos (\varphi)$. De esto se puede deducir que la misma es máxima cuando el desfasaje $\varphi = \theta_{V} - \theta_I $ es nulo. \par
 
         Por otra parte, la potencia reactiva es la parte imaginaria de $\vec{S}$. Esta representa la potencia inductiva o capacitiva. Esta se puede descomponer en $ Q = S \cdot \sen (\varphi)= \pm \frac{V_\text{rms}^2}{X}$ donde es (+) si es inductivo o (-) si es capacitivo.
-        De esta formula se puede deducir que el mismo es mínimo cuando el desfasaje entre la corriente y la tensión se acerca a cero, 
-        la potencia reactiva se reduce. La potencia reactiva, a diferencia de la potencia activa, es una potencia la cual no puede ser aprovechada por el sistema, 
-        ya que la misma esta asociada (como se pudo observar en la ecuación que la define) a la energía almacenada por los inductores y los capacitores.\par
+        De esta formula se puede deducir que la misma es mínima cuando el desfasaje entre la corriente y la tensión se acerca a cero. La potencia reactiva, a diferencia de la potencia activa, es una potencia la cual no puede ser aprovechada por el sistema, 
+        ya que la misma esta asociada (como se pudo observar en la ecuación que la define) a la energía almacenada por los inductores y los capacitores, es decir que idealmente no es disipada o es disipada en proporciones mínimas. \par
 
         En consecuencia, este último tipo de potencia se suele reducir al mínimo posible, por motivos económicos.
 
@@ -164,212 +161,244 @@
     \indent
     \section{Desarrollo}
 
-    \subsection{Procedimiento}
+        \subsection{Procedimiento}
 
-        Para esta experiencia se conectaron los instrumentos de medición junto con el variac y el inductor de la siguiente forma (Observar Figura: \ref{fig:circuito-inductor}). Luego se setió el variac a 120 V. Finalmente se procedió a la toma de mediciones de tensión, de corriente y la potencia usando el instrumental . 
-        \begin{figure}[h!]
-            \centering
-            \begin{tikzpicture}
-                % Paths, nodes and wires:
-                \draw (22.5, -14.5) to[voltmeter] (22.5, -17.25);
-                \draw (24.25, -17.25) to[cute inductor] (24.25, -14.5);
-                \draw (17.75, -14.5) to[ammeter] (20.25, -14.5);
-                \draw (20.25, -14.5) to[qpprobe] (21.75, -14.5);
-                \draw (21.75, -14.5) -- (22.5, -14.5);
-                \draw (17.75, -14.5) to[sinusoidal voltage source, l={$V_s$}] (17.75, -17.25);
-                \draw (22.5, -14.5) -- (24.25, -14.5);
-                \draw (17.75, -17.25) -- (24.25, -17.25);
-            \end{tikzpicture}
-            \caption{Circuito con fuente senoidal, amperímetro, voltímetro e inductor}
-            \label{fig:circuito-inductor}
-        \end{figure}
-
-        Este procedimiento se realizo tres veces: 1) Con el nucleo del inductor vacío. 2) Una barra parcialmente introducida en el nucleo. 3) Con la barra totalmente introducida en el nucleo.
-
-    \subsection{Mediciones}
-        
-        A continuación se presentan las mediciones tomadas en cada una de las tres instancias del experimento.
-
-        \subsubsection{Nucleo vacío}
-
-        \begin{table}[H]
-            \centering
-            \begin{tabular}{|c|c|c|c|}
-                \hline
-                $V_{rms} $[V] & $I_{rms} $[A] & $P $[W]  \\ \hline
-                120           & 1.175         & 29     \\ \hline
-            \end{tabular}
-            \caption{Mediciones con núcleo vacío}
-            \label{tab:mediciones-nucleo-vacio}
-        \end{table}
-
-        \subsubsection{Nucleo de hierro parcialmente introducido}
-
-        \begin{table}[H]
-            \centering
-            \begin{tabular}{|c|c|c|}
-                \hline
-                $V_{rms} $[V] & $I_{rms} $[A] & $P $[W] \\ \hline
-                122           & 0.6         & 16    \\ \hline
-            \end{tabular}
-            \caption{Mediciones con núcleo parcialmente introducido de hierro}
-            \label{tab:mediciones-nucleo-parcialmente-introducido-hierro}
-        \end{table}
-
-        \subsubsection{Nucleo totalmente introducido de hierro}
-
-        \begin{table}[H]
-            \centering
-            \begin{tabular}{|c|c|c|c|}
-                \hline
-                $V_{rms} $[V] & $I_{rms} $[A] & $P $[W] \\ \hline
-                124           & 0.25         & 12    \\ \hline
-            \end{tabular}
-            \caption{Mediciones con núcleo totalmente introducido de hierro}
-            \label{tab:mediciones-nucleo-totalmente-introducido-hierro}
-        \end{table}
-
-        \subsubsection{Nucleo totalmente introducido de aluminio}
-
-        \begin{table}[H]
-            \centering
-            \begin{tabular}{|c|c|c|c|}
-                \hline
-                $V_{rms} $[V] & $I_{rms} $[A] & $P $[W] \\ \hline
-                124           & 0.25         & 6    \\ \hline
-            \end{tabular}
-            \caption{Mediciones con núcleo totalmente introducido de aluminio}
-            \label{tab:mediciones-nucleo-totalmente-introducido-aluminio}
-        \end{table}
-
-    \subsection{Cálculos}
-
-    \subsubsection*{Fórmulas utilizadas}
-
-A partir de las magnitudes medidas de potencia activa $P$ (en watts), 
-tensión $V$ (en volts) y corriente $I$ (en amperes), se calcularon las 
-siguientes variables eléctricas:
-
-\begin{enumerate}
-    \item \textbf{Potencia aparente:}
-    \[
-        S = V \cdot I
-    \]
-    donde $S$ se mide en volt–amperes (VA).
-
-    \item \textbf{Potencia reactiva:}
-    \[
-        Q = \sqrt{S^{2} - P^{2}}
-    \]
-    expresada en volt–amperes reactivos (VAR).
-
-    \item \textbf{Factor de potencia:}
-    \[
-        \cos \varphi = \frac{P}{S}
-    \]
-
-    \item \textbf{Ángulo de desfase:}
-    \[
-        \varphi = \arccos\left( \frac{P}{S} \right)
-    \]
-    donde $\varphi$ se expresa en grados al convertir el resultado de 
-    radianes:
-    \[
-        \varphi \,[^\circ] = \arccos\left( \frac{P}{S} \right) \cdot 
-        \frac{180}{\pi}
-    \]
-\end{enumerate}
-
-        Estas expresiones permiten representar el \textit{triángulo de potencias}, 
-        donde la potencia activa $P$ se ubica en el eje horizontal, la potencia 
-        reactiva $Q$ en el eje vertical, y la potencia aparente $S$ corresponde a 
-        la hipotenusa.\par
-
-	Por otra parte, se calculó el valor de L, considerando la resistencia interna del inductor mediante la siguiente ecuación:
-
-    \begin{equation*}
-        L = \frac{1}{\omega} \cdot \sqrt{\frac{V^2}{I^2}-R^2}
-    \end{equation*}
-    con $L$ la constante del inductor, $\omega$ la frecuencia, $V$ la tensión medida, $I$ la corriente medida y $R$ la resistencia interna del inductor. \par
-	
-        A continuación se presentan los triángulos de potencia de cada una de las configuraciones estudiadas, y en adición,
-        la configuración con núcleo totalmente introducido de aluminio. 
-
-        \subsubsection{Nucleo vacío}
-            Se obtuvieron los siguientes resultados:
-            \begin{itemize}
-                \item Potencia aparente (S): 73.20 VA.
-                \item Potencia reactiva (Q): 71.43 VAR.
-                \item Factor de potencia (cos $\phi$): 0.219.
-                \item Ángulo de desfase $\phi$: 77.37°.
-                \item Constante del inductor (L): 324,71 mH.
-            \end{itemize}
-
-            \begin{figure}[H]
+            Para esta experiencia se conectaron los instrumentos de medición junto con el variac y el inductor de la siguiente forma (Observar Figura: \ref{fig:circuito-inductor}). Luego se setió el variac a 120 V. Finalmente se procedió a la toma de mediciones de tensión, de corriente y la potencia usando el instrumental . 
+            \begin{figure}[h!]
                 \centering
-                \includegraphics[width=0.8\textwidth]{graficoAire.png}
-                \caption{Triángulo de Potencias para el circuito con núcleo de aire.}
-                \label{fig:graficoAire}
+                \begin{tikzpicture}
+                    % Paths, nodes and wires:
+                    \draw (22.5, -14.5) to[voltmeter] (22.5, -17.25);
+                    \draw (24.25, -17.25) to[cute inductor] (24.25, -14.5);
+                    \draw (17.75, -14.5) to[ammeter] (20.25, -14.5);
+                    \draw (20.25, -14.5) to[qpprobe] (21.75, -14.5);
+                    \draw (21.75, -14.5) -- (22.5, -14.5);
+                    \draw (17.75, -14.5) to[sinusoidal voltage source, l={$V_s$}] (17.75, -17.25);
+                    \draw (22.5, -14.5) -- (24.25, -14.5);
+                    \draw (17.75, -17.25) -- (24.25, -17.25);
+                \end{tikzpicture}
+                \caption{Circuito con fuente senoidal, amperímetro, voltímetro e inductor}
+                \label{fig:circuito-inductor}
             \end{figure}
-        
-        \subsubsection{Nucleo de hierro parcialmente introducido}
+
+            Este procedimiento se realizo tres veces: 1) Con el nucleo del inductor vacío. 2) Una barra parcialmente introducida en el nucleo. 3) Con la barra totalmente introducida en el nucleo.
+
+        \subsection{Mediciones}
             
-            Se obtuvieron los siguientes resultados:
-            \begin{itemize}
-                \item Potencia aparente (S): 141.00 VA.
-                \item Potencia reactiva (Q): 137.99 VAR.
-                \item Factor de potencia (cos $\phi$): 0.206.
-                \item Ángulo de desfase $\phi$: 78.13°.
-                \item Constante del inductor (L): 647,04 mH.
-            \end{itemize}
+            A continuación se presentan las mediciones tomadas en cada una de las tres instancias del experimento.
 
-            \begin{figure}[H]
+            \subsubsection{Núcleo vacío}
+
+            \begin{table}[H]
                 \centering
-                \includegraphics[width=0.8\textwidth]{graficoParcialHierro.png}
-                \caption{Triángulo de Potencias para el circuito con núcleo parcialmente introducido de hierro.}
-                \label{fig:graficoParcialHierro}
-            \end{figure}
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    $V_{rms} $[V] & $I_{rms} $[A] & $P $[W]  \\ \hline
+                    120           & 1.175         & 29     \\ \hline
+                \end{tabular}
+                \caption{Mediciones con núcleo vacío}
+                \label{tab:mediciones-nucleo-vacio}
+            \end{table}
 
+            \subsubsection{Núcleo de hierro parcialmente introducido}
 
-        \subsubsection{Nucleo de hierro totalmente introducido}
-
-            Se obtuvieron los siguientes resultados:
-            \begin{itemize}
-                \item Potencia aparente (S): 31.00 VA.
-                \item Potencia reactiva (Q): 28.58 VAR.
-                \item Factor de potencia (cos $\phi$): 0.387.
-                \item Ángulo de desfase $\phi$: 67.23°.
-                \item Constante del inductor (L): 1,58 H.
-            \end{itemize}
-
-            \begin{figure}[H]
+            \begin{table}[H]
                 \centering
-                \includegraphics[width=0.8\textwidth]{graficoTotalHierro.png}
-                \caption{Triángulo de Potencias para el circuito con núcleo totalmente introducido de hierro.}
-                \label{fig:graficoTotalHierro}
-            \end{figure}
+                \begin{tabular}{|c|c|c|}
+                    \hline
+                    $V_{rms} $[V] & $I_{rms} $[A] & $P $[W] \\ \hline
+                    122           & 0.6         & 16    \\ \hline
+                \end{tabular}
+                \caption{Mediciones con núcleo parcialmente introducido de hierro}
+                \label{tab:mediciones-nucleo-parcialmente-introducido-hierro}
+            \end{table}
 
+            \subsubsection{Núcleo de hierro totalmente introducido}
 
-        \subsubsection{Nucleo de aluminio totalmente introducido}
-
-                 Se obtuvieron los siguientes resultados:
-            \begin{itemize}
-                \item Potencia aparente (S): 31.00 VA.
-                \item Potencia reactiva (Q): 30.41 VAR.
-                \item Factor de potencia (cos $\phi$): 0.194.
-                \item Ángulo de desfase $\phi$: 78.84°.
-                \item Constante del inductor (L): CALCULAR.
-            \end{itemize}
-
-            \begin{figure}[H]
+            \begin{table}[H]
                 \centering
-                \includegraphics[width=0.8\textwidth]{graficoTotalAluminio.png}
-                \caption{Triángulo de Potencias para el circuito con núcleo totalmente introducido de aluminio.}
-                \label{fig:graficoTotalAluminio}
-            \end{figure}
-   
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    $V_{rms} $[V] & $I_{rms} $[A] & $P $[W] \\ \hline
+                    124           & 0.25         & 12    \\ \hline
+                \end{tabular}
+                \caption{Mediciones con núcleo totalmente introducido de hierro}
+                \label{tab:mediciones-nucleo-totalmente-introducido-hierro}
+            \end{table}
+
+            \subsubsection{Núcleo de aluminio parcialmente introducido}
+
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    $V_{rms} $[V] & $I_{rms} $[A] & $P $[W] \\ \hline
+                    122           & 0.575         & 10    \\ \hline
+                \end{tabular}
+                \caption{Mediciones con núcleo parcialmente introducido de aluminio}
+                \label{tab:mediciones-nucleo-parcialmente-introducido-aluminio}
+            \end{table}
+
+            \subsubsection{Núcleo de aluminio totalmente introducido}
+
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    $V_{rms} $[V] & $I_{rms} $[A] & $P $[W] \\ \hline
+                    124           & 0.25         & 6    \\ \hline
+                \end{tabular}
+                \caption{Mediciones con núcleo totalmente introducido de aluminio}
+                \label{tab:mediciones-nucleo-totalmente-introducido-aluminio}
+            \end{table}
+
+        \subsection{Cálculos}
+
+            \subsubsection*{Fórmulas utilizadas}
+
+            A partir de las magnitudes medidas de potencia activa $P$ (en watts), 
+            tensión $V$ (en volts) y corriente $I$ (en amperes), se calcularon las 
+            siguientes variables eléctricas:
+
+            \begin{enumerate}
+                \item \textbf{Potencia aparente:}
+                \[
+                    S = V \cdot I
+                \]
+                donde $S$ se mide en volt–amperes (VA).
+
+                \item \textbf{Potencia reactiva:}
+                \[
+                    Q = \sqrt{S^{2} - P^{2}}
+                \]
+                expresada en volt–amperes reactivos (VAR).
+
+                \item \textbf{Factor de potencia:}
+                \[
+                    \cos \varphi = \frac{P}{S}
+                \]
+
+                \item \textbf{Ángulo de desfase:}
+                \[
+                    \varphi = \arccos\left( \frac{P}{S} \right)
+                \]
+                donde $\varphi$ se expresa en grados al convertir el resultado de 
+                radianes:
+                \[
+                    \varphi \,[^\circ] = \arccos\left( \frac{P}{S} \right) \cdot 
+                    \frac{180}{\pi}
+                \]
+            \end{enumerate}
+
+                    Estas expresiones permiten representar el \textit{triángulo de potencias}, 
+                    donde la potencia activa $P$ se ubica en el eje horizontal, la potencia 
+                    reactiva $Q$ en el eje vertical, y la potencia aparente $S$ corresponde a 
+                    la hipotenusa.\par
+
+                Por otra parte, se calculó el valor de L, considerando la resistencia interna del inductor mediante la siguiente ecuación:
+
+                \begin{equation*}
+                    L = \frac{1}{\omega} \cdot \sqrt{\frac{V^2}{I^2}-R^2}
+                \end{equation*}
+                con $L$ la constante del inductor, $\omega$ la frecuencia, $V$ la tensión medida, $I$ la corriente medida y $R$ la resistencia interna del inductor. \par
+                
+                    A continuación se presentan los triángulos de potencia de cada una de las configuraciones estudiadas, y en adición,
+                    la configuración con núcleo totalmente introducido de aluminio. 
+
+                    \subsubsection{Núcleo vacío}
+                        Se obtuvieron los siguientes resultados:
+                        \begin{itemize}
+                            \item Potencia aparente (S): 141 VA
+                            \item Potencia reactiva (Q): 137,98 VAR
+                            \item Factor de potencia (cos $\phi$): 0,206
+                            \item Ángulo de desfase $\phi$: 78,131°
+                            \item Constante del inductor (L): 316,208 mH
+                        \end{itemize}
+
+                        \begin{figure}[H]
+                            \centering
+                            \includegraphics[width=0.8\textwidth]{graficoAire.png}
+                            \caption{Triángulo de Potencias para el circuito con núcleo de aire.}
+                            \label{fig:graficoAire}
+                        \end{figure}
+                    
+                    \subsubsection{Núcleo de hierro parcialmente introducido}
+                        
+                        Se obtuvieron los siguientes resultados:
+                        \begin{itemize}
+                            \item Potencia aparente (S): 73,2 VA
+                            \item Potencia reactiva (Q): 71,43 VAR
+                            \item Factor de potencia (cos $\phi$): 0.218
+                            \item Ángulo de desfase $\phi$: 73,37°
+                            \item Constante del inductor (L): 642,82 mH
+                        \end{itemize}
+
+                        \begin{figure}[H]
+                            \centering
+                            \includegraphics[width=0.8\textwidth]{graficoParcialHierro.png}
+                            \caption{Triángulo de Potencias para el circuito con núcleo parcialmente introducido de hierro.}
+                            \label{fig:graficoParcialHierro}
+                        \end{figure}
+
+
+                    \subsubsection{Núcleo de hierro totalmente introducido}
+
+                        Se obtuvieron los siguientes resultados:
+                        \begin{itemize}
+                            \item Potencia aparente (S): 31.00 VA
+                            \item Potencia reactiva (Q): 28.58 VAR
+                            \item Factor de potencia (cos $\phi$): 0.387
+                            \item Ángulo de desfase $\phi$: 67.23°
+                            \item Constante del inductor (L): 1577 mH
+                        \end{itemize}
+
+                        \begin{figure}[H]
+                            \centering
+                            \includegraphics[width=0.8\textwidth]{graficoTotalHierro.png}
+                            \caption{Triángulo de Potencias para el circuito con núcleo totalmente introducido de hierro.}
+                            \label{fig:graficoTotalHierro}
+                        \end{figure}
+
+
+                        \subsubsection{Núcleo de aluminio parcialmente introducido}
+
+                            Se obtuvieron los siguientes resultados:
+                        \begin{itemize}
+                            \item Potencia aparente (S): 70,15 VA
+                            \item Potencia reactiva (Q): 63,43 VAR
+                            \item Factor de potencia (cos $\phi$): 0,142
+                            \item Ángulo de desfase $\phi$: 81,80°
+                            \item Constante del inductor (L): 671,14 mH
+                        \end{itemize}
+
+                %     \begin{figure}[H]
+                    %        \centering
+                %           \includegraphics[width=0.8\textwidth]{graficoParcialAluminio.png}
+                %           \caption{Triángulo de Potencias para el circuito con núcleo parcialmente introducido de aluminio.}
+                %          \label{fig:graficoParcialAluminio}
+                %       \end{figure}
+                    
+
+                    \subsubsection{Núcleo de aluminio totalmente introducido}
+
+                            Se obtuvieron los siguientes resultados:
+                        \begin{itemize}
+                            \item Potencia aparente (S): 31.00 VA
+                            \item Potencia reactiva (Q): 30.41 VAR
+                            \item Factor de potencia (cos $\phi$): 0.194
+                            \item Ángulo de desfase $\phi$: 78.84°
+                            \item Constante del inductor (L): 1577 mH
+                        \end{itemize}
+
+                        \begin{figure}[H]
+                            \centering
+                            \includegraphics[width=0.8\textwidth]{graficoTotalAluminio.png}
+                            \caption{Triángulo de Potencias para el circuito con núcleo totalmente introducido de aluminio.}
+                            \label{fig:graficoTotalAluminio}
+                        \end{figure}
             
-            
+                        
+        \subsection{Análisis}
             
     %%%Conclusiones%%%
     \section{Conclusiones}
