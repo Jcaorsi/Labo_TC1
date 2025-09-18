@@ -82,6 +82,7 @@
     \section{Introducción}
 
         El objetivo principal de este trabajo practico fue utilizar nuestros conocimientos de corriente alterna para estudiar la relación entre la potencia activa, real y aparente, así como el efecto que tiene la introducción de un núcleo en un inductor.
+        Consecuentemente, con los datos recolectados se calculó la constante del inductor.
 
         \subsection{Instrumental}
 
@@ -127,13 +128,6 @@
         \end{equation*}
         Donde V es la tensión, L es la constante inductiva en [H] e I es la corriente que circula por el inductor.
 
-        Usando cambio de variable a números complejos, se puede llegar a la siguiente ecuación.
-        \begin{equation}
-            V=j\cdot \omega\cdot L \cdot I
-            \label{induct}
-        \end{equation}
-        con $j$ la constante compleja, $\omega$ la frecuencia en [$\frac{rads}{seg}$], $L$ la constante inductiva en [H] y $I$ corriente [A].\par
-
         \subsubsection{Potencia compleja}
 
         Al analizar la potencia asociada a circuitos AC, se debe tener en consideración los siguientes aspectos.\par
@@ -149,13 +143,14 @@
 
         En consecuencia, este último tipo de potencia se suele reducir al mínimo posible, por motivos económicos.
 
-        Por último, P y Q se pueden relacionar usando el triangulo de potencia (observar Figura \ref{fig:triangulo_de_potencia}) mediante la fórmula $S^2=Q^2+P^2$. 
+
         \begin{figure}[h!] % h! = aquí, lo más forzado posible
             \centering
             \includegraphics[width=0.5\textwidth]{Trojkat-mocy.png} % nombre del archivo
             \caption{Triangulo de potencia inductivo}
             \label{fig:triangulo_de_potencia} % etiqueta para referencias
         \end{figure}
+        Por último, P y Q se pueden relacionar usando el triángulo de potencia (observar Figura \ref{fig:triangulo_de_potencia}) mediante la fórmula $S^2=Q^2+P^2$. Aquí, $S$ es la potencia aparente, $Q$ es la potencia reactiva, $P$ es la potencia activa y $\varphi$ es el desfasaje entre las fases de la corriente y la tensión. 
 
     %%%Desarrollo%%%
     \indent
@@ -181,7 +176,7 @@
                 \label{fig:circuito-inductor}
             \end{figure}
 
-            Este procedimiento se realizo tres veces: 1) Con el nucleo del inductor vacío. 2) Una barra parcialmente introducida en el nucleo. 3) Con la barra totalmente introducida en el nucleo.
+            Este procedimiento se realizo tres veces: 1) Con el núcleo del inductor vacío. 2) Una barra parcialmente introducida en el núcleo. 3) Con la barra totalmente introducida en el núcleo. Finalmente, se hizo una última medición con un núcleo distinto, totalmente introducido.
 
         \subsection{Mediciones}
             
@@ -300,12 +295,12 @@
                     reactiva $Q$ en el eje vertical, y la potencia aparente $S$ corresponde a 
                     la hipotenusa.\par
 
-                Por otra parte, se calculó el valor de L, considerando la resistencia interna del inductor mediante la siguiente ecuación:
+                Por otra parte, se calculó el valor de $L$ mediante la siguiente ecuación:
 
                 \begin{equation*}
-                    L = \frac{1}{\omega} \cdot \sqrt{\frac{V^2}{I^2}-R^2}
+                    L = \frac{\sqrt{(I \cdot V)^2- P^2}}{\omega \cdot I^2} 
                 \end{equation*}
-                con $L$ la constante del inductor, $\omega$ la frecuencia, $V$ la tensión medida, $I$ la corriente medida y $R$ la resistencia interna del inductor. \par
+                con $L$ la constante del inductor [H], $\omega$ la frecuencia [$\frac{rads}{seg}$], $V$ la tensión medida [V], $I$ la corriente medida [A] y $P$ la potencia reactiva medida [$W$]. \par
                 
                     A continuación se presentan los triángulos de potencia de cada una de las configuraciones estudiadas, y en adición,
                     la configuración con núcleo totalmente introducido de aluminio. 
@@ -317,7 +312,7 @@
                             \item Potencia reactiva (Q): 137,98 VAR
                             \item Factor de potencia (cos $\phi$): 0,206
                             \item Ángulo de desfase $\phi$: 78,131°
-                            \item Constante del inductor (L): 316,208 mH
+                            \item Constante del inductor (L): 318,13 mH
                         \end{itemize}
 
                         \begin{figure}[H]
@@ -335,7 +330,7 @@
                             \item Potencia reactiva (Q): 71,43 VAR
                             \item Factor de potencia (cos $\phi$): 0.218
                             \item Ángulo de desfase $\phi$: 73,37°
-                            \item Constante del inductor (L): 642,82 mH
+                            \item Constante del inductor (L): 631,58 mH
                         \end{itemize}
 
                         \begin{figure}[H]
@@ -354,7 +349,7 @@
                             \item Potencia reactiva (Q): 28.58 VAR
                             \item Factor de potencia (cos $\phi$): 0.387
                             \item Ángulo de desfase $\phi$: 67.23°
-                            \item Constante del inductor (L): 1577 mH
+                            \item Constante del inductor (L): 1,46 H
                         \end{itemize}
 
                         \begin{figure}[H]
@@ -373,7 +368,7 @@
                             \item Potencia reactiva (Q): 63,43 VAR
                             \item Factor de potencia (cos $\phi$): 0,142
                             \item Ángulo de desfase $\phi$: 81,80°
-                            \item Constante del inductor (L): 671,14 mH
+                            \item Constante del inductor (L): 668,47 mH
                         \end{itemize}
 
                 %     \begin{figure}[H]
@@ -392,7 +387,7 @@
                             \item Potencia reactiva (Q): 30.41 VAR
                             \item Factor de potencia (cos $\phi$): 0.194
                             \item Ángulo de desfase $\phi$: 78.84°
-                            \item Constante del inductor (L): 1577 mH
+                            \item Constante del inductor (L): 1,55 H
                         \end{itemize}
 
                         \begin{figure}[H]
@@ -412,9 +407,9 @@
                 \begin{tabular}{|l|c|c|c|}
                 \hline
                 Constante del inductor               & Aire (sin núcleo)     & Núcleo de hierro & Núcleo de aluminio \\ \hline
-                                                    & 316,208 mH             &                  &                     \\ \hline
-                Núcleo parcialmente introducido     &                        & 642,82 mH        & 671,14 mH            \\ \hline
-                Núcleo totalmente introducido       &                        & 1577 mH          & 1577 mH                \\ \hline
+                                                    & 318,13 mH             &                  &                     \\ \hline
+                Núcleo parcialmente introducido     &                        & 631,58 mH        & 668,47 mH            \\ \hline
+                Núcleo totalmente introducido       &                        & 1,46 H          & 1,55 H                \\ \hline
                 \end{tabular}
                 \caption{Constantes de inductores medidas con diferentes núcleos}
                 \label{tab:ConstantesDelInductor}
