@@ -131,11 +131,10 @@
 
         Usando cambio de variable a números complejos, se puede llegar a la siguiente ecuación.
         \begin{equation}
-            V=j\cdot \omega\cdot L
+            V=j\cdot \omega\cdot L \cdot I
             \label{induct}
         \end{equation}
-        con j la constante compleja, $\omega$ la frecuencia en [$\frac{rads}{seg}$] y L la constante inductiva en [H].\par
-        Esta ecuación \eqref{induct} fue usada para el cálculo de la constante del inductor.
+        con $j$ la constante compleja, $\omega$ la frecuencia en [$\frac{rads}{seg}$], $L$ la constante inductiva en [H] y $I$ corriente [A].\par
 
         \subsubsection{Potencia compleja}
 
@@ -284,8 +283,15 @@ siguientes variables eléctricas:
         Estas expresiones permiten representar el \textit{triángulo de potencias}, 
         donde la potencia activa $P$ se ubica en el eje horizontal, la potencia 
         reactiva $Q$ en el eje vertical, y la potencia aparente $S$ corresponde a 
-        la hipotenusa.
+        la hipotenusa.\par
 
+	Por otra parte, se calculó el valor de L, considerando la resistencia interna del inductor mediante la siguiente ecuación:
+
+    \begin{equation*}
+        L = \frac{1}{\omega} \cdot \sqrt{\frac{V^2}{I^2}-R^2}
+    \end{equation*}
+    con $L$ la constante del inductor, $\omega$ la frecuencia, $V$ la tensión medida, $I$ la corriente medida y $R$ la resistencia interna del inductor. \par
+	
         A continuación se presentan los triángulos de potencia de cada una de las configuraciones estudiadas, y en adición,
         la configuración con núcleo totalmente introducido de aluminio. 
 
@@ -296,6 +302,7 @@ siguientes variables eléctricas:
                 \item Potencia reactiva (Q): 71.43 VAR.
                 \item Factor de potencia (cos $\phi$): 0.219.
                 \item Ángulo de desfase $\phi$: 77.37°.
+                \item Constante del inductor (L): 324,71 mH.
             \end{itemize}
 
             \begin{figure}[H]
@@ -313,6 +320,7 @@ siguientes variables eléctricas:
                 \item Potencia reactiva (Q): 137.99 VAR.
                 \item Factor de potencia (cos $\phi$): 0.206.
                 \item Ángulo de desfase $\phi$: 78.13°.
+                \item Constante del inductor (L): 647,04 mH.
             \end{itemize}
 
             \begin{figure}[H]
@@ -331,6 +339,7 @@ siguientes variables eléctricas:
                 \item Potencia reactiva (Q): 28.58 VAR.
                 \item Factor de potencia (cos $\phi$): 0.387.
                 \item Ángulo de desfase $\phi$: 67.23°.
+                \item Constante del inductor (L): 1,58 H.
             \end{itemize}
 
             \begin{figure}[H]
@@ -349,6 +358,7 @@ siguientes variables eléctricas:
                 \item Potencia reactiva (Q): 30.41 VAR.
                 \item Factor de potencia (cos $\phi$): 0.194.
                 \item Ángulo de desfase $\phi$: 78.84°.
+                \item Constante del inductor (L): CALCULAR.
             \end{itemize}
 
             \begin{figure}[H]

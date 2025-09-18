@@ -6,7 +6,7 @@
 \contentsline {subsubsection}{\numberline {$b)$}Potencia compleja}{4}{subsubsection.1.2.2}%
 \contentsline {section}{\numberline {2.}Desarrollo}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Procedimiento}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Mediciones}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Mediciones}{4}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {$a)$}Nucleo vacío}{5}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {$b)$}Nucleo de hierro parcialmente introducido}{5}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {$c)$}Nucleo totalmente introducido de hierro}{5}{subsubsection.2.2.3}%
