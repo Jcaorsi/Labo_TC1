@@ -329,12 +329,12 @@ INPUT .\imagenes&matlab\graficoTotalHierro.png
 INPUT .\imagenes&matlab\graficoTotalHierro.png
 INPUT .\imagenes&matlab\graficoTotalHierro.png
 INPUT .\imagenes&matlab\graficoTotalHierro.png
-INPUT .\imagenes&matlab\graficoTotalAluminio.png
-INPUT .\imagenes&matlab\graficoTotalAluminio.png
-INPUT .\imagenes&matlab\graficoTotalAluminio.png
-INPUT .\imagenes&matlab\graficoTotalAluminio.png
-INPUT .\imagenes&matlab\graficoTotalAluminio.png
-INPUT .\imagenes&matlab\graficoTotalAluminio.png
+INPUT .\imagenes&matlab\graficoTotalHierroLaminado.png
+INPUT .\imagenes&matlab\graficoTotalHierroLaminado.png
+INPUT .\imagenes&matlab\graficoTotalHierroLaminado.png
+INPUT .\imagenes&matlab\graficoTotalHierroLaminado.png
+INPUT .\imagenes&matlab\graficoTotalHierroLaminado.png
+INPUT .\imagenes&matlab\graficoTotalHierroLaminado.png
 INPUT TP_2.aux
 INPUT .\TP_2.out
 INPUT .\TP_2.out
@@ -362,8 +362,6 @@ INPUT C:\Users\Cesica\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\
 INPUT C:\Users\Cesica\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\Cesica\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\Cesica\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Users\Cesica\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
-INPUT C:\Users\Cesica\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
 INPUT C:\Users\Cesica\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\Cesica\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\Cesica\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
