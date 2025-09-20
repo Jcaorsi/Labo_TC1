@@ -18,5 +18,4 @@
 \contentsline {subsubsection}{\numberline {$d)$}Núcleo de hierro laminado totalmente introducido}{8}{subsubsection.2.3.4}%
 \contentsline {subsection}{\numberline {2.4}Análisis}{9}{subsection.2.4}%
 \contentsline {section}{\numberline {3.}Conclusiones}{10}{section.3}%
-\contentsline {section}{\numberline {4.}Anexos}{10}{section.4}%
 \contentsfinish 

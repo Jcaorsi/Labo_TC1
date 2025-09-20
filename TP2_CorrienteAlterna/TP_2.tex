@@ -72,9 +72,13 @@
     %%%RESUMEN%%%
     {\centering \LARGE \bfseries Resumen \par}
     
-    En este trabajo se estudió un circuito que contó con un inductor conectado a una fuente de tensión alterna. El objetivo de las mediciones fue observar la relación de la corriente, la tensión, los distintos tipos de potencias, y la constante del inductor. Estas mediciones fueron realizadas intercambiando el núcleo del inductor. \par
+    En este trabajo se estudió un circuito que contaba con un inductor conectado a una fuente de tensión alterna. El
+    objetivo de las mediciones fue observar la relación entre la corriente, la tensión, los distintos tipos de potencias
+    y la constante del inductor. Adicionalmente, se realizaron las mismas mediciones insertando distintos núcleos 
+    en distinta medida en el inductor. \par
 
-Luego de las mediciones se pudo observar como al introducir los distintos núcleos, la corriente del circuito disminuía, causando una reducción de la potencia medida. Por otra parte, al introducir los núcleos se pudo observar como la constante del inductor aumentó.
+    Se pudo observar como al introducir los distintos núcleos, la constante del inductor aumentaba y la corriente del
+    circuito disminuía, causando una reducción de la potencia medida.
 
     \newpage
 
@@ -99,7 +103,7 @@ Luego de las mediciones se pudo observar como al introducir los distintos núcle
             \item {\bfseries Variac}: Fuente de tensión AC regulable, 50 Hz, cuyos valores van desde 0 V hasta 250 V.
             \item {\bfseries Vatímetro analógico}: El mismo sirve para poder medir la potencia activa (P) consumida por el circuito.
                     Para calcular los valores, el mismo debe medir la tensión y la corriente del circuito.
-                     Para ello se conecta su voltímetro en paralelo con el circuito y su amperímetro en serie 
+                     Para ello se conecta el voltímetro en paralelo con el circuito y el amperímetro en serie 
                      con el circuito (observar Figura \ref{fig:vatimetro}). \par
 
                     \begin{figure}[h!] % el [h!] fuerza a ponerlo aquí
@@ -120,7 +124,7 @@ Luego de las mediciones se pudo observar como al introducir los distintos núcle
             \item {\bfseries Amperímetro analógico}
             \item {\bfseries Voltímetro analógico}
             \item {\bfseries Inductor}: Consta de un armazón, al cual se le enrolla un
-             alambre sucesivas veces. El mismo tiene asociado una resistencia y un valor L inductivo. 
+             alambre sucesivas veces. El mismo tiene asociado una resistencia interna y un valor L inductivo. 
                 A su vez, tiene un hueco en el medio donde se podía introducir un núcleo de material sólido. 
         \end{itemize}
         
@@ -140,11 +144,10 @@ Luego de las mediciones se pudo observar como al introducir los distintos núcle
         \subsubsection{Potencia compleja}
 
         Al analizar la potencia asociada a circuitos AC, se debe tener en consideración los siguientes aspectos.\par
-        La potencia total se llama { \bfseries potencia compleja} $\vec{S}= V \cdot I^{*}$ [VA], y es la potencia 
-        total del sistema. El módulo de la misma, se llama {\bfseries potencia aparente} $S=|I_{rms}| \cdot |V_{rms}|$ 
+        La potencia total se llama { \bfseries potencia compleja} $\vec{S}= V \cdot I^{*}$ [VA]. El módulo de la misma, se llama {\bfseries potencia aparente} $S=|I_{rms}| \cdot |V_{rms}|$ 
         [VA]. \par
         La potencia compleja se puede describir de la siguiente forma $\vec{S}=P + j \cdot Q$, donde P es la { \bfseries 
-        potencia activa} realmente disipada por el circuito [W] y Q es la {\bfseries potencia reactiva} [VAR], que siempre se busca minimizar para 
+        potencia activa} [W] realmente disipada por el circuito y Q es la {\bfseries potencia reactiva} [VAR], que siempre se busca minimizar para 
         bajar costos pues no es realmente aprovechada por el circuito. \par
         Por último, P y Q se pueden relacionar usando el triángulo de potencia (observar Figura \ref{fig:triangulo_de_potencia}) mediante la fórmula $S^2=Q^2+P^2$. 
 
@@ -153,7 +156,7 @@ Luego de las mediciones se pudo observar como al introducir los distintos núcle
         \begin{figure}[h!] % h! = aquí, lo más forzado posible
             \centering
             \includegraphics[width=0.5\textwidth]{Trojkat-mocy.png} % nombre del archivo
-            \caption{Triángulo de potencia inductivo}
+            \caption{Triángulo de potencia inductiva}
             \label{fig:triangulo_de_potencia} % etiqueta para referencias
         \end{figure}
     
@@ -163,7 +166,10 @@ Luego de las mediciones se pudo observar como al introducir los distintos núcle
 
         \subsection{Procedimiento}
 
-            Para esta experiencia se conectaron los instrumentos de medición junto con el variac y el inductor de la siguiente forma (Observar Figura: \ref{fig:circuito-inductor}). Luego se setió el variac a 120 V. Finalmente se procedió a la toma de mediciones de tensión, de corriente y la potencia usando el instrumental . 
+            Para esta experiencia se conectaron los instrumentos de medición junto con el variac y el inductor de la
+             siguiente forma (observar Figura \ref{fig:circuito-inductor}). Luego se setió el variac a 120 V. 
+             Finalmente se procedió a la toma de mediciones de tensión, de corriente y la potencia usando el 
+             instrumental. 
             \begin{figure}[h!]
                 \centering
                 \begin{tikzpicture}
@@ -178,12 +184,14 @@ Luego de las mediciones se pudo observar como al introducir los distintos núcle
                     \draw (17.75, -17.25) -- (24.25, -17.25);
                     \draw (24.25, -15.75) to[american resistor, /tikz/circuitikz/bipoles/length=0.924cm, l={$R_L$}] (24.25, -14.5);
                 \end{tikzpicture}
-                \caption{Circuito con fuente senoidal, amperímetro, voltímetro e inductor}
+                \caption{Circuito con fuente senoidal, amperímetro, voltímetro e inductor. $V_s$ es la tensión de entrada,
+                 L la constante del inductor y $R_L$ la resistencia interna del mismo}
                 \label{fig:circuito-inductor}
             \end{figure}
 
             Este procedimiento se realizó cuatro veces: a) Con el núcleo del inductor vacío. b) 
-            Una barra de hierro parcialmente introducida en el núcleo. c) Con la barra de hierrototalmente introducida 
+            Con una barra de hierro parcialmente introducida en el núcleo. c) Con la barra de hierro
+             totalmente introducida 
             en el núcleo. d) Con la barra de hierro laminado totalmente introducida 
             en el núcleo.
 
@@ -397,15 +405,14 @@ Luego de las mediciones se pudo observar como al introducir los distintos núcle
         \subsection{Análisis}
         
             Dado que se realizó el trabajo práctico empleando un núcleo de hierro y uno de hierro laminado, los valores
-            de las inductancias obtenidas para una misma configuración con distintos núcleos son $L_{hierro} = 1460 mH$
-            y $L_{hierroLaminado} = 1550 mH$, lo cual es esperable dado los materiales son muy similares.
-
-            Además, se puede ver en la sección 2.3 que, dado que la inductancia de ambos núcleos es similar, la potencia
-            reactiva (es decir, compleja) se ve principalmente afectada por la posición del núcleo en el inductor.
-            \par También se puede notar en la tabla que la potencia activa disipada por el inductor se ve afectada por 
-            la introducción de los núcleos. Obsérvese que el valor de la potencia activa disipada por el inductor una vez agregado
-            parcialmente el núcleo de hierro desciende, luego es menor para el hierro introducido por compelto y aun menor para el
-            hierro laminado.
+            de las inductancias obtenidas para una misma configuración con distintos núcleos son $L_{hierro} = 1460$ mH
+            y $L_{hierroLaminado} = 1550$ mH; su semejanza es de esperar, pues los materiales son muy similares. Esto
+            también resulta en que la potencia reactiva (es decir, compleja) se ve principalmente afectada por la 
+            posición del núcleo en el inductor.
+            \par Adicionalmente, se puede notar en la tabla \ref{tab:MedicionesIndirectas} cómo la potencia
+            disipada por el inductor se ve afectada por la introducción de los núcleos. Obsérvese que, en particular, el
+            valor de la potencia activa disipada por el inductor una vez agregado parcialmente el núcleo de hierro
+            desciende, luego es menor para el hierro introducido por completo y es aún menor para el hierro laminado.
 
             \begin{table}[h]
                 \begin{tabular}{|p{5cm}|c|c|c|}
@@ -423,7 +430,7 @@ Luego de las mediciones se pudo observar como al introducir los distintos núcle
 
             Luego, con el fin de cuantificar la imprecisión de las mediciones se decidió comparar la potencia activa
             medida de forma directa por el vatímetro con la potencia activa disipada por la resistencia interna del inductor
-            (es decir, el único elemento pasivo que disipa potencia activa del circuito). Es decir, utilizamos la siguiente
+            (es decir, el único elemento pasivo que disipa potencia activa del circuito). Con este fin, se utilizó en la siguiente
              ecuación:
             \begin{equation}
                S_R = P = V_R \cdot I = I^2 \cdot R \cdot
@@ -438,7 +445,7 @@ Luego de las mediciones se pudo observar como al introducir los distintos núcle
                 Núcleo de hierro totalmente introducido             &      1,48          & 12                                 \\ \hline
                 Núcleo de hierro laminado totalmente introducido   & 1,48               & 6              \\ \hline
                 \end{tabular}
-                \caption{Valores de la potencia activa para cada configuración obtenida de forma tanto directa como indirecta.}
+                \caption{Valores de la potencia activa para cada configuración, obtenidos de forma tanto directa como indirecta.}
                 \label{tab:PotenciasActivas}
             \end{table}
 
@@ -449,12 +456,18 @@ Luego de las mediciones se pudo observar como al introducir los distintos núcle
              
     %%%Conclusiones%%%
     \section{Conclusiones}
-	En este trabajo, se observaron los cambios que hubo en la potencia disipada por la bobina y su resistencia interna en las distintas configuraciones. \par
+	En este trabajo, se observaron los cambios que hubo en la potencia disipada por la bobina y su resistencia interna
+    en las distintas configuraciones. \par
 
-Al introducir los distintos núcleos se observó una disminución de la corriente. Esto se debe a que la inductancia del inductor aumentó, incrementando la reactancia inductiva y, en consecuencia, la oposición al paso de la corriente. De este modo, la potencia activa se redujo gracias a la disminución de la corriente, tal como se esperaria acorde a lo estudiado en la materia. \par
+    Al introducir los distintos núcleos se observó una disminución de la corriente. Esto se debe a que la inductancia
+    del inductor aumentó, incrementando la reactancia inductiva y, en consecuencia, la oposición al paso de la
+    corriente. De este modo, la potencia activa se redujo gracias a la disminución de la corriente, tal como se esperaría
+    acorde a lo estudiado en la materia. \par
 
-Finalmente, se considera que para una mayor precisión en las mediciones se debe o trabajar con un amperímetro de menor escala, o bien aumentar la tensión de entrada con el propósito de aumentar la corriente. Esto permitiría trabajar con magnitudes de corriente que se acerquen al rango de mayor precisión del amperímetro. Esto taería el mismo efecto sobre la medición de la potencia activa, ya que aumentaría los valores de esta magnitud, llevándola a un rango donde el vatímetro tiene una mayor precisión.\par
+    Finalmente, se considera que para lograr una mayor precisión en las mediciones, se recomienda trabajar con un
+    amperímetro de menor escala, o bien aumentar la tensión de entrada con el propósito de aumentar la corriente; esto
+    permitiría trabajar con magnitudes de corriente que se acerquen más al rango de mayor precisión del amperímetro. A su
+    vez, traería el mismo efecto sobre la medición de la potencia activa, ya que aumentaría los valores de esta magnitud,
+    llevándola a un rango donde el vatímetro tiene una mayor precisión.\par
     %%%Anexos%%%
-    \section{Anexos}
-
 \end{document}
