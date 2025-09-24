@@ -6,6 +6,8 @@
 \contentsline {subsection}{\numberline {2.1}Procedimiento}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Mediciones}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Cálculos}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Análisis}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}Ecuaciones utilizadas}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Resultados}{4}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Análisis}{4}{subsection.2.6}%
 \contentsline {section}{\numberline {3.}Conclusiones}{4}{section.3}%
 \contentsfinish 

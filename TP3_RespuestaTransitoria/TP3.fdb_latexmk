@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1758736717.15016 "c:/Users/Cesica/Documents/RITA/Labo_TC1/TP3_RespuestaTransitoria/TP3.tex" "TP3.pdf" "TP3" 1758736719.8195 0
+["pdflatex"] 1758745589.49857 "c:/Users/Cesica/Documents/RITA/Labo_TC1/TP3_RespuestaTransitoria/TP3.tex" "TP3.pdf" "TP3" 1758745591.84914 0
   "C:/Users/Cesica/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1758164923 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Cesica/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1440.pk" 1758164936 18748 49e31a82e7430f57070d000c4fc08eeb ""
   "C:/Users/Cesica/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx2074.pk" 1758164938 28420 ef3ccb401d21afd14f1413fe2e2a4c14 ""
@@ -22,7 +22,6 @@
   "C:/Users/Cesica/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/Cesica/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/Cesica/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
-  "C:/Users/Cesica/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247596666 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "C:/Users/Cesica/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/Cesica/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/Cesica/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty" 1754220793 146665 9149bce97203d4030d7cbe4f4e85dfc4 ""
@@ -161,11 +160,11 @@
   "C:/Users/Cesica/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titletoc.sty" 1736608268 16594 e070b7268023b1ec1b45c44617ea64f9 ""
   "C:/Users/Cesica/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Cesica/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "TP3.aux" 1758736719 1415 c17ba12b660a49526a128d03925f5262 "pdflatex"
-  "TP3.out" 1758736719 976 d12441bf834301b5d8852388b808a752 "pdflatex"
-  "TP3.tex" 1758736715 5689 09984ebdf6185cde1039f282a60c119b ""
-  "TP3.toc" 1758736719 716 58dc364b6e659707842526c24d0b1373 "pdflatex"
-  "c:/Users/Cesica/Documents/RITA/Labo_TC1/TP3_RespuestaTransitoria/TP3.tex" 1758736715 5689 09984ebdf6185cde1039f282a60c119b ""
+  "TP3.aux" 1758745591 1660 ae7aa4361d921fc5823aa301cfbe5b22 "pdflatex"
+  "TP3.out" 1758745591 1250 ded522c5beefc652628f5da8f15997fa "pdflatex"
+  "TP3.tex" 1758745588 6383 10b26300a2748b13ecabb59a3f1b32a6 ""
+  "TP3.toc" 1758745591 879 9f2a12e23c7ef76a79a00d98e8b9ae44 "pdflatex"
+  "c:/Users/Cesica/Documents/RITA/Labo_TC1/TP3_RespuestaTransitoria/TP3.tex" 1758745588 6383 10b26300a2748b13ecabb59a3f1b32a6 ""
   "imagenes/Logo_ITBA.png" 1758164480 34082 18565f2ade26fe38705e2ad93c029b27 ""
   (generated)
   "TP3.aux"
