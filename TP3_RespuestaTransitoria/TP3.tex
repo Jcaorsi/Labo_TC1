@@ -1,0 +1,141 @@
+\documentclass{article}
+
+%%%%%%%%%%%%%%% LIBRERIAS %%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{graphicx}
+\usepackage[spanish,es-tabla]{babel} % 'es-tabla' cambia Cuadro→Tabla
+\usepackage{hyperref}                % cargar después de babel
+\usepackage{float}
+\usepackage{circuitikz}
+%%%%%%%%%%%%%%%%%%% VARIABLES %%%%%%%%%%%%%%%%%%%%
+\newcommand{\Facultad}{Instituto Tecnológico \\de\\ Buenos Aires} %constantes
+\newcommand{\TPn}{Trabajo Práctico N° 3}
+\newcommand{\TPtema}{Respuesta Transitoria}
+\renewcommand{\thesection}{\arabic{section}}          % 2
+\renewcommand{\thesubsection}{\quad \alph{subsection}}   % a
+\renewcommand{\thesubsubsection}{\quad \thesubsection.~\roman{subsubsection}} % a. i
+\graphicspath{{imagenes/}} %para que acceda a las fotos en la carpeta directamente
+
+
+%%%%%%%%%%%%%%%%%% FORMATO TÍTULO Y NUMERACIÓN %%%%%%%%%%%%%%%%%%%
+% Numeración de secciones
+\renewcommand{\thesection}{\arabic{section}.}          
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}}       
+\renewcommand{\thesubsubsection}{$\alph{subsubsection})$}
+
+% Numerar hasta subsubsecciones
+\setcounter{secnumdepth}{3}
+
+% Formato de títulos
+\titleformat{\section}{\Huge\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\LARGE\bfseries}{\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}{\large\bfseries}{\thesubsubsection}{0.5em}{}
+
+
+
+%%%%%%%%%%%%%%%%%%% ARCHIVO %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%CARATULA%%%
+\begin{titlepage} %creo portada
+
+        \begin{flushleft}
+            \centering
+            \includegraphics[width=0.3\textwidth]{Logo_ITBA.png}
+        \end{flushleft}
+
+        \centering
+            
+        {\scshape\LARGE \Facultad \par} %\par sirve para indicar un final de parrafo
+        \vspace{1cm}                    %esto hace un espacio entre lineas de 1cm
+
+
+        {\huge\bfseries \TPn \par}
+        \vspace{1.5cm}
+        {\Large Teoría de Circuitos I\\ 25.10 \par}
+        \vfill                      %sirve para rellenar el espacio y quede simétrico. Si se añaden otros, se dividen el espacio de forma equitativa
+        {\Large \bfseries Grupo N° 5 \par}
+        \vspace{1cm}
+        {\large Juan Bautista Correa Uranga \hfill Legajo: 65016 \par} %\hfill sirve para hacerlo simétrico
+        {\large Juan Ignacio Caorsi \hfill Legajo: 65532  \par}
+        {\large Rita Moschini \hfill Legajo: 67026 \par} 
+        \vfill
+        {\large \today\par}
+        \vfil
+
+    \end{titlepage}
+
+ %%%RESUMEN%%%
+{\centering \LARGE \bfseries Resumen \par}
+
+\newpage
+
+%%%INDICE%%%
+\tableofcontents %esto sirve para crear el índice
+
+\newpage
+
+%%%Introduccion%%%
+\section{Introducción}
+    \subsection{Instrumental}
+    \subsection{Marco teórico}
+
+%%%Desarrollo%%%
+\section{Desarrollo}
+    \subsection{Procedimiento}
+    \subsection{Mediciones}
+ 
+        \begin{itemize}
+            \item $ R_f = 215 \Omega $
+            \item $ R_{V_{max}} = 9980 \Omega $
+            \item $ R_{V_{min}} = 2 \Omega $
+            \item $ R_L = 0,8 \Omega $
+            \item $ L \approx 1 mH $
+        \end{itemize}
+        
+        \par
+        \subsubsection*{Capacitor de C = 470 pF}
+            \begin{itemize}
+                \item Valor de la resistencia variable tal que el amortiguamiento era crítico: $ R_{critico} = 1,9 k\Omega $
+                \item Tiempo $\tau$ en que la salida llegaba a 3,175 V cuando $ R_V $ tomaba su valor máximo: $ \tau = 5,75 \mu s$
+                \item Salida cuando $t=5\tau$: V=3,175 V
+            \end{itemize}
+
+        \par
+        \subsubsection*{Capacitor de C = 47 pF}
+            \begin{itemize}
+                \item Valor de la resistencia variable tal que el amortiguamiento era crítico: $ R_{critico} = 3,47 k\Omega $
+                \item Tiempo $\tau$ en que la salida llegaba a 3,175 V cuando $ R_V $ tomaba su valor máximo: $ \tau = 32,25 \mu s$
+                \item Tiempo en que la salida llegaba a 5,24 V ($ 5V \pm 0,05V $) cuando $ R_V $ tomaba su valor mínimo:  $ t = 14,3 \mu s$ %a frecuencia de oscilación y el sobrepico máximo
+                \item Tiempo en que la salida llegaba a 4,888 V ($ 5V \pm 0,05V $) con ambas resistencias cortocircuitadas: $ t = 22,25 \mu s$
+            \end{itemize}
+
+    \subsection{Cálculos}
+
+        Cálculo del valor de la resistencia variable tal que el amortiguamiento es crítico: \par
+        $ \alpha_{serie} = \omega_0 $
+        $ \Rightarrow \frac{R}{2L} = \frac{2L}{\sqrt{LC}} $
+        $ \Rightarrow R = \frac{2L}{\sqrt{LC}}  \wedge R_f + R_V + R_L $
+        $ \Rightarrow R_V = R - R_f  -R_L $
+
+        Cálculo del valor de $ \tau $ para $ R_V = R_{V_{max}} = 9980 \Omega $
+        $ \tau = \frac{1}{\alpha} = \frac{2L}{R_f + R_V + R_L} $
+
+            \paragraph*{Capacitor de C = 470 pF} 
+                \par Valor de la resistencia variable tal que el amortiguamiento fuera crítico: $ R_{critico} = 2,702 k\Omega $ %CUALQUIER COSA DESPUES PONEMOS MENOS DECIMALES!!! prefiero poner de mas para hacer menos veces la cuenta
+
+            \paragraph*{Capacitor de C = 47 pF} 
+                Valor de $ \tau $ para $ R_V = R_{V_{max} }= 9980 \Omega $: $ \tau = \frac{2 \cdot 10^-3}{215 + 9989 + 0,8} $ \par
+                $ \tau = 0,91616 \mu s $
+                \par Valor de la resistencia variable tal que el amortiguamiento fuera crítico: $ R_{critico} = 9,010 k\Omega $
+        
+        \subsubsection*{Resultados}
+        \subsubsection*{Capacitor de C = 47 pF}
+
+
+    \subsection{Análisis}
+\section{Conclusiones}
+
+\end{document}
