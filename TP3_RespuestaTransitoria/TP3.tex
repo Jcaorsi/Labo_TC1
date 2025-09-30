@@ -98,26 +98,25 @@
         \par
         \subsubsection*{Capacitor de C = 470 pF}
             \begin{itemize}
-                \item Valor de la resistencia variable tal que el amortiguamiento era crítico: $ R_{critico} = 1,9 k\Omega $
-                \item Tiempo $\tau$ en que la salida llegaba a 3,175 V cuando $ R_V $ tomaba su valor máximo: $ \tau = 5,75 \mu s$
-                \item Salida cuando $t=5\tau$: V=3,175 V
+                \item Valor de la resistencia variable tal que el amortiguamiento fue crítico: $ R_{critico} = 1,9 k\Omega $ % item 1
+                \item Tiempo $\tau$ en que la salida llegó a 3,175 V con $ R_V $ en su valor máximo: $ \tau = 5,75 \mu s$ % item 2
+                \item Salida cuando $t=5\tau$ con $ R_V $ en su valor máximo: V=3,175 V % item 2
             \end{itemize}
 
         \par
         \subsubsection*{Capacitor de C = 47 pF}
             \begin{itemize}
-                \item Valor de la resistencia variable tal que el amortiguamiento era crítico: $ R_{critico} = 3,47 k\Omega $
-                \item Tiempo en que la salida llegaba a 3,175 V cuando $ R_V $ tomaba su valor máximo: $ t = 32,25 \mu s$
-                \item Tiempo en que la salida llegaba a 5,24 V ($ 5V \pm 0,05V $) cuando $ R_V $ tomaba su valor mínimo:  $ t = 14,3 \mu s$ %a frecuencia de oscilación y el sobrepico máximo
-                \item Tiempo en que la salida llegaba a 4,888 V ($ 5V \pm 0,05V $) con ambas resistencias cortocircuitadas: $ t = 22,25 \mu s$
+                \item Valor de la resistencia variable tal que el amortiguamiento fue crítico: $ R_{critico} = 3,47 k\Omega $ %item 3
+                \item Tiempo en que la salida llegó a 3,175 V con $ R_V $ en su valor crítico: $ t = 2,20 \mu s$ % item 3
+                \item Tiempo en que la salida llegó a 5,24 V con $ R_V $ en su valor mínimo: $ t = 14,30 \mu s$ % item 4
+                \item Tiempo en que la salida llegó a 4,982 V ($ 5V \pm 0,05V $) con las resistencias cortocircuitadas: $ t = 11 \mu s$ % item 5
             \end{itemize}
 
     \subsection{Cálculos}
 
         \subsection{Ecuaciones utilizadas}
-            \textbf{Cálculo del valor de la resistencia variable tal que el amortiguamiento sea crítico:} \par \par
-            $ \alpha_{serie} = \omega_0 $ \par \par
-            $ \Rightarrow \frac{R}{2L} = \frac{1}{\sqrt{LC}} $
+            \textbf{Cálculo del valor de la resistencia variable tal que el amortiguamiento fuera crítico} \par \par
+            $ \alpha_{serie} = \omega_0 \Rightarrow \frac{R}{2L} = \frac{1}{\sqrt{LC}} $
             \begin{equation}
                 R = \frac{2L}{\sqrt{LC}}
             \end{equation}
