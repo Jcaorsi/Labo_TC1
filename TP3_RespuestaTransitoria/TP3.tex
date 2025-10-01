@@ -56,7 +56,7 @@
         \vspace{1.5cm}
         {\Large Teoría de Circuitos I\\ 25.10 \par}
         \vfill                      %sirve para rellenar el espacio y quede simétrico. Si se añaden otros, se dividen el espacio de forma equitativa
-        {\Large \bfseries Grupo N° 5 \par}
+        {\Large \bfseries Grupo N° 2 \par}
         \vspace{1cm}
         {\large Juan Bautista Correa Uranga \hfill Legajo: 65016 \par} %\hfill sirve para hacerlo simétrico
         {\large Juan Ignacio Caorsi \hfill Legajo: 65532  \par}
@@ -79,8 +79,70 @@
 
 %%%Introduccion%%%
 \section{Introducción}
+    Este trabajo práctico aborda la respuesta transitoria
+     en circuitos RLC serie. Se busca aplicar conceptos 
+     teóricos mediante mediciones reales, utilizando generador 
+     de señales y osciloscopio. Se analiza cómo varían las
+      respuestas al modificar resistencia, inductancia y 
+      capacitancia, observando casos de subamortiguamiento,
+       sobreamortiguamiento y amortiguamiento crítico. 
+       El objetivo es comprender la dinámica temporal 
+       de circuitos RLC y validar modelos teóricos
+       con datos experimentales.
     \subsection{Instrumental}
+        En esta experiencia se utilizaron los siguientes instrumentos:
+\begin{itemize}
+  \item Osciloscopio Keysight DSOX 1202G con generador de ondas integrado.
+  \item Capacitores de $47\,\text{pF}$ y $470\,\text{pF}$.
+  \item Resistencias de 220 $\Omega$ nominal y potenciómetro de 5 k$\Omega$ nominal.
+  \item Inductor de resistencia indefinida, con inductancia aproximada de $1\,\text{mH}$.
+  \item Multímetro UNI-T,  Standar Digital multimeter, modelo: UT39C.
+\end{itemize}
+
     \subsection{Marco teórico}
+
+        Un circuito RLC serie está compuesto por una resistencia (R),
+         una 
+        inductancia (L) y una capacitancia (C) conectadas en serie.
+        Dependiendo de la resistencia del circuito, la respuesta transitoria
+         puede ser subamortiguada, sobreamortiguada o críticamente 
+         amortiguada. La ecuación diferencial que describe la 
+         respuesta del circuito RLC serie es:
+        \begin{equation}
+            L\frac{d^2i(t)}{dt^2} + R\frac{di(t)}{dt} + \frac{1}{C}i(t) = V_{in}(t)
+        \end{equation}
+
+        y su solución general es la suma de la respuesta natural y la respuesta forzada:
+
+Para la respuesta natural (\( V_{\text{in}}(t) = 0 \)), se define:
+
+\begin{equation}
+\alpha = \frac{R}{2L}, \quad \omega_0 = \frac{1}{\sqrt{LC}}, \quad \Delta = \alpha^2 - \omega_0^2
+\end{equation}
+
+La solución general depende del valor de \( \Delta \):
+
+\begin{itemize}
+  \item \textbf{Sobreamortiguado} (\( \Delta > 0 \)):
+
+  \begin{equation}
+  i(t) = A e^{(-\alpha + \sqrt{\Delta})t} + B e^{(-\alpha - \sqrt{\Delta})t}
+  \end{equation}
+
+  \item \textbf{Críticamente amortiguado} (\( \Delta = 0 \)):
+
+  \begin{equation}
+  i(t) = (A + Bt)e^{-\alpha t}
+  \end{equation}
+
+  \item \textbf{Subamortiguado} (\( \Delta < 0 \)):
+
+  \begin{equation}
+  i(t) = e^{-\alpha t} \left( A \cos(\omega_d t) + B \sin(\omega_d t) \right)
+  \end{equation}
+
+  donde \( \omega_d = \sqrt{\omega_0^2 - \alpha^2} \).
+\end{itemize}
 
 %%%Desarrollo%%%
 \section{Desarrollo}
