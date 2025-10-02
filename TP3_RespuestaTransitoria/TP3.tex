@@ -9,6 +9,7 @@
 \usepackage{hyperref}                % cargar después de babel
 \usepackage{float}
 \usepackage{circuitikz}
+\usepackage[left=3cm,right=3cm]{geometry} %para margenes
 %%%%%%%%%%%%%%%%%%% VARIABLES %%%%%%%%%%%%%%%%%%%%
 \newcommand{\Facultad}{Instituto Tecnológico \\de\\ Buenos Aires} %constantes
 \newcommand{\TPn}{Trabajo Práctico N° 3}
@@ -147,6 +148,30 @@ La solución general depende del valor de \( \Delta \):
 %%%Desarrollo%%%
 \section{Desarrollo}
     \subsection{Procedimiento}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \draw (15.75, -14.5) to[american voltage source, l={$Vs$}] (15.75, -17.75);
+        \draw (15.75, -14.5) to[american resistor, l={$Rf$}] (19.5, -14.5);
+        \draw (19.5, -14.5) to[variable american resistor, l={$Rv$}] (22.25, -14.5);
+        \draw (22.25, -14.5) to[cute inductor, l={$L$}] (22.25, -17.75);
+        \draw (22.25, -17.75) to[capacitor, l={$C$}] (15.75, -17.75);
+    \end{tikzpicture}
+    \caption{Circuito analizado}
+    \label{fig: circuito_rlc}
+\end{figure}
+
+
+    La parte experimental se realizó en una serie de 4 pasos:
+
+    \begin{enumerate}
+        \item Primero se armó el circuito en serie (observar figura \ref{fig: circuito_rlc}) usando el capacitor de 470 pF. Luego de esto, se procedió con su análisis variando el valor de la resistencia variable. Finalmente, se determinó de manera aproximada el valor de la resistencia variable que producía un amortiguamiento crítico.
+        \item En esta parte, se ajustó la resistencia Rv a su valor máximo. Posteriormente, se calculó de forma experimental el valor $\tau$ del sistema. Con este valor aproximado, se midió la salida en el tiempo $ 5\tau$.
+        \item A continuación, se remplazo el capacitor por uno de 47pF. Luego de esto, se observó la respuesta del sistema en función del valor de la resistencia variable. Al mismo tiempo, se repitió la medición del amortiguamiento crítico y se calculó el tiempo del transitorio, pero esta vez, para el valor de Rv mínimo. También se midió la frecuencia y el valor pico.
+        \item Finalmente, se cortocircuitaron las resistencias y se analizó la respuesta transitoria nuevamente.
+        
+    \end{enumerate}
     \subsection{Mediciones}
  
         \begin{itemize}
@@ -162,7 +187,7 @@ La solución general depende del valor de \( \Delta \):
             \begin{itemize}
                 \item Resistencia variable tal que el amortiguamiento fue crítico: $ R_{critico} = 1,9 k\Omega $ % item 1
                 \item Tiempo $\tau$ en que la salida llegó a 3,175 V con $ R_V $ en su valor máximo: $ \tau = 5,75 \mu s$ % item 2
-                \item Salida cuando $t=5\tau$ con $ R_V $ en su valor máximo: V=3,175 V % item 2
+                \item Salida cuando $t=5\tau$ con $ R_V $ en su valor máximo: $V_{5\tau}$ = 5 V% item 2
             \end{itemize}
 
         \par
@@ -197,23 +222,23 @@ La solución general depende del valor de \( \Delta \):
             \subsubsection*{Capacitor de C = 470 pF}
                 0) Inductancia L
                 \begin{equation}
-                    L=0.505mH
+                    L=0.526mH
                 \end{equation}
                 1) Resistencia variable tal que el amortiguamiento fuera crítico:
                 \begin{equation}
                     R_{critico} = 1.857 k\Omega
                 \end{equation} \par
-                2) $ \tau $ con $ R_V = R_{V_{max}} = 9980 \Omega $: REVISAR
+                2) $ \tau $ con $ R_V = R_{V_{max}} = 9980 \Omega $:
                  \begin{equation}
-                    \tau = ??? \mu s 
+                    \tau = 4,74 \mu s 
                 \end{equation}
 
             \subsubsection*{Capacitor de C = 47 pF}
                 3) Resistencia variable tal que el amortiguamiento fuera crítico:
                 \begin{equation}
-                    R_{critico} = 6,34 k\Omega 
+                    R_{critico} = 6,47 k\Omega 
                 \end{equation} \par
-                4) Valor de $ \tau $ para $ R_V = R_{V_{min}} $: REVISAR
+                4) Valor de $ \tau $ para $ R_V = R_{V_{min}} $: 4,83 $\mu$s
                 \begin{equation}
                     \tau =  \mu s 
                 \end{equation} \par
@@ -225,8 +250,41 @@ La solución general depende del valor de \( \Delta \):
 
 
     \subsection{Análisis}
-        \subsection*{Simulación}
-        1) 
+    
+    	Luego de recolectar los datos, se pudieron observar los siguientes comportamientos. \par
+	Es importante mencionar que en este trabajo, no se contó con un valor de referencia de la constante del inductor; esta debió ser aproximada mediante el valor de la resistencia del amortiguamiento critico. Consecuentemente, los datos teóricos también pueden contener errores asociados.
+	
+        \subsection*{Capacitor 470pF}
+        	En esta parte, se observó lo siguiente. Al aproximar el valor de la resistencia del amortiguamiento crítico, se llegó a $1,9k\Omega$, un valor el cual posee un error relativo del 2,32 \% con respecto al valor teórico. Esto indica una buena aproximación al valor real que causa que el sistema sea críticamente amortiguado. \par
+	Sumado a esto, se observó que la respuesta se volvía sobreamortiguada al aumentar la resistencia por encima de $1,9k\Omega$ y que la misma se volvía subamortiguada al disminuir la misma por debajo de ese valor. Esto concuerda con las ecuaciones descriptas en el apartado teórico, puesto a que al aumentar R, $\alpha$ aumentaba. \par
+	Otras de las áreas analizadas fue la del valor de $\tau$. Esta se aproximó despejando el tiempo el cual llevaba a una respuesta de 3,175 $V$. Se observó que el mismo fue de $5,75\mu F$, un valor el cual posee un error relativo del 21,3\%. Esto muestra un error alto, pero este puede estar asociado en gran medida a la incertidumbre en el valor de la constante L. Al mismo tiempo, dicho $\tau$ teórico se consiguió mediante una aproximación, usando la raíz de la ecuación característica más pequeña y descartando la otra.\par
+	Finalmente, se observó que el transitorio en $5\tau$ el valor de la respuesta estaba entre los valores de 4,75 V y 5,25 V. Esto demuestra que la aproximación de $5\tau$ como tiempo de transitorio, es efectiva.
+	
+	
+        \subsection*{Capacitor 47pF}
+        En esta parte, se analizó el efecto de la reducción de la capacitancia. Primero se observo que la resistencia del valor crítico aumentaba en comparación con el capacitor de 470pF. Consecuentemente, esto aumentó el margen de valores de las resistencias en los cuales el sistema se mantiene como un subamortiguado.\par
+        Al mismo tiempo, también se midió un valor de resistencia que causaba un amortiguamiento crítico. Es valor fue de $3,47k\Omega$, el cual muestra un error relativo del 46,4\%. Este gran error asociado a la medición se debe a que el valor fue obtenido de manera aproximada, sin un ajuste riguroso.\par 
+        
+        \begin{figure}[h]
+    \centering
+    \begin{minipage}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{CRITICAMENTE.png}
+        \caption{Capacitor 47pF, con Rv = 6,47 $k\Omega$}
+        \label{fig:img1}
+    \end{minipage}\hfill
+    \begin{minipage}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{SUBAMORT.png}
+        \caption{Capacitor 47pF, con Rv= 3,47 $k\Omega$}
+        \label{fig:img2}
+    \end{minipage}
+\end{figure}
+
+        Por este motivo, se recurrió a la simulación del mismo usando el valor de L. Es importante volver a mencionar que el mismo ya asocia una gran incertidumbre en su cálculo. Al observar las figuras \ref{fig:img1} y \ref{fig:img2}, se puede observar que el valor calculado mediante el osciloscopio, es un valor subamortiguado. Por tal motivo se considera que el valor de 6,47 $k\Omega$ es el valor aproximado que genera un transitorio críticamente amortiguado.\par
+        Por otra parte, al analizar el tiempo de transitorio del sistema, con la resistencia variable configurada en su valor mínimo, se obtuvieron los siguientes datos. El $\tau$ obtenido experimentalmente fue de 14,30 $\mu$s, 
+        
+        
 
 
 \section{Conclusiones}
