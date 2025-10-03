@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.14)  3 OCT 2025 12:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.14)  3 OCT 2025 18:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -848,14 +848,14 @@ File: imagenes/OSI5T.jpg Graphic file (type jpg)
 <use imagenes/OSI5T.jpg>
 Package pdftex.def Info: imagenes/OSI5T.jpg  used on input line 292.
 (pdftex.def)             Requested size: 217.35588pt x 163.00482pt.
-<imagenes/TAU47PF.png, id=133, 546.04pt x 324.21124pt>
+<imagenes/TAU47PF.png, id=133, 548.0475pt x 326.21875pt>
 File: imagenes/TAU47PF.png Graphic file (type png)
 <use imagenes/TAU47PF.png>
 Package pdftex.def Info: imagenes/TAU47PF.png  used on input line 298.
-(pdftex.def)             Requested size: 217.35588pt x 129.05391pt.
+(pdftex.def)             Requested size: 217.35588pt x 129.38013pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
@@ -864,31 +864,60 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.307     P
-           or tal motivo se puede concluir que el valor medido del tiempo de...
-
+l.307 ...observadas con los valores teóricos.\par
+                                                  
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.307     P
-           or tal motivo se puede concluir que el valor medido del tiempo de...
- <./imagenes/CRIT2.png> <./imagenes/SUBAMORT1.png>]
+l.307 ...observadas con los valores teóricos.\par
+                                                   <./imagenes/CRIT2.png> <./im
+agenes/SUBAMORT1.png>]
+<imagenes/Resistencias_corto.jpg, id=148, 1606.0pt x 1205.50375pt>
+File: imagenes/Resistencias_corto.jpg Graphic file (type jpg)
+<use imagenes/Resistencias_corto.jpg>
+Package pdftex.def Info: imagenes/Resistencias_corto.jpg  used on input line 31
+7.
+(pdftex.def)             Requested size: 217.35588pt x 163.14066pt.
+<imagenes/CORTOCIRCUITO.png, id=149, 549.05125pt x 327.2225pt>
+File: imagenes/CORTOCIRCUITO.png Graphic file (type png)
+<use imagenes/CORTOCIRCUITO.png>
+Package pdftex.def Info: imagenes/CORTOCIRCUITO.png  used on input line 323.
+(pdftex.def)             Requested size: 217.35588pt x 129.53856pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 
 [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.329 \end{document}
-                    
+l.347 A
+       nalisis
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.329 \end{document}
-                     <./imagenes/OSI5T.jpg> <./imagenes/TAU47PF.png>]
-(./TP3.aux
+l.347 A
+       nalisis <./imagenes/OSI5T.jpg> <./imagenes/TAU47PF.png>]
+
+[9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.356 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.356 \end{document}
+                     <./imagenes/Resistencias_corto.jpg> <./imagenes/CORTOCIRCU
+ITO.png>] (./TP3.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -900,13 +929,13 @@ Package rerunfilecheck Info: File `TP3.out' has not changed.
 (rerunfilecheck)             Checksum: 39C085E24E4B574A81B51024E321B66D;1270.
  ) 
 Here is how much of TeX's memory you used:
- 40765 strings out of 473190
- 967867 string characters out of 5715800
- 1602656 words of memory out of 5000000
- 63572 multiletter control sequences out of 15000+600000
+ 40789 strings out of 473190
+ 968521 string characters out of 5715800
+ 1602818 words of memory out of 5000000
+ 63593 multiletter control sequences out of 15000+600000
  567023 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,105p,724b,1033s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,105p,713b,1033s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -922,10 +951,10 @@ xlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
 ve/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive
 /2025/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb>
-Output written on TP3.pdf (9 pages, 641282 bytes).
+Output written on TP3.pdf (10 pages, 1128559 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 240 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

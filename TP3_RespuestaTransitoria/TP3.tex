@@ -244,7 +244,7 @@ La solución general depende del valor de \( \Delta \):
                 \end{equation} \par
                 6) Valor de $ \tau $ para $ R = R_L $ (resistencias cortocircuitadas): REVISAR
                 \begin{equation}
-                    \tau =  \mu s 
+                    \tau =  1,315 ms 
                 \end{equation}
         
 
@@ -252,7 +252,7 @@ La solución general depende del valor de \( \Delta \):
     \subsection{Análisis}
     
     	Luego de recolectar los datos, se pudieron observar los siguientes comportamientos. \par
-	Es importante mencionar que en este trabajo, no se contó con un valor de referencia de la constante del inductor; esta debió ser aproximada mediante el valor de la resistencia del amortiguamiento critico obtenida con el capacitor de 470 pF. Consecuentemente, los datos teóricos también pueden contener errores asociados.
+	Es importante mencionar que en este trabajo, no se contó con un valor de referencia de la constante del inductor; esta debió ser aproximada mediante el valor de la resistencia del amortiguamiento crítico obtenida con el capacitor de 470 pF. Consecuentemente, los datos teóricos también pueden contener errores asociados.
 	
         \subsection*{Capacitor 470 pF}
         	En esta parte, se observó lo siguiente: al aproximar el valor de la resistencia del amortiguamiento crítico, se llegó a $1,9 k\Omega$, un valor el cual posee un error relativo del 2,32 \% con respecto al valor teórico. Esto indica una buena aproximación al valor real que causa que el sistema sea críticamente amortiguado. \par
@@ -265,7 +265,7 @@ La solución general depende del valor de \( \Delta \):
         En esta parte, se analizó el efecto de la reducción de la capacitancia. Primero se observo que la resistencia del valor crítico aumentaba en comparación con el capacitor de 470 pF. Consecuentemente, esto aumentó el margen de valores de las resistencias en los cuales el sistema se mantiene como un subamortiguado.\par
         Al mismo tiempo, también se midió un valor de resistencia que causaba un amortiguamiento crítico. Ese valor fue de $3,47 k\Omega$, el cual muestra un error relativo del 46,4\%. Este gran error asociado a la medición se debe a que el valor fue obtenido de manera aproximada, sin un ajuste riguroso.\par 
         
-        \begin{figure}[h]
+        \begin{figure}[h!]
     \centering
     \begin{minipage}{0.49\textwidth}
         \centering
@@ -282,10 +282,10 @@ La solución general depende del valor de \( \Delta \):
 \end{figure}
 
         Por este motivo, se recurrió a la simulación del mismo usando el valor de L. Es importante volver a mencionar que el mismo ya asocia una gran incertidumbre en su cálculo. Al observar las figuras \ref{fig:img1} y \ref{fig:img2}, se puede observar que el valor calculado mediante el osciloscopio, es un valor subamortiguado. Por tal motivo se considera que el valor de 6,47 $k\Omega$ es el valor aproximado que genera un transitorio críticamente amortiguado.\par
-        Por otra parte, al analizar el tiempo de transitorio del sistema, con la resistencia variable configurada en su valor mínimo, se obtuvieron los datos a continuacion. El tiempo de respuesta transitoria obtenido experimentalmente fue de 14,30 $\mu$s, un valor muy lejano al que se consigue con la aproximación teórica de $5\tau$ = 24,15 $\mu$s. \par
+        Por otra parte, al analizar el tiempo de transitorio del sistema, con la resistencia variable configurada en su valor mínimo, se obtuvieron los datos a continuación. El tiempo de respuesta transitoria obtenido experimentalmente fue de 14,30 $\mu$s, un valor muy lejano al que se consigue con la aproximación teórica de $5\tau$ = 24,15 $\mu$s. \par
         
         
-                \begin{figure}[h]
+                \begin{figure}[h!]
     \centering
     \begin{minipage}{0.49\textwidth}
         \centering
@@ -296,18 +296,41 @@ La solución general depende del valor de \( \Delta \):
     \begin{minipage}{0.49\textwidth}
     \centering
  \includegraphics[width=\linewidth]{TAU47PF.png}
-        \caption{Capacitor 47pF, con Rv mínimo. Aquí las dos lineas marcan los valores de 3$\tau$ y 5$\tau$. }
+        \caption{Capacitor 47pF, con Rv mínimo. Aquí la linea marca el valor de 5$\tau$. }
         \label{fig:tausim}
 
     \end{minipage}
 \end{figure}
 
    
-   Al observar laz figuras \ref{fig:taureal} y \ref{fig:tausim}, se puede observar que una de las principales causas de error en este valor es la escala usada en el osciloscopio. A diferencia de la simulación, si uno se basa en lo mostrado por el osciloscopio, uno puede considerar el tiempo medido como una buena aproximación del transitorio; algo que no sucede en la imagen de la simulación. Al mismo tiempo, el error usado para conseguir el tiempo del transitorio en el osciloscopio fue del $\pm$ 5\%. No obstante, el valor de tiempo teórico que coincide un error del $\pm$ 5\%, es 3$\tau$, un valor que coincide con el obtenido experimentalmente, teniendo un error relativo del 1,3\%. \par
-    Por tal motivo se puede concluir que el valor medido del tiempo de respuesta, no es un error en la medición, sino que está ligado al error que posee el osciloscopio. Las tiempos teóricos calculados a partir de $\tau$ no son tiempos exactos, sino que brindan aproximaciones al tiempo de respuesta con mayor o menor precisión. En este caso, la aproximación medida fue de $3\tau$.
-    
-    Finalmente se aproximo la frecuencia de oscilacion del subamortiguado en 0,9836 (unidad?? hay que añadirlo en la otra parte). También se vio un sobrepico de ....
-    
+  Al observar las dos gráficas (observar figuras \ref{fig:taureal} y \ref{fig:tausim}), se puede observar que el gráfico teórico difiere en gran medida con el medido por el osciloscopio. Las dos diferencias más grandes que se observa son: 1) La señal medida por el osciloscopio posee un decaimiento exponencial mucho más rápido que la simulada. 2) La señal simulada posee una frecuencia angular mucho más rápida que la medida por el osciloscopio. \par 
+  Esta gran diferencia se puede explicar por el efecto de histéresis en el inductor. Si bien el núcleo del inductor es de ferrite, un material el cual no cuenta con perdidas a causa de corrientes Eddin, el mismo cuenta con perdidas de histéresis al cambiar la orientación del campo magnético. Esto se debe a que la corriente en este momento no es continua, sino que varia con el tiempo cambiando la dirección del campo magnético. Esto termina afectando la energía del sistema no ideal, causando las diferencias observadas con los valores teóricos.\par
+  Por tal motivo, se pudo concluir que en este caso los cálculos teóricos no se aproximan correctamente a los valores observados en el sistema real. Esto se debe a que las ecuaciones no contemplan el efecto de perdida causado por la histéresis. Es más, este modelo se podría aproximar usando una resistencia en serie o una resistencia en paralelo. Aunque la misma conserva una forma parecida, la misma cuenta con diferencias marcadas en el tiempo de transitorio, por lo que no se consideró pertinente su comparación con los valores experimentales. Todo esto explicaría el error relativo del 68\% entre el tiempo del transitorio teórico y el experimental.\par
+  (explicar sobre pico)\par
+  En última instancia se cortocircuitaron la resistencia de 215 $\Omega$ y la resistencia variable. Al comparar ambos gráficos (observar figuras \ref{fig:CORTREAL} y \ref{fig:CORTSIM}), se puede observar una gran diferencia entre los datos obtenidos teóricamente y los datos empíricos. Mientras que según lo teórico se puede observar lo que es un oscilador casi ideal, en la experiencia de laboratorio se observo un sistema que no oscila indefinidamente. Esto se puede ver en los datos, puesto a que el tiempo de transitorio obtenido en el osciloscopio es de $ t = 11 \mu s$, mientras que el teórico es de $5\tau$ = 6,58 ms. Esto es una diferencia de 3 ordenes de magnitud.\par
+  Esta diferencia vuelve a ser explicada por la perdida de histéresis en el inductor. En el modelo teórico se considera que el único elemento que pierde energía es la resistencia asociada al inductor. No obstante en la realidad, el sistema no solo pierde energía por la resistencia del inductor, sino que también por la histéresis al cambiar la orientación del campo magnético.
+  
+                  \begin{figure}[h!]
+    \centering
+    \begin{minipage}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Resistencias_corto.jpg}
+        \caption{Foto de medición del osciloscopio con las resistencias cortocircuitadas.}
+        \label{fig:CORTREAL}
+    \end{minipage}\hfill
+    \begin{minipage}{0.49\textwidth}
+    \centering
+ \includegraphics[width=\linewidth]{CORTOCIRCUITO.png}
+        \caption{Simulación del sistema con las resistencias cortocircuitadas. }
+        \label{fig:CORTSIM}
+
+    \end{minipage}
+\end{figure}
+
+  
+  
+  
+ 
     
     
     
