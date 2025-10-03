@@ -168,7 +168,7 @@ La solución general depende del valor de \( \Delta \):
     \begin{enumerate}
         \item Primero se armó el circuito en serie (observar figura \ref{fig: circuito_rlc}) usando el capacitor de 470 pF. Luego, se determinó de manera aproximada, observando la salida en el osciloscopio, el valor de la resistencia variable que producía un amortiguamiento crítico.
         \item En esta parte, se ajustó la resistencia Rv a su valor máximo. Poteriormente, se coloco uno de los cursores horizontales del osciloscopio en $ V_{salida}=0 V$, y el otro en $ V_{salida}=3,16 V$ y medimos el $ \Delta t $ entre esos valores, tomandolo como el $\tau$ del sistema. Con este valor aproximado, se midió la salida en el tiempo $ 5\tau$.
-        \item A continuación, se remplazo el capacitor por uno de 47pF, y se repitió la medición de la resistencia variable tal que el amortiguamiento fuera crítico. Luego, se puso Rv en su valor mínimo, y se calculó el tiempo del transitorio. También se midió la frecuencia y el valor de sobrepico, esto el $ \Delta V = V_{max} - V_{excitacion} = V_{max} - 5 V $. Para calcular la frecuencia, obtuvimos un valor aproximado del periodo promediando las distancias horizontales entre los primeros 3 picos.
+        \item A continuación, se remplazo el capacitor por uno de 47pF, y se repitió la medición de la resistencia variable tal que el amortiguamiento fuera crítico. Luego, se puso Rv en su valor mínimo, y se calculó el tiempo del transitorio. También se midió la frecuencia y el valor de sobrepico, esto el $ \Delta V = V_{max} - V_{excitacion} = V_{max} - 5 V $. Para calcular la frecuencia, obtuvimos un valor aproximado del período promediando las distancias horizontales entre los primeros 3 picos.
         \item Finalmente, se cortocircuitaron las resistencias y se analizó el tiempo de respuesta transitoria nuevamente.
         
     \end{enumerate}
@@ -201,7 +201,7 @@ La solución general depende del valor de \( \Delta \):
 
     \subsection{Cálculos}
 
-        \subsubsection{Ecuaciones utilizadas}            
+        \subsubsection*{Ecuaciones utilizadas}            
 
             \textbf{Cálculo del la resistencia variable tal que el amortiguamiento fuera crítico} \par \par
             $ \alpha_{serie} = \omega_0 \Rightarrow \frac{R}{2L} = \frac{1}{\sqrt{LC}}  $
@@ -217,35 +217,49 @@ La solución general depende del valor de \( \Delta \):
             \end{equation}
 
             
-        \subsubsection{Resultados}
+        \subsubsection*{Resultados}
 
             \subsubsection*{Capacitor de C = 470 pF}
-                0) Inductancia L
-                \begin{equation}
+                Inductancia L:
+                \begin{equation*}
                     L=0.526mH
-                \end{equation}
-                1) Resistencia variable tal que el amortiguamiento fuera crítico:
-                \begin{equation}
+                \end{equation*} \par
+                
+                Resistencia variable tal que el amortiguamiento fuera crítico:
+                \begin{equation*}
                     R_{critico} = 1.857 k\Omega
-                \end{equation} \par
-                2) $ \tau $ con $ R_V = R_{V_{max}} = 9980 \Omega $:
-                 \begin{equation}
+            \end{equation*} \par
+                
+                $ \tau $ con $ R_V = R_{V_{max}} = 9980 \Omega $:
+                 \begin{equation*}
                     \tau = 4,74 \mu s 
-                \end{equation}
+                \end{equation*}
 
             \subsubsection*{Capacitor de C = 47 pF}
-                3) Resistencia variable tal que el amortiguamiento fuera crítico:
-                \begin{equation}
+                Resistencia variable tal que el amortiguamiento fuera crítico:
+                \begin{equation*}
                     R_{critico} = 6,47 k\Omega 
-                \end{equation} \par
-                4) Valor de $ \tau $ para $ R_V = R_{V_{min}} $: 
-                \begin{equation}
+                \end{equation*} \par
+                
+                $ \tau $ para $ R_V = R_{V_{min}} $: 
+                \begin{equation*}
                     \tau = 4,83 \mu s 
-                \end{equation} \par
-                6) Valor de $ \tau $ para $ R = R_L $ (resistencias cortocircuitadas): REVISAR
-                \begin{equation}
+                \end{equation*} \par
+                
+                Sobrepico para $ R_V = R_{V_{min}} $:
+                \begin{equation*}
+                    \Delta V = 3,196 V
+                \end{equation*} \par
+
+                Frecuencia para $ R_V = R_{V_{min}} $:
+                \begin{equation*}
+                    f = 0,9836
+                \end{equation*} \par
+
+                $ \tau $ para $ R = R_L $ (resistencias cortocircuitadas):
+                \begin{equation*}
                     \tau =  1,315 ms 
-                \end{equation}
+                \end{equation*}
         
 
 
@@ -286,21 +300,20 @@ La solución general depende del valor de \( \Delta \):
         
         
                 \begin{figure}[h!]
-    \centering
-    \begin{minipage}{0.49\textwidth}
-        \centering
-        \includegraphics[width=\linewidth]{OSI5T.jpg}
-        \caption{Foto de medición de 5tau con la resistencia mínima.}
-        \label{fig:taureal}
-    \end{minipage}\hfill
-    \begin{minipage}{0.49\textwidth}
-    \centering
- \includegraphics[width=\linewidth]{TAU47PF.png}
-        \caption{Capacitor 47pF, con Rv mínimo. Aquí la linea marca el valor de 5$\tau$. }
-        \label{fig:tausim}
-
-    \end{minipage}
-\end{figure}
+                    \centering
+                    \begin{minipage}{0.49\textwidth}
+                        \centering
+                        \includegraphics[width=\linewidth]{OSI5T.jpg}
+                        \caption{Foto de medición de 5tau con la resistencia mínima.}
+                        \label{fig:taureal}
+                    \end{minipage}\hfill
+                    \begin{minipage}{0.49\textwidth}
+                        \centering
+                        \includegraphics[width=\linewidth]{TAU47PF.png}
+                        \caption{Capacitor 47pF, con Rv mínimo. Aquí la linea marca el valor de 5$\tau$. }
+                        \label{fig:tausim}
+                    \end{minipage}
+                \end{figure}
 
    
   Al observar las dos gráficas (observar figuras \ref{fig:taureal} y \ref{fig:tausim}), se puede observar que el gráfico teórico difiere en gran medida con el medido por el osciloscopio. Las dos diferencias más grandes que se observa son: 1) La señal medida por el osciloscopio posee un decaimiento exponencial mucho más rápido que la simulada. 2) La señal simulada posee una frecuencia angular mucho más rápida que la medida por el osciloscopio. \par 
@@ -311,44 +324,20 @@ La solución general depende del valor de \( \Delta \):
   Esta diferencia vuelve a ser explicada por la perdida de histéresis en el inductor. En el modelo teórico se considera que el único elemento que pierde energía es la resistencia asociada al inductor. No obstante en la realidad, el sistema no solo pierde energía por la resistencia del inductor, sino que también por la histéresis al cambiar la orientación del campo magnético.
   
                   \begin{figure}[h!]
-    \centering
-    \begin{minipage}{0.49\textwidth}
-        \centering
-        \includegraphics[width=\linewidth]{Resistencias_corto.jpg}
-        \caption{Foto de medición del osciloscopio con las resistencias cortocircuitadas.}
-        \label{fig:CORTREAL}
-    \end{minipage}\hfill
-    \begin{minipage}{0.49\textwidth}
-    \centering
- \includegraphics[width=\linewidth]{CORTOCIRCUITO.png}
-        \caption{Simulación del sistema con las resistencias cortocircuitadas. }
-        \label{fig:CORTSIM}
-
-    \end{minipage}
-\end{figure}
-
-  
-  
-  
- 
-    
-    
-    
-   
-   
-        
-        
-
-\subsection*{Rita}
-Procedimiento
-- la oracion "luego de esto, se observo la rta del sist en funcion del valor de la resistencia variable' me parece que no aporta.
-
-
-Analisis
-- no me convence la justifiacion de que el tau con C=470pF tiene mucho error por culpa del L. Con ese criterio, todo lo calculado con ese L deberia tener mucho error
-- con C=47pF esta puesto que al reducirse la capacitancia, el valor de R critico aumenta, pero no se justifica por que
-- en la justificacion de por que la resistencia del critico tiene casi 50 \% de error esta puesto que es xq se obtuvo de manera aproxmada, sin un ajuste riguroso. Tendría que esta aclarado como se obtuvo, que es esa "manera aproximada"
-
+                    \centering
+                    \begin{minipage}{0.49\textwidth}
+                        \centering
+                        \includegraphics[width=\linewidth]{Resistencias_corto.jpg}
+                        \caption{Foto de medición del osciloscopio con las resistencias cortocircuitadas.}
+                        \label{fig:CORTREAL}
+                    \end{minipage}\hfill
+                    \begin{minipage}{0.49\textwidth}
+                        \centering
+                        \includegraphics[width=\linewidth]{CORTOCIRCUITO.png}
+                        \caption{Simulación del sistema con las resistencias cortocircuitadas. }
+                        \label{fig:CORTSIM}
+                    \end{minipage}
+                \end{figure}
 
 
 \section{Conclusiones}
