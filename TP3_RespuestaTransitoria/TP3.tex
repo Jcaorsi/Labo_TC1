@@ -71,6 +71,9 @@
  %%%RESUMEN%%%
 {\centering \LARGE \bfseries Resumen \par}
 
+En este trabajo se estudió un circuito que contaba con una resistencia de valor fijo, una resistencia variable, una bobina y un capacitor conectados en serie; todo esto alimentado por un generador de señales que producía una excitación cuadrada. El objetivo de las mediciones fue aplicar lo estudiado sobre la respuesta transitoria ante distintos valores de resistencia, inductancia y capacitancia. \par
+Se pudo observar como, ante una menor capacitancia, la resistencia variable debía tomar mayores valores para que el amortiguamiento fuera crítico. El tiempo de respuesta transitoria difirió del esperado debido a la histiéresis del circuito.
+
 \newpage
 
 %%%INDICE%%%
@@ -196,7 +199,7 @@ La solución general depende del valor de \( \Delta \):
                 \item Resistencia variable tal que el amortiguamiento fue crítico: $ R_{critico} = 3,47 k\Omega $ %item 3
                 \item Tiempo en que la salida llegó a 3,175 V con $ R_V $ en su valor crítico: $ t = 2,20 \mu s$ % item 3
                 \item Tiempo en que la salida llegó a 5,24 V con $ R_V $ en su valor mínimo: $ t = 14,30 \mu s$ % item 4
-                \item Tiempo en que la salida llegó a 4,982 V ($ 5V \pm 0,05V $) con las resistencias cortocircuitadas: $ t = 11 \mu s$ % item 5
+                \item Tiempo en que la salida llegó a 4,982 V ($ 5V \pm 0,25V $) con las resistencias cortocircuitadas: $ t = 11 \mu s$ % item 5
             \end{itemize}
 
     \subsection{Cálculos}
@@ -253,7 +256,7 @@ La solución general depende del valor de \( \Delta \):
 
                 Frecuencia para $ R_V = R_{V_{min}} $:
                 \begin{equation*}
-                    f = 0,9836
+                    f = 0,9836 Hz
                 \end{equation*} \par
 
                 $ \tau $ para $ R = R_L $ (resistencias cortocircuitadas):
@@ -319,11 +322,10 @@ La solución general depende del valor de \( \Delta \):
   Al observar las dos gráficas (observar figuras \ref{fig:taureal} y \ref{fig:tausim}), se puede observar que el gráfico teórico difiere en gran medida con el medido por el osciloscopio. Las dos diferencias más grandes que se observa son: 1) La señal medida por el osciloscopio posee un decaimiento exponencial mucho más rápido que la simulada. 2) La señal simulada posee una frecuencia angular mucho más rápida que la medida por el osciloscopio. \par 
   Esta gran diferencia se puede explicar por el efecto de histéresis en el inductor. Si bien el núcleo del inductor es de ferrite, un material el cual no cuenta con perdidas a causa de corrientes Eddin, el mismo cuenta con perdidas de histéresis al cambiar la orientación del campo magnético. Esto se debe a que la corriente en este momento no es continua, sino que varia con el tiempo cambiando la dirección del campo magnético. Esto termina afectando la energía del sistema no ideal, causando las diferencias observadas con los valores teóricos.\par
   Por tal motivo, se pudo concluir que en este caso los cálculos teóricos no se aproximan correctamente a los valores observados en el sistema real. Esto se debe a que las ecuaciones no contemplan el efecto de perdida causado por la histéresis. Es más, este modelo se podría aproximar usando una resistencia en serie o una resistencia en paralelo. Aunque la misma conserva una forma parecida, la misma cuenta con diferencias marcadas en el tiempo de transitorio, por lo que no se consideró pertinente su comparación con los valores experimentales. Todo esto explicaría el error relativo del 68\% entre el tiempo del transitorio teórico y el experimental.\par
-  (explicar sobre pico)\par
-  En última instancia se cortocircuitaron la resistencia de 215 $\Omega$ y la resistencia variable. Al comparar ambos gráficos (observar figuras \ref{fig:CORTREAL} y \ref{fig:CORTSIM}), se puede observar una gran diferencia entre los datos obtenidos teóricamente y los datos empíricos. Mientras que según lo teórico se puede observar lo que es un oscilador casi ideal, en la experiencia de laboratorio se observo un sistema que no oscila indefinidamente. Esto se puede ver en los datos, puesto a que el tiempo de transitorio obtenido en el osciloscopio es de $ t = 11 \mu s$, mientras que el teórico es de $5\tau$ = 6,58 ms. Esto es una diferencia de 3 ordenes de magnitud.\par
-  Esta diferencia vuelve a ser explicada por la perdida de histéresis en el inductor. En el modelo teórico se considera que el único elemento que pierde energía es la resistencia asociada al inductor. No obstante en la realidad, el sistema no solo pierde energía por la resistencia del inductor, sino que también por la histéresis al cambiar la orientación del campo magnético.
+  Al analizar la frecuencia, se registró f = 0,9836 Hz\par
   
-                  \begin{figure}[h!]
+  
+                    \begin{figure}[H]
                     \centering
                     \begin{minipage}{0.49\textwidth}
                         \centering
@@ -338,8 +340,21 @@ La solución general depende del valor de \( \Delta \):
                         \label{fig:CORTSIM}
                     \end{minipage}
                 \end{figure}
+                
+  En última instancia se cortocircuitaron la resistencia de 215 $\Omega$ y la resistencia variable. Al comparar ambos gráficos (observar figuras \ref{fig:CORTREAL} y \ref{fig:CORTSIM}), se puede observar una gran diferencia entre los datos obtenidos teóricamente y los datos empíricos. Mientras que según lo teórico se puede observar lo que es un oscilador casi ideal, en la experiencia de laboratorio se observo un sistema que no oscila indefinidamente. Esto se puede ver en los datos, puesto a que el tiempo de transitorio obtenido en el osciloscopio es de $ t = 11 \mu s$, mientras que el teórico es de $5\tau$ = 6,58 ms. Esto es una diferencia de 3 ordenes de magnitud.\par
+  Esta diferencia vuelve a ser explicada por la perdida de histéresis en el inductor. En el modelo teórico se considera que el único elemento que pierde energía es la resistencia asociada al inductor. No obstante en la realidad, el sistema no solo pierde energía por la resistencia del inductor, sino que también por la histéresis al cambiar la orientación del campo magnético.
+  
+
 
 
 \section{Conclusiones}
+	A lo largo del informe se pudo observar las diferentes respuestas del sistema al cambiar los valores de sus componentes. En este caso se pudo observar que al aumentar la capacitancia, se reduce el valor de la resistencia que causa un amortiguamiento crítico. Algo predicho por las ecuaciones mencionadas en el marco teórico.\par
+	Aun así, es importante mencionar que al trabajar con los datos del capacitor de 47 pF encontramos muchas diferencias con lo esperado según la teoría. Si bien se pudo ver un margen de error en los datos del capacitor de 470 pF, el error se hizo mucho más notable en el segundo capacitor.\par
+	Algunas de las causas que se pueden asociar a ello son: 1) La constante del inductor fue calculada en base a datos del primer capacitor. 2) La perdida de energía por parte de la histéresis causó una gran error en las mediciones frente a los valores teóricos. 3) Cargas parasitarias introducidas por los elementos de medición.\par
+	En particular, en este trabajo se hace hincapié en que la segunda causa afectó mucho más a las mediciones. En el régimen subamortiguado la energía se disipa gradualmente a lo largo de varias oscilaciones, mientras que en el sobreamortiguado se disipa de manera monótona sin oscilaciones. Por tal motivo, al sumar factores que favorecen la disipación de energía, su respuesta se ve afectada en mayor medida que en los sistemas sobreamortiguados. \par
+	 Esto se aprecia en las figuras \ref{fig:CORTREAL} y \ref{fig:CORTSIM}, al comparar el caso de las resistencias cortocircuitadas. En dicho caso, según la teoría, el sistema debería seguir un comportamiento de un oscilador ideal al no poseer una resistencia R, la cual disipe energía. No obstante, en la practica hay varios factores que generan perdidas de energía. Algunos de ellos son la resistencia asociada al inductor y la disipación por histéresis. Por ende, el sistema no cumplió con lo predicho en la teoría.\par
+	 Por último, al trabajar con un valor mucho más pequeño de capacitancia y resistencias, el sistema se volvió mucho más sensible a las cargas parasitarias causadas por el generador de ondas y el osciloscopio.\par
+	Se concluye que las ecuaciones teóricas presentan una buena correlación con los datos analizados, ya que permiten predecir la respuesta del sistema; sin embargo, mantienen un margen de incertidumbre al calcular valores aproximados, dado que no contemplan los efectos parasitarios presentes en el sistema.	
+	
 
 \end{document}
