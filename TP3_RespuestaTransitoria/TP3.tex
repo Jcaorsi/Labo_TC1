@@ -71,8 +71,12 @@
  %%%RESUMEN%%%
 {\centering \LARGE \bfseries Resumen \par}
 
-En este trabajo se estudió un circuito que contaba con una resistencia de valor fijo, una resistencia variable, una bobina y un capacitor conectados en serie; todo esto alimentado por un generador de señales que producía una excitación cuadrada. El objetivo de las mediciones fue aplicar lo estudiado sobre la respuesta transitoria ante distintos valores de resistencia, inductancia y capacitancia. \par
-Se pudo observar como, ante una menor capacitancia, la resistencia variable debía tomar mayores valores para que el amortiguamiento fuera crítico. El tiempo de respuesta transitoria difirió del esperado debido a la histiéresis del circuito.
+En este trabajo se estudió un circuito que contaba con una resistencia de valor fijo, una resistencia variable, una bobina y un 
+capacitor conectados en serie; todo esto alimentado por un generador de señales que producía una excitación cuadrada. El objetivo 
+de las mediciones fue aplicar lo estudiado sobre la respuesta transitoria ante distintos valores de resistencia, inductancia y
+ capacitancia. \par
+Se pudo observar como, ante una menor capacitancia, la resistencia variable debía tomar mayores valores para que el amortiguamiento 
+fuera crítico. El tiempo de respuesta transitoria difirió del esperado debido a la histiéresis del inductor.
 
 \newpage
 
@@ -103,20 +107,17 @@ Se pudo observar como, ante una menor capacitancia, la resistencia variable deb�
   \item Multímetro UNI-T,  Standar Digital multimeter, modelo: UT39C.
 \end{itemize}
 
-    \subsection{Marco teórico}
+\subsection{Marco teórico}
 
-        Un circuito RLC serie está compuesto por una resistencia (R),
-         una 
-        inductancia (L) y una capacitancia (C) conectadas en serie.
-        Dependiendo de la resistencia del circuito, la respuesta transitoria
-         puede ser subamortiguada, sobreamortiguada o críticamente 
-         amortiguada. La ecuación diferencial que describe la 
-         respuesta del circuito RLC serie es:
-        \begin{equation}
-            L\frac{d^2i(t)}{dt^2} + R\frac{di(t)}{dt} + \frac{1}{C}i(t) = V_{in}(t)
-        \end{equation}
-
-        y su solución general es la suma de la respuesta natural y la respuesta forzada:
+    Un circuito RLC serie está compuesto por una resistencia (R), un inductor de inductancia (L) y un capacitor de
+    capacitancia (C) conectadas en serie. Dependiendo de estos tres valores, la respuesta transitoria
+    puede ser subamortiguada, sobreamortiguada o críticamente 
+    amortiguada. La ecuación diferencial que describe la 
+    respuesta del circuito RLC serie es:
+    \begin{equation}
+        L\frac{d^2i(t)}{dt^2} + R\frac{di(t)}{dt} + \frac{1}{C}i(t) = V_{in}(t)
+    \end{equation}
+    y su solución general es la suma de la respuesta natural y la respuesta forzada:
 
 Para la respuesta natural (\( V_{\text{in}}(t) = 0 \)), se define:
 
@@ -148,6 +149,12 @@ La solución general depende del valor de \( \Delta \):
   donde \( \omega_d = \sqrt{\omega_0^2 - \alpha^2} \).
 \end{itemize}
 
+Otro valor que fue estudiado a lo largo del tp ´
+
+Un valor muy útil de referencia es el tiempo $\tau$. En particual al evaluar un sistema de primer orden con t=$\tau$, la exponencial llega al valor $e^{-1}$, esto lleva al valor de 63\% del valor inicial. No obstante, en el caso del sobreamortiguado, al tener dos exponenciales, se suele aproximar este valor al tomar solo el valor de la exponencial que decrece menos rápido y despreciando el otro valor.
+
+
+
 %%%Desarrollo%%%
 \section{Desarrollo}
     \subsection{Procedimiento}
@@ -170,7 +177,7 @@ La solución general depende del valor de \( \Delta \):
 
     \begin{enumerate}
         \item Primero se armó el circuito en serie (observar figura \ref{fig: circuito_rlc}) usando el capacitor de 470 pF. Luego, se determinó de manera aproximada, observando la salida en el osciloscopio, el valor de la resistencia variable que producía un amortiguamiento crítico.
-        \item En esta parte, se ajustó la resistencia Rv a su valor máximo. Poteriormente, se coloco uno de los cursores horizontales del osciloscopio en $ V_{salida}=0 V$, y el otro en $ V_{salida}=3,16 V$ y medimos el $ \Delta t $ entre esos valores, tomandolo como el $\tau$ del sistema. Con este valor aproximado, se midió la salida en el tiempo $ 5\tau$.
+        \item En esta parte, se ajustó la resistencia Rv a su valor máximo. Poteriormente, se coloco uno de los cursores horizontales del osciloscopio en $ V_{salida}=0$ V, y el otro en $ V_{salida}=3,16$ V y medimos el $ \Delta t $ entre esos valores, tomandolo como el $\tau$ del sistema. Se tomo este valor de tension ya que es el que coincide con $V_{medido} = V_{fuente}(1-e^{-1})$. Con este valor aproximado, se midió la salida en el tiempo $ 5\tau$.
         \item A continuación, se remplazo el capacitor por uno de 47pF, y se repitió la medición de la resistencia variable tal que el amortiguamiento fuera crítico. Luego, se puso Rv en su valor mínimo, y se calculó el tiempo del transitorio. También se midió la frecuencia y el valor de sobrepico, esto el $ \Delta V = V_{max} - V_{excitacion} = V_{max} - 5 V $. Para calcular la frecuencia, obtuvimos un valor aproximado del período promediando las distancias horizontales entre los primeros 3 picos.
         \item Finalmente, se cortocircuitaron las resistencias y se analizó el tiempo de respuesta transitoria nuevamente.
         
@@ -182,7 +189,6 @@ La solución general depende del valor de \( \Delta \):
             \item $ R_{V_{max}} = 9980 \Omega $
             \item $ R_{V_{min}} = 2 \Omega $
             \item $ R_L = 0,8 \Omega $
-            \item $ L \approx 1 mH $
         \end{itemize}
         
         \par
@@ -223,17 +229,20 @@ La solución general depende del valor de \( \Delta \):
         \subsubsection*{Resultados}
 
             \subsubsection*{Capacitor de C = 470 pF}
-                Inductancia L:
-                \begin{equation*}
-                    L=0.526mH
-                \end{equation*} \par
                 
                 Resistencia variable tal que el amortiguamiento fuera crítico:
                 \begin{equation*}
                     R_{critico} = 1.857 k\Omega
-            \end{equation*} \par
+                \end{equation*} \par
+
+                Inductancia L (a partir de $R_{critico}$):
+
+                \begin{equation*}
+                    L=0.526mH
+                \end{equation*} \par
+
                 
-                $ \tau $ con $ R_V = R_{V_{max}} = 9980 \Omega $:
+                Valor $ \tau $ con $ R_V = R_{V_{max}} = 9980 \Omega $:
                  \begin{equation*}
                     \tau = 4,74 \mu s 
                 \end{equation*}
@@ -269,12 +278,12 @@ La solución general depende del valor de \( \Delta \):
     \subsection{Análisis}
     
     	Luego de recolectar los datos, se pudieron observar los siguientes comportamientos. \par
-	Es importante mencionar que en este trabajo, no se contó con un valor de referencia de la constante del inductor; esta debió ser aproximada mediante el valor de la resistencia del amortiguamiento crítico obtenida con el capacitor de 470 pF. Consecuentemente, los datos teóricos también pueden contener errores asociados.
+	Es importante mencionar que en este trabajo, no se contó con un valor de referencia de la inductancia; esta debió ser aproximada mediante el valor de la resistencia del amortiguamiento crítico obtenida con el capacitor de 470 pF. Consecuentemente, los datos teóricos también pueden contener errores asociados.
 	
         \subsection*{Capacitor 470 pF}
         	En esta parte, se observó lo siguiente: al aproximar el valor de la resistencia del amortiguamiento crítico, se llegó a $1,9 k\Omega$, un valor el cual posee un error relativo del 2,32 \% con respecto al valor teórico. Esto indica una buena aproximación al valor real que causa que el sistema sea críticamente amortiguado. \par
 	Sumado a esto, se observó que la respuesta se volvía sobreamortiguada al aumentar la resistencia por encima de $1,9 k\Omega$ y que la misma se volvía subamortiguada al disminuir la misma por debajo de ese valor. Esto concuerda con las ecuaciones descriptas en el apartado teórico, puesto a que al aumentar R, $\alpha$ aumentaba. \par
-	Otras de las áreas analizadas fue la del valor de $\tau$. Esta se aproximó despejando el tiempo el cual llevaba a una respuesta de 3,175 $V$. Se observó que el mismo fue de $5,75 \mu F$, un valor el cual posee un error relativo del 21,3\%. Esto muestra un error alto, pero el mismo puede estar asociado en gran medida a la incertidumbre en el valor de la constante L. Al mismo tiempo, dicho $\tau$ teórico se consiguió mediante una aproximación, usando la raíz de la ecuación característica más pequeña y descartando la otra.\par
+	Otras de las áreas analizadas fue la del valor de $\tau$. Esta se aproximó despejando el tiempo el cual llevaba a una respuesta de 3,175 $V$. Se observó que el mismo fue de $5,75 \mu F$, un valor el cual posee un error relativo del 21,3\%. Esto muestra un error alto, pero el mismo puede estar asociado en gran medida a la incertidumbre en el valor de la inductancia. Al mismo tiempo, dicho $\tau$ teórico se consiguió mediante una aproximación, usando la raíz de la ecuación característica más pequeña y descartando la otra.\par
 	Finalmente, se observó que el transitorio en $5\tau$ el valor de la respuesta estaba entre los valores de 4,75 V y 5,25 V. Esto demuestra que la aproximación de $5\tau$ como tiempo de transitorio, es efectiva.
 	
 	
@@ -320,7 +329,7 @@ La solución general depende del valor de \( \Delta \):
 
    
   Al observar las dos gráficas (observar figuras \ref{fig:taureal} y \ref{fig:tausim}), se puede observar que el gráfico teórico difiere en gran medida con el medido por el osciloscopio. Las dos diferencias más grandes que se observa son: 1) La señal medida por el osciloscopio posee un decaimiento exponencial mucho más rápido que la simulada. 2) La señal simulada posee una frecuencia angular mucho más rápida que la medida por el osciloscopio. \par 
-  Esta gran diferencia se puede explicar por el efecto de histéresis en el inductor. Si bien el núcleo del inductor es de ferrite, un material el cual no cuenta con perdidas a causa de corrientes Eddin, el mismo cuenta con perdidas de histéresis al cambiar la orientación del campo magnético. Esto se debe a que la corriente en este momento no es continua, sino que varia con el tiempo cambiando la dirección del campo magnético. Esto termina afectando la energía del sistema no ideal, causando las diferencias observadas con los valores teóricos.\par
+  Esta diferencia podría deberse al efecto de histéresis en el inductor. Si bien el núcleo del inductor es de ferrite, un material el cual no cuenta con perdidas a causa de corrientes eddy, el mismo cuenta con perdidas de histéresis al cambiar la orientación del campo magnético. Esto se debe a que la corriente en este momento no es continua, sino que varia con el tiempo cambiando la dirección del campo magnético. Esto termina afectando la energía del sistema no ideal, causando las diferencias observadas con los valores teóricos.\par
   Por tal motivo, se pudo concluir que en este caso los cálculos teóricos no se aproximan correctamente a los valores observados en el sistema real. Esto se debe a que las ecuaciones no contemplan el efecto de perdida causado por la histéresis. Es más, este modelo se podría aproximar usando una resistencia en serie o una resistencia en paralelo. Aunque la misma conserva una forma parecida, la misma cuenta con diferencias marcadas en el tiempo de transitorio, por lo que no se consideró pertinente su comparación con los valores experimentales. Todo esto explicaría el error relativo del 68\% entre el tiempo del transitorio teórico y el experimental.\par
   Al analizar la frecuencia, se registró f = 102,45 kHz. En cambio, en la simulación se obtuvo una frecuencia de 1012,4 kHz, una frecuencia mucho más grande. También, el valor de sobrepico obtenido en la experiencia fue de 3,196 V, mientras que en el simulado fue de 4,745 V. Aquí se ve un error relativo del 32,64\%, el cual se puede atribuir a las perdidas de energía ocasionadas en el núcleo del inductor.
   
