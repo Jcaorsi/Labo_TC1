@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.10)  16 OCT 2025 14:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.10)  16 OCT 2025 15:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -647,7 +647,7 @@ LaTeX Info: Redefining \% on input line 1.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.190         \item P
+l.192         \item P
                      rimero se armó el circuito en serie (observar figura \...]
 
 [5]
@@ -656,64 +656,62 @@ l.190         \item P
 <imagenes/CRIT2.png, id=110, 548.0475pt x 329.23pt>
 File: imagenes/CRIT2.png Graphic file (type png)
 <use imagenes/CRIT2.png>
-Package pdftex.def Info: imagenes/CRIT2.png  used on input line 325.
+Package pdftex.def Info: imagenes/CRIT2.png  used on input line 331.
 (pdftex.def)             Requested size: 217.35588pt x 130.57442pt.
 <imagenes/SUBAMORT1.png, id=111, 545.03625pt x 329.23pt>
 File: imagenes/SUBAMORT1.png Graphic file (type png)
 <use imagenes/SUBAMORT1.png>
-Package pdftex.def Info: imagenes/SUBAMORT1.png  used on input line 331.
+Package pdftex.def Info: imagenes/SUBAMORT1.png  used on input line 337.
 (pdftex.def)             Requested size: 217.35588pt x 131.29279pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<imagenes/OSI5T.jpg, id=114, 1606.0pt x 1204.5pt>
-File: imagenes/OSI5T.jpg Graphic file (type jpg)
-<use imagenes/OSI5T.jpg>
-Package pdftex.def Info: imagenes/OSI5T.jpg  used on input line 345.
-(pdftex.def)             Requested size: 217.35588pt x 163.00482pt.
-<imagenes/TAU47PF.png, id=115, 548.0475pt x 326.21875pt>
-File: imagenes/TAU47PF.png Graphic file (type png)
-<use imagenes/TAU47PF.png>
-Package pdftex.def Info: imagenes/TAU47PF.png  used on input line 351.
-(pdftex.def)             Requested size: 217.35588pt x 129.38013pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
 [7]
+<imagenes/OSI5T.jpg, id=120, 1606.0pt x 1204.5pt>
+File: imagenes/OSI5T.jpg Graphic file (type jpg)
+<use imagenes/OSI5T.jpg>
+Package pdftex.def Info: imagenes/OSI5T.jpg  used on input line 351.
+(pdftex.def)             Requested size: 217.35588pt x 163.00482pt.
+<imagenes/TAU47PF.png, id=121, 548.0475pt x 326.21875pt>
+File: imagenes/TAU47PF.png Graphic file (type png)
+<use imagenes/TAU47PF.png>
+Package pdftex.def Info: imagenes/TAU47PF.png  used on input line 357.
+(pdftex.def)             Requested size: 217.35588pt x 129.38013pt.
+
 
 [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.360 ...ansitorio teórico y el experimental.\par
+l.365 ...observadas con los valores teóricos.\par
                                                   
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.360 ...ansitorio teórico y el experimental.\par
+l.365 ...observadas con los valores teóricos.\par
                                                   
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.360 ...ansitorio teórico y el experimental.\par
+l.365 ...observadas con los valores teóricos.\par
                                                   
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.360 ...ansitorio teórico y el experimental.\par
+l.365 ...observadas con los valores teóricos.\par
                                                    <./imagenes/CRIT2.png> <./imagenes/SUBAMORT1.png> <./imagenes/OSI5T.jpg> <./imagenes/TAU47PF.png>]
 <imagenes/Resistencias_corto.jpg, id=133, 1606.0pt x 1205.50375pt>
 File: imagenes/Resistencias_corto.jpg Graphic file (type jpg)
 <use imagenes/Resistencias_corto.jpg>
-Package pdftex.def Info: imagenes/Resistencias_corto.jpg  used on input line 368.
+Package pdftex.def Info: imagenes/Resistencias_corto.jpg  used on input line 374.
 (pdftex.def)             Requested size: 217.35588pt x 163.14066pt.
 <imagenes/CORTOCIRCUITO.png, id=134, 549.05125pt x 327.2225pt>
 File: imagenes/CORTOCIRCUITO.png Graphic file (type png)
 <use imagenes/CORTOCIRCUITO.png>
-Package pdftex.def Info: imagenes/CORTOCIRCUITO.png  used on input line 374.
+Package pdftex.def Info: imagenes/CORTOCIRCUITO.png  used on input line 380.
 (pdftex.def)             Requested size: 217.35588pt x 129.53856pt.
 
 
@@ -721,12 +719,12 @@ Package pdftex.def Info: imagenes/CORTOCIRCUITO.png  used on input line 374.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.387 ...nes mencionadas en el marco teórico.\par
+l.393 ...nes mencionadas en el marco teórico.\par
                                                   
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.387 ...nes mencionadas en el marco teórico.\par
+l.393 ...nes mencionadas en el marco teórico.\par
                                                    <./imagenes/Resistencias_corto.jpg> <./imagenes/CORTOCIRCUITO.png>]
 
 [10] (TP3.aux
@@ -741,15 +739,15 @@ Package rerunfilecheck Info: File `TP3.out' has not changed.
 (rerunfilecheck)             Checksum: D12441BF834301B5D8852388B808A752;976.
  ) 
 Here is how much of TeX's memory you used:
- 41487 strings out of 473522
- 984855 string characters out of 5714125
- 1628198 words of memory out of 5000000
- 64265 multiletter control sequences out of 15000+600000
+ 41491 strings out of 473522
+ 984915 string characters out of 5714125
+ 1629198 words of memory out of 5000000
+ 64269 multiletter control sequences out of 15000+600000
  563911 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,105p,830b,1035s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\caorsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1440.pk> <C:\Users\caorsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx2074.pk><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on TP3.pdf (11 pages, 1141058 bytes).
+Output written on TP3.pdf (11 pages, 1141378 bytes).
 PDF statistics:
  220 PDF objects out of 1000 (max. 8388607)
  38 named destinations out of 1000 (max. 500000)

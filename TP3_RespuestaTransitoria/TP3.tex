@@ -172,13 +172,15 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
 
 \begin{figure}[H]
     \centering
-    \begin{tikzpicture}
-        \draw (15.75, -14.5) to[american voltage source, l={$Vs$}] (15.75, -17.75);
-        \draw (15.75, -14.5) to[american resistor, l={$Rf$}] (19.5, -14.5);
-        \draw (19.5, -14.5) to[variable american resistor, l={$Rv$}] (22.25, -14.5);
-        \draw (22.25, -14.5) to[cute inductor, l={$L$}] (22.25, -17.75);
-        \draw (22.25, -17.75) to[capacitor, l={$C$}] (15.75, -17.75);
-    \end{tikzpicture}
+   \begin{tikzpicture}
+	% Paths, nodes and wires:
+	\draw (15.75, -14.5) to[american voltage source, l={$V_{fuente}$}, label distance=0.1cm] (15.75, -17.75);
+	\draw (15.75, -14.5) to[american resistor, l={$R_{resistor}$}] (19.5, -14.5);
+	\draw (19.5, -14.5) to[variable american resistor, l={$R_{V}$}] (22.25, -14.5);
+	\draw (22.25, -14.5) to[cute inductor, l={$L$}] (22.25, -17.75);
+	\draw (22.25, -17.75) to[capacitor, l={$C$}] (15.75, -17.75);
+	\node[shape=rectangle, minimum width=2.75cm, minimum height=0.5cm] at (19.25, -17){} node[anchor=north, align=center, text width=2.397cm, inner sep=5pt] at (19.25, -16.75){-  $Vs_{salida}$  +};
+\end{tikzpicture}
     \caption{Circuito analizado}
     \label{fig: circuito_rlc}
 \end{figure}
@@ -308,10 +310,14 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
      debajo de ese valor. Esto concuerda con las ecuaciones descriptas en el apartado teórico, puesto 
      a que al aumentar R, $\alpha$ aumentaba. \par
 	Otras de las áreas analizadas fue la del valor de $\tau$. Esta se aproximó despejando el tiempo 
-    el cual llevaba a una respuesta de 3,16 $V$. Se observó que el mismo fue de $5,75 \mu s$, un valor el cual posee un error relativo del 21,3\%, con respecto al valor teórico $4,76 \mu s$. Esto muestra un error alto, pero el mismo puede estar asociado en gran medida a la incertidumbre en el valor de la inductancia. Al mismo tiempo, dicho $\tau$ teórico se consiguió mediante una aproximación, usando la raíz de la ecuación característica más pequeña y descartando la otra.\par
+    el cual llevaba a una respuesta de 3,16 $V$. Se observó que el mismo fue de $5,75 \mu s$, un valor
+     el cual posee un error relativo del 21,3\%, con respecto al valor teórico $4,76 \mu s$. Dicho $\tau$
+      teórico se consiguió mediante una aproximación, usando la raíz de la ecuación característica más pequeña 
+      y descartando la otra. Es probable que el error que vemos se deba a la disipación de energía en el núcleo del inductor como también a corrientes parásitas, pero no lo podemos asegurar.\par
 	Finalmente, se observó que el transitorio en $5\tau$ el valor de la respuesta estaba entre los
      valores de 4,75 V y 5,25 V. Esto demuestra que la aproximación de $5\tau$ como tiempo de 
-     transitorio, es efectiva.
+     transitorio, es efectiva. Cabe aclarar que se elige el valor de $V_{salida}$ igual a $V_s \pm 5\%$ pues 
+     consideramos que a partir de ese punto el sistema ya se encuentra en estado estacionario y es más facil de apreciar en un sistema subamortiguado.  \par CHEQUEAR ESTO ULTIMO 
 	
 	
         \subsection*{Capacitor 47 pF}
