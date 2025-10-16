@@ -83,7 +83,6 @@ fuera crítico. El tiempo de respuesta transitoria difirió del esperado debido 
 
 %%%INDICE%%%
 \tableofcontents %esto sirve para crear el índice
-
 \newpage
 
 %%%Introduccion%%%
@@ -150,8 +149,8 @@ La solución general depende del valor de \( \Delta \):
   donde \( \omega_d = \sqrt{\omega_0^2 - \alpha^2} \).
 \end{itemize}
 
-\par Otro valor estudiado a lo largo del tp fue el tiempo de respuesta transitoria, el cual se define como 5$\tau$ en sistemas de
-primer orden. En una de las configuraciones se observó que la respuesta fue sobreamortiguada con coeficientes de módulos muy dispares,
+\par Otro valor estudiado a lo largo del tp fue el tiempo de respuesta transitoria, el cual se define como el tiempo que tarda el sistema en estabilizarse. La constante $\tau$ describe el tiempo en el que el sistema tarda en llegar 63,2\% del cambio total del sistema. Al evaluar el tiempo 5$\tau$ en el sistema, se puede observar que el sistema alcanza un 99,3\% del cambio total del sistema. Por tal motivo, en un sistema de primer orden puede considerarse, a fines prácticos, que el tiempo de transitorio se aproxima adecuadamente utilizando 5$\tau$. Pese a ello, al analizar un sistema de segundo orden, uno debe tener más cuidado al usar esta aproximación, ya que no existe una definicion de $\tau$, sino que algunas aproximaciones del mismo.\par
+En una de las configuraciones se observó que la respuesta fue sobreamortiguada con coeficientes de módulos muy dispares,
 es decir con una diferencia de orden mayor a uno, notándose en que uno de los términos de la respuesta pesó o influyó mucho más 
 que el otro (puesto que decrece más lento); es por esto que se consideró que, en ese caso, se podía aproximar el sistema a uno de 
 primer orden, y buscamos el $\tau$ acorde a esto. Así, tras un desarrollo de la ecuación diferencial obtenida, se llegó a que
@@ -164,7 +163,7 @@ donde s es la solución predominante de la EDO. Para buscar $\tau$, buscamos t t
 \end{equation*}
 Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera que $V_c \approx V_s$ en $t=5\tau$. Para $V_s=5 V$, $V_c(t) = V_s (1-e^{-1}) = 3,16 V$ \par
 
-\par \par Luego, con el fin de facilitar la comparación de los tiempos de respuesta para las otras configuraciones, se tomó que el tiempo de respuesta era igual a $5\tau$ aun cuando no se podía realizar la aproximación a primer orden. En estos casos, se tomó como tiempo de respuesta $5\tau$ el instante en que la salida era igual a $V_s \pm 5\% $, y a partir de eso se despejó $\tau$.
+\par \par Luego, con el fin de facilitar la comparación de los tiempos de respuesta para las otras configuraciones, se tomó que el tiempo de respuesta era igual a $5\tau$ aun cuando no se podía realizar la aproximación a primer orden. En estos casos, se tomó como tiempo de respuesta $5\tau$ el instante en que la salida era igual a $V_s \pm 5\% $, y a partir de eso se despejó $\tau$. Sumado a esto, para poder aproximar un valor teórico de $\tau$, se tomó $\tau = \frac{1}{\alpha}$.
 
 
 \section{Desarrollo}
@@ -179,9 +178,9 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
 	\draw (19.5, -14.5) to[variable american resistor, l={$R_{V}$}] (22.25, -14.5);
 	\draw (22.25, -14.5) to[cute inductor, l={$L$}] (22.25, -17.75);
 	\draw (22.25, -17.75) to[capacitor, l={$C$}] (15.75, -17.75);
-	\node[shape=rectangle, minimum width=2.75cm, minimum height=0.5cm] at (19.25, -17){} node[anchor=north, align=center, text width=2.397cm, inner sep=5pt] at (19.25, -16.75){-  $Vs_{salida}$  +};
+	\node[shape=rectangle, minimum width=2.75cm, minimum height=0.5cm] at (19.25, -17){} node[anchor=north, align=center, text width=2.397cm, inner sep=5pt] at (19.25, -16.75){-  $V_{salida}$  +};
 \end{tikzpicture}
-    \caption{Circuito analizado}
+    \caption{Circuito analizado. $V_{salida}$ indica el conexionado del osciloscopio}
     \label{fig: circuito_rlc}
 \end{figure}
 
@@ -298,14 +297,7 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
      esta debió ser aproximada mediante el valor de la resistencia del amortiguamiento crítico obtenida con el capacitor de 470 pF. Consecuentemente, los datos teóricos también pueden contener errores asociados.
 	
         \subsection*{Capacitor 470 pF}
-        BORRO LO QUE SIGUE
-        	En esta parte, se observó lo siguiente: al aproximar el valor de la resistencia del 
-            amortiguamiento crítico, se llegó a $1,9 k\Omega$, un valor el cual posee un error 
-            relativo del 2,32 \% 
-            con respecto al valor teórico. Esto indica una buena aproximación al valor real que
-             causa que el sistema sea críticamente amortiguado. \par
-        HASTA ACÁ BORRO \par
-	Se observó que la respuesta se volvía sobreamortiguada al aumentar la resistencia
+    	Se observó que la respuesta se volvía sobreamortiguada al aumentar la resistencia
      por encima de $1,9 k\Omega$ y que la misma se volvía subamortiguada al disminuir la misma por 
      debajo de ese valor. Esto concuerda con las ecuaciones descriptas en el apartado teórico, puesto 
      a que al aumentar R, $\alpha$ aumentaba. \par
@@ -329,7 +321,7 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=\linewidth]{CRIT2.png}
-        \caption{Capacitor 47pF, con Rv = 6,47 $k\Omega$}
+        \caption{Capacitor 47pF, con Rv = 6,58 $k\Omega$}
         \label{fig:img1}
     \end{minipage}\hfill
     \begin{minipage}{0.49\textwidth}
@@ -341,7 +333,7 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
 \end{figure}
 
         Por este motivo, se recurrió a la simulación del mismo usando el valor de L. Es importante volver a mencionar que el mismo ya asocia una gran incertidumbre en su cálculo. Al observar las figuras \ref{fig:img1} y \ref{fig:img2}, se puede observar que el valor calculado mediante el osciloscopio, es un valor subamortiguado. \par
-        Por otra parte, al analizar el tiempo de transitorio del sistema, con la resistencia variable configurada en su valor mínimo, se obtuvieron los datos a continuación. El tiempo de respuesta transitoria obtenido experimentalmente fue de 14,30 $\mu$s, un valor muy lejano al que se consigue con la aproximación teórica de $5\tau$ = 24,15 $\mu$s. \par
+        Por otra parte, al analizar el tiempo de transitorio del sistema, con la resistencia variable configurada en su valor mínimo, se obtuvieron los datos a continuación. El tiempo de respuesta transitoria obtenido experimentalmente (como se explicó en la sección 2.1) fue de 14,30 $\mu$s, un valor muy lejano al que se consigue con la aproximación teórica de $5\tau$ = 20,55 $\mu$s (usando $\tau = 4,11 \mu s$). \par
         
         
                 \begin{figure}[h!]
@@ -364,7 +356,7 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
   Al observar las dos gráficas (observar figuras \ref{fig:taureal} y \ref{fig:tausim}), se puede observar que el gráfico teórico difiere en gran medida con el medido por el osciloscopio. Las dos diferencias más grandes que se observa son: 1) La señal medida por el osciloscopio posee un decaimiento exponencial mucho más rápido que la simulada. 2) La señal simulada posee una frecuencia angular mucho más rápida que la medida por el osciloscopio. \par 
   Esta diferencia podría deberse al efecto de histéresis en el inductor. Si bien el núcleo del inductor es de ferrite, un material el cual no cuenta con perdidas a causa de corrientes eddy, el mismo cuenta con perdidas de histéresis al cambiar la orientación del campo magnético. Esto se debe a que la corriente en este momento no es continua, sino que varia con el tiempo cambiando la dirección del campo magnético. Esto termina afectando la energía del sistema no ideal, causando las diferencias observadas con los valores teóricos.\par
   Por tal motivo, se pudo concluir que en este caso los cálculos teóricos no se aproximan correctamente a los valores observados en el sistema real. Esto se debe a que las ecuaciones no contemplan el efecto de perdida causado por la histéresis. Es más, este modelo se podría aproximar usando una resistencia en serie o una resistencia en paralelo. Aunque la misma conserva una forma parecida, la misma cuenta con diferencias marcadas en el tiempo de transitorio, por lo que no se consideró pertinente su comparación con los valores experimentales. Todo esto explicaría el error relativo del 68\% entre el tiempo del transitorio teórico y el experimental.\par
-  Al analizar la frecuencia, se registró f = 102,45 kHz. En cambio, en la simulación se obtuvo una frecuencia de 1012,4 kHz, una frecuencia mucho más grande. También, el valor de sobrepico obtenido en la experiencia fue de 3,196 V, mientras que en el simulado fue de 4,745 V. Aquí se ve un error relativo del 32,64\%, el cual se puede atribuir a las perdidas de energía ocasionadas en el núcleo del inductor.
+  Al analizar la frecuencia, se registró f = 102,45 kHz. En cambio, en la simulación se obtuvo una frecuencia de 1012,4 kHz, una frecuencia mucho más grande. También, el valor de sobrepico obtenido en la experiencia fue de 3,196 V, mientras que en el simulado fue de 4,745 V. Aquí se ve un error relativo del 32,64\%, el cual se puede atribuir a las pérdidas de energía ocasionadas en el núcleo del inductor.
   
   
                     \begin{figure}[H]
