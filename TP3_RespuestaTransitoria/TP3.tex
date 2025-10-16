@@ -2,6 +2,7 @@
 
 %%%%%%%%%%%%%%% LIBRERIAS %%%%%%%%%%%%%%%%%%%%%
 \usepackage{amsmath}
+\usepackage{physics}
 \usepackage{titlesec}
 \usepackage{titletoc}
 \usepackage{graphicx}
@@ -57,7 +58,7 @@
         \vspace{1.5cm}
         {\Large Teoría de Circuitos I\\ 25.10 \par}
         \vfill                      %sirve para rellenar el espacio y quede simétrico. Si se añaden otros, se dividen el espacio de forma equitativa
-        {\Large \bfseries Grupo N° 2 \par}
+        {\Large \bfseries Grupo N° 3 \par}
         \vspace{1cm}
         {\large Juan Bautista Correa Uranga \hfill Legajo: 65016 \par} %\hfill sirve para hacerlo simétrico
         {\large Juan Ignacio Caorsi \hfill Legajo: 65532  \par}
@@ -102,7 +103,7 @@ fuera crítico. El tiempo de respuesta transitoria difirió del esperado debido 
 \begin{itemize}
   \item Osciloscopio Keysight DSOX 1202G con generador de ondas integrado y resistencia interna de $50 \Omega$.
   \item Capacitores de $47\,\text{pF}$ y $470\,\text{pF}$.
-  \item Resistencias de 220 $\Omega$ nominal y potenciómetro de 5 k$\Omega$ nominal.
+  \item Resistencias de 220 $\Omega$ nominal y potenciómetro de 10 k$\Omega$ nominal.
   \item Inductor de resistencia indefinida, con inductancia aproximada de $1\,\text{mH}$.
   \item Multímetro UNI-T,  Standar Digital multimeter, modelo: UT39C.
 \end{itemize}
@@ -118,7 +119,7 @@ fuera crítico. El tiempo de respuesta transitoria difirió del esperado debido 
         L\frac{d^2i(t)}{dt^2} + R\frac{di(t)}{dt} + \frac{1}{C}i(t) = V_{in}(t)
     \end{equation}
     y su solución general es la suma de la respuesta natural y la respuesta forzada:
-
+%HOLA JUANIIIIjoijoi
 Para la respuesta natural (\( V_{\text{in}}(t) = 0 \)), se define:
 
 \begin{equation}
@@ -149,8 +150,11 @@ La solución general depende del valor de \( \Delta \):
   donde \( \omega_d = \sqrt{\omega_0^2 - \alpha^2} \).
 \end{itemize}
 
-\par Otro valor estudiado a lo largo del tp fue el tiempo de respuesta transitoria, el cual se define como 5$\tau$ en sistemas de primer orden.
-En una de las configuraciones se observó que la respuesta fue subamortiguada con coeficientes de módulos muy dispares, es decir con una diferencia de orden mayor a uno, notándose en que uno de los términos de la respuesta pesó o influyó mucho más que el otro (puesto que decrece mas rápido); es por esto que se consideró que, en ese caso, se podía aproximar el sistema a uno de primer orden, y buscamos el $\tau$ acorde a esto. Así, tras un desarrollo de la ecuación diferencial obtenida, se llegó a que
+\par Otro valor estudiado a lo largo del tp fue el tiempo de respuesta transitoria, el cual se define como 5$\tau$ en sistemas de
+primer orden. En una de las configuraciones se observó que la respuesta fue sobreamortiguada con coeficientes de módulos muy dispares,
+es decir con una diferencia de orden mayor a uno, notándose en que uno de los términos de la respuesta pesó o influyó mucho más 
+que el otro (puesto que decrece más lento); es por esto que se consideró que, en ese caso, se podía aproximar el sistema a uno de 
+primer orden, y buscamos el $\tau$ acorde a esto. Así, tras un desarrollo de la ecuación diferencial obtenida, se llegó a que
 \begin{equation*}
     V_c(t) = V_s (1-e^{st})
 \end{equation*}
@@ -160,9 +164,9 @@ donde s es la solución predominante de la EDO. Para buscar $\tau$, buscamos t t
 \end{equation*}
 Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera que $V_c \approx V_s$ en $t=5\tau$. Para $V_s=5 V$, $V_c(t) = V_s (1-e^{-1}) = 3,16 V$ \par
 
-\par Con el fin de facilitar la comparación de los tiempos de respuesta para las distintas configuraciones, se tomó que el tiempo de respuesta era igual a $5\tau$ aun cuando no se podía realizar la aproximación a primer orden. En estos casos, se tomó como tiempo de respuesta $5\tau$ el instante en que la salida era igual a $V_s \pm 5\% $, y a partir de eso se despejó $\tau$.
+\par \par Luego, con el fin de facilitar la comparación de los tiempos de respuesta para las otras configuraciones, se tomó que el tiempo de respuesta era igual a $5\tau$ aun cuando no se podía realizar la aproximación a primer orden. En estos casos, se tomó como tiempo de respuesta $5\tau$ el instante en que la salida era igual a $V_s \pm 5\% $, y a partir de eso se despejó $\tau$.
 
-%%%Desarrollo%%%
+
 \section{Desarrollo}
     \subsection{Procedimiento}
 
@@ -184,7 +188,7 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
 
     \begin{enumerate}
         \item Primero se armó el circuito en serie (observar figura \ref{fig: circuito_rlc}) usando el capacitor de 470 pF. Luego, se determinó de manera aproximada, observando la salida en el osciloscopio, el valor de la resistencia variable que producía un amortiguamiento crítico.
-        \item En esta parte, se ajustó la resistencia Rv a su valor máximo. Poteriormente, se coloco uno de los cursores horizontales del osciloscopio en $ V_{salida}=0$ V, y el otro en $ V_{salida}=3,16$ V y medimos el $ \Delta t $ entre esos valores, tomandolo como el $\tau$ del sistema.
+        \item En esta parte, se ajustó la resistencia Rv a su valor máximo. Posteriormente, se colocó uno de los cursores horizontales del osciloscopio en $ V_{salida}=0$ V, y el otro en $ V_{salida}=3,16$ V y medimos el $ \Delta t $ entre esos valores, tomandolo como el $\tau$ del sistema.
         \item A continuación, se remplazo el capacitor por uno de 47pF, y se repitió la medición de la resistencia variable tal que el amortiguamiento fuera crítico. Luego, se puso Rv en su valor mínimo, y se calculó el tiempo del transitorio tomandolo como el valor mínimo de tiempo tal que la respuesta fuera $V_s \pm 5\% $. También se obtuvo la frecuencia midiendo la distancia temporal entre los primeros tres picos, y promediandola para obtener un período aproximado, de manera que la frecuencia fuera la inversa de dicho período. Por último, se obtuvo el valor de sobrepico midiendo la tensión máxima de la respuesta, y haciendo $ \Delta V = V_{max} - V_s = V_{max} - 5 V $.
         \item Finalmente, se cortocircuitaron las resistencias y se analizó el tiempo de respuesta transitoria nuevamente.
         
@@ -192,7 +196,7 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
     \subsection{Mediciones}
  
         \begin{itemize}
-            \item $ R_f = 215 \Omega $
+            \item $ R_{resistor} = 215 \Omega $
             \item $ R_{V_{max}} = 9980 \Omega $
             \item $ R_{V_{min}} = 2 \Omega $
             \item $ R_L = 0,8 \Omega $
@@ -210,12 +214,17 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
         \subsubsection*{Capacitor de C = 47 pF}
             \begin{itemize}
                 \item Resistencia variable tal que el amortiguamiento fue crítico: $ R_{critico} = 3,47 k\Omega $ %item 3
-                \item Tiempo en que la salida llegó a 3,16 V con $ R_V = R_{V_{crítico}}: t = 2,20 \mu s$ % item 3
+                \item Tiempo en que la salida llegó a 3,16 V con $ R_V = R_{\text{crítico}} \colon t = 2,20 \, \mu s$ % item 3
                 \item Tiempo en que la salida llegó a 5,24 V ($V_s \pm 5\% $) con $ R_V=R_{V_{min}}$: $ t = 14,30 \mu s$ % item 4
                 \item Sobrepico para $R_V = R_{V_{min}}$: $ \Delta V = 3,196 V $
                 \item Tiempo en que la salida llegó a 4,982 V ($V_s \pm 5\% $) con las resistencias cortocircuitadas: $ t = 11 \mu s$ % item 5
+                \item Frecuencia para $ R_V = R_{V_{min}} $:
+                \begin{equation*}
+                    f = 102,45 kHz
+                \end{equation*} \par
             \end{itemize}
 
+                
     \subsection{Cálculos}
 
         \subsubsection*{Ecuaciones utilizadas}            
@@ -224,7 +233,7 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
             Tomando la resistencia variable tal que el amortiguamiento resultase crítico,
             $ R = \frac{2L}{\sqrt{LC}} = 2\frac{\sqrt{L}}{\sqrt{C}} $
             \begin{equation}
-                L = \frac{C \cdot R_{eq}^2}{4} = \frac{C \cdot (R_v+R_f+R_L)^2}{4}
+                L = \frac{C \cdot R_{eq}^2}{4} = \frac{C \cdot (R_v+R_{fuente}+R_L+R_{resistor})^2}{4}
             \end{equation}
 
             \textbf{Cálculo del la resistencia variable tal que el amortiguamiento fuera crítico} \par \par
@@ -233,9 +242,14 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
             \Rightarrow R_{eq} = \frac{2L}{\sqrt{LC}}= R_f + R_v + R_L
             $
             \begin{equation}
-                R_v = \frac{2L}{\sqrt{LC}} - R_f - R_L
+                R_v = \frac{2L}{\sqrt{LC}} - R_{fuente} - R_L - R_{resistor} 
             \end{equation}  \par
 
+            \textbf{Cálculo de la $\tau$ para la respuesta sobreamortiguada aproximable a primer orden} \par
+            Debido a lo explicado en el marco teórico, el $\tau$ esperado en este caso fue
+            \begin{equation*}
+               \tau = \abs{ \frac{1}{s} } = \abs{ \frac{1}{-\alpha-\sqrt{\omega_0^2 - \alpha^2}} }
+            \end{equation*}
             
         \subsubsection*{Resultados}
 
@@ -243,34 +257,29 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
 
                 Inductancia L (a partir del $R_{critico}$ medido):
                 \begin{equation*}
-                    L=\frac{(1,9\cdot10^3 + 215 + 0,8)^2 \cdot 470 \cdot 10^{-12}}{4}= 0,526 mH
+                    L=\frac{(1,9\cdot10^3 + 215 + 0,8 + 50)^2 \cdot 470 \cdot 10^{-12}}{4}= 0,551 mH
                 \end{equation*} \par
                 
                 Resistencia variable tal que el amortiguamiento fuera crítico:
                 \begin{equation*}
-                    R_{critico} = 1.899 k\Omega
+                    R_{critico} = 1,9 k\Omega
                 \end{equation*} \par
 
         
                 Valor $ \tau $ con $ R_V = R_{V_{max}} = 9980 \Omega $:
                  \begin{equation*}
-                    \tau = 4,74 \mu s RAROOOOO
+                    \tau = 4,76 \mu s 
                 \end{equation*}
 
             \subsubsection*{Capacitor de C = 47 pF}
                 Resistencia variable tal que el amortiguamiento fuera crítico:
                 \begin{equation*}
-                    R_{critico} = 6,47 k\Omega 
+                    R_{critico} = 6,58 k\Omega 
                 \end{equation*} \par
                 
                 $ \tau $ para $ R_V = R_{V_{min}} $: 
                 \begin{equation*}
-                    \tau = 4,83 \mu s 
-                \end{equation*} \par
-
-                Frecuencia para $ R_V = R_{V_{min}} $:
-                \begin{equation*}
-                    f = 102,45 kHz
+                    \tau = 4,11 \mu s 
                 \end{equation*} \par
 
                 $ \tau $ para $ R = R_L $ (resistencias cortocircuitadas):
@@ -283,13 +292,26 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
     \subsection{Análisis}
     
     	Luego de recolectar los datos, se pudieron observar los siguientes comportamientos. \par
-	Es importante mencionar que en este trabajo, no se contó con un valor de referencia de la inductancia; esta debió ser aproximada mediante el valor de la resistencia del amortiguamiento crítico obtenida con el capacitor de 470 pF. Consecuentemente, los datos teóricos también pueden contener errores asociados.
+	Es importante mencionar que en este trabajo, no se contó con un valor de referencia de la inductancia;
+     esta debió ser aproximada mediante el valor de la resistencia del amortiguamiento crítico obtenida con el capacitor de 470 pF. Consecuentemente, los datos teóricos también pueden contener errores asociados.
 	
         \subsection*{Capacitor 470 pF}
-        	En esta parte, se observó lo siguiente: al aproximar el valor de la resistencia del amortiguamiento crítico, se llegó a $1,9 k\Omega$, un valor el cual posee un error relativo del 2,32 \% con respecto al valor teórico. Esto indica una buena aproximación al valor real que causa que el sistema sea críticamente amortiguado. \par
-	Sumado a esto, se observó que la respuesta se volvía sobreamortiguada al aumentar la resistencia por encima de $1,9 k\Omega$ y que la misma se volvía subamortiguada al disminuir la misma por debajo de ese valor. Esto concuerda con las ecuaciones descriptas en el apartado teórico, puesto a que al aumentar R, $\alpha$ aumentaba. \par
-	Otras de las áreas analizadas fue la del valor de $\tau$. Esta se aproximó despejando el tiempo el cual llevaba a una respuesta de 3,16 $V$. Se observó que el mismo fue de $5,75 \mu F$, un valor el cual posee un error relativo del 21,3\%. Esto muestra un error alto, pero el mismo puede estar asociado en gran medida a la incertidumbre en el valor de la inductancia. Al mismo tiempo, dicho $\tau$ teórico se consiguió mediante una aproximación, usando la raíz de la ecuación característica más pequeña y descartando la otra.\par
-	Finalmente, se observó que el transitorio en $5\tau$ el valor de la respuesta estaba entre los valores de 4,75 V y 5,25 V. Esto demuestra que la aproximación de $5\tau$ como tiempo de transitorio, es efectiva.
+        BORRO LO QUE SIGUE
+        	En esta parte, se observó lo siguiente: al aproximar el valor de la resistencia del 
+            amortiguamiento crítico, se llegó a $1,9 k\Omega$, un valor el cual posee un error 
+            relativo del 2,32 \% 
+            con respecto al valor teórico. Esto indica una buena aproximación al valor real que
+             causa que el sistema sea críticamente amortiguado. \par
+        HASTA ACÁ BORRO \par
+	Se observó que la respuesta se volvía sobreamortiguada al aumentar la resistencia
+     por encima de $1,9 k\Omega$ y que la misma se volvía subamortiguada al disminuir la misma por 
+     debajo de ese valor. Esto concuerda con las ecuaciones descriptas en el apartado teórico, puesto 
+     a que al aumentar R, $\alpha$ aumentaba. \par
+	Otras de las áreas analizadas fue la del valor de $\tau$. Esta se aproximó despejando el tiempo 
+    el cual llevaba a una respuesta de 3,16 $V$. Se observó que el mismo fue de $5,75 \mu s$, un valor el cual posee un error relativo del 21,3\%, con respecto al valor teórico $4,76 \mu s$. Esto muestra un error alto, pero el mismo puede estar asociado en gran medida a la incertidumbre en el valor de la inductancia. Al mismo tiempo, dicho $\tau$ teórico se consiguió mediante una aproximación, usando la raíz de la ecuación característica más pequeña y descartando la otra.\par
+	Finalmente, se observó que el transitorio en $5\tau$ el valor de la respuesta estaba entre los
+     valores de 4,75 V y 5,25 V. Esto demuestra que la aproximación de $5\tau$ como tiempo de 
+     transitorio, es efectiva.
 	
 	
         \subsection*{Capacitor 47 pF}
