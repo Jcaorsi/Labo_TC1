@@ -100,7 +100,7 @@ fuera crítico. El tiempo de respuesta transitoria difirió del esperado debido 
     \subsection{Instrumental}
         En esta experiencia se utilizaron los siguientes instrumentos:
 \begin{itemize}
-  \item Osciloscopio Keysight DSOX 1202G con generador de ondas integrado y resistencia interna de $50 \Omega$.
+  \item Osciloscopio Keysight DSOX 1202G con generador de ondas integrado y resistencia interna de $50 \Omega$. El mismo fue utilizado como fuente de señal cuadrada de $5\,\text{V}$ de amplitud, señalizada como $V_{fuente}$ o $ V_s$.
   \item Capacitores de $47\,\text{pF}$ y $470\,\text{pF}$.
   \item Resistencias de 220 $\Omega$ nominal y potenciómetro de 10 k$\Omega$ nominal.
   \item Inductor de resistencia indefinida, con inductancia aproximada de $1\,\text{mH}$.
@@ -190,7 +190,7 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
     \begin{enumerate}
         \item Primero se armó el circuito en serie (observar figura \ref{fig: circuito_rlc}) usando el capacitor de 470 pF. Luego, se determinó de manera aproximada, observando la salida en el osciloscopio, el valor de la resistencia variable que producía un amortiguamiento crítico.
         \item En esta parte, se ajustó la resistencia Rv a su valor máximo. Posteriormente, se colocó uno de los cursores horizontales del osciloscopio en $ V_{salida}=0$ V, y el otro en $ V_{salida}=3,16$ V y medimos el $ \Delta t $ entre esos valores, tomandolo como el $\tau$ del sistema.
-        \item A continuación, se remplazo el capacitor por uno de 47pF, y se repitió la medición de la resistencia variable tal que el amortiguamiento fuera crítico. Luego, se puso Rv en su valor mínimo, y se calculó el tiempo del transitorio tomandolo como el valor mínimo de tiempo tal que la respuesta fuera $V_s \pm 5\% $. También se obtuvo la frecuencia midiendo la distancia temporal entre los primeros tres picos, y promediandola para obtener un período aproximado, de manera que la frecuencia fuera la inversa de dicho período. Por último, se obtuvo el valor de sobrepico midiendo la tensión máxima de la respuesta, y haciendo $ \Delta V = V_{max} - V_s = V_{max} - 5 V $.
+        \item A continuación, se remplazo el capacitor por uno de 47pF, y se repitió la medición de la resistencia variable tal que el amortiguamiento fuera crítico. Luego, se llevó Rv a su valor mínimo, y se midió el tiempo del transitorio aproximándolo al instante en el cual la respuesta fue $V_s \pm 5\% $. Es importante aclarar que el 5 \% de $V_s$ se elige como convención para facilitar la medición del tiempo de respuesta del transitorio en subamortiguado. También se obtuvo la frecuencia midiendo la distancia temporal entre los primeros tres picos, y promediandola para obtener un período aproximado, de manera que la frecuencia fuera la inversa de dicho período. Por último, se obtuvo el valor de sobrepico midiendo la tensión máxima de la respuesta, y haciendo $ \Delta V = V_{max} - V_s = V_{max} - 5 V $.
         \item Finalmente, se cortocircuitaron las resistencias y se analizó el tiempo de respuesta transitoria nuevamente.
         
     \end{enumerate}
@@ -215,10 +215,9 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
         \subsubsection*{Capacitor de C = 47 pF}
             \begin{itemize}
                 \item Resistencia variable tal que el amortiguamiento fue crítico: $ R_{critico} = 3,47 k\Omega $ %item 3
-                \item Tiempo en que la salida llegó a 3,16 V con $ R_V = R_{\text{crítico}} \colon t = 2,20 \, \mu s$ % item 3
                 \item Tiempo en que la salida llegó a 5,24 V ($V_s \pm 5\% $) con $ R_V=R_{V_{min}}$: $ t = 14,30 \mu s$ % item 4
                 \item Sobrepico para $R_V = R_{V_{min}}$: $ \Delta V = 3,196 V $
-                \item Tiempo en que la salida llegó a 4,982 V ($V_s \pm 5\% $) con las resistencias cortocircuitadas: $ t = 11 \mu s$ % item 5
+                \item Tiempo en que la salida llegó a 4,982 V ($V_s \pm 5\% $) con las resistencias cortocircuitadas: $ t = 22,2 \mu s$ % item 5
                 \item Frecuencia para $ R_V = R_{V_{min}} $:
                 \begin{equation*}
                     f = 102,45 kHz
@@ -305,11 +304,8 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
     el cual llevaba a una respuesta de 3,16 $V$. Se observó que el mismo fue de $5,75 \mu s$, un valor
      el cual posee un error relativo del 21,3\%, con respecto al valor teórico $4,76 \mu s$. Dicho $\tau$
       teórico se consiguió mediante una aproximación, usando la raíz de la ecuación característica más pequeña 
-      y descartando la otra. Es probable que el error que vemos se deba a la disipación de energía en el núcleo del inductor como también a corrientes parásitas, pero no lo podemos asegurar.\par
-	Finalmente, se observó que el transitorio en $5\tau$ el valor de la respuesta estaba entre los
-     valores de 4,75 V y 5,25 V. Esto demuestra que la aproximación de $5\tau$ como tiempo de 
-     transitorio, es efectiva. Cabe aclarar que se elige el valor de $V_{salida}$ igual a $V_s \pm 5\%$ pues 
-     consideramos que a partir de ese punto el sistema ya se encuentra en estado estacionario y es más facil de apreciar en un sistema subamortiguado.  \par CHEQUEAR ESTO ULTIMO 
+      y descartando la otra. Es probable que el error que se ve se deba, tanto a la disipación de energía en el núcleo del inductor como también a corrientes parásitas, pero no lo podemos asegurar.\par
+	
 	
 	
         \subsection*{Capacitor 47 pF}
@@ -375,8 +371,8 @@ Si para $t=\tau$ se consigue una respuesta de $ V_s \cdot 0,63212$, se considera
                     \end{minipage}
                 \end{figure}
                 
-  En última instancia se cortocircuitaron la resistencia de 215 $\Omega$ y la resistencia variable. Al comparar ambos gráficos (observar figuras \ref{fig:CORTREAL} y \ref{fig:CORTSIM}), se puede observar una gran diferencia entre los datos obtenidos teóricamente y los datos empíricos. Mientras que según lo teórico se puede observar lo que es un oscilador casi ideal, en la experiencia de laboratorio se observo un sistema que no oscila indefinidamente. Esto se puede ver en los datos, puesto a que el tiempo de transitorio obtenido en el osciloscopio es de $ t = 11 \mu s$, mientras que el teórico es de $5\tau$ = 6,58 ms. Esto es una diferencia de 3 ordenes de magnitud.\par
-  Esta diferencia vuelve a ser explicada por la perdida de histéresis en el inductor. En el modelo teórico se considera que el único elemento que pierde energía es la resistencia asociada al inductor. No obstante en la realidad, el sistema no solo pierde energía por la resistencia del inductor, sino que también por la histéresis al cambiar la orientación del campo magnético.
+  En última instancia se cortocircuitaron la resistencia de 215 $\Omega$ y la resistencia variable. Al comparar ambos gráficos (observar figuras \ref{fig:CORTREAL} y \ref{fig:CORTSIM}), se puede observar una gran diferencia entre los datos obtenidos teóricamente y los datos empíricos. Mientras que según lo teórico se puede observar lo que es un oscilador casi ideal, en la experiencia de laboratorio se observo un sistema que no oscila indefinidamente. Esto se puede ver en los datos, puesto a que el tiempo de transitorio obtenido en el osciloscopio es de $ t = 22,2 \mu s$, mientras que el teórico es de $5\tau$ = $71 \mu s$.\par
+  Esta diferencia vuelve a ser explicada por la perdida de histéresis en el inductor. En el modelo teórico se considera que el único elemento que pierde energía es la resistencia asociada a la fuente. No obstante en la realidad, el sistema no solo pierde energía por esta última, sino que también por la histéresis al cambiar la orientación del campo magnético.
   
 
 
