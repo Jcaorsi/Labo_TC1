@@ -90,16 +90,173 @@
 
 \section{Desarrollo}
     \subsection{Procedimiento}
+    
+    El procedimiento en este trabajo fue el siguiente:
+    
+    \begin{itemize}
+    \item Primero, para simplificar el procedimiento de medición, se armó el circuito en una protoboard. De esta manera, al modificar los parámetros de medición, la única intervención requerida fue la reconexión del cuadripolo, sin necesidad de alterar los demás elementos de medición. Para esto se considero la siguiente esquemática (COMPLETAR).
+    \item Segundo, una vez conectado el cuadripolo, se midió la corriente y tensión de entrada y salida de cada caso. En la figura (COMPLETAR) se indica el lugar en donde estaba conectadas las salidas del osciloscopio. Es importante mencionar los siguientes aspectos. Para evitar que los equipos se quemen, se calculó una resistencia que se conectó entre el generador y el cuadripolo, la cual limitaba la corriente de entrada al mismo. En este caso se usó una resistencia de 1 $ k\Omega$ (Observar el apartado de cálculos para su determinación). Por otra parte, para poder medir la corriente al realizar un cortocircuito en la salida, se usó una resistencia pequeña de 4,7 $\Omega$. Esta misma introdujo incertezas a las mediciones ya que en este caso uno no tendría tensión de salida igual a 0, sino que aproximadamente 0. Aun así se decidió usar este método, ya que sin esto, uno no podía usar el osciloscopio para medir la corriente y su fase.
+    \item Para conseguir las fases de la corriente, se tomo como referencia la tensión del generador de señal y se usaron las funciones de math. 
+    \item Una vez conseguidos los tres parámetros para una condición particular, se repitió el proceso cambiando o el cuadripolo o el conexionado para evaluar condiciones distintas.
+\end{itemize}
 
 
 
-                
+    \subsection{Datos recolectados}
+    
+    En el laboratorio se recolectaron los siguientes datos para cada cuadripolo:
+    
+   \begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+9603 & $V_1=0$ & $V_2=0$ & $I_1=0$ & $I_2=0$ \\ \hline
+$V_1$ & $0$ & $0.85\ \mathrm{V}\,\angle\,0^\circ$ & $0.95\ \mathrm{V}\,\angle\,-41^\circ$ & $1.39\ \mathrm{V}\,\angle\,-22^\circ$ \\ \hline
+$V_2$ & $0.65\ \mathrm{V}\,\angle\,-24^\circ$ & $0$ & $1.14\ \mathrm{V}\,\angle\,-43^\circ$ & $0.865\ \mathrm{V}\,\angle\,-46^\circ$ \\ \hline
+$I_1$ & $5.147\ \mathrm{mA}\,\angle\,-20^\circ$ & $8.5\ \mathrm{mA}\,\angle\,0^\circ$ & $0$ & $8.5\ \mathrm{mA}\,\angle\,4^\circ$ \\ \hline
+$I_2$ & $9.1\ \mathrm{mA}\,\angle\,0^\circ$ & $7.941\ \mathrm{mA}\,\angle\,0^\circ$ & $8.6\ \mathrm{mA}\,\angle\,6^\circ$ & $0$ \\ \hline
+\end{tabular}
+\caption{Mediciones de tensiones y corrientes cuadripolo 9603.}
+\label{tab:mediciones9603}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+9609 & $V_1=0$ & $V_2=0$ & $I_1=0$ & $I_2=0$ \\ \hline
+$V_1$ & $0$ & $1.8\,\mathrm{V}\,\angle\,-16^\circ$ & $1.18\,\mathrm{V}\,\angle\,-58^\circ$ & $1.875\,\mathrm{V}\,\angle\,-30^\circ$ \\ \hline
+$V_2$ & $2.5\,\mathrm{V}\,\angle\,-4^\circ$ & $0$ & $2.625\,\mathrm{V}\,\angle\,-17^\circ$ & $1.25\,\mathrm{V}\,\angle\,-58^\circ$ \\ \hline
+$I_1$ & $6.617\,\mathrm{mA}\,\angle\,-11^\circ$ & $8\,\mathrm{mA}\,\angle\,4^\circ$ & $0$ & $8\,\mathrm{mA}\,\angle\,7^\circ$ \\ \hline
+$I_2$ & $7.3\,\mathrm{mA}\,\angle\,0^\circ$ & $3.676\,\mathrm{mA}\,\angle\,-33^\circ$ & $7.3\,\mathrm{mA}\,\angle\,6^\circ$ & $0$ \\ \hline
+\end{tabular}
+\caption{Mediciones de tensiones y corrientes cuadripolo 9609.}
+\label{tab:mediciones9609}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Cascada} & $I_2 = 0$ & $V_2 = 0$ \\ \hline
+$V_1$ & $1.2\,\mathrm{V}\,\angle\,-16^\circ$ & $1.22\,\mathrm{V}\,\angle\,-12^\circ$ \\ \hline
+$V_2$ & $0.435\,\mathrm{V}\,\angle\,-70^\circ$ & $0$ \\ \hline
+$I_1$ & $8.6\,\mathrm{mA}\,\angle\,2^\circ$ & $8.3\,\mathrm{mA}\,\angle\,0^\circ$ \\ \hline
+$I_2$ & $0$ & $1.985\,\mathrm{mA}\,\angle\,-12^\circ$ \\ \hline
+\end{tabular}
+\caption{Mediciones de tensiones y corrientes en conexión en cascada}
+\label{tab:corrientes_tensiones_cascada}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Serie} & $I_1 = 0$ & $I_2 = 0$ \\ \hline
+$V_1$ & $2.34\,\mathrm{V}\,\angle\,-32^\circ$ & $2.64\,\mathrm{V}\,\angle\,-25^\circ$ \\ \hline
+$V_2$ & $2.53\,\mathrm{V}\,\angle\,-30^\circ$ & $2.265\,\mathrm{V}\,\angle\,-36^\circ$ \\ \hline
+$I_1$ & $0$ & $7.5\,\mathrm{mA}\,\angle\,9^\circ$ \\ \hline
+$I_2$ & $7.8\,\mathrm{mA}\,\angle\,11^\circ$ & $0$ \\ \hline
+\end{tabular}
+\caption{Mediciones de tensiones y corrientes en conexión en serie}
+\label{tab:corrientes_tensiones_serie}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Paralelo} & $V_1 = 0$ & $V_2 = 0$ \\ \hline
+$V_1$ & $0$ & $0.64\,\mathrm{V}\,\angle\,0^\circ$ \\ \hline
+$V_2$ & $0.58\,\mathrm{V}\,\angle\,-20^\circ$ & $0$ \\ \hline
+$I_1$ & $5\,\mathrm{mA}\,\angle\,-20^\circ$ & $9\,\mathrm{mA}\,\angle\,0^\circ$ \\ \hline
+$I_2$ & $8.5\,\mathrm{mA}\,\angle\,0^\circ$ & $5.441\,\mathrm{mA}\,\angle\,-4^\circ$ \\ \hline
+\end{tabular}
+\caption{Mediciones de tensiones y corrientes en conexión en paralelo}
+\label{tab:corrientes_tensiones_paralelo}
+\end{table}
+
+
+     
     \subsection{Cálculos}
 
-        \subsubsection*{Ecuaciones utilizadas}            
+	Para el calculo de los parámetros Y, Z y T se usaron las ecuaciones detalladas en el marco teórico. Los resultados obtenidos fueron:
+	
+	\subsubsection*{Cuadripolo 9603}
+	
+	\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$}} \\ \hline
+$10\,\mathrm{mS}$ & $(7.9 + 0.5523j)\,\mathrm{mS}$ \\ \hline
+$9.342\,\mathrm{mS}$ & $(12.789 + 5.694j)\,\mathrm{mS}$ \\ \hline
+\end{tabular}
+\caption{Matriz de parámetros $Y$ correspondiente al cuadripolo 9603. Matriz calculada a partir de parametros medidos}
+\label{tab:matriz_Y9603}
+\end{table}
 
-            
-        \subsubsection*{Resultados}
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $T$}} \\ \hline
+$1.468$ & $-107.04\,\Omega$ \\ \hline
+$6.316\times10^{-3}\,\mathrm{S}$ & $-1.07$ \\ \hline
+\end{tabular}
+\caption{Matriz de parámetros $T$ correspondiente al cuadripolo 9603. Matriz calculada a partir de parametros medidos}
+\label{tab:matriz_T9603}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Z$}} \\ \hline
+$(146.98 - 71.69j)\,\Omega$ & $(75.33 - 80.79j)\,\Omega$ \\ \hline
+$(91.47 - 98.08j)\,\Omega$ & $(86.97 - 100.04j)\,\Omega$ \\ \hline
+\end{tabular}
+\caption{Matriz de parámetros $Z$ correspondiente al cuadripolo 9603. Matriz calculada a partir de parametros medidos}
+\label{tab:matriz_Z9603}
+\end{table}
+
+Luego, en base a la tabla \ref{tab:matriz_Z9603} se calcularon los parametros Y y T de forma indirecta.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ (método indirecto)}} \\ \hline
+$(14.55 - 1.572j)\,\mathrm{mS}$ & $(-12.16 + 0.886j)\,\mathrm{mS}$ \\ \hline
+$(-14.76 + 1.075j)\,\mathrm{mS}$ & $(17.277 + 5.227j)\,\mathrm{mS}$ \\ \hline
+\end{tabular}
+\caption{Matriz de parámetros $Y$ obtenida por el método indirecto para el cuadripolo 9603}
+\label{tab:matriz_Y9603_indirecta}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $T$ (método indirecto)}} \\ \hline
+$(1.138 + 0.437j)$ & $(67.37 + 4.91j)\,\Omega$ \\ \hline
+$(0.00509 + 0.00545j)\,\mathrm{S}$ & $(0.9878 - 0.0345j)$ \\ \hline
+\end{tabular}
+\caption{Matriz de parámetros $T$ obtenida por el método indirecto para el cuadripolo 9603}
+\label{tab:matriz_T9603_indirecta}
+\end{table}
+
+
+
+
+
+
+	
+	\subsubsection*{Elección de la resistencia}
+	
+	Ambos cuadripolos poseían una corriente máxima de 50mA. Configurando el generador de ondas a 10V, se llego a $R_{min} = 200$ $ \Omega$. Para evitar trabajar en valores de corriente muy cercanos al limite, se optó por usar una resistencia de 1 $k\Omega$. De esta forma, nos asegurábamos de no dañar los equipos. Al mismo tiempo, no se usó una resistencia mas grande pare evitar trabajar con corrientes muy pequeñas, las cuales podrían producir mayores errores en las mediciones.
+	
+	
 
 
         
