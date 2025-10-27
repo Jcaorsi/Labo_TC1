@@ -274,7 +274,12 @@ OUTPUT main.pdf
 INPUT .\main.out
 INPUT .\main.out
 OUTPUT main.out
-INPUT C:\Users\ritam\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
+INPUT .\imagenesFiguras\Logo_ITBA.png
+INPUT .\imagenesFiguras\Logo_ITBA.png
+INPUT .\imagenesFiguras\Logo_ITBA.png
+INPUT .\imagenesFiguras\Logo_ITBA.png
+INPUT .\imagenesFiguras\Logo_ITBA.png
+INPUT .\imagenesFiguras\Logo_ITBA.png
 INPUT C:\Users\ritam\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\ritam\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\ritam\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
@@ -309,6 +314,12 @@ INPUT desarrolloSinAnalisis.tex
 INPUT .\desarrolloSinAnalisis.tex
 INPUT .\desarrolloSinAnalisis.tex
 INPUT desarrolloSinAnalisis.tex
+INPUT .\imagenesFiguras\V2=0.png
+INPUT imagenesFiguras\V2=0.png
+INPUT .\imagenesFiguras\V2=0.png
+INPUT .\imagenesFiguras\V2=0.png
+INPUT .\imagenesFiguras\V2=0.png
+INPUT .\imagenesFiguras\V2=0.png
 INPUT .\desarrolloAnalisis.tex
 INPUT .\desarrolloAnalisis.tex
 INPUT desarrolloAnalisis.tex
@@ -352,5 +363,3 @@ INPUT C:\Users\ritam\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\ritam\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\ritam\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\ritam\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
-INPUT C:\Users\ritam\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
-INPUT C:\Users\ritam\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb

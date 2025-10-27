@@ -1,3 +1,5 @@
+    \graphicspath{{imagenesFiguras/}} %para que acceda a las fotos en la carpeta directamente
+
     \subsection{Procedimiento}
     
     Primero que nada, se configuró el generador de señales de manera que produjera una señal senoidal con offset nulo, 20 V de tensión
@@ -32,7 +34,7 @@
     método, ya que de otra forma no era posible usar el osciloscopio para medir la corriente y su fase.
 
 
-    \begin{figure}
+    \begin{figure}[H]
         \begin{equation*}
             \begin{tikzpicture}
                 \node[shape=rectangle, draw, line width=1pt, minimum width=1.965cm, minimum height=1.965cm] at (5, 2.5){};
@@ -47,13 +49,13 @@
                 \draw (2.25, 2.75) -- (2.25, 3.25);
                 \draw (2.25, 2.162) -- (2.25, 1.75) -- (4, 1.75);
                 \node[circ] at (3.75, 3.25){};
-                \node[shape=rectangle, minimum width=0.722cm, minimum height=0.472cm] at (1.897, 3.65){} node[anchor=center, align=center, text width=0.341cm, inner sep=5.8pt] at (1.897, 3.65){\scriptsize Ch1};
-                \node[shape=rectangle, minimum width=0.722cm, minimum height=0.472cm] at (3.394, 3.65){} node[anchor=center, align=center, text width=0.341cm, inner sep=5.8pt] at (3.394, 3.65){\scriptsize Ch2};
+                \node[shape=rectangle, minimum width=0.722cm, minimum height=0.472cm] at (1.897, 3.65){} node[anchor=center, align=center, text width=0.5cm, inner sep=5.8pt] at (1.897, 3.65){\scriptsize Ch1};
+                \node[shape=rectangle, minimum width=0.722cm, minimum height=0.472cm] at (3.394, 3.65){} node[anchor=center, align=center, text width=0.5cm, inner sep=5.8pt] at (3.394, 3.65){\scriptsize Ch2};
                 \node[circ] at (6.75, 3.25){};
-                \node[shape=rectangle, minimum width=0.722cm, minimum height=0.472cm] at (6.386, 3.661){} node[anchor=center, align=center, text width=0.341cm, inner sep=5.8pt] at (6.386, 3.661){\scriptsize Ch3};
+                \node[shape=rectangle, minimum width=0.722cm, minimum height=0.472cm] at (6.386, 3.661){} node[anchor=center, align=center, text width=0.5cm, inner sep=5.8pt] at (6.386, 3.661){\scriptsize Ch3};
                 \node[sground, xscale=0.6, yscale=0.6] at (2.25, 1.75){};
-                \node[shape=rectangle, minimum width=0.722cm, minimum height=0.472cm] at (3.125, 3){} node[anchor=center, align=center, text width=0.341cm, inner sep=5.8pt] at (3.125, 3){\scriptsize 1k};
-                \node[shape=rectangle, minimum width=0.722cm, minimum height=0.472cm] at (7.125, 2.5){} node[anchor=center, align=center, text width=0.341cm, inner sep=5.8pt] at (7.125, 2.5){\scriptsize 4,7};
+                \node[shape=rectangle, minimum width=0.722cm, minimum height=0.472cm] at (3.125, 3){} node[anchor=center, align=center, text width=0.5cm, inner sep=5.8pt] at (3.125, 3){\scriptsize 1k};
+                \node[shape=rectangle, minimum width=0.722cm, minimum height=0.472cm] at (7.125, 2.5){} node[anchor=center, align=center, text width=0.5cm, inner sep=5.8pt] at (7.125, 2.5){\scriptsize 4,7};
                 \node[sground, xscale=0.6, yscale=0.6] at (6.75, 1.75){};
                 \draw (2.25, 3.25) -- (2, 3.5);
                 \draw (3.75, 3.25) -- (3.5, 3.5);
@@ -65,10 +67,10 @@
     \label{fig: graficoConexionesOsciloscopio}
     \end{figure}
 
-    \begin{figure}
+    \begin{figure}[H]
         \centering
-        \includegraphics[width=0.5\linewidth]{V2=0.jpeg}
-    \caption{Foto de las conexiones para medir $ V_1, I_1 e I_2 $ en simultáneo con $ V_2 = 0 $.}
+        \includegraphics[width=0.5\linewidth]{V2=0.png}
+    \caption{Foto de las conexiones para medir $ V_1 $, $ I_1 $ e $ I_2 $ en simultáneo con $ V_2 = 0 $.}
     \label{fig: fotoConexionesOsciloscopio}
     \end{figure}
 
