@@ -69,8 +69,8 @@ Para eso, se definen los parámetros impedancia ($Z$), admitancia ($Y$) y transm
     \end{pmatrix}
     \qquad T = 
     \begin{pmatrix}
-        A & -B \\
-        C & -D
+        A & B \\
+        C & D
     \end{pmatrix}
 \end{equation*}
 tal que
@@ -86,8 +86,8 @@ tal que
     \end{cases}
     \qquad \qquad
     \begin{cases}
-        V_1 = V_2 \cdot A + I_1 \cdot (-B) \\ 
-        I_1 = V_2 \cdot C + I_1 \cdot (-D)
+        V_1 = V_2 \cdot A + (-I_2) \cdot B \\ 
+        I_1 = V_2 \cdot C + (-I_2) \cdot D
     \end{cases}
 \end{equation*}
 
@@ -104,7 +104,7 @@ estructura vista desde cualquiera de sus dos puertos, esto es si se cumplen las 
 Luego, un cuadripolo es \textbf{recíproco} si es simétrico y solo tiene elementos pasivos (resistencias, inductores o capacitores, no 
 fuentes). En estos casos, se puede afirmar
 \begin{equation*}
-    Z_{12}=Z_{21} \quad \wedge \quad Y_{12}=Y_{21} \quad \wedge \quad AD-BE=1
+    Z_{12}=Z_{21} \quad \wedge \quad Y_{12}=Y_{21} \quad \wedge \quad AD-BC=1
 \end{equation*}
 
 \par Por otro lado, la cátedra provee una tabla con ecuaciones que permiten obtener todos los parámetros a partir de cualquier otro. Los que serán 
