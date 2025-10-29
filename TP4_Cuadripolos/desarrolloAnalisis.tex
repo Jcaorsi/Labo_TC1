@@ -1,1 +1,173 @@
 \subsection{Análisis}
+
+
+\subsubsection{Cuadripolo 9603}
+
+Se comparan los valores medidos y los obtenidos por conversión para los parámetros $Y$ y $T$.
+
+\subsubsection*{Parámetros $Y$}
+
+La matriz medida fue:
+
+
+\[
+Y_{medido} =
+\begin{bmatrix}
+10 & 7.9 + 0.55j \\
+9.34 & 12.79 + 5.69j
+\end{bmatrix} \,\mathrm{mS}
+\]
+
+
+
+La matriz obtenida por conversión desde $Z$ fue:
+
+
+\[
+Y_{\mathrm{teorico}} =
+\begin{bmatrix}
+14.55 - 1.57j & -12.16 + 0.89j \\
+-14.76 + 1.07j & 17.277 + 5.23j
+\end{bmatrix} \,\mathrm{mS}
+\]
+
+
+
+Se observa una discrepancia significativa en los valores fuera de la diagonal, lo que sugiere que el modelo de conversión no refleja adecuadamente el acoplamiento observado en la medición. El error relativo en la componente $Y_{21}$ es:
+
+
+
+\[
+\varepsilon_{rel} = \frac{|\text{teórico} - \text{medido}|}{|\text{medido}|} = \frac{|(-14.76 + 1.07j) - 9.34|}{|9.34|} \approx 1.68
+\]
+
+
+
+Este error relativo del 168\% indica una diferencia importante.
+
+\subsubsection*{Parámetros $T$}
+
+Medido:
+
+
+\[
+T_{medido} =
+\begin{bmatrix}
+1.47 + 0.65j & -107.04\,\Omega \\
+6.31 + 7.53j\,\mathrm{mS} & -1.07
+\end{bmatrix}
+\]
+
+
+
+Convertido desde $Z$:
+
+
+\[
+T_{teorico} =
+\begin{bmatrix}
+1.14 + 0.44j & 67.37 + 4.91j\,\Omega \\
+5.09 + 5.45j\,\mathrm{mS} & 0.99 - 0.03j
+\end{bmatrix}
+\]
+
+
+
+El error relativo en la componente $T_{12}$ es especialmente significativo:
+
+
+
+\[
+\varepsilon_{rel} = \frac{|(67.37 + 4.91j) - (-107.04)|}{|107.04|} \approx 1.63
+\]
+
+
+
+Esto sugiere una discrepancia de más del 160\% en la impedancia de transferencia.
+
+\subsection{Cuadripolo 9609}
+
+\subsubsection*{Parámetros $Y$}
+
+Medido:
+
+
+\[
+Y_{medido} =
+\begin{bmatrix}
+4.18 + 1.52j & 2.63 - 0.32j \\
+1.95 - 0.60j & 2.91 + 0.20j
+\end{bmatrix} \,\mathrm{mS}
+\]
+
+
+
+Convertido desde $Z$:
+
+
+\[
+Y_{teorico} =
+\begin{bmatrix}
+7.98 + 0.47j & -2.85 + 2.19j \\
+-7.29 - 0.30j & 5.12 - 0.96j
+\end{bmatrix} \,\mathrm{mS}
+\]
+
+
+
+El error relativo en $Y_{21}$ es:
+
+
+
+\[
+\varepsilon_{rel} = \frac{|(-7.29 - 0.30j) - 1.95 + 0.60j|}{|1.95 - 0.60j|} \approx 4.3
+\]
+
+
+
+Lo que representa un error del 430\%, indicando una inversión de signo y magnitud.
+
+\subsubsection*{Parámetros $T$}
+
+Medido:
+
+
+\[
+T_{medido} =
+\begin{bmatrix}
+1.324 + 0.704j & -468.21 - 143.15j\,\Omega \\
+2.7 + 5.8j\,\mathrm{mS} & -1.74 - 1.31j
+\end{bmatrix}
+\]
+
+
+
+Convertido desde $Z$:
+
+
+\[
+T_{teorico} =
+\begin{bmatrix}
+0.69 - 0.16j & 136.93 - 5.69j\,\Omega \\
+2.78 + 1.24j\,\mathrm{mS} & 1.10 + 0.02j
+\end{bmatrix}
+\]
+
+
+
+El error relativo en $T_{12}$ es:
+
+
+
+\[
+\varepsilon_{rel} = \frac{|(136.93 - 5.69j) - (-468.21 - 143.15j)|}{|468.21 + 143.15j|} \approx 1.1
+\]
+
+
+
+Un error del 110\% que indica una discrepancia importante en la impedancia de transferencia.
+
+\subsection*{Conclusión}
+
+Los errores relativos observados en los parámetros indirectos obtenidos por conversión desde $Z$ son significativos en varios casos, especialmente en las componentes de transferencia ($Y_{21}$, $T_{12}$). Esto sugiere que las mediciones directas ofrecen una representación más precisa del comportamiento de los cuadripolos en condiciones reales, y que los modelos de conversión deben ser revisados o ajustados para mejorar su fidelidad.
+
