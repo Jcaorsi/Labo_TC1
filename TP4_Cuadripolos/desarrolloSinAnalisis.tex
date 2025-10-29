@@ -3,7 +3,7 @@
     \subsection{Procedimiento}
     
     Primero que nada, se configuró el generador de señales de manera que produjera una señal senoidal con offset nulo, 20 V de tensión
-    pico a pico (es decir 10 V de máxima) y con 1 kHz de frecuencia. Los 20 V pico a pico fue elegidos considerando los 15 V de máxima
+    pico a pico (es decir 10 V de máxima) y con 1 kHz de frecuencia. Los 20 V pico a pico fue elegido considerando los 15 V de máxima
     que soportan los cuadripolos, de manera que el valor de la señal fuera lo suficientemente grande como para obtener una buena 
     resolución en el osciloscopio pero a la vez lo suficientemente por debajo de la tensión máxima como para no arriesgar quemar los
     componentes. 
@@ -13,10 +13,7 @@
     $R_{min} = \frac{10 V}{50 mA} = 200 \Omega$. Para evitar trabajar en valores de corriente muy cercanos al límite, se optó por
     usar una resistencia de 1 $k\Omega$, de manera que $ I = \frac{10 V}{1 k\Omega} = 10 mA $ (muy por debajo de los 50 mA), 
     asegurándonos así de no dañar los equipos. Al mismo tiempo, no se usó una resistencia más grande para evitar trabajar con
-    corrientes muy pequeñas, las cuales podrían resultar en mayor ruido en las mediciones. Finalmente, una ventaja adicional de tomar
-    ese valor de resistencia es que su amplia diferencia con la resistencia interna del generador de 50 $ \Omega $ (dos órdenes de
-    magnitud) implica una menor influencia de la resistencia interna del generador sobre las mediciones, y por lo tanto un comportamiento
-    más cercano al ideal.
+    corrientes muy pequeñas, las cuales podrían resultar en mayor ruido en las mediciones. 
 
     \par Dado que resultaba menos trabajoso conectar y desconectar los cuadripolos a la protoboard y entre sí que anular tensiones y
     corrientes, se realizaron las mediciones de manera tal que para cada valor anulado, se medían todos los demás valores con ambos
@@ -24,10 +21,10 @@
     Por ejemplo, primero se anuló $ I_2 $ y se midieron $ I_1 $, $ V_1 $ y $ V_2 $ para el cuadripolo 9603, luego 
     para el 9609 y luego con ambos conectados en serie y en cascada (nótese que para obtener las ecuaciones de la matriz admitancia, 
     que es la estudiada en el conexionado en paralelo, solo anulan las tensiones $ V_1 $ y $ V_2 $, por lo que realizar las mediciones
-    con $ I_2 $ anulada habría sido útil).
+    con $ I_2 $ anulada no habría sido útil).
 
     \par Por otra parte, la forma que elegimos de medir corriente usando el osciloscopio fue midiendo la caída de tensión en una 
-    resistencia (esto es, la tensión tanto antes como después), y dividiéndola por la impedancia de la misma. Para $ I_1 $ se uso la
+    resistencia (esto es, la tensión tanto antes como después), y dividiéndola por la impedancia de la misma. Para $ I_1 $ se usó la
     resistencia de $ 1 k\Omega $, y para poder medir la corriente al realizar un cortocircuito en la salida, es decir al anular $ V_2 $,
     se usó una resistencia pequeña de 4,7 $\Omega$ (valor medido con el multímetro). Esta misma introdujo incertezas a las mediciones
     ya que en este caso uno no tendría tensión de salida igual a cero, sino que aproximadamente cero. Aun así se decidió usar este
@@ -116,7 +113,7 @@ $V_2$ & $0.435\,\mathrm{V}\,\angle\,-70^\circ$ & $0$ \\ \hline
 $I_1$ & $8.6\,\mathrm{mA}\,\angle\,2^\circ$ & $8.3\,\mathrm{mA}\,\angle\,0^\circ$ \\ \hline
 $I_2$ & $0$ & $1.985\,\mathrm{mA}\,\angle\,-12^\circ$ \\ \hline
 \end{tabular}
-\caption{Mediciones de tensiones y corrientes en conexión en cascada}
+\caption{Mediciones de tensiones y corrientes en conexión en cascada de los cuadripolos 9603 y 9609 en ese orden.}
 \label{tab:corrientes_tensiones_cascada}
 \end{table}
 
@@ -160,11 +157,11 @@ $I_2$ & $8.5\,\mathrm{mA}\,\angle\,0^\circ$ & $5.441\,\mathrm{mA}\,\angle\,-4^\c
 \centering
 \begin{minipage}{0.48\textwidth}
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$}} \\ \hline
-$10\,\mathrm{mS}$ & $(7.9 + 0.5523j)\,\mathrm{mS}$ \\ \hline
-$9.342\,\mathrm{mS}$ & $(12.789 + 5.694j)\,\mathrm{mS}$ \\ \hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ [$\mathrm{mS}$]}} \\ \hline
+$10      \,$ & $7.9 + 0.55j\,$ \\ \hline
+$9.34      \,$ & $  $  $12.79 + 5.69j\,$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $Y$ correspondiente al cuadripolo 9603. Matriz calculada a partir de parámetros medidos.}
 \label{tab:matriz_Y9603}
@@ -175,8 +172,8 @@ $9.342\,\mathrm{mS}$ & $(12.789 + 5.694j)\,\mathrm{mS}$ \\ \hline
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{2}{|c|}{\textbf{Matriz de parámetros $T$}} \\ \hline
-$1.468$ & $-107.04\,\Omega$ \\ \hline
-$6.316\times10^{-3}\,\mathrm{S}$ & $-1.07$ \\ \hline
+$1.47 + 0,65j$ & $-107.04\,\Omega$ \\ \hline
+$6.31 + 7,53j$ $ \mathrm{mS} $ & $-1.07$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $T$ correspondiente al cuadripolo 9603. Matriz calculada a partir de parámetros medidos.}
 \label{tab:matriz_T9603}
@@ -187,9 +184,9 @@ $6.316\times10^{-3}\,\mathrm{S}$ & $-1.07$ \\ \hline
 \centering
 \begin{tabular}{|l|l|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Z$}} \\ \hline
-$(146.98 - 71.69j)\,\Omega$ & $(75.33 - 80.79j)\,\Omega$ \\ \hline
-$(91.47 - 98.08j)\,\Omega$ & $(86.97 - 100.04j)\,\Omega$ \\ \hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Z$ [$\mathrm{\Omega}$]}} \\ \hline
+$146.98 - 71.69j\,$ & $75.33 - 80.79j\,$ \\ \hline
+$91.47 - 98.08j\,$ & $86.97 - 100.04j\,$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $Z$ correspondiente al cuadripolo 9603. Matriz calculada a partir de parametros medidos}
 \label{tab:matriz_Z9603}
@@ -199,11 +196,11 @@ Luego, en base a la tabla \ref{tab:matriz_Z9603} se calcularon los parametros Y 
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ (método indirecto)}} \\ \hline
-$(14.55 - 1.572j)\,\mathrm{mS}$ & $(-12.16 + 0.886j)\,\mathrm{mS}$ \\ \hline
-$(-14.76 + 1.075j)\,\mathrm{mS}$ & $(17.277 + 5.227j)\,\mathrm{mS}$ \\ \hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ (método indirecto)[$\mathrm{mS}$]}} \\ \hline
+$14.55 - 1.57j\,$ & $-12.16 + 0.89j\,$ \\ \hline
+$-14.76 + 1.07j\,$ & $17.277 + 5.23j\,$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $Y$ obtenida por el método indirecto para el cuadripolo 9603}
 \label{tab:matriz_Y9603_indirecta}
@@ -214,8 +211,8 @@ $(-14.76 + 1.075j)\,\mathrm{mS}$ & $(17.277 + 5.227j)\,\mathrm{mS}$ \\ \hline
 \begin{tabular}{|l|l|}
 \hline
 \multicolumn{2}{|c|}{\textbf{Matriz de parámetros $T$ (método indirecto)}} \\ \hline
-$(1.138 + 0.437j)$ & $(67.37 + 4.91j)\,\Omega$ \\ \hline
-$(0.00509 + 0.00545j)\,\mathrm{S}$ & $(0.9878 - 0.0345j)$ \\ \hline
+$1.14 + 0.44j$ & $(67.37 + 4.91j)\,\Omega$ \\ \hline
+$(5,09 + 5,45j)\,\mathrm{mS}$ & $0.99 - 0.03j$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $T$ obtenida por el método indirecto para el cuadripolo 9603}
 \label{tab:matriz_T9603_indirecta}
@@ -228,11 +225,11 @@ $(0.00509 + 0.00545j)\,\mathrm{S}$ & $(0.9878 - 0.0345j)$ \\ \hline
 \centering
 \begin{minipage}{0.48\textwidth}
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$}} \\ \hline
-$(4.176 + 1.520j)\,\mathrm{mS}$ & $(2.627 - 0.323j)\,\mathrm{mS}$ \\ \hline
-$(1.953 - 0.597j)\,\mathrm{mS}$ & $(2.913 + 0.204j)\,\mathrm{mS}$ \\ \hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ [$\mathrm{mS}$]}} \\ \hline
+$4.18 + 1.52j\,$ & $2.63 - 0.32j\,$ \\ \hline
+$1.95 - 0.60j\,$ & $2.91 + 0.20j\,$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $Y$ correspondiente al cuadripolo 9609. Matriz calculada a partir de parámetros medidos.}
 \label{tab:matriz_Y_9609}
@@ -240,11 +237,11 @@ $(1.953 - 0.597j)\,\mathrm{mS}$ & $(2.913 + 0.204j)\,\mathrm{mS}$ \\ \hline
 \hfill
 \begin{minipage}{0.48\textwidth}
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
 \multicolumn{2}{|c|}{\textbf{Matriz de parámetros $T$}} \\ \hline
-$(1.324 + 0.704j)$ & $(-468.21 - 143.15j)\,\Omega$ \\ \hline
-$(0.003 + 0.006j)\,\mathrm{S}$ & $(-1.738 - 1.310j)$ \\ \hline
+$1.324 + 0.704j$ & $(-468.21 - 143.15j)\,\Omega$ \\ \hline
+$(2.7 + 5.8j)\,\mathrm{mS}$ & $-1.74 - 1.31j$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $T$ correspondiente al cuadripolo 9609. Matriz calculada a partir de parámetros medidos.}
 \label{tab:matriz_T_9609}
@@ -255,9 +252,9 @@ $(0.003 + 0.006j)\,\mathrm{S}$ & $(-1.738 - 1.310j)$ \\ \hline
 \centering
 \begin{tabular}{|l|l|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Z$}} \\ \hline
-$(187.18 - 141.05j)\,\Omega$ & $(70.86 - 145.28j)\,\Omega$ \\ \hline
-$(299.76 - 133.46j)\,\Omega$ & $(331.00 - 140.50j)\,\Omega$ \\ \hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Z$ [$\mathrm{\Omega}$]}} \\ \hline
+$187.18 - 141.05j\,$ & $70.86 - 145.28j\,$ \\ \hline
+$299.76 - 133.46j\, $ & $331.00 - 140.50j\,$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $Z$ correspondiente al cuadripolo 9609. Matriz calculada a partir de parámetros medidos.}
 \label{tab:matriz_Z9609}
@@ -267,11 +264,11 @@ Luego, en base a la tabla \ref{tab:matriz_Z9609} se calcularon los parametros Y 
 	
 	\begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ (método indirecto)}} \\ \hline
-$(7.982 + 0.471j)\,\mathrm{mS}$ & $(-2.847 + 2.194j)\,\mathrm{mS}$ \\ \hline
-$(-7.290 - 0.303j)\,\mathrm{mS}$ & $(5.122 - 0.961j)\,\mathrm{mS}$ \\ \hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ (método indirecto) [$\mathrm{mS}$]}} \\ \hline
+$7.98 + 0.47j\,$ & $-2.85 + 2.19j\,$ \\ \hline
+$-7.29 - 0.30j\,$ & $5.12 - 0.96j\,$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $Y$ obtenida por el método indirecto para el cuadripolo 9606}
 \label{tab:matriz_Y9606_indirecta}
@@ -279,11 +276,11 @@ $(-7.290 - 0.303j)\,\mathrm{mS}$ & $(5.122 - 0.961j)\,\mathrm{mS}$ \\ \hline
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
 \multicolumn{2}{|c|}{\textbf{Matriz de parámetros $T$ (método indirecto)}} \\ \hline
-$(0.696 - 0.161j)$ & $(136.935 - 5.688j)\,\Omega$ \\ \hline
-$(0.003 + 0.001j)\,\mathrm{S}$ & $(1.096 + 0.019j)$ \\ \hline
+$0.69 - 0.16j$ & $136.93 - 5.69j\,\Omega$ \\ \hline
+$(2.78 + 1.24j)\,\mathrm{mS}$ & $1.10 + 0.02j$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $T$ obtenida por el método indirecto para el cuadripolo 9609}
 \label{tab:matriz_T9609_indirecta}
@@ -293,11 +290,11 @@ $(0.003 + 0.001j)\,\mathrm{S}$ & $(1.096 + 0.019j)$ \\ \hline
 	
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Z$ cuadripolos en serie}} \\ \hline
-$(334.16 - 212.74j)\,\Omega$ & $(146.20 - 226.07j)\,\Omega$ \\ \hline
-$(391.23 - 231.55j)\,\Omega$ & $(417.97 - 240.55j)\,\Omega$ \\ \hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Z$ cuadripolos en serie [$\mathrm{\Omega}$]}} \\ \hline
+$334.16 - 212.74j\,$ & $146.20 - 226.07j\,$ \\ \hline
+$391.23 - 231.55j\,$ & $417.97 - 240.55j\,$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $Z$ equivalente correspondiente a la conexión en serie de los cuadripolos 9603 y 9609, calculada a partir de $Z_{9603} + Z_{9609}$.}
 \label{tab:matriz_Z_serie_9603_9609}
@@ -305,11 +302,11 @@ $(391.23 - 231.55j)\,\Omega$ & $(417.97 - 240.55j)\,\Omega$ \\ \hline
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Z$ serie a partir de mediciones}} \\ \hline
-$(291.82 - 196.84j)\,\Omega$ & $(219.41 - 204.60j)\,\Omega$ \\ \hline
-$(213.55 - 213.55j)\,\Omega$ & $(244.80 - 212.80j)\,\Omega$ \\ \hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Z$ serie [$\mathrm{\Omega}$]}} \\ \hline
+$291.82 - 196.84j\,$ & $219.41 - 204.60j\,$ \\ \hline
+$213.55 - 213.55j\,$ & $244.80 - 212.80j\,$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $Z$ correspondiente a la conexión en serie directa de los cuadripolos 9603 y 9609, calculada a partir de los valores medidos en el laboratorio.}
 \label{tab:matriz_Z_serie_directa}
@@ -317,11 +314,11 @@ $(213.55 - 213.55j)\,\Omega$ & $(244.80 - 212.80j)\,\Omega$ \\ \hline
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
 \multicolumn{2}{|c|}{\textbf{Matriz de parámetros $T$ equivalente (conexión en cascada)}} \\ \hline
-$(1.9448 + 1.2786j)$ & $(-407.76 - 375.99j)\,\Omega$ \\ \hline
-$(1.70\times10^{-4} + 8.21\times10^{-3}j)\,\mathrm{S}$ & $(-0.0197 - 3.0269j)$ \\ \hline
+$1.94 + 1.28j$ & $(-407.76 - 375.99j)\,\Omega$ \\ \hline
+$(0.17 + 8.21j)\,\mathrm{mS}$ & $-0.02 - 3.03j$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $T$ equivalente correspondiente a la conexión en cascada de los cuadripolos 9603 y 9609, calculada mediante la multiplicación $T_{9603} \cdot T_{9609}$ conseguidas mediante los datos directos.}
 \label{tab:matriz_T_cascada_procuto}
@@ -329,11 +326,11 @@ $(1.70\times10^{-4} + 8.21\times10^{-3}j)\,\mathrm{S}$ & $(-0.0197 - 3.0269j)$ \
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
 \multicolumn{2}{|c|}{\textbf{Matriz de parámetros $T$ a partir de mediciones}} \\ \hline
-$(1.6214 + 2.2318j)$ & $(-614.61)\,\Omega$ \\ \hline
-$(6.109\times10^{-3} + 0.0188j)\,\mathrm{S}$ & $(-3.9421 - 0.8379j)$ \\ \hline
+$1.62 + 2.23j$ & $(-614.61)\,\Omega$ \\ \hline
+$(6.11 + 18,8j)\,\mathrm{mS}$ & $-3.94 - 0.84j$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $T$ correspondiente a la conexión en cascada de los cuadripolos 9603 y 9609, obtenida directamente a partir de los valores medidos en el laboratorio.}
 \label{tab:matriz_T_cascada_directa}
@@ -341,11 +338,11 @@ $(6.109\times10^{-3} + 0.0188j)\,\mathrm{S}$ & $(-3.9421 - 0.8379j)$ \\ \hline
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ equivalente ($Y_{9603} + Y_{9609}$)}} \\ \hline
-$(0.014176 + 0.001520j)\,\mathrm{S}$ & $(0.010527 + 0.000230j)\,\mathrm{S}$ \\ \hline
-$(0.011296 - 0.000598j)\,\mathrm{S}$ & $(0.015703 + 0.005899j)\,\mathrm{S}$ \\ \hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ equivalente ($Y_{9603} + Y_{9609}$) [$\mathrm{mS}$] }} \\ \hline
+$(14.18 + 1.52j)\,$ & $(10.53 + 0.23j)\,$ \\ \hline
+$(11,30 - 0.60j)\,$ & $(15.70 + 5.9j)\,$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $Y$ equivalente correspondiente a la conexión en paralelo de los cuadripolos 9603 y 9609, calculada a partir de $Y_{9603} + Y_{9609}$.}
 \label{tab:matriz_Y_paralelo_suma}
@@ -353,11 +350,11 @@ $(0.011296 - 0.000598j)\,\mathrm{S}$ & $(0.015703 + 0.005899j)\,\mathrm{S}$ \\ \
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ (medición directa)}} \\ \hline
-$(0.01406)\,\mathrm{S}$ & $(8.62\times10^{-3})\,\mathrm{S}$ \\ \hline
-$(8.481\times10^{-3} - 5.930\times10^{-4}j)\,\mathrm{S}$ & $(0.01377 + 5.012\times10^{-3}j)\,\mathrm{S}$ \\ \hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ (medición directa) [$\mathrm{mS}$]}} \\ \hline
+$14.06\, $ & $8.62\, $ \\ \hline
+$8.48 - 0.59j\, $ & $13.77 + 5.01 j\,$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $Y$ correspondiente a la conexión en paralelo de los cuadripolos 9603 y 9609, obtenida directamente a partir de los valores medidos en el laboratorio.}
 \label{tab:matriz_Y_paralelo_directa}
@@ -365,11 +362,11 @@ $(8.481\times10^{-3} - 5.930\times10^{-4}j)\,\mathrm{S}$ & $(0.01377 + 5.012\tim
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ equivalente ($Y$ a partir de $Z$)}} \\ \hline
-$(0.02253 - 0.00110j)\,\mathrm{S}$ & $(-0.01501 + 0.00381j)\,\mathrm{S}$ \\ \hline
-$(-0.02205 + 0.00077j)\,\mathrm{S}$ & $(0.02240 + 0.00427j)\,\mathrm{S}$ \\ \hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ equivalente ($Y$ a partir de $Z$) [$\mathrm{mS}$]}} \\ \hline
+$(22.53 - 1.10j)\,$ & $(-15.01 + 3.08j)\,$ \\ \hline
+$(-22.05 + 0.77j)\,$ & $(22.40 + 4.27j)\,$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $Y$ equivalente correspondiente a la conexión en paralelo de los cuadripolos 9603 y 9609, calculada a partir de $Z_{9603}$ y $Z_{9609}$.}
 \label{tab:matriz_Y_paralelo_desdeZ}
@@ -377,11 +374,13 @@ $(-0.02205 + 0.00077j)\,\mathrm{S}$ & $(0.02240 + 0.00427j)\,\mathrm{S}$ \\ \hli
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|}
 \hline
 \multicolumn{2}{|c|}{\textbf{Matriz de parámetros $T$ equivalente ($T_{9603} \cdot T_{9609}$ a partir de $Z$)}} \\ \hline
-$(1.0439 + 0.2184j)$ & $(232.09 + 60.03j)\,\Omega$ \\ \hline
-$(7.1225\times10^{-3} + 4.298\times10^{-3}j)\,\mathrm{S}$ & $(1.8089 + 0.7745j)$ \\ \hline
+$1.04 + 0.22j$ & $(232.09 + 60.03j)\,\Omega$ \\ \hline
+$(7.12 + 4.3 j)\,\mathrm{mS}$ & $1.81 + 0.77
+
+j)$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $T$ equivalente correspondiente a la conexión en cascada de los cuadripolos 9603 y 9609, calculada a partir de los parámetros $T$ derivados de $Z$.}
 \label{tab:matriz_T_cascada_desdeZ}

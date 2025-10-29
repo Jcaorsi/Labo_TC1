@@ -11,7 +11,7 @@ de conectar de distintas maneras dos cuadripolos con parámetros obtenidos previ
         resistencia interna de $ 50 \Omega $ % lo tuvimos en cuenta?? vale la pena mencionarlo??
   \item Cuadripolo 9603
   \item Cuadripolo 9609
-  \item Resistencia de $ 4,7 \Omega $
+  \item Resistencia de $ 4,7 \Omega $ nominal.
   \item Resistencia de $ 1 K\Omega $
 \end{itemize}
 Para ambos cuadripolos, la tensión máxima de entrada es de 15 V, y la corriente máxima de entrada vale 50 mA.
@@ -96,13 +96,13 @@ Si por ejemplo se quisiera obtener el parámetro $ Z_{11} $, anulando $ I_2$ y d
     Z_{11} = \frac{V_1}{I_1} \Biggr|_{\substack{I_2=0}} % Aunque esté rojo, no tira error!
 \end{equation*}
 
-\par Otro aspecto que se buscó estudiar es si un cuadripolo era simétrico o recíproco. Se dice que un cuadripolo es \textbf{simétrico} si que tiene la misma
-estructura vista desde cualquiera de sus dos puertos, esto es si se cumplen las siguientes ecuaciones en simultáneo:
+\par Otro aspecto que se buscó estudiar es si un cuadripolo era simétrico o recíproco. Se dice que un cuadripolo es \textbf{simétrico} si
+ al alimentarlo por el puerto 1 se obtiene, en el puerto 2, la misma respuesta que se 
+ obtendría en el puerto 1 si se alimentara por el puerto 2. Esto es si se cumplen las siguientes ecuaciones en simultáneo:
 \begin{equation*}
     Z_{11}=Z_{22} \quad \wedge \quad Y_{11}=Y_{22} \quad \wedge \quad A=D
 \end{equation*}
-Luego, un cuadripolo es \textbf{recíproco} si es simétrico y solo tiene elementos pasivos (resistencias, inductores o capacitores, no 
-fuentes). En estos casos, se puede afirmar
+Luego, un cuadripolo es \textbf{recíproco} si es simétrico y solo tiene elementos pasivos (resistencias, inductores o capacitores). En estos casos, se puede afirmar
 \begin{equation*}
     Z_{12}=Z_{21} \quad \wedge \quad Y_{12}=Y_{21} \quad \wedge \quad AD-BC=1
 \end{equation*}
@@ -235,7 +235,7 @@ originales. Para saber si esto sucede o no, se realiza el \textbf{Test de Brune}
 
 % No sé por qué, si pongo dos dibujos en una misma \begin{equation*} me tira error
 
-Si se cumple que la tensión del voltímetro es cero o cercana a cero en ambos casos, entonces se cumple la condición de Brune y se puede 
+Si se cumple que la tensión del voltímetro es cero o cercana a cero en ambos casos, entonces se cumple la condición de puertos y se puede 
 obtener la matriz Z de la manera explicada.
 
 \subsubsection*{Conexión en Paralelo}
@@ -287,6 +287,7 @@ De forma análoga al conexionado serie, no siempre se cumple esta relación. El 
 
 \begin{figure}[h]
 \centering
+\captionsetup{justification=centering, margin=1.5cm}
 \begin{minipage}{0.45\textwidth}
     \centering
     \begin{equation*}
@@ -313,44 +314,20 @@ De forma análoga al conexionado serie, no siempre se cumple esta relación. El 
         \end{tikzpicture}
     \end{equation*}
 \end{minipage}%
-\hspace{0.05\textwidth}% espacio entre figuras
-\begin{minipage}{0.45\textwidth}
-    \centering
-    \begin{equation*}
-    \begin{tikzpicture}
-        \node[shape=rectangle, draw, line width=1pt, minimum width=1.965cm, minimum height=1.965cm] at (5, 5){};
-        \draw (4.25, 5.5) -- (4.25, 5.75);
-        \draw (4.5, 5.5) -- (4.5, 5.75);
-        \draw (4.75, 5.75) -- (4.75, 5.5);
-        \draw (4, 5.75) -- (2.5, 5.75);
-        \draw (4, 1.75) -- (2.5, 1.75);
-        \draw (6, 5.75) -| (8, 5.75);
-        \draw (6, 1.75) -| (8, 3.25);
-        \node[shape=rectangle, draw, line width=1pt, minimum width=1.965cm, minimum height=1.965cm] at (5, 2.5){};
-        \draw (4.25, 3.25) -| (4.25, 3);
-        \draw (4.5, 3.25) -| (4.5, 3);
-        \draw (4.75, 3.25) -| (4.75, 3);
-        \node[oscillator, xscale=0.6, yscale=0.6] at (8.294, 3.544){};
-        \draw (3.5, 4.25) to[voltmeter, /tikz/circuitikz/bipoles/length=0.840cm] (3.5, 3.25);
-        \draw (6, 4.25) -- (7, 4.25);
-        \draw (6, 3.25) -| (7, 4.25);
-        \draw (8, 5.75) to[american resistor, /tikz/circuitikz/bipoles/length=0.840cm] (8, 3.838);
-        \draw (3.5, 4.25) -- (4, 4.25);
-        \draw (3.5, 3.25) -- (4, 3.25);
-    \end{tikzpicture}    
-\end{equation*}
-\end{minipage}
-\caption{Test de Brune para el conexionado en Paralelo.}
+
+\caption{Test de Brune para el conexionado en Paralelo. Se mide la tensión entre los puertos cortocircuitados de la figura y se verifica si es cero. También se realiza el mismo procedimiento invirtiendo la conexión del generador y el cortocircuito.}
 \label{fig: testBruneParalelo}
 \end{figure}
 
-Si se cumple que la tensión del voltímetro es cero o cercana a cero en ambos casos, entonces se cumple la condición de Brune y se puede 
+Si se cumple que la tensión del voltímetro es cero o cercana a cero en ambos casos, entonces se cumple la condición de puertos y se puede 
 obtener la matriz Y de la manera explicada.
 
 
 \subsubsection*{Conexión en Cascada}
 
-\begin{figure}
+\begin{figure}[H]
+    \centering
+\captionsetup{justification=centering, margin=1.5cm}
     \begin{equation*}
         \begin{tikzpicture}
         % Paths, nodes and wires:
@@ -384,7 +361,7 @@ obtener la matriz Y de la manera explicada.
         \draw (6.75, 4.25) -- (6, 4.25);
     \end{tikzpicture}
     \end{equation*}
-\caption{Dos cuadripolos conectados en cascada.}
+\caption{Dos cuadripolos conectados en cascada. A la izquierda está el cuadripolo A y a la derecha el cuadripolo B.}
 \label{fig: conexinoCascada}
 \end{figure}
 
