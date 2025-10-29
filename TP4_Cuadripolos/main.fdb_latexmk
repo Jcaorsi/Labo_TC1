@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761748415.76566 "c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP4_Cuadripolos/main.tex" "main.pdf" "main" 1761748418.97009 0
+["pdflatex"] 1761749144.612 "c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP4_Cuadripolos/main.tex" "main.pdf" "main" 1761749147.1376 0
   "C:/Users/caorsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1761241667 82047 f453b55ebb61edd127187c166946b504 ""
   "C:/Users/caorsi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1440.pk" 1755787232 18748 faf8ce1ff2bbf2571d449f4bcf9cc49f ""
   "C:/Users/caorsi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx2074.pk" 1755787235 28420 b088c4556d4ba2557f8f41b00bbbda39 ""
@@ -178,14 +178,14 @@
   "c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP4_Cuadripolos/main.tex" 1761674043 3139 bd839cdd04cff9f2cfcd5ca7f06ba9dd ""
   "conclusiones.tex" 1761574565 0 d41d8cd98f00b204e9800998ecf8427e ""
   "desarrolloAnalisis.tex" 1761574565 22 64f5ba45b47d124043fa2fa90012aabb ""
-  "desarrolloSinAnalisis.tex" 1761748413 18573 3a847d507935534d6393202ec7d53677 ""
+  "desarrolloSinAnalisis.tex" 1761749140 18534 9bf76813c28caf7b9f322a0057bd7654 ""
   "imagenesFiguras/Logo_ITBA.png" 1761574565 34082 18565f2ade26fe38705e2ad93c029b27 ""
   "imagenesFiguras/V2=0.png" 1761574565 2190927 e34512096dada32b954e0e47ce8fa31c ""
   "introduccion.tex" 1761674174 20961 373127cb0528af7e8ba5a386b8f11307 ""
-  "main.aux" 1761748418 13998 b48c084290d05b7a1b049d7107574ad9 "pdflatex"
-  "main.out" 1761748418 1019 3d1b1061fa77ef919f01cc647f205250 "pdflatex"
+  "main.aux" 1761749146 14002 fbbf0e8a3913f83d13eef0ed18f3b19b "pdflatex"
+  "main.out" 1761749146 1019 3d1b1061fa77ef919f01cc647f205250 "pdflatex"
   "main.tex" 1761674043 3139 bd839cdd04cff9f2cfcd5ca7f06ba9dd ""
-  "main.toc" 1761748418 727 8b3d7292c77b936333bab45e3543320d "pdflatex"
+  "main.toc" 1761749146 727 8b3d7292c77b936333bab45e3543320d "pdflatex"
   (generated)
   "main.aux"
   "main.log"
