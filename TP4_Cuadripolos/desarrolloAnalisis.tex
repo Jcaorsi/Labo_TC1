@@ -173,7 +173,11 @@ El error relativo en $T_{12}$ es:
 
 Un error del 110\% que indica una discrepancia importante en la impedancia de transferencia.
 
-\subsection*{Conclusión}
+\subsubsection{Parametros combinados}
+Como se puede observar en la tabla \ref{medicionesTestBrune} de la medicion del test de Brune en el conexionado en serie se obtuvo un resultado de $1,6 V$, lejano a $0 V$, por lo que resulta esperable que la suma de las matrices de impedancia de un valor distinto de la matriz impedancia medida de los cuadripolos conectados en serie. Luego, con el conexionado en paralelo, el test de Brune da $0 V$, por lo que es correcto afirmar que la suma de las matrices admitancia de ambos cuadripolos deberia resultar en la matriz admitancia del conjunto. Sin embargo, esto no se refleja en los calculos. El error relativo en el coeficiente $Y_{21}$ es
 
-Los errores relativos observados en los parámetros indirectos obtenidos por conversión desde $Z$ son significativos en varios casos, especialmente en las componentes de transferencia ($Y_{21}$, $T_{12}$). Esto sugiere que las mediciones directas ofrecen una representación más precisa del comportamiento de los cuadripolos en condiciones reales, y que los modelos de conversión deben ser revisados o ajustados para mejorar su fidelidad.
+\begin{equation*}
+    \varepsilon_r = \frac{\left| (8,48 - 0,59j) - (11,30 - 0,60j) \right|} {\left| 8,48 - 0,59j \right|} \approx 0,33
+\end{equation*}
 
+esto es, los parametros admitancia del conexionado en paralelo discrepan de los esperados en un 33%.
