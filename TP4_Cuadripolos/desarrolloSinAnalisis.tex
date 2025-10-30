@@ -1,4 +1,4 @@
-    \graphicspath{{imagenesFiguras/}} %para que acceda a las fotos en la carpeta directamente
+\graphicspath{{imagenesFiguras/}} %para que acceda a las fotos en la carpeta directamente
 
     \subsection{Procedimiento}
     
@@ -146,12 +146,26 @@ $I_2$ & $8.5\,\mathrm{mA}\,\angle\,0^\circ$ & $5.441\,\mathrm{mA}\,\angle\,-4^\c
 \end{table}
 
 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+               & Medicion de la Condicion de Brune $[V]$\\ \hline
+  Serie        & 1,2 \\ \hline
+  Paralelo     & 0   \\ \hline
+\end{tabular}
+\caption{Medicion de la Condicion de Brune acorde al conexionado de la figura de la derecha en \ref{testBruneSerie} y a \ref{testBruneParalelo} }
+\label{tab:medicionesTestBrune}
+\end{table}
+
+
      
     \subsection{Cálculos}
 
 	Para el calculo de los parámetros Y, Z y T se usaron las ecuaciones detalladas en el marco teórico. Los resultados obtenidos fueron:
 	
-	\subsubsection*{Cuadripolo 9603}
+	\subsubsection{Cuadripolo 9603}
 	
 	\begin{table}[H]
 \centering
@@ -159,7 +173,7 @@ $I_2$ & $8.5\,\mathrm{mA}\,\angle\,0^\circ$ & $5.441\,\mathrm{mA}\,\angle\,-4^\c
 \centering
 \begin{tabular}{|c|c|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$ [$\mathrm{mS}$]}} \\ \hline
+\multicolumn{2}{|c|}{\textbf{Matriz de parámetros $Y$[$\mathrm{mS}$]}} \\ \hline
 $10      \,$ & $7.9 + 0.55j\,$ \\ \hline
 $9.34      \,$ & $  $  $12.79 + 5.69j\,$ \\ \hline
 \end{tabular}
@@ -212,13 +226,13 @@ $-14.76 + 1.07j\,$ & $17.277 + 5.23j\,$ \\ \hline
 \hline
 \multicolumn{2}{|c|}{\textbf{Matriz de parámetros $T$ (método indirecto)}} \\ \hline
 $1.14 + 0.44j$ & $(67.37 + 4.91j)\,\Omega$ \\ \hline
-$(5,09 + 5,45j)\,\mathrm{mS}$ & $0.99 - 0.03j$ \\ \hline
+$5,09 + 5,45j$ & $0.99 - 0.03j$ \\ \hline
 \end{tabular}
 \caption{Matriz de parámetros $T$ obtenida por conversión de parámetros para el cuadripolo 9603}
 \label{tab:matriz_T9603_indirecta}
 \end{table}
 	
-	\subsubsection*{Cuadripolo 9609}
+	\subsubsection{Cuadripolo 9609}
 	
 
 \begin{table}[H]
@@ -286,7 +300,7 @@ $(2.78 + 1.24j)\,\mathrm{mS}$ & $1.10 + 0.02j$ \\ \hline
 \label{tab:matriz_T9609_indirecta}
 \end{table}
 
-	\subsection*{Parametros combinados}
+	\subsubsection{Parametros combinados}
 	
 \begin{table}[H]
 \centering
@@ -385,9 +399,3 @@ j)$ \\ \hline
 \caption{Matriz de parámetros $T$ equivalente correspondiente a la conexión en cascada de los cuadripolos 9603 y 9609, calculada a partir de los parámetros $T$ derivados de $Z$.}
 \label{tab:matriz_T_cascada_desdeZ}
 \end{table}
-
-	
-	
-	
-	
-	
