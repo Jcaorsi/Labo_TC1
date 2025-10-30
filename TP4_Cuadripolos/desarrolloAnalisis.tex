@@ -1,172 +1,174 @@
 \subsection{Análisis}
 
-Al comparar los datos calculados, se observaron grandes diferencias en los valores. 
+Al comparar los datos calculados, se observaron grandes diferencias en los valores. Aun así se pudieron observar los siguientes rasgos en cada cuadripolo.
 
-\subsubsection{Cuadripolo 9603}
-
-
-Una de las primeras observaciones que se pueden hacer de la tabla \ref{tab:matriz_Z9603}, es que todos los valores imaginarios de los parametros, son negativos. De aquí se puede inducir que el mismo cuenta con componentes predominantemente capacitivos y no inductivos. Otra conclusión que se puede obtener de esta tabla, es que este cuadripolo no cumple con las condiciones de simetría ni reciprocidad.
-
-Se comparan los valores medidos y los obtenidos por conversión para los parámetros $Y$ y $T$.
-
-\subsubsection*{Parámetros $Y$}
-
-La matriz medida fue:
+\subsubsection{Cuadripolos individuales}
 
 
-\[
-Y_{medido} =
-\begin{bmatrix}
-10 & 7.9 + 0.55j \\
-9.34 & 12.79 + 5.69j
-\end{bmatrix} \,\mathrm{mS}
-\]
-
-
-
-La matriz obtenida por conversión desde $Z$ fue:
-
-
-\[
-Y_{\mathrm{teorico}} =
-\begin{bmatrix}
-14.55 - 1.57j & -12.16 + 0.89j \\
--14.76 + 1.07j & 17.277 + 5.23j
-\end{bmatrix} \,\mathrm{mS}
-\]
-
-
-
-Se observa una discrepancia significativa en los valores fuera de la diagonal, lo que sugiere que el modelo de conversión no refleja adecuadamente el acoplamiento observado en la medición. El error relativo en la componente $Y_{21}$ es:
-
-
-
-\[
-\varepsilon_{rel} = \frac{|\text{teórico} - \text{medido}|}{|\text{medido}|} = \frac{|(-14.76 + 1.07j) - 9.34|}{|9.34|} \approx 1.68
-\]
-
-
-
-Este error relativo del 168\% indica una diferencia importante.
-
-\subsubsection*{Parámetros $T$}
-
-Medido:
-
-
-\[
-T_{medido} =
-\begin{bmatrix}
-1.47 + 0.65j & -107.04\,\Omega \\
-6.31 + 7.53j\,\mathrm{mS} & -1.07
-\end{bmatrix}
-\]
-
-
-
-Convertido desde $Z$:
-
-
-\[
-T_{teorico} =
-\begin{bmatrix}
-1.14 + 0.44j & 67.37 + 4.91j\,\Omega \\
-5.09 + 5.45j\,\mathrm{mS} & 0.99 - 0.03j
-\end{bmatrix}
-\]
-
-
-
-El error relativo en la componente $T_{12}$ es especialmente significativo:
-
-
-
-\[
-\varepsilon_{rel} = \frac{|(67.37 + 4.91j) - (-107.04)|}{|107.04|} \approx 1.63
-\]
-
-
-
-Esto sugiere una discrepancia de más del 160\% en la impedancia de transferencia.
-
-\subsubsection{Cuadripolo 9609}
-
+Una de las primeras observaciones que se pueden hacer para el cuadripolo 9603 de la tabla \ref{tab:matriz_Z9603}, es que todos los valores imaginarios de los parámetros son negativos. De aquí se puede inducir que el mismo cuenta con componentes predominantemente capacitivos y no inductivos. Otra conclusión que se puede obtener de esta tabla, es que este cuadripolo no cumple con las condiciones de simetría ni reciprocidad. Esto puesto a que $Z_{11} \neq Z_{22}$, por lo tanto no es simétrico; $Z_{12} \neq Z_{21}$ por lo tanto no es recíproco.
 Al repetir el procedimiento que se hizo en el cuadripolo anterior, al observar la matriz Z (tabla \ref{tab:matriz_Z9609}), también se puede deducir que el cuadripolo tiene componentes capacitivos, puesto a que la parte imaginaria de cada parametro es negativa. También se puede observar que este cuadripolo no es ni simétrico ni reciproco. 
 
-\subsubsection*{Parámetros $Y$}
+Se comparan los valores medidos y los obtenidos por conversión para los parámetros $Y$ y $T$. Al comparar las tablas \ref{tab:matriz_Y9603} (medid0)y \ref{tab:matriz_Y9603_indirecta} (teórico), se observa una discrepancia significativa en los valores fuera de la diagonal, lo que sugiere que el modelo de conversión no refleja adecuadamente el acoplamiento observado en la medición. El error relativo en la componente $Y_{21}$ es:
 
-Medido:
+%\subsubsection*{Parámetros $Y$}
 
-
-\[
-Y_{medido} =
-\begin{bmatrix}
-4.18 + 1.52j & 2.63 - 0.32j \\
-1.95 - 0.60j & 2.91 + 0.20j
-\end{bmatrix} \,\mathrm{mS}
-\]
+%La matriz medida fue:
 
 
-
-Convertido desde $Z$:
-
-
-\[
-Y_{teorico} =
-\begin{bmatrix}
-7.98 + 0.47j & -2.85 + 2.19j \\
--7.29 - 0.30j & 5.12 - 0.96j
-\end{bmatrix} \,\mathrm{mS}
-\]
+%\[
+%Y_{medido} =
+%\begin{bmatrix}
+%10 & -7.9 - 0.55j \\
+%-9.34 & 12.79 + 5.69j
+%\end{bmatrix} \,\mathrm{mS}
+%\]
 
 
 
-El error relativo en $Y_{21}$ es:
+%La matriz obtenida por conversión desde $Z$ fue:
+
+
+%\[
+%Y_{\mathrm{teorico}} =
+%\begin{bmatrix}
+%14.55 - 1.57j & -12.16 + 0.89j \\
+%-14.76 + 1.07j & 17.277 + 5.23j
+%\end{bmatrix} \,\mathrm{mS}
+%\]
 
 
 
-\[
-\varepsilon_{rel} = \frac{|(-7.29 - 0.30j) - 1.95 + 0.60j|}{|1.95 - 0.60j|} \approx 4.3
-\]
-
-
-
-Lo que representa un error del 430\%, indicando una inversión de signo y magnitud.
-
-\subsubsection*{Parámetros $T$}
-
-Medido:
-
-
-\[
-T_{medido} =
-\begin{bmatrix}
-1.324 + 0.704j & -468.21 - 143.15j\,\Omega \\
-2.7 + 5.8j\,\mathrm{mS} & -1.74 - 1.31j
-\end{bmatrix}
-\]
-
-
-
-Convertido desde $Z$:
-
-
-\[
-T_{teorico} =
-\begin{bmatrix}
-0.69 - 0.16j & 136.93 - 5.69j\,\Omega \\
-2.78 + 1.24j\,\mathrm{mS} & 1.10 + 0.02j
-\end{bmatrix}
-\]
-
-
-
-El error relativo en $T_{12}$ es:
+%Se observa una discrepancia significativa en los valores fuera de la diagonal, lo que sugiere que el modelo de conversión no refleja adecuadamente el acoplamiento observado en la medición. El error relativo en la %componente $Y_{21}$ es: (esto lo muevo arriba)
 
 
 
 \[
-\varepsilon_{rel} = \frac{|(136.93 - 5.69j) - (-468.21 - 143.15j)|}{|468.21 + 143.15j|} \approx 1.1
+\varepsilon_{rel} = \frac{|\text{teórico} - \text{medido}|}{|\text{medido}|} = \frac{|(-14.76 + 1.07j) + 9.34|}{|-9.34|} \approx 0,59
+\] 
+
+ (ya se corrigió, pasamos de 1,68 a 0,59)
+
+
+
+Este error relativo del 59\% indica una diferencia importante. Este mismo patrón se cumple con las otras componentes de las dos matrices. Algo parecido surge con el parámetro T. Al repetir la cuenta anterior pero comparando las tablas \ref{tab:matriz_T9603} (medido) y \ref{tab:matriz_T9603_indirecta} (teórico), se llega a un error relativo de 24\% para el parámetro $T_{11}$ y un error del 59\% para el parametro $T_{12}$ donde se nota una mayor diferencia al comparar un valor real con uno imaginario. \par
+
+En particular estos errores en las matrices se pueden atribuir a los errores de medición, puesto a que se tuvieron que realizar muchas mediciones, 
+
+%\subsubsection*{Parámetros $T$}
+
+%Medido:
+
+
+%\[
+%T_{medido} =
+%\begin{bmatrix}
+%1.47 + 0.65j & 107.04\,\Omega \\
+%6.31 + 7.53j\,\mathrm{mS} & 1.07
+%\end{bmatrix}
+%\]
+
+
+
+%Convertido desde $Z$:
+
+
+%\[
+%T_{teorico} =
+%\begin{bmatrix}
+%1.14 + 0.44j & 67.37 + 4.91j\,\Omega \\
+%5.09 + 5.45j\,\mathrm{mS} & 0.99 - 0.03j
+%\end{bmatrix}
+%\]
+
+
+%El error relativo en la componente $T_{12}$ es especialmente significativo:
+
+%\[
+%\varepsilon_{rel} = \frac{|(67.37 + 4.91j) - (-107.04)|}{|107.04|} \approx 1.63 (cambiar)
+%\]
+
+
+
+%Esto sugiere una discrepancia de más del 160\% en la impedancia de transferencia.
+
+%\subsubsection{Cuadripolo 9609}
+
+%Al repetir el procedimiento que se hizo en el cuadripolo anterior, al observar la matriz Z (tabla \ref{tab:matriz_Z9609}), también se puede deducir que el cuadripolo tiene componentes capacitivos, puesto a que la parte imaginaria de cada parametro es negativa. También se puede observar que este cuadripolo no es ni simétrico ni reciproco. 
+
+%\subsubsection*{Parámetros $Y$}
+
+%Medido:
+
+
+%\[
+%Y_{medido} =
+%\begin{bmatrix}
+%4.18 + 1.52j & - 2.63 + 0.32j \\
+%- 1.95 + 0.60j & 2.91 + 0.20j
+%\end{bmatrix} \,\mathrm{mS}
+%\]
+
+
+
+%Convertido desde $Z$:
+
+
+%\[
+%Y_{teorico} =
+%\begin{bmatrix}
+%7.98 + 0.47j & -2.85 + 2.19j \\
+%-7.29 - 0.30j & 5.12 - 0.96j
+%\end{bmatrix} \,\mathrm{mS}
+%\]
+
+
+
+%El error relativo en $Y_{21}$ es:
+
+
+
+%\[
+%\varepsilon_{rel} = \frac{|(-7.29 - 0.30j) - 1.95 + 0.60j|}{|1.95 - 0.60j|} \approx 4.3 (cambiar)
+%\]
+
+
+
+%Lo que representa un error del 430\%, indicando una inversión de signo y magnitud.
+
+%\subsubsection*{Parámetros $T$}
+
+%Medido:
+
+
+%\[
+%T_{medido} =. (cambiar ) tabla 13
+%\begin{bmatrix}
+%1.324 + 0.704j & -468.21 - 143.15j\,\Omega \\
+%2.7 + 5.8j\,\mathrm{mS} & -1.74 - 1.31j
+%\end{bmatrix}
+%\]
+
+
+
+%Convertido desde $Z$:
+
+
+%\[
+%T_{teorico} = (tabla 16) (cambiar)
+%\begin{bmatrix}
+%0.69 - 0.16j & 136.93 - 5.69j\,\Omega \\
+%2.78 + 1.24j\,\mathrm{mS} & 1.10 + 0.02j
+%\end{bmatrix}
+%\]
+
+
+
+%El error relativo en $T_{12}$ es:
+
+
+
+\[
+\varepsilon_{rel} = \frac{|(136.93 - 5.69j) - (-468.21 - 143.15j)|}{|468.21 + 143.15j|} \approx 1.1 (cambiar)
 \]
 
 
