@@ -330,12 +330,6 @@ INPUT .\imagenesFiguras\V2=0.png
 INPUT .\imagenesFiguras\V2=0.png
 INPUT .\imagenesFiguras\V2=0.png
 INPUT .\imagenesFiguras\V2=0.png
-INPUT .\desarrolloAnalisis.tex
-INPUT .\desarrolloAnalisis.tex
-INPUT desarrolloAnalisis.tex
-INPUT .\desarrolloAnalisis.tex
-INPUT .\desarrolloAnalisis.tex
-INPUT desarrolloAnalisis.tex
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -347,6 +341,12 @@ INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tf
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Users\caorsi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT .\desarrolloAnalisis.tex
+INPUT .\desarrolloAnalisis.tex
+INPUT desarrolloAnalisis.tex
+INPUT .\desarrolloAnalisis.tex
+INPUT .\desarrolloAnalisis.tex
+INPUT desarrolloAnalisis.tex
 INPUT .\conclusiones.tex
 INPUT .\conclusiones.tex
 INPUT conclusiones.tex
