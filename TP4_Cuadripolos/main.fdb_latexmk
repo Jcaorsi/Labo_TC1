@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1762039164.84016 "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/Labo_TC1/TP4_Cuadripolos/main.tex" "main.pdf" "main" 1762039168.94772 0
+["pdflatex"] 1762040270.09072 "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/Labo_TC1/TP4_Cuadripolos/main.tex" "main.pdf" "main" 1762040274.94303 0
   "C:/Users/ritam/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762039153 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/ritam/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1440.pk" 1755438494 18748 2822502a5d65f882009fdd7f32795fd1 ""
   "C:/Users/ritam/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx2074.pk" 1755438496 28420 9c8b253034f91495cc0ea426149bd669 ""
@@ -184,15 +184,15 @@
   "C:/Users/ritam/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/Labo_TC1/TP4_Cuadripolos/main.tex" 1762039138 3139 bd839cdd04cff9f2cfcd5ca7f06ba9dd ""
   "conclusiones.tex" 1762039138 476 49a2782c1576d0e4128eb858c0d26a50 ""
-  "desarrolloAnalisis.tex" 1762039138 7055 b3e57a15483c7e2ea32f772df9bd42fb ""
-  "desarrolloSinAnalisis.tex" 1762039138 18062 293712f9fac23dfb071f416cd6a20574 ""
+  "desarrolloAnalisis.tex" 1762040263 7085 c991b4aa8505c308e0fbf11b0f699573 ""
+  "desarrolloSinAnalisis.tex" 1762040263 18070 5d68b1ed4c4f94c6c3f2a769d3f82efa ""
   "imagenesFiguras/Logo_ITBA.png" 1761491828 34082 18565f2ade26fe38705e2ad93c029b27 ""
   "imagenesFiguras/V2=0.png" 1761536053 2190927 e34512096dada32b954e0e47ce8fa31c ""
-  "introduccion.tex" 1762039138 20961 373127cb0528af7e8ba5a386b8f11307 ""
-  "main.aux" 1762039167 14470 22609ccec03e750271cdad74fc9c9056 "pdflatex"
-  "main.out" 1762039167 1854 8fc21959cdce242a27942d9c98432b10 "pdflatex"
+  "introduccion.tex" 1762040263 20959 c32fe712ec9fde4f319c06b1e78466a4 ""
+  "main.aux" 1762040273 14484 48e71d9c91958321f283b233efd862f7 "pdflatex"
+  "main.out" 1762040273 1854 8fc21959cdce242a27942d9c98432b10 "pdflatex"
   "main.tex" 1762039138 3139 bd839cdd04cff9f2cfcd5ca7f06ba9dd ""
-  "main.toc" 1762039167 1203 4f932f0210b5732af4b3acd398d943a5 "pdflatex"
+  "main.toc" 1762040273 1203 4f932f0210b5732af4b3acd398d943a5 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
