@@ -8,7 +8,7 @@ Al comparar los datos calculados, se observaron grandes diferencias en los valor
 Una de las primeras observaciones que se pueden hacer para el cuadripolo 9603 a partir de la tabla \ref{tab:matriz_Z9603}, es que todos los valores imaginarios de los parámetros son negativos. De aquí se puede deducir que el mismo cuenta con componentes predominantemente capacitivos y no inductivos. Otra conclusión que se puede obtener de esta tabla, es que este cuadripolo no cumple con las condiciones de simetría ni reciprocidad. Esto puesto a que $Z_{11} \neq Z_{22}$, por lo tanto no es simétrico; $Z_{12} \neq Z_{21}$ por lo tanto no es recíproco.
 Al repetir el procedimiento que se hizo en el cuadripolo anterior, al observar la matriz Z (tabla \ref{tab:matriz_Z9609}), también se puede deducir que el cuadripolo tiene componentes capacitivos, puesto a que la parte imaginaria de cada parametro es negativa. También se puede observar que este cuadripolo no es ni simétrico ni recíproco. 
 
-Se comparan los valores medidos y los obtenidos por conversión para los parámetros $Y$ y $T$. Al comparar las tablas \ref{tab:matriz_Y9603} (medido)y \ref{tab:matriz_Y9603_indirecta} (teórico), se observa una discrepancia significativa en los valores fuera de la diagonal, lo que sugiere que el modelo de conversión no refleja adecuadamente el acoplamiento observado en la medición. El error relativo en la componente $Y_{21}$ es:
+Se comparan los valores medidos y los obtenidos por conversión para los parámetros $Y$ y $T$. Al comparar las tablas \ref{tab:matriz_Y9603} (medido) y \ref{tab:matriz_Y9603_indirecta} (calculado), se observa una discrepancia significativa en los valores fuera de la diagonal, lo que sugiere que el modelo de conversión no refleja adecuadamente el acoplamiento observado en la medición. El error relativo en la componente $Y_{21}$ es:
 
 
 \[
@@ -23,20 +23,29 @@ Al pasar a evaluar las diferencias en el cuadripolo 9609, se encuentran las mism
 
 Este gran error se puede explicar por varios motivos. El más importante es el error humano, puesto a que en esta experiencia se tuvieron que realizar muchas mediciones repetidas cambiando el conexionado y usando varias funciones del osciloscopio. Sumado a esto, nuestro grupo no contaba con una gran experiencia en el manejo del osciloscopio, lo que dificultó la toma de mediciones. Otras causas consideradas fueron el ruido en las mediciones causado por el conexionado.
 
-\subsubsection{Parametros combinados}
+\subsubsection{Cuadripolos combinados}
 Como se puede observar en la tabla \ref{tab:medicionesTestBrune} de la medicion del test de Brune en el conexionado en serie se obtuvo
  un resultado de $1,6 V$, lejano a $0 V$, por lo que resulta esperable que la suma de las matrices de impedancia de un valor distinto 
  de la matriz impedancia medida de los cuadripolos conectados en serie. Luego, con el conexionado en paralelo, el test de Brune da
   $0 V$, por lo que es correcto afirmar que la suma de las matrices admitancia de ambos cuadripolos deberia resultar en la matriz 
-  admitancia del conjunto. Sin embargo, esto no se refleja en los calculos. El error relativo en el coeficiente $Y_{21}$ es
-
-\begin{equation*}
-    \varepsilon_r = \frac{\left| (-8,47 + 0,59j) - (- 11,30 + 0,60j) \right|} {\left| -8,47 + 0,59j \right|} \approx 1,14
+  admitancia del conjunto. 
+  
+En cuanto a los errores de las matrices, para el parámetro $ Z_{21} $ se tiene
+ \begin{equation*}
+    \varepsilon_r = \frac{\left\lvert (391.23-231.55\,\mathrm{j}) - (213.55-213.55\,\mathrm{j}) \right\rvert}{\left\lvert 213.55-213.55\,\mathrm{j} \right\rvert} \approx 0.59
 \end{equation*}
 
-esto es, los parámetros admitancia del conexionado en paralelo discrepan de los esperados en un 113\%. \par
+lo cual representa un error del 59\%. El error relativo en el coeficiente $Y_{21}$ es
+\begin{equation*}
+    \varepsilon_r = \frac{\left| (-8,47 + 0,59j) - (- 11,30 + 0,60j) \right|} {\left| -8,47 + 0,59j \right|} \approx 0,33
+\end{equation*}
+lo cual representa una discrepancia del 33 \%.
 
-Las otras matrices (Z e Y), también mostraron grandes diferencias dentro del 30-120 \% de error relativo. A pesar de esto, las matrices calculadas a partir de los datos y las calculadas según la teoría mostraron un nivel de correlación, en cuanto a los signos y magnitudes. Por tal motivo se considera que son una aproximación útil de la matriz de los cuadripolos en serie y paralelo.\par
+Al analizar las matrices T se encontró un panorama muy distinto: aquí las matrices no fueron parecidas. Si uno lee
+las tablas \ref{tab:matriz_T_cascada_procuto} y \ref{tab:matriz_T_cascada_directa}, al comparar el parametro $T_{21}$ se puede 
+ver que uno es completamente real, mientras que el otro es imaginario. Esto se considera erróneo, ya que la misma matriz surge a
+partir de dos cuadripolos que, según lo analizado en sus matrices Z, poseerían componentes capacitivos. Por tal motivo la presencia
+de numero reales puros sugeriria de errores de medición, como ya se menciono en el apartado anterior de las matrices individuales.
 
-Por otro lado, al analizar las matrices T se encontró un panorama muy distinto. Aquí las matrices no fueron parecidas. Si uno lee las tablas \ref{tab:matriz_T_cascada_procuto} y \ref{tab:matriz_T_cascada_directa}, al comparar el parametro $T_{21}$ se puede ver que uno es completamente real, mientras que el otro es imaginario. Esto se considera erróneo, ya que la misma matriz surge a partir de dos cuadripolos que, según lo analizado en sus matrices Z, poseerían componentes capacitivos. Por tal motivo la presencia de numero reales puros, surgiria de errores de medición, como ya se menciono en el apartado anterior de las matrices individuales.
-
+\par Así, se considera que se obtuvieron buenos resultados para las conexiones en serie y en paralelo (a pesar del resultado del Test
+de Brune en paralelo), pero no para la conexión en cascada.
