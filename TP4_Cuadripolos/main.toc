@@ -8,9 +8,9 @@
 \contentsline {subsection}{\numberline {2.3}Cálculos}{10}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {$a)$}Cuadripolo 9603}{10}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {$b)$}Cuadripolo 9609}{11}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {$c)$}Parametros combinados}{12}{subsubsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.4}Análisis}{13}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {$c)$}Parametros combinados}{11}{subsubsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.4}Análisis}{12}{subsection.2.4}%
 \contentsline {subsubsection}{\numberline {$a)$}Cuadripolos individuales}{13}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {$b)$}Parametros combinados}{14}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {$b)$}Parametros combinados}{13}{subsubsection.2.4.2}%
 \contentsline {section}{\numberline {3.}Conclusiones}{14}{section.3}%
 \contentsfinish 
