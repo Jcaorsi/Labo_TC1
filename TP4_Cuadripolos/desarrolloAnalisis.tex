@@ -10,172 +10,18 @@ Al repetir el procedimiento que se hizo en el cuadripolo anterior, al observar l
 
 Se comparan los valores medidos y los obtenidos por conversión para los parámetros $Y$ y $T$. Al comparar las tablas \ref{tab:matriz_Y9603} (medido)y \ref{tab:matriz_Y9603_indirecta} (teórico), se observa una discrepancia significativa en los valores fuera de la diagonal, lo que sugiere que el modelo de conversión no refleja adecuadamente el acoplamiento observado en la medición. El error relativo en la componente $Y_{21}$ es:
 
-%\subsubsection*{Parámetros $Y$}
-
-%La matriz medida fue:
-
-
-%\[
-%Y_{medido} =
-%\begin{bmatrix}
-%10 & -7.9 - 0.55j \\
-%-9.34 & 12.79 + 5.69j
-%\end{bmatrix} \,\mathrm{mS}
-%\]
-
-
-
-%La matriz obtenida por conversión desde $Z$ fue:
-
-
-%\[
-%Y_{\mathrm{teorico}} =
-%\begin{bmatrix}
-%14.55 - 1.57j & -12.16 + 0.89j \\
-%-14.76 + 1.07j & 17.277 + 5.23j
-%\end{bmatrix} \,\mathrm{mS}
-%\]
-
-
-
-%Se observa una discrepancia significativa en los valores fuera de la diagonal, lo que sugiere que el modelo de conversión no refleja adecuadamente el acoplamiento observado en la medición. El error relativo en la %componente $Y_{21}$ es: (esto lo muevo arriba)
-
-
 
 \[
 \varepsilon_{rel} = \frac{|\text{teórico} - \text{medido}|}{|\text{medido}|} = \frac{|(-14.76 + 1.07j) + 9.34|}{|-9.34|} \approx 0,59
 \] 
 
- (ya se corrigió, pasamos de 1,68 a 0,59)
-
 
 
 Este error relativo del 59\% indica una diferencia importante. Este mismo patrón se cumple con las otras componentes de las dos matrices. Algo parecido surge con el parámetro T. Al repetir la cuenta anterior pero comparando las tablas \ref{tab:matriz_T9603} (medido) y \ref{tab:matriz_T9603_indirecta} (teórico), se llega a un error relativo de 24\% para el parámetro $T_{11}$ y un error del 59\% para el parametro $T_{12}$ donde se nota una mayor diferencia al comparar un valor real con uno imaginario. \par
 
-Al pasar a evaluar las diferencias en el cuadripolo 9609, se encuentran las mismas diferencias entre los valores. Al observar las matrices de las tablas \ref{tab:matriz_Y_9609} (medido) y \ref{tab:matriz_Y9609_indirecta} (teorica), en el parametro $Y_{21}$ se puede osbervar un error del 265\%. Algo muy parecido pasa con los otros parametros.
+Al pasar a evaluar las diferencias en el cuadripolo 9609, se encuentran las mismas diferencias entre los valores. Al observar las matrices de las tablas \ref{tab:matriz_Y_9609} (medido) y \ref{tab:matriz_Y9609_indirecta} (teórica), en el parametro $Y_{21}$ se puede osbervar un error del 265\%. Algo muy parecido pasa con los otros parametros.
 
 Este gran error se puede explicar por varios motivos. El más importante es el error humano, puesto a que en esta experiencia se tuvieron que realizar muchas mediciones repetidas cambiando el conexionado y usando varias funciones del osciloscopio. Sumado a esto, nuestro grupo no contaba con una gran experiencia en el manejo del osciloscopio, lo que dificultó la toma de mediciones. Otras causas consideradas fueron el ruido en las mediciones causado por el conexionado.
-
-%\subsubsection*{Parámetros $T$}
-
-%Medido:
-
-
-%\[
-%T_{medido} =
-%\begin{bmatrix}
-%1.47 + 0.65j & 107.04\,\Omega \\
-%6.31 + 7.53j\,\mathrm{mS} & 1.07
-%\end{bmatrix}
-%\]
-
-
-
-%Convertido desde $Z$:
-
-
-%\[
-%T_{teorico} =
-%\begin{bmatrix}
-%1.14 + 0.44j & 67.37 + 4.91j\,\Omega \\
-%5.09 + 5.45j\,\mathrm{mS} & 0.99 - 0.03j
-%\end{bmatrix}
-%\]
-
-
-%El error relativo en la componente $T_{12}$ es especialmente significativo:
-
-%\[
-%\varepsilon_{rel} = \frac{|(67.37 + 4.91j) - (-107.04)|}{|107.04|} \approx 1.63 (cambiar)
-%\]
-
-
-
-%Esto sugiere una discrepancia de más del 160\% en la impedancia de transferencia.
-
-%\subsubsection{Cuadripolo 9609}
-
-%Al repetir el procedimiento que se hizo en el cuadripolo anterior, al observar la matriz Z (tabla \ref{tab:matriz_Z9609}), también se puede deducir que el cuadripolo tiene componentes capacitivos, puesto a que la parte imaginaria de cada parametro es negativa. También se puede observar que este cuadripolo no es ni simétrico ni reciproco. 
-
-%\subsubsection*{Parámetros $Y$}
-
-%Medido:
-
-
-%\[
-%Y_{medido} =
-%\begin{bmatrix}
-%4.18 + 1.52j & - 2.63 + 0.32j \\
-%- 1.95 + 0.60j & 2.91 + 0.20j
-%\end{bmatrix} \,\mathrm{mS}
-%\]
-
-
-
-%Convertido desde $Z$:
-
-
-%\[
-%Y_{teorico} =
-%\begin{bmatrix}
-%7.98 + 0.47j & -2.85 + 2.19j \\
-%-7.29 - 0.30j & 5.12 - 0.96j
-%\end{bmatrix} \,\mathrm{mS}
-%\]
-
-
-
-%El error relativo en $Y_{21}$ es:
-
-
-
-%\[
-%\varepsilon_{rel} = \frac{|(-7.29 - 0.30j) - 1.95 + 0.60j|}{|1.95 - 0.60j|} \approx 4.3 (cambiar)
-%\]
-
-
-
-%Lo que representa un error del 430\%, indicando una inversión de signo y magnitud.
-
-%\subsubsection*{Parámetros $T$}
-
-%Medido:
-
-
-%\[
-%T_{medido} =. (cambiar ) tabla 13
-%\begin{bmatrix}
-%1.324 + 0.704j & -468.21 - 143.15j\,\Omega \\
-%2.7 + 5.8j\,\mathrm{mS} & -1.74 - 1.31j
-%\end{bmatrix}
-%\]
-
-
-
-%Convertido desde $Z$:
-
-
-%\[
-%T_{teorico} = (tabla 16) (cambiar)
-%\begin{bmatrix}
-%0.69 - 0.16j & 136.93 - 5.69j\,\Omega \\
-%2.78 + 1.24j\,\mathrm{mS} & 1.10 + 0.02j
-%\end{bmatrix}
-%\]
-
-
-
-%El error relativo en $T_{12}$ es:
-
-
-
-\[
-\varepsilon_{rel} = \frac{|(136.93 - 5.69j) - (-468.21 - 143.15j)|}{|468.21 + 143.15j|} \approx 1.1 (cambiar)
-\]
-
-
-
-Un error del 110\% que indica una discrepancia importante en la impedancia de transferencia.
 
 \subsubsection{Parametros combinados}
 Como se puede observar en la tabla \ref{tab:medicionesTestBrune} de la medicion del test de Brune en el conexionado en serie se obtuvo
@@ -185,7 +31,12 @@ Como se puede observar en la tabla \ref{tab:medicionesTestBrune} de la medicion 
   admitancia del conjunto. Sin embargo, esto no se refleja en los calculos. El error relativo en el coeficiente $Y_{21}$ es
 
 \begin{equation*}
-    \varepsilon_r = \frac{\left| (8,48 - 0,59j) - (11,30 - 0,60j) \right|} {\left| 8,48 - 0,59j \right|} \approx 0,33
+    \varepsilon_r = \frac{\left| (-8,47 + 0,59j) - (- 11,30 + 0,60j) \right|} {\left| -8,47 + 0,59j \right|} \approx 1,14
 \end{equation*}
 
-esto es, los parametros admitancia del conexionado en paralelo discrepan de los esperados en un 33%.
+esto es, los parámetros admitancia del conexionado en paralelo discrepan de los esperados en un 113\%. \par
+
+Las otras matrices (Z e Y), también mostraron grandes diferencias dentro del 30-120 \% de error relativo. A pesar de esto, las matrices calculadas a partir de los datos y las calculadas según la teoría mostraron un nivel de correlación, en cuanto a los signos y magnitudes. Por tal motivo se considera que son una aproximación útil de la matriz de los cuadripolos en serie y paralelo.\par
+
+Por otro lado, al analizar las matrices T se encontró un panorama muy distinto. Aquí las matrices no fueron parecidas. Si uno lee las tablas \ref{tab:matriz_T_cascada_procuto} y \ref{tab:matriz_T_cascada_directa}, al comparar el parametro $T_{21}$ se puede ver que uno es completamente real, mientras que el otro es imaginario. Esto se considera erróneo, ya que la misma matriz surge a partir de dos cuadripolos que, según lo analizado en sus matrices Z, poseerían componentes capacitivos. Por tal motivo la presencia de numero reales puros, surgiria de errores de medición, como ya se menciono en el apartado anterior de las matrices individuales.
+
