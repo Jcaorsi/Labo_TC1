@@ -1,0 +1,102 @@
+\graphicspath{{imagenes/}} %para que acceda a las fotos en la carpeta directamente
+
+\subsection{Procedimiento}
+
+    \subsubsection{Analizador de impedancias}
+    Con el fin de saber entre cuáles frecuencias se encontraría la frecuencia de resonancia, dados el rango de inductancia de la bobina 
+    utilizada, se obtuvieron sus valores teóricos para los extremos del rango de inductancia (0,5 mH y 2 mH), haciendo
+
+    \begin{equation*}
+        f_{1,-1} = \frac{1}{\sqrt{LC}} \cdot \frac{1}{2\pi}
+    \end{equation*}
+
+    También se obtuvo $ f_{-2} = \frac{f_{-1}}{2} $ (una octava menor a $f_{-1}$) y $  f_2 = f_1 \cdot 2 $ (una octava mayor a $ f_1 $)
+    y se midieron la inductancia y la resistencia de la bobina para cada una de estas frecuencias, variando la frecuencia con el analizador
+    de impedancias.
+
+    \subsubsection{Resonancia}
+        Se armó el circuito de la figura \ref{fig: circuito}, fijando la tensión del generador en 1 V de amplitud ( es decir, 2 V pico a
+        pico), y conectando los canales del osciloscopio en la entrada y la salida de la resistencia, de manera que se pudiera observar
+        la caída de tensión en la misma usando la función Math.
+
+        \begin{figure}[H]
+        \centering
+            \begin{tikzpicture}
+                \node[oscillator, xscale=0.8, yscale=0.8] at (3.892, 3.892){};
+                \draw (4, 5) to[american resistor, /tikz/circuitikz/bipoles/length=1.12cm] (6, 5);
+                \draw (6.5, 5) to[cute inductor] (8.5, 5);
+                \draw (8.75, 4.75) to[capacitor, /tikz/circuitikz/bipoles/length=1.12cm] (8.75, 2.75);
+                \draw (3.5, 4.284) -- (3.5, 5) -- (4, 5);
+                \draw (6, 5) -- (7, 5);
+                \draw (8.5, 5) -- (8.75, 5) -- (8.75, 4.25);
+                \draw (8.75, 2.75) -- (3.5, 2.75) -- (3.5, 3.5);
+                \node[shape=rectangle, minimum width=0.715cm, minimum height=0.465cm] at (2.75, 4){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (2.375, 4.25){Vs};
+                \node[shape=rectangle, minimum width=0.715cm, minimum height=0.465cm] at (5, 5.5){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (4.625, 5.75){R};
+                \node[shape=rectangle, minimum width=0.715cm, minimum height=0.465cm] at (7.55, 5.591){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (7.175, 5.841){L};
+                \node[shape=rectangle, minimum width=0.715cm, minimum height=0.465cm] at (9.368, 3.854){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (8.993, 4.104){C};
+                \draw (3.5, 5) -- (3.25, 5.25);
+                \draw (6, 5) -| (6, 5.25);
+                \node[shape=rectangle, minimum width=0.715cm, minimum height=0.465cm] at (2.987, 5.54){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (2.612, 5.79){Ch1};
+                \node[shape=rectangle, minimum width=0.715cm, minimum height=0.465cm] at (5.875, 5.604){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (5.5, 5.854){Ch2};
+            \end{tikzpicture}
+            \caption{Circuito estudiado a lo largo de la práctica.}
+            \label{fig: circuito}
+        \end{figure}
+
+        De esta manera, se varió la frecuencia de la señal generada entre $ f_{-1} $ y $ f_1 $, considerando que la frecuencia de
+        resonancia se correspondía con la mayor caída de tensión sobre la resistencia, es decir cuando la señal ilustrada por Math era
+        máxima, la frecuencia correspondiente era la de resonancia.
+
+        Luego se buscaron las frecuencias de corte $ f_{c1} $ y $ f_{c2} $, es decir las frecuencias para las cuales $ P = \frac{P_{max}}{2} $ o bien 
+        $ V = \frac{V_{max}}{\sqrt{2}} $ (siendo V la tensión pico en la resistencia) y se calculó el ancho de banda
+        \begin{equation*}
+            B = \frac{ f_{c1} + f_{c2}}{2}
+        \end{equation*}
+
+    \subsubsection{Respuesta en frecuencia}
+
+\subsection{Datos recolectados}
+    \subsubsection{Analizador de impedancias}
+        \begin{table}[h!]
+            \centering
+            \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+                             & 38 kHz $(f_{-2})$  & 76 kHz $(f_{-1})$  & 114 kHz $(f_m)$  & 151 kHz $(f_1)$  & 304 kHz $(f_2)$      \\ \hline
+            $ R_L [\Omega]$  & 60,9               & 99,2               &  126             & 150              & 257                 \\ \hline
+            L  [mH]          & 1,562              & 1,414              & 1,32             & 1,257            & 1,162                \\ \hline
+            \end{tabular}
+            \caption{Mediciones de las impedancias de la bobina en función de la frecuencia, tomadas con el analizador de impedancias.}
+        \end{table}
+
+
+    \subsubsection{Resonancia}
+        \begin{itemize}
+            \item $ f_R= 80 kHz $
+            \item $ f_{c1} = 63 kHz $
+            \item $ f_{c2} = 102,5 kHz $
+            \item $ V_{max} = 350,35 mV $
+        \end{itemize}
+
+    \subsubsection{Respuesta en frecuencia}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\linewidth]{Rbode.png}
+            \caption{Diagrama de bode de la resistencia, obtenido con el osciloscopio.}
+            \label{fig: Rbode}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\linewidth]{Lbode.png}
+            \caption{Diagrama de bode del inductor, obtenido con el osciloscopio.}
+            \label{fig: Lbode}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.5\linewidth]{Cbode.png}
+            \caption{Diagrama de bode del capacitor, obtenido con el osciloscopio.}
+            \label{fig: Cbode}
+        \end{figure}
+
+\subsection{Cálculos}
