@@ -2,6 +2,95 @@
 
 \subsection{Procedimiento}
 
+	El procedimiento de este TP se dividió en 3 secciones:
+	
+	\begin{itemize}
+	\item En la primera sección se midieron los parámetros del inductor. Para ello, primero se midieron los valores de inductancia de ambos lados del inductor. Eso realizo mediante el medidor LRC configurándolo a 50kHz. Seguido a eso, midió la tensión de salida de cada lado, al conectar un generador de señal senoidal de 1,5V pico con una frecuencia de 50kHz en el lado opuesto. 
+	\item En la segunda parte se conectó una resistencia adicional 47 $\Omega$ entre el generador y la entrada del transformador del lado elevador. Seguidamente, se varió el offset (se tomaron valores de -5v a 5v) a la señal usada en la primera sección y se midió la tensión de salida. La salida se considero como circuito abierto.
+	\item En la tercera parte (COMPLETA)
+	\end{itemize}
+	
+
 \subsection{Datos recolectados}
+
+	\subsubsection*{Parametros del inductor}
+	
+	Se midieron los siguientes parámetros en la primera sección. En primer lugar se obtuvieron los siguientes valores de inductancia a 50kHz con el medidor LRC.
+	
+	\begin{itemize}
+	\item $L_1$ = 0,135 $mH$
+	\item $L_2$ = 1,931 $mH$
+	\end{itemize}
+	
+	Luego, con el generador de ondas configurado con una onda senoidal de 3 $V_{pp}$ a 50kHz con offset nulo, se midieron los siguientes valores (Observar tabla \ref{tab:mediciones_tensiones_bobinas})
+	
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.2} % Espaciado vertical más cómodo
+\setlength{\tabcolsep}{10pt}      % Espaciado horizontal
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{} & \textbf{$V_{L1}$} & \textbf{$V_{L2}$} \\ 
+\hline
+$V_{L1}$ entrada & $2{,}10~\text{V}_{pp}\, \angle\, 0^\circ$ & $4{,}34~\text{V}_{pp}\, \angle\, 182^\circ$ \\ 
+$V_{L2}$ entrada & $0{,}45~\text{V}_{pp}\, \angle\, 181^\circ$ & $3{,}10~\text{V}_{pp}\, \angle\, 0^\circ$ \\ 
+\hline
+\end{tabular}
+\caption{Tensiones medidas en cada bobina con sus respectivas fases.}
+\label{tab:mediciones_tensiones_bobinas}
+\end{table}
+
+ \subsubsection*{Fuente de tensión con offset}
+ 
+ 	En la segunda parte al analizar variar el offset, se obtuvieron las siguientes mediciones:
+
+\begin{center}
+
+% --- Fila superior (2 imágenes) ---
+\begin{minipage}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{tp6_part2_1.png}
+  \captionof{figure}{Fuente con offset de -5 V.}
+  \label{fig:off1}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{tp6_part2_3.png}
+  \captionof{figure}{Fuente con offset de -2,5 V.}
+  \label{fig:off2}
+\end{minipage}
+
+\vspace{1.5em}
+
+% --- Imagen central ---
+\begin{minipage}[b]{0.5\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{tp6_part2_4.png}
+  \captionof{figure}{Fuente con offset de 0 V.}
+  \label{fig:off3}
+\end{minipage}
+
+\vspace{1.5em}
+
+% --- Fila inferior (2 imágenes) ---
+\begin{minipage}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{tp6_part2_5.png}
+  \captionof{figure}{Fuente con offset de 2,5 V.}
+  \label{fig:off4}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{tp6_part2_6.png}
+  \captionof{figure}{Fuente con offset de 5 V.}
+  \label{fig:off5}
+\end{minipage}
+
+\end{center}
+	
+	
+\subsubsection*{Salida con carga}
 
 \subsection{Cálculos}
