@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.10)  2 NOV 2025 14:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.10)  10 NOV 2025 11:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP4_Cuadripolos/main.tex
-(c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP4_Cuadripolos/main.tex
+**"c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP5_RtaEnFrecuencia/main copy.tex"
+(c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP5_RtaEnFrecuencia/main copy.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (C:\Users\caorsi\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -544,65 +544,121 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen307
 \Gm@layoutvoffset=\dimen308
 \Gm@dimlist=\toks39
- (C:\Users\caorsi\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\caorsi\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.sty
-Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
- (C:\Users\caorsi\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
-Package: import 2020/04/01  v 6.2
-)) (main.aux
+ (C:\Users\caorsi\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\caorsi\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen309
+\lightrulewidth=\dimen310
+\cmidrulewidth=\dimen311
+\belowrulesep=\dimen312
+\belowbottomsep=\dimen313
+\aboverulesep=\dimen314
+\abovetopsep=\dimen315
+\cmidrulesep=\dimen316
+\cmidrulekern=\dimen317
+\defaultaddspace=\dimen318
+\@cmidla=\count329
+\@cmidlb=\count330
+\@aboverulesep=\dimen319
+\@belowrulesep=\dimen320
+\@thisruleclass=\count331
+\@lastruleclass=\count332
+\@thisrulewidth=\dimen321
+) (C:\Users\caorsi\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count333
+\l__siunitx_number_exponent_fixed_int=\count334
+\l__siunitx_number_min_decimal_int=\count335
+\l__siunitx_number_min_integer_int=\count336
+\l__siunitx_number_round_precision_int=\count337
+\l__siunitx_number_lower_threshold_int=\count338
+\l__siunitx_number_upper_threshold_int=\count339
+\l__siunitx_number_group_first_int=\count340
+\l__siunitx_number_group_size_int=\count341
+\l__siunitx_number_group_minimum_int=\count342
+\l__siunitx_angle_tmp_dim=\dimen322
+\l__siunitx_angle_marker_box=\box70
+\l__siunitx_angle_unit_box=\box71
+\l__siunitx_compound_count_int=\count343
+ (C:\Users\caorsi\AppData\Local\Programs\MiKTeX\tex/latex/translations\translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+)
+\l__siunitx_table_tmp_box=\box72
+\l__siunitx_table_tmp_dim=\dimen323
+\l__siunitx_table_column_width_dim=\dimen324
+\l__siunitx_table_integer_box=\box73
+\l__siunitx_table_decimal_box=\box74
+\l__siunitx_table_uncert_box=\box75
+\l__siunitx_table_before_box=\box76
+\l__siunitx_table_after_box=\box77
+\l__siunitx_table_before_dim=\dimen325
+\l__siunitx_table_carry_dim=\dimen326
+\l__siunitx_unit_tmp_int=\count344
+\l__siunitx_unit_position_int=\count345
+\l__siunitx_unit_total_int=\count346
+ (C:\Users\caorsi\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen327
+\ar@mcellbox=\box78
+\extrarowheight=\dimen328
+\NC@list=\toks40
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box79
+)) (main copy.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported  on input line 11.
 )
-\openout1 = `main.aux'.
+\openout1 = `"main copy.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (C:\Users\caorsi\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count329
-\scratchdimen=\dimen309
-\scratchbox=\box70
-\nofMPsegments=\count330
-\nofMParguments=\count331
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count332
-\MPscratchDim=\dimen310
-\MPnumerator=\count333
-\makeMPintoPDFobject=\count334
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count347
+\scratchdimen=\dimen329
+\scratchbox=\box80
+\nofMPsegments=\count348
+\nofMParguments=\count349
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count350
+\MPscratchDim=\dimen330
+\MPnumerator=\count351
+\makeMPintoPDFobject=\count352
+\everyMPtoPDFconversion=\toks42
 ) (C:\Users\caorsi\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\caorsi\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
-Package hyperref Info: Link coloring OFF on input line 44.
- (main.out) (main.out)
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
+Package hyperref Info: Link coloring OFF on input line 50.
+ (main copy.out) (main copy.out)
 \@outlinefile=\write4
-\openout4 = `main.out'.
+\openout4 = `"main copy.out"'.
 
 
 *geometry* driver: auto-detecting
@@ -639,157 +695,52 @@ Package hyperref Info: Link coloring OFF on input line 44.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<imagenesFiguras/Logo_ITBA.png, id=62, 557.08125pt x 220.825pt>
-File: imagenesFiguras/Logo_ITBA.png Graphic file (type png)
-<use imagenesFiguras/Logo_ITBA.png>
-Package pdftex.def Info: imagenesFiguras/Logo_ITBA.png  used on input line 51.
-(pdftex.def)             Requested size: 133.07489pt x 52.74973pt.
+
+Package siunitx Warning: Detected the "physics" package:
+(siunitx)                omitting definition of \qty.
+(siunitx)                
+(siunitx)                If you want to use \qty with the siunitx definition,
+(siunitx)                add 
+(siunitx)                
+(siunitx)                    \AtBeginDocument{\RenewCommandCopy\qty\SI}
+(siunitx)                
+(siunitx)                to your preamble.
+
+(C:\Users\caorsi\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-spanish.trsl
+File: translations-basic-dictionary-spanish.trsl (spanish translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 50.
 
 
 [1
 
-{C:/Users/caorsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./imagenesFiguras/Logo_ITBA.png>]
+{C:/Users/caorsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.87 \newpage
-              [1] (main.toc
+l.86 \newpage
+              [1] (main copy.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@toc=\write5
-\openout5 = `main.toc'.
+\openout5 = `"main copy.toc"'.
 
 
 
-[2] (introduccion.tex
-Overfull \hbox (4.68431pt too wide) in paragraph at lines 44--44
- [][]\OT1/cmr/m/n/7 I1 
- []
-
-
-Overfull \hbox (4.68431pt too wide) in paragraph at lines 45--45
- [][]\OT1/cmr/m/n/7 I1 
- []
-
-
-Overfull \hbox (4.68431pt too wide) in paragraph at lines 46--46
- [][]\OT1/cmr/m/n/7 I2 
- []
-
-
-Overfull \hbox (4.68431pt too wide) in paragraph at lines 47--47
- [][]\OT1/cmr/m/n/7 I2 
- []
-
-
-Overfull \hbox (7.69821pt too wide) in paragraph at lines 48--48
- [][]\OT1/cmr/m/n/7 V1 
- []
-
-
-Overfull \hbox (7.69821pt too wide) in paragraph at lines 49--49
- [][]\OT1/cmr/m/n/7 V2 
- []
-
-
+[2]
 
 [3]
-Overfull \hbox (1.35304pt too wide) in paragraph at lines 152--152
- [][]\OT1/cmr/m/n/7 V2 
- []
-
-
 
 [4]
-Overfull \hbox (4.68431pt too wide) in paragraph at lines 260--260
- [][]\OT1/cmr/m/n/7 I1 
- []
-
-
-Overfull \hbox (4.68431pt too wide) in paragraph at lines 261--261
- [][]\OT1/cmr/m/n/7 I1 
- []
-
-
-Overfull \hbox (4.68431pt too wide) in paragraph at lines 262--262
- [][]\OT1/cmr/m/n/7 I2 
- []
-
-
-Overfull \hbox (4.68431pt too wide) in paragraph at lines 263--263
- [][]\OT1/cmr/m/n/7 I2 
- []
-
-
-Overfull \hbox (7.69821pt too wide) in paragraph at lines 264--264
- [][]\OT1/cmr/m/n/7 V1 
- []
-
-
-Overfull \hbox (7.69821pt too wide) in paragraph at lines 265--265
- [][]\OT1/cmr/m/n/7 V2 
- []
-
-
 
 [5]
-Overfull \hbox (4.68431pt too wide) in paragraph at lines 348--348
- [][]\OT1/cmr/m/n/7 I1 
- []
 
+[6]
 
-Overfull \hbox (4.68431pt too wide) in paragraph at lines 349--349
- [][]\OT1/cmr/m/n/7 I1 
- []
-
-
-Overfull \hbox (4.68431pt too wide) in paragraph at lines 350--350
- [][]\OT1/cmr/m/n/7 I2 
- []
-
-
-Overfull \hbox (4.68431pt too wide) in paragraph at lines 351--351
- [][]\OT1/cmr/m/n/7 I2 
- []
-
-
-Overfull \hbox (7.69821pt too wide) in paragraph at lines 352--352
- [][]\OT1/cmr/m/n/7 V1 
- []
-
-
-Overfull \hbox (7.69821pt too wide) in paragraph at lines 353--353
- [][]\OT1/cmr/m/n/7 V2 
- []
-
-
-
-[6]) (desarrolloSinAnalisis.tex
-
-[7]
-<imagenesFiguras/V2=0.png, id=134, 1606.0pt x 1205.50375pt>
-File: imagenesFiguras/V2=0.png Graphic file (type png)
-<use imagenesFiguras/V2=0.png>
-Package pdftex.def Info: imagenesFiguras/V2=0.png  used on input line 69.
-(pdftex.def)             Requested size: 221.78923pt x 166.47006pt.
-
-
-[8 <./imagenesFiguras/V2=0.png (PNG copy)>]
-
-[9]
-
-[10]
-
-[11]) (desarrolloAnalisis.tex
-
-[12]
-
-[13]) (conclusiones.tex)
-
-[14] (main.aux
+[7] (main copy.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -797,21 +748,21 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3A8EF661C62C483C2FE25A5798FDE3FB;1864.
+Package rerunfilecheck Info: File `"main copy".out' has not changed.
+(rerunfilecheck)             Checksum: E26F7EEA649F3F87FCF13DDC625CED13;2055.
  ) 
 Here is how much of TeX's memory you used:
- 42732 strings out of 473522
- 1008423 string characters out of 5714125
- 1668567 words of memory out of 5000000
- 65454 multiletter control sequences out of 15000+600000
- 567023 words of font info for 64 fonts, out of 8000000 for 9000
+ 46148 strings out of 473522
+ 1116139 string characters out of 5714125
+ 1732403 words of memory out of 5000000
+ 68888 multiletter control sequences out of 15000+600000
+ 568603 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,105p,695b,1239s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\caorsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1440.pk> <C:\Users\caorsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx2074.pk><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (15 pages, 2437013 bytes).
+ 99i,10n,105p,725b,1073s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\caorsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1000.pk> <C:\Users\caorsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1440.pk> <C:\Users\caorsi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx2074.pk><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/caorsi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "main copy.pdf" (8 pages, 212659 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

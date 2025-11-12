@@ -1,0 +1,400 @@
+\documentclass{article}
+
+%%%%%%%%%%%%%%%%% LIBRERIAS %%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc} % Paquete esencial
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{physics}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{graphicx}
+\usepackage[spanish,es-tabla]{babel} % 'es-tabla' cambia Cuadro→Tabla
+\usepackage{hyperref}                % cargar después de babel
+\usepackage{float}
+\usepackage{circuitikz}
+\usepackage[left=3cm,right=3cm]{geometry} %para margenes
+% \usepackage{amsmath} % --- Estaba duplicada ---
+% \usepackage{subfiles} % --- No lo usamos, unificamos todo ---
+
+%%%%%% LIBRERIAS (AÑADIDAS PARA LAS TABLAS Y UNIDADES) %%%%%%
+\usepackage{booktabs}   % Para tablas limpias
+\usepackage[
+    output-decimal-marker = {,}, % Usa coma decimal
+    inter-unit-product = \cdot
+]{siunitx}              % Para formatear unidades (kHz, kOhm, etc.)
+
+
+%%%%%%%%%%%%%%%%%%% VARIABLES %%%%%%%%%%%%%%%%%%%%
+\newcommand{\Facultad}{Instituto Tecnológico \\de\\ Buenos Aires} %constantes
+\newcommand{\TPn}{Trabajo Práctico N° 5}
+\newcommand{\TPtema}{Respuesta en frecuencia y resonancia}
+\graphicspath{{imagenes/}} %para que acceda a las fotos en la carpeta directamente
+
+
+%%%%%%%%%%%%%%%%%% FORMATO TÍTULO Y NUMERACIÓN %%%%%%%%%%%%%%%%%%%
+% Numeración de secciones
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}}
+\renewcommand{\thesubsubsection}{$\alph{subsubsection})$}
+
+% Numerar hasta subsubsecciones
+\setcounter{secnumdepth}{3}
+
+% Formato de títulos
+\titleformat{\section}{\Huge\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\LARGE\bfseries}{\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}{\large\bfseries}{\thesubsubsection}{0.5em}{}
+
+
+
+%%%%%%%%%%%%%%%%%%% ARCHIVO %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%CARATULA (LA TUYA) %%%
+\begin{titlepage} %creo portada
+
+        \begin{flushleft}
+            \centering
+            % Asegúrate de tener Logo_ITBA.png en la carpeta 'imagenes/'
+            \includegraphics[width=0.3\textwidth]{Logo_ITBA.png}
+        \end{flushleft}
+
+        \centering
+           
+        {\scshape\LARGE \Facultad \par}
+        \vspace{1cm}                    
+
+
+        {\huge\bfseries \TPn \par}
+        \vspace{1.5cm}
+        {\Large Teoría de Circuitos I\\ 25.10 \par}
+        \vfill                  
+        {\Large \bfseries Grupo N° 2 \par}
+        \vspace{1cm}
+        {\large Juan Bautista Correa Uranga \hfill Legajo: 65016 \par}
+        {\large Juan Ignacio Caorsi \hfill Legajo: 65532  \par}
+        {\large Rita Moschini \hfill Legajo: 67026 \par}
+        \vfill
+        {\large 9 de noviembre de 2025\par} % Fecha del PDF
+        \vfill
+
+\end{titlepage}
+
+{\centering \LARGE \bfseries Resumen \par} % Resumen (Tuyo)
+Este trabajo abordó la variación de la inductancia y la resistencia interna de un inductor en función de la frecuencia de la excitación, la obtención de la frecuencia de resonancia y los diagramas de bode de los distintos componentes en un circuito RLC serie.
+Además, se determinó el factor de calidad (Q) por dos métodos experimentales y se analizó la respuesta del circuito a una señal triangular. Se concluyó que las resistencias parásitas del inductor ($R_L$) y del generador ($R_{gen}$) son factores dominantes que explican la diferencia entre los valores medidos y los teóricos.
+\par
+\newpage
+
+\tableofcontents % Indice!!
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           COMIENZO DEL CONTENIDO                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introducción}
+
+\subsection{Instrumental}
+En esta experiencia se utilizaron los siguientes instrumentos:
+\begin{itemize}
+    \item Osciloscopio Keysight (Agilent) DSO6014A
+    % --- TYPO CORREGIDO ---
+    \item Generador de ondas con resistencia interna de \SI{50}{\ohm}
+    \item Analizador de impedancias.
+    % --- TYPO CORREGIDO ---
+    \item Resistencia de \SI{100}{\ohm} (nominal y medido).
+    \item Capacitor de \SI{2,2}{\nano\farad}.
+    \item Inductor de inductancia entre \SI{0,5}{\milli\henry} y \SI{2}{\milli\henry}
+\end{itemize}
+
+\subsection{Marco teórico}
+Un circuito RLC serie está compuesto por una resistencia de valor R, un inductor de inductancia L y un capacitor de capacitancia C conectados en serie. La resistencia total del circuito ($R_{Total}$) debe considerar todas las resistencias:
+$R_{Total} = R_{gen} + R + R_{L}$
+donde $R_{gen}$ es la resistencia interna del generador.
+
+La frecuencia de resonancia angular para un circuito RLC, serie o paralelo, es:
+\begin{equation}
+    \omega_{0}=\frac{1}{\sqrt{LC}}
+\end{equation}
+
+Se puede calcular el factor de calidad o factor de selectividad Q. Para un circuito serie, se define como:
+\begin{equation}
+    Q_{S}=\frac{\omega_{0}L}{R_{Total}}=\frac{1}{\omega_{0}CR_{Total}}
+\end{equation}
+
+Las frecuencias de corte se definen como las frecuencias para las cuales la potencia es igual a la mitad de la potencia máxima (es decir, la potencia cuando la frecuencia es igual a la de resonancia). El Ancho de Banda (B) se define como la diferencia entre las dos frecuencias de corte, $f_{c2}$ y $f_{c1}$:
+\begin{equation}
+    B = f_{c2} - f_{c1}
+\end{equation}
+El factor de calidad también relaciona la frecuencia de resonancia con el ancho de banda:
+\begin{equation}
+    Q = \frac{f_0}{B}
+\end{equation}
+ Cuanto mayor sea Q, más angosta será la curva de la tensión en función de la frecuencia, es decir se
+ amortiguarán más frecuencias.
+\par Las Funciones Transferencia para las tensiones en cada componente, considerando $V_{in}$ como la tensión total de la fuente $V_S$, son:
+\begin{equation}
+    H_R(s) = \frac{V_R(s)}{V_S(s)} = \frac{R}{R_{Total} + sL + 1/sC} = \frac{sCR}{s^2LC + sCR_{Total} + 1}
+\end{equation}
+\begin{equation}
+    H_L(s) = \frac{V_L(s)}{V_S(s)} = \frac{sL}{R_{Total} + sL + 1/sC} = \frac{s^2LC}{s^2LC + sCR_{Total} + 1}
+\end{equation}
+\begin{equation}
+    H_C(s) = \frac{V_C(s)}{V_S(s)} = \frac{1/sC}{R_{Total} + sL + 1/sC} = \frac{1}{s^2LC + sCR_{Total} + 1}
+\end{equation}
+
+A lo largo del trabajo práctico se distinguirá entre tres tipos de filtros
+\begin{itemize}
+    \item Filtro pasa-altos: deja pasar las señales de alta frecuencia y atenúa las de baja frecuencia y deja pasar las de alta frecuencia.
+    \item Filtro pasa-banda: deja pasar un rango de frecuencias y atenúa las frecuencias fuera del mismo.
+    \item Filtro pasa-bajos: deja pasar las señales de baja frecuencia y atenúa las de alta frecuencia.
+\end{itemize}
+
+\section{Desarrollo}
+
+\subsection{Procedimiento}
+
+\subsubsection{Analizador de impedancias}
+Con el fin de saber entre cuáles frecuencias se encontraría la frecuencia de resonancia, dados el rango de inductancia de la bobina utilizada, se obtuvieron sus valores teóricos para los extremos del rango de inductancia (\SI{0,5}{\milli\henry} y \SI{2}{\milli\henry}), haciendo:
+\begin{equation}
+    f_{1,-1}=\frac{1}{\sqrt{LC}}\cdot\frac{1}{2\pi}
+\end{equation}
+También se obtuvo $f_{-2}=\frac{f_{-1}}{2}$ (una octava menor a $f_{-1}$) y $f_{2}=f_{1}\cdot2$ (una octava mayor a $f_{1}$) y se midieron la inductancia y la resistencia de la bobina para cada una de estas frecuencias, variando la frecuencia con el analizador de impedancias.
+
+    \subsubsection{Resonancia}
+        Se armó el circuito de la figura \ref{fig: circuito}, fijando la tensión del generador en 1 V de amplitud ( es decir, 2 V pico a
+        pico), y conectando los canales del osciloscopio en la entrada y la salida de la resistencia, de manera que se pudiera observar
+        la caída de tensión en la misma usando la función Math.
+
+        \begin{figure}[H]
+        \centering
+            \begin{tikzpicture}
+                \node[oscillator, xscale=0.8, yscale=0.8] at (3.892, 3.892){};
+                \draw (4, 5) to[american resistor, /tikz/circuitikz/bipoles/length=1.12cm] (6, 5);
+                \draw (6.5, 5) to[cute inductor] (8.5, 5);
+                \draw (8.75, 4.75) to[capacitor, /tikz/circuitikz/bipoles/length=1.12cm] (8.75, 2.75);
+                \draw (3.5, 4.284) -- (3.5, 5) -- (4, 5);
+                \draw (6, 5) -- (7, 5);
+                \draw (8.5, 5) -- (8.75, 5) -- (8.75, 4.25);
+                \draw (8.75, 2.75) -- (3.5, 2.75) -- (3.5, 3.5);
+                \node[shape=rectangle, minimum width=0.715cm, minimum height=0.465cm] at (2.75, 4){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (2.375, 4.25){Vs};
+                \node[shape=rectangle, minimum width=0.715cm, minimum height=0.465cm] at (5, 5.5){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (4.625, 5.75){R};
+                \node[shape=rectangle, minimum width=0.715cm, minimum height=0.465cm] at (7.55, 5.591){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (7.175, 5.841){L};
+                \node[shape=rectangle, minimum width=0.715cm, minimum height=0.465cm] at (9.368, 3.854){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (8.993, 4.104){C};
+                \draw (3.5, 5) -- (3.25, 5.25);
+                \draw (6, 5) -| (6, 5.25);
+                \node[shape=rectangle, minimum width=0.715cm, minimum height=0.465cm] at (2.987, 5.54){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (2.612, 5.79){Ch1};
+                \node[shape=rectangle, minimum width=0.715cm, minimum height=0.465cm] at (5.875, 5.604){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (5.5, 5.854){Ch2};
+            \end{tikzpicture}
+            \caption{Circuito estudiado a lo largo de la práctica.}
+            \label{fig: circuito}
+        \end{figure}
+
+        De esta manera, se varió la frecuencia de la señal generada entre $ f_{-1} $ y $ f_1 $, considerando que la frecuencia de
+        resonancia se correspondía con la mayor caída de tensión sobre la resistencia, es decir cuando la señal ilustrada por Math era
+        máxima, la frecuencia correspondiente era la de resonancia.
+
+        Luego se buscaron las frecuencias de corte $ f_{c1} $ y $ f_{c2} $, es decir como se mencionó previamente las frecuencias para las cuales $ P = \frac{P_{max}}{2} $, o bien
+        $ V = \frac{V_{max}}{\sqrt{2}} $ (siendo V la tensión pico en la resistencia) y se calculó el ancho de banda
+        \begin{equation*}
+            B = \frac{ f_{c1} + f_{c2}}{2}
+        \end{equation*}
+
+\subsubsection{Respuesta en frecuencia}
+Se utilizó la función FRA (Frequency Response Analysis) del osciloscopio para obtener los diagramas de Bode de $V_R$, $V_L$ y $V_C$. Adicionalmente, se midieron puntos individuales para la transferencia de $V_R$.
+
+\subsection{Datos recolectados}
+
+\subsubsection{Analizador de impedancias}
+Los valores medidos se presentan en la Tabla \ref{tab:analizador}.
+
+\begin{table}[H]
+    \centering
+    \caption{Mediciones de la bobina con el analizador de impedancias.}
+    \label{tab:analizador}
+    \begin{tabular}{@{}ccc@{}}
+        \toprule
+        \textbf{Frecuencia (f)} & \textbf{Resistencia Inductor ($R_L$)} & \textbf{Inductancia (L)} \\ \midrule
+        \SI{38}{\kilo\hertz}    & \SI{60,9}{\ohm}                       & \SI{1,562}{\milli\henry} \\
+        \SI{76}{\kilo\hertz}    & \SI{99,2}{\ohm}                       & \SI{1,414}{\milli\henry} \\
+        \SI{114}{\kilo\hertz}   & \SI{126,0}{\ohm}                      & \SI{1,320}{\milli\henry} \\
+        \SI{151}{\kilo\hertz}   & \SI{150,0}{\ohm}                      & \SI{1,257}{\milli\henry} \\
+        \SI{304}{\kilo\hertz}   & \SI{257,0}{\ohm}                      & \SI{1.162}{\milli\henry} \\ \bottomrule
+    \end{tabular}
+    % Datos de la tabla
+\end{table}
+
+\subsubsection{Resonancia}
+Los valores medidos experimentalmente en el circuito fueron:
+\begin{itemize}
+    \item Frecuencia de Resonancia: $f_0 = \SI{80}{\kilo\hertz}$
+    \item Frecuencia de Corte Inferior: $f_{c1} = \SI{63}{\kilo\hertz}$
+    \item Frecuencia de Corte Superior: $f_{c2} = \SI{102,5}{\kilo\hertz}$
+\end{itemize}
+
+% --- Cálculos experimentales ---
+A partir de estos datos, se calcularon el ancho de banda (B) y el factor de calidad (Q) experimentales:
+
+\begin{itemize}
+    \item Ancho de Banda: $B = f_{c2} - f_{c1} = \SI{102,5}{\kilo\hertz} - \SI{63}{\kilo\hertz} = \mathbf{\SI{39,5}{\kilo\hertz}}$
+    \item Factor de Calidad (por B): $Q_B = f_0 / B = \SI{80}{\kilo\hertz} / \SI{39,5}{\kilo\hertz} = \mathbf{2,025}$
+\end{itemize}
+
+Adicionalmente, se midió el factor Q midiendo la sobretensión en el capacitor en $f_0$:
+\begin{itemize}
+    \item $V_S (\text{pico-pico}) = \SI{2,0}{\volt}$
+    \item $V_C (\text{pico-pico}) = \SI{3,973}{\volt}$
+    \item Factor de Calidad (por V): $Q_V = |V_C| / |V_S| = 3,973 / 2,0 = \mathbf{1,987}$
+\end{itemize}
+Ambos valores de Q medidos (2,025 y 1,987) son muy consistentes entre sí.
+
+\subsubsection{Respuesta en frecuencia}
+Las Figuras \ref{fig:bode_r}, \ref{fig:bode_l} y \ref{fig:bode_c} muestran los diagramas de Bode obtenidos con el osciloscopio.
+
+% --- EPÍGRAFES CAMBIADOS (COMO PEDISTE) ---
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{resbodex3.png}
+    \caption{Diagrama de Bode para la Tensión en la Resistencia ($V_R$). Se observa un claro filtro Pasa-Banda centrado en \SI{81,49}{\kilo\hertz}.}
+    \label{fig:bode_r}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{indbodex5.png}
+    \caption{Diagrama de Bode para la Tensión en el Inductor ($V_L$). Muestra un comportamiento de filtro Pasa-Alto, con un pico de ganancia cerca de la resonancia.}
+    \label{fig:bode_l}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{capbode.png}
+    \caption{Diagrama de Bode para la Tensión en el Capacitor ($V_C$). Muestra un comportamiento de filtro Pasa-Bajo, con un pico de ganancia cerca de la resonancia.}
+    \label{fig:bode_c}
+\end{figure}
+
+Se midieron los siguientes puntos para la transferencia $H_R(s) = V_R/V_S$, presentados en la Tabla \ref{tab:puntos_bode}.
+
+\begin{table}[H]
+    \centering
+    \caption{Puntos de Bode medidos para $V_R$.}
+    \label{tab:puntos_bode}
+    \begin{tabular}{@{}ccc@{}}
+        \toprule
+        \textbf{Frecuencia (kHz)} & \textbf{Amplitud (dB)} & \textbf{Fase (°)} \\ \midrule
+        39,1                      & -20,53                 & 81,47             \\
+        51,73                     & -16,19                 & 74,63             \\
+        59,49                     & -13,25                 & 66,58             \\
+        66,07                     & -10,52                 & 54,76             \\
+        70,85                     & -8,54                  & 41,22             \\
+        \textbf{81,49}            & \textbf{-6,62}         & \textbf{-0,33}    \\
+        93,72                     & -8,42                  & -34,57            \\
+        100,5                     & -9,83                  & -45,57            \\
+        119,7                     & -13,34                 & -61,82            \\
+        152,9                     & -17,43                 & -71,87            \\
+        202,3                     & -21,07                 & -77,02            \\
+        297,1                     & -25,19                 & -80,29            \\ \bottomrule
+    \end{tabular}
+    % Datos de la tabla
+\end{table}
+El punto de máxima ganancia (\SI{-6,62}{\deci\bel}) a \SI{81,49}{\kilo\hertz} coincide con la frecuencia de resonancia experimental $f_0 = \SI{80}{\kilo\hertz}$.
+
+
+\subsection{Cálculos y Comparación Teórica}
+Para el análisis teórico, se utilizan los valores de componentes medidos a la frecuencia más cercana a la resonancia experimental ($f_0 = \SI{80}{\kilo\hertz}$). De la Tabla \ref{tab:analizador}, la más cercana es \SI{76}{\kilo\hertz}, por lo que se usan:
+
+\begin{itemize}
+    \item $L = \SI{1,414}{\milli\henry}$ (medido a \SI{76}{\kilo\hertz})
+    \item $R_L = \SI{99,2}{\ohm}$ (medido a \SI{76}{\kilo\hertz})
+    \item $C = \SI{2,2}{\nano\farad}$
+    \item $R_{gen} = \SI{50}{\ohm}$
+    \item $R = \SI{100}{\ohm}$
+    \item $R_{Total} = R_{gen} + R + R_L = \SI{50}{\ohm} + \SI{100}{\ohm} + \SI{99,2}{\ohm} = \mathbf{\SI{249,2}{\ohm}}$
+\end{itemize}
+
+Con estos valores, se calculan los parámetros teóricos:
+\begin{itemize}
+    \item $f_0 (\text{teórica}) = \frac{1}{2\pi\sqrt{LC}} = \frac{1}{2\pi\sqrt{\SI{1,414e-3}{\henry} \cdot \SI{2,2e-9}{\farad}}} \approx \mathbf{\SI{89,9}{\kilo\hertz}}$
+    \item $Q (\text{teórico}) = \frac{\omega_0 L}{R_{Total}} = \frac{2\pi \cdot \SI{89,9e3}{\hertz} \cdot \SI{1,414e-3}{\henry}}{\SI{249,2}{\ohm}} \approx \mathbf{3,20}$
+    \item $B (\text{teórico}) = \frac{f_0}{Q} = \frac{\SI{89,9}{\kilo\hertz}}{3,20} \approx \mathbf{\SI{28,1}{\kilo\hertz}}$
+\end{itemize}
+
+La Tabla \ref{tab:comparativa} resume la comparación entre los valores teóricos (calculados con componentes medidos) y los experimentales (medidos en el circuito).
+
+\begin{table}[H]
+    \centering
+    \caption{Comparación de valores Teóricos y Experimentales.}
+    \label{tab:comparativa}
+    \begin{tabular}{@{}lcc@{}}
+        \toprule
+        \textbf{Parámetro} & \textbf{Teórico (calculado)} & \textbf{Experimental (medido)} \\ \midrule
+        $f_0$              & \SI{89,9}{\kilo\hertz}       & \SI{80,0}{\kilo\hertz}         \\
+        $Q$                & 3,20                         & 2,025 (por B) / 1,987 (por V)  \\
+        $B$                & \SI{28,1}{\kilo\hertz}       & \SI{39,5}{\kilo\hertz}         \\ \bottomrule
+    \end{tabular}
+    % Datos de la tabla
+\end{table}
+
+% --- SECCIÓN DE SEÑAL TRIANGULAR (VERSIÓN FINAL Y CORRECTA) ---
+\subsection{Respuesta a Señal Triangular}
+Finalmente, se reemplazó la entrada senoidal por una señal triangular de 2Vpp para observar la respuesta del circuito. La guía pedía analizar el comportamiento en $f_{-2}$ y $f_{2}$.
+Se utilizó $f_{-2} \approx \SI{38}{\kilo\hertz}$. Para $f_2 \approx \SI{304}{\kilo\hertz}$, se utilizó una frecuencia de \SI{200}{\kilo\hertz} como sustitución, ya que era el límite operativo del generador de funciones.
+
+Las Figuras \ref{fig:tri_r}, \ref{fig:tri_l} y \ref{fig:tri_c} muestran las 6 combinaciones de salida y frecuencia. Debido a una confusión, la señal del generador aparece en color verde en las imágenes de la izquierda de las figuras mencioandas, mientras que en las imágenes de la derecha la señal del generador aparece en color amarillo.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.49\textwidth]{triaresi.png}
+    \includegraphics[width=0.49\textwidth]{triaresi3.png}
+    \caption{Respuesta en $V_R$ a \SI{38}{\kilo\hertz} (izquierda) y \SI{200}{\kilo\hertz} (derecha).}
+    \label{fig:tri_r}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.49\textwidth]{triaindu1.png}
+    \includegraphics[width=0.49\textwidth]{triaindu5.png}
+    \caption{Respuesta en $V_L$ a \SI{38}{\kilo\hertz} (izquierda) y \SI{200}{\kilo\hertz} (derecha).}
+    \label{fig:tri_l}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.49\textwidth]{triacapa.png}
+    \includegraphics[width=0.49\textwidth]{triacapa2.png}
+    \caption{Respuesta en $V_C$ a \SI{38}{\kilo\hertz} (izquierda) y \SI{200}{\kilo\hertz} (derecha).}
+    \label{fig:tri_c}
+\end{figure}
+
+\subsubsection{Análisis de la Forma de Onda}
+Una señal triangular está compuesta por una suma infinita de armónicos impares. La respuesta del circuito depende de cómo el filtro (pasa-bajo, pasa-alto o pasa-banda) atenúa o no esos armónicos.
+
+\begin{itemize}
+    \item \textbf{$V_R$ (Pasa-banda):} El filtro está centrado en \SI{80}{\kilo\hertz}. A \SI{38}{\kilo\hertz} (Figura \ref{fig:tri_r}, izq.), la señal está atenuada pero retiene su forma triangular. A \SI{200}{\kilo\hertz} (Figura \ref{fig:tri_r}, der.), la frecuencia fundamental y todos sus armónicos están profundamene en la banda de rechazo; la señal de salida es casi nula (210mVpp vs 2Vpp).
+
+\item \textbf{$V_L$ (Pasa-alto):} A \SI{38}{\kilo\hertz} (Figura \ref{fig:tri_l}, izq.), la frecuencia es baja, por lo que el filtro la bloquea; la señal de salida se ve muy atenuada y con una forma muy distorsionada. A \SI{200}{\kilo\hertz} (Figura \ref{fig:tri_l}, der.), la frecuencia es alta y está en la banda de paso. El filtro deja pasar la señal, por lo que la salida \textbf{es casi idéntica a la triangular de entrada}.
+
+    \item \textbf{$V_C$ (Pasa-bajo):} A \SI{38}{\kilo\hertz} (Figura \ref{fig:tri_c}, izq.), la frecuencia es baja
+    y está en la banda de paso. El filtro deja pasar la señal, por lo que la salida \textbf{es casi idéntica a la triangular de entrada}. A \SI{200}{\kilo\hertz} (Figura \ref{fig:tri_c}, der.),
+     la frecuencia es alta y está en la banda de rechazo. El filtro bloquea la señal de 200 kHz. Una señal triangular necesita componentes de alta frecuencia para formar sus "picos" agudos. Como el filtro los bloquea, la señal de salida se "suaviza" y se convierte en una \textbf{onda senoidal} de muy baja amplitud (510mVpp).
+\end{itemize}
+
+Respondiendo a la pregunta del TP "¿En qué caso se obtiene una respuesta más parecida a una señal triangular?": La respuesta es más fiel a la triangular en \textbf{$V_L$ a alta frecuencia} (\SI{200}{\kilo\hertz}) y en \textbf{$V_C$ a baja frecuencia} (\SI{38}{\kilo\hertz}). Esto ocurre porque en esas regiones, la impedancia del componente ($Z_L$ o $Z_C$) es tan grande comparada con el resto que domina el divisor de tensión, haciendo que $V_{out} \approx V_{in}$.
+
+
+\section{Conclusiones}
+Se ha verificado exitosamente el comportamiento en resonancia de un circuito RLC serie. La medición de los componentes con el analizador de impedancias (Tabla \ref{tab:analizador}) fue fundamental, ya que demostró que la resistencia parásita del inductor $(R_{L})$ no es despreciable y varía significativamente con la frecuencia.
+
+Esta resistencia parásita, sumada a la resistencia interna del generador $(R_{gen}=\SI{50}{\ohm})$, compone una $R_{Total}$ de \SI{249,2}{\ohm}, que es mucho mayor a la R nominal de \SI{100}{\ohm}. Este es el factor principal que domina el comportamiento del circuito.
+
+Los valores experimentales de Q (2,025 y 1,987) fueron muy consistentes entre sí, validando las mediciones de frecuencias de corte y de tensión.
+
+Como se ve en la Tabla \ref{tab:comparativa}, los valores teóricos (calculados usando los datos de \SI{76}{\kilo\hertz}) difieren de los experimentales. La $f_{0}$ teórica (\SI{89,9}{\kilo\hertz}) es un 12\% mayor que la experimental (\SI{80}{\kilo\hertz}), y el Q teórico (3,20) es significativamente mayor que el experimental (~2,0). Esto es la "mayor causa de diferencia" mencionada en la guía del TP: el modelo teórico usa valores fijos de L y $R_{L}$ medidos a \SI{76}{\kilo\hertz}, pero en la realidad, estos valores cambian para $f_{0}$, $f_{c1}$ y $f_{c2}$, afectando los resultados.
+
+Finalmente, los diagramas de Bode (Figuras \ref{fig:bode_r}, \ref{fig:bode_l} y \ref{fig:bode_c}) confirmaron el comportamiento esperado: $V_{R}$ actúa como un filtro pasa-banda, $V_{L}$ como un pasa-alto y $V_{C}$ como un pasa-bajo. El análisis con la señal triangular demostró cómo estos filtros afectan a los armónicos de una señal no senoidal.
+
+
+
+\end{document}
