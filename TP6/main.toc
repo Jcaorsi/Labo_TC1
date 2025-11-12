@@ -5,6 +5,6 @@
 \contentsline {section}{\numberline {2.}Desarrollo}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Procedimiento}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Datos recolectados}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Cálculos}{3}{subsection.2.3}%
-\contentsline {section}{\numberline {3.}Conclusiones}{3}{section.3}%
+\contentsline {subsection}{\numberline {2.3}Cálculos}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3.}Conclusiones}{5}{section.3}%
 \contentsfinish 
