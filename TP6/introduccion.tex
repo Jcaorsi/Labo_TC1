@@ -4,9 +4,180 @@
   \item \href{https://www.rftesolutions.com/index.php?main_page=product_info&products_id=729}{Osciloscopio Keysight (Agilent) DSO6014A}
   \item \href{https://www.keysight.com/us/en/product/EDU33212A/waveform-generator-20mhz-2-channel.html}{Generador de ondas}  con 
         resistencia interna de $ 50 \Omega $
+  \item Analizador de impedancias LCR.
   \item Resistencia de $ 100 \Omega $ (nominal y medido).
   \item Capacitor de 2,2 nF.
   \item Inductor de inductancia entre 0,5 mH y 2 mH
 \end{itemize}
 
 \subsection{Marco teórico}
+
+El modelo de transformador estudiado a lo largo de este trabajo práctico consiste en dos bobinados
+alrededor de un núcleo. Si se conecta uno de estos bobinados a una fuente de alterna, el campo 
+magnético variable debido al caracter alterno de la excitación genera un flujo de campo magnético variable
+a través del mismo, y el cual induce una corriente en el núcleo. Dicha corriente se llama \textbf{corriente 
+de Eddy} o corriente de Foucault, y se obtiene mediante la ecuación
+\begin{equation*}
+    I = I_1 \cdot N_1+ I_2 \cdot N_2 = \frac{\phi l}{A \mu}
+\end{equation*}
+donde $N_1$ y $N_2$ representan el número de vueltas del bobinado primario y el secundario respectivamente,
+$I_1, I_2$ las corrientes que circulan por los mismos, A la sección transversal del núcleo, l la longitud
+del mismo y $\phi$ el flujo de campo magnético a través del mismo. En base a esto, se define la reluctancia
+R como
+\begin{equation*}
+    R = \frac{l}{A \mu}
+\end{equation*}
+La corriente de Eddy en un efecto no deseable de la configuración física del transformador, ya que disipa
+potencia que no es aprovechada. Es por esto que se busca que $\mu$ sea muy grande, ya que en ese caso I=0 y
+\begin{equation*}
+    0 = I_1 \cdot N_1+ I_2 \cdot N_2 = \frac{\phi l}{A \mu} \quad \Rightarrow \quad I_2 = \frac{-N_1}{N_2}I_1
+\end{equation*}
+
+Los materiales que tienen $\mu$ grande se denominan materiales mu-magnéticos.
+
+\par Defino la constante $n = \frac{N_2}{N_1}$ que establece una relación entre el número de vueltas de
+ambos bobinados. Las 3 relaciones de transformación son:
+\begin{equation*}
+    V_2=n V_1 \qquad I_2=\frac{-I_1}{n} \qquad S_2=-S_1
+\end{equation*}
+
+Nótese que si $N_2 > N_1 \quad \Rightarrow \quad n > 1 \quad \Rightarrow \quad V_2 > V_1  \ \  \wedge \ \  I_2 < -I_1  $
+es decir, si el bobinado secundario tiene mayor cantidad de vueltas que el primario, la caída de tensión en
+el secundario es mayor que en el primario, y lo contrario sucede con la corriente. Al bobinado que tiene
+mayor tensión se le dice \textbf{reductor}, ya que si se conecta una tensión de alimentación al mismo, la 
+tensión en el otro bobinado se verá reducida; de manera análoga, al bobinado con menor tensión se lo
+denomina \textbf{elevador}.
+
+Un transformador ideal no tiene efecto inductivo entre las bobinas. Sin embargo, el campo magnético generado
+por la corriente $I_1$ también atraviesa el bobinado secundario, y visceversa. Esto resulta en la presencia
+de la inductancia mutua M, de manera que se considera el siguiente modelo
+\begin{figure}[H]
+    \centering
+        \begin{equation*}
+            \begin{tikzpicture}
+              \draw (6.689, 4.483) -- (6.439, 4.483);
+              \draw (5.5, 4.75) to[cute inductor] (5.5, 3);
+              \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (7.294, 3.962){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (6.919, 4.212){\small L2};
+              \draw (6.839, 3) to[cute inductor] (6.839, 4.75);
+              \draw (5.5, 4.75) -- (4, 4.75);
+              \draw (5.5, 3) -- (4, 3);
+              \draw (6.839, 3) -- (8.339, 3);
+              \draw (6.839, 4.75) -- (8.339, 4.75);
+              \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (5.125, 3.96){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (4.75, 4.21){\small L1};
+              \draw[-latex] (5, 5) -- (5.5, 5);
+              \draw[-latex] (7.339, 5) -- (6.839, 5);
+              \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (4.823, 5.118){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (4.448, 5.368){\small I1};
+              \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (7.786, 5.118){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (7.411, 5.368){\small I2};
+              \draw (6.558, 4.609) -- (6.558, 4.359);
+              \draw (6.687, 3.121) -- (6.437, 3.121);
+              \draw (5.705, 4.633) -- (5.705, 4.383);
+              \draw (5.85, 3.121) -- (5.6, 3.121);
+              \draw (5.835, 4.5) -- (5.585, 4.5);
+              \node[shape=circle, draw, line width=1pt, minimum width=0.215cm] at (5.286, 4.535){};
+              \node[shape=circle, draw, line width=1pt, minimum width=0.215cm] at (7.061, 4.518){};
+            \end{tikzpicture}
+        \end{equation*}
+    \caption{Modelo de transformador sin corrientes de Eddy, con inductancia mutua, ambas corrientes ``entrando por el punto''.}
+    \label{fig:modeloTrafo1}
+\end{figure}
+la ubicación de los puntos indica el signo del término con M; si en un inductor la corriente "entra por el
+punto" y en el otro "sale por el punto", entonces el signo del término con M es contrario al del término
+sin M en la tensión dada. En el caso de la sigura \ref{fig:modeloTrafo1}, las ecuaciones son
+\begin{equation*}
+    \begin{cases}
+    V_1 = L_1  \diff{I_1}{t} + M \diff{I_2}{t} \\ \\
+    V_2 = M \diff{I_1}{t} + \diff{I_2}{t}
+    \end{cases}
+\end{equation*}
+
+en cambio, en la figura \ref{fig:modeloTrafo2}
+\begin{figure}[H]
+  \begin{equation*}
+    \begin{tikzpicture}
+      \draw (6.689, 4.483) -- (6.439, 4.483);
+      \draw (5.5, 4.75) to[cute inductor] (5.5, 3);
+      \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (7.294, 3.962){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (6.919, 4.212){\small L2};
+      \draw (6.839, 3) to[cute inductor] (6.839, 4.75);
+      \draw (5.5, 4.75) -- (4, 4.75);
+      \draw (5.5, 3) -- (4, 3);
+      \draw (6.839, 3) -- (8.339, 3);
+      \draw (6.839, 4.75) -- (8.339, 4.75);
+      \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (5.125, 3.96){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (4.75, 4.21){\small L1};
+      \draw[-latex] (5, 5) -- (5.5, 5);
+      \draw[-latex] (7.339, 5) -- (6.839, 5);
+      \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (4.823, 5.118){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (4.448, 5.368){\small I1};
+      \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (7.786, 5.118){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (7.411, 5.368){\small I2};
+      \draw (6.558, 4.609) -- (6.558, 4.359);
+      \draw (6.687, 3.121) -- (6.437, 3.121);
+      \draw (5.705, 4.633) -- (5.705, 4.383);
+      \draw (5.85, 3.121) -- (5.6, 3.121);
+      \draw (5.835, 4.5) -- (5.585, 4.5);
+      \node[shape=circle, draw, line width=1pt, minimum width=0.215cm] at (5.286, 4.535){};
+      \node[shape=circle, draw, line width=1pt, minimum width=0.215cm] at (7.061, 3.212){};
+    \end{tikzpicture}
+  \end{equation*}
+  \caption{Modelo de transformador sin corrientes de Eddy, con inductancia mutua, una corriente ``entrando por el punto'' y la otra ``saliendo''.}
+  \label{fig:modeloTrafo2}
+\end{figure}
+las ecuaciones de las tensiones son
+\begin{equation*}
+    \begin{cases}
+    V_1 = L_1  \diff{I_1}{t} - M \diff{I_2}{t} \\ \\
+    V_2 = - M \diff{I_1}{t} + \diff{I_2}{t}
+    \end{cases}
+\end{equation*}
+en este trabajo práctico, se utilizó el modelo de la figura \ref{fig:modeloTrafo1}.
+
+\par Un factor que influye en la inductancia mutua M es el acoplamiento de las bobinas. Se puede despejar a
+partir de las ecuaciones ya dadas la ecuación $M = \sqrt{L_1L_2}$; sin embargo, en la práctica se observa que 
+$ M \leq \sqrt{L_1L_2}$, pues no todo el campo magnético generado por cada bobinado pasa también por el otro.
+Esto sucede por la no idealidad de los materiales, y porque es imposible asegurar que ambos bobinados se
+mantengan perfectamente alineados. Para describir que tanto se acercan las condiciones del experimento a
+las ideales, se define el acoplamiento K
+\begin{equation*}
+  K = \frac{M}{\sqrt{L_1L_2}}
+\end{equation*}
+Como $ M \leq \sqrt{L_1L_2} \quad \Rightarrow \quad 0 \leq K \leq 1$. Las condiciones ideales en las que
+K = 1 se denominan \textbf{acoplamiento perfecto}.
+
+\par Una ventaja escencial del uso de transformadores es el aislamiento eléctrico. Esto quiere decir que si 
+por ejemplo en la figura \ref{fig:circuitoEjemplo} se quema la resistencia $R_1$, esto no afectaría a $R_2$,
+sino que simplemente dejaría de circular corriente a traves del transformador. 
+
+\begin{figure} [H]
+  \begin{equation*}
+    \begin{tikzpicture}
+      \draw (5.5, 4.75) to[cute inductor, /tikz/circuitikz/bipoles/length=1.12cm] (5.5, 3);
+      \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (6.553, 3.962){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (6.178, 4.212){\small L2};
+      \draw (6.099, 3) to[cute inductor, /tikz/circuitikz/bipoles/length=1.12cm] (6.099, 4.75);
+      \draw (5.5, 4.75) -- (4, 4.75);
+      \draw (5.5, 3) -- (4, 3);
+      \draw (6.099, 3) -- (7.554, 3);
+      \draw (6.099, 4.75) -- (7.509, 4.75);
+      \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (5.125, 3.96){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (4.75, 4.21){\small L1};
+      \draw[-latex] (5, 5) -- (5.5, 5);
+      \draw[-latex] (6.599, 5) -- (6.099, 5);
+      \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (4.823, 5.118){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (4.448, 5.368){\small I1};
+      \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (7.046, 5.118){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (6.671, 5.368){\small I2};
+      \node[shape=rectangle, draw, line width=1pt, minimum width=0.715cm, minimum height=0.215cm] at (3.625, 4.759){};
+      \node[shape=rectangle, draw, line width=1pt, minimum width=0.215cm, minimum height=0.715cm] at (7.554, 3.875){};
+      \node[oscillator, xscale=0.6, yscale=0.6] at (3.293, 3.921){};
+      \draw (3, 4.25) -| (3, 4.75) -- (3.25, 4.75);
+      \draw (2.999, 3.627) -| (3, 3) -- (4, 3);
+      \draw (7.554, 3.5) -- (7.554, 3);
+      \draw (7.554, 4.25) |- (7.509, 4.75);
+      \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (3.647, 5.151){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (3.272, 5.401){\small R1};
+      \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (7.973, 3.941){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (7.598, 4.191){\small R2};
+      \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (2.131, 3.987){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (1.756, 4.237){\small Vgen};
+      \node[shape=circle, draw, line width=1pt, minimum width=0.215cm] at (5.247, 4.508){};
+      \node[shape=circle, draw, line width=1pt, minimum width=0.215cm] at (6.331, 4.519){};
+    \end{tikzpicture}
+  \end{equation*}
+  \caption{Ejemplo de circuito con cargas conectadas a ambos bobinados.}
+  \label{fig:circuitoEjemplo}
+\end{figure}
+
+\par Otra característica de los transformadores es que si se agrega un offset a la señal que alimenta el
+bobinado primario del esquema, como el offset es escencialmmente una señal que continua que se superpone
+con la alterna, y los inductores se comportan como cortocircuitos en régimen de continua, esa tensión
+adicional no afecta al acoplamiento, y no se transmite al bobinado secundario.
