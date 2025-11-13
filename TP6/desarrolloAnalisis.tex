@@ -1,1 +1,18 @@
 \section{Análisis}
+
+ \subsubsection*{Parametros del transformador}
+ 
+ 	En la primera parte se midieron los parametros y comportamiento del transformador. Al observar la tabla \ref{tab:mediciones_tensiones_bobinas}, se puede observar que el transformador poseía una entrada elevadora en la bobina L1 y reductora en L2.\par
+	
+	El primer valor calculado fue M y se calculó a partir de las dos mediciones indicadas en la tabla \ref{tab:mediciones_tensiones_bobinas}. En ambos casos, se llego a un M casi idéntico, el cuyos módulo difiere en 0,001 mH. Esto concuerda con la teoría, puesto a que el coeficiente de inductancia mutua, debe ser el mismo para ambos bobinados. Al mismo tiempo, esto sugiere que las mediciones de tensión fueron bastante confiables. \par
+	Otro aspecto observado en los resultados obtenidos de M, fue que el valor de la constante fue negativo. Aun así, esto no debería ser un problema, ya que estaría ligado al sistema de referencia usado para despejar las ecuaciones. En este caso se usó el indicado en la figura \ref{fig:modeloTrafo1}.\par
+	
+	A partir del módulo de M y los valores de inductancia obtenidos se consiguió la constante de acoplamiento k. Este dió un valor bajo de $\approx$ 0,55. Esto indica que las bobinas del transformador no estaban idealmente acopladas. Más aun, al querer estimar la realción de vueltas del transformador, se consiguieron valores muy distintos según el método utilizado. 
+	\par Para el cálculo de errores, se tomó como referencia el n conseguido a partir de L1 y L2. Este valor nos permitiría indicar que este transformador tendría una relación aproximada de 1:3 o 1:4 vueltas. Con esto en cuenta, se obtuvieron valores que diferían en un 45,5\% para el caso en el que se calculaba n a partir de los valores medidos a partir de excitar la entrada L1 del transformador y un 82,28 \% al calcular n a partir de los valores obtenidos al excitar la entrada L2 del transformador. \par
+	Con esto se puede concluir que el transformador no estaba perfectamente acoplado, y esto se podría atribuir a fugas en el campo magnetico inducido por las bobinas. Si bien el material de la estructura del transformador era de ferrite, el mismo no era ideal, por lo que existen perdidas de flujo magnético. Al mismo tiempo, también es importante considerar las corrientes de eddy generadas en el interior del núcleo las cuales, a mayor frecuencia de cambio, aumentan las perdidas de energía. Es muy importante considerar esto, ya que en este trabajo, se utilizó una señal de frecuencia muy alta (50kHz). \par
+
+ \subsubsection*{Fuente de tensión con offset}
+ 
+	En esta parte, al observar las figuras \ref{fig:off1} a la \ref{fig:off5}, se pudo observar que la tensión de salida no varió al modificar el offset. Esto se puede explicar de la siguiente manera. Al añadir un offset a una señal, se añade una corriente continua a la misma. Debido a que el transformador funciona como un filtro pasa altos, el mismo filtra la señal dc del offset dejando solo la señal senoidal original. Todo esto sin importar el valor del offset.\par
+	 Por tal motivo, al observar las mediciones en todos los casos, se puede observar que la salida es la misma para todos los casos y concuerda con la señal original sin offset agregado.
+	 

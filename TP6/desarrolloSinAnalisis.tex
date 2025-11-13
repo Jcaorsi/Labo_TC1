@@ -4,6 +4,9 @@
 
 	El procedimiento de este TP se dividió en 3 secciones:
 	
+
+
+	
 	\begin{itemize}
 	\item En la primera sección se midieron los parámetros del inductor. Para ello, primero se midieron los valores de inductancia de ambos lados del inductor. Eso realizo mediante el medidor LRC configurándolo a 50kHz. Seguido a eso, midió la tensión de salida de cada lado, al conectar un generador de señal senoidal de 1,5V pico con una frecuencia de 50kHz en el lado opuesto. 
 	\item En la segunda parte se conectó una resistencia adicional 47 $\Omega$ entre el generador y la entrada del transformador del lado elevador. Seguidamente, se varió el offset (se tomaron valores de -5v a 5v) a la señal usada en la primera sección y se midió la tensión de salida. La salida se considero como circuito abierto.
@@ -30,15 +33,22 @@
 \setlength{\tabcolsep}{10pt}      % Espaciado horizontal
 \begin{tabular}{|l|l|l|}
 \hline
-\textbf{} & \textbf{$V_{L1}$} & \textbf{$V_{L2}$} \\ 
-\hline
-$V_{L1}$ entrada & $2{,}10~\text{V}_{pp}\, \angle\, 0^\circ$ & $4{,}34~\text{V}_{pp}\, \angle\, 182^\circ$ \\ 
-$V_{L2}$ entrada & $0{,}45~\text{V}_{pp}\, \angle\, 181^\circ$ & $3{,}10~\text{V}_{pp}\, \angle\, 0^\circ$ \\ 
-\hline
+\textbf{} & $V_{entrada} $& $V_{salida}$ \\ \hline
+
+$V_{L1}$\ como entrada 
+& $2{,}10~\text{V}_{pp}\, \angle\, 0^\circ$ 
+& $4{,}34~\text{V}_{pp}\, \angle\, 182^\circ$ \\ \hline
+
+$V_{L2}$\ como entrada 
+& $3{,}10~\text{V}_{pp}\, \angle\, 0^\circ$
+& $0{,}45~\text{V}_{pp}\, \angle\, 181^\circ$ \\ \hline
+
 \end{tabular}
 \caption{Tensiones medidas en cada bobina con sus respectivas fases.}
 \label{tab:mediciones_tensiones_bobinas}
 \end{table}
+
+
 
  \subsubsection*{Fuente de tensión con offset}
  
@@ -94,3 +104,60 @@ $V_{L2}$ entrada & $0{,}45~\text{V}_{pp}\, \angle\, 181^\circ$ & $3{,}10~\text{V
 \subsubsection*{Salida con carga}
 
 \subsection{Cálculos}
+
+\subsubsection*{Parametros del transformador}
+
+
+	Para la obtención de M, se partió del sistema de ecuaciones \ref{eq:sist_eq} y se despejaron las siguientes ecuaciones, considerando que $I_2$ = 0:
+	
+	
+\begin{equation*}
+V_{in} - R_{L in} \cdot I_{in} - j \omega L_{in} I_{in} = 0
+\end{equation*}
+
+\begin{equation*}
+V_{out} = j \cdot \omega \cdot M \cdot I_{in} 
+\end{equation*}
+
+	Al despejar y hacer el cociente de ambas, se puede llegar a:
+	
+\begin{equation*}
+	\frac{V_{out}}{V_{in}} = \frac{j \, \omega \, M}{R_{L in} + j \, \omega \, L_{in}}
+	\label{eq:acoplamiento_mutuo}
+\end{equation*}
+
+	Finalmente, como la resistencia del inductor es muy chica a comparación de $j\cdot \omega L_1$, se desprecia R llegando a la ecuación final:
+	
+\begin{equation}
+    \frac{V_{out}}{V_{in}} \cdot L_{in} = M
+    \label{eq:acoplamiento_mutuo}
+\end{equation}
+
+con $L_{in}$ el valor del bobinado conectado al generador, $V_{in}$ la tensión en la entrada del transformador y $V_{out}$ la tensión de la salida.
+
+A partir de esta última ecuación se puede conseguir, mediante la fase, el signo de M, y al tomar el modulo, se puede despejar K mediante la ecuación \ref{eq:coef_acop}.
+
+Con esto en cuenta se llegaron a los siguientes resultados:
+
+\begin{itemize}
+\item M = $0,279 mH \angle -178^\circ$ $\approx$ -0,279 mH
+\item K = 0,546 
+\end{itemize}
+A partir de conectar $V_l1$ al generador.
+
+\begin{itemize}
+\item M = $0,28 mH \angle -179^\circ$ $\approx$ -0,28 mH
+\item K = 0,549 
+\end{itemize}
+A partir de conectar $V_{L2}$ al generador.
+
+Otro valor que se trabajo fue el factor de relación de vueltas para un transformador ideal. Aquí se calculó el n de varias formas:
+
+\begin{itemize}
+\item Mediante la ecuación \ref{eq:trafo_v} con $V_1$ la entrada de $L_1$ : n = 2,06
+\item Mediante la ecuacion \ref{eq:trafo_v} con $V_2$ la entrada de $L_2$: $\frac{1}{n}$ = 0,145 $\implies$ n = 6,89
+\item Mediante la ecuación \ref{eq:rel_vuelta} : n= 3,78
+\end{itemize}
+
+
+	

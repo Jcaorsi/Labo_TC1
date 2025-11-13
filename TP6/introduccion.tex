@@ -37,9 +37,13 @@ Los materiales que tienen $\mu$ grande se denominan materiales mu-magnéticos.
 
 \par Defino la constante $n = \frac{N_2}{N_1}$ que establece una relación entre el número de vueltas de
 ambos bobinados. Las 3 relaciones de transformación son:
-\begin{equation*}
-    V_2=n V_1 \qquad I_2=\frac{-I_1}{n} \qquad S_2=-S_1
-\end{equation*}
+\begin{align}
+V_2 &= n V_1 \label{eq:trafo_v} \\
+I_2 &= \frac{-I_1}{n} \label{eq:trafo_i} \\
+S_2 &= -S_1 \label{eq:trafo_s}\\
+n &= \sqrt{\frac{L_2}{L_1}} \label{eq:rel_vuelta}
+\end{align}
+
 
 Nótese que si $N_2 > N_1 \quad \Rightarrow \quad n > 1 \quad \Rightarrow \quad V_2 > V_1  \ \  \wedge \ \  I_2 < -I_1  $
 es decir, si el bobinado secundario tiene mayor cantidad de vueltas que el primario, la caída de tensión en
@@ -83,12 +87,13 @@ de la inductancia mutua M, de manera que se considera el siguiente modelo
 la ubicación de los puntos indica el signo del término con M; si en un inductor la corriente "entra por el
 punto" y en el otro "sale por el punto", entonces el signo del término con M es contrario al del término
 sin M en la tensión dada. En el caso de la sigura \ref{fig:modeloTrafo1}, las ecuaciones son
-\begin{equation*}
+\begin{equation}
     \begin{cases}
     V_1 = L_1  \diff{I_1}{t} + M \diff{I_2}{t} \\ \\
     V_2 = M \diff{I_1}{t} + \diff{I_2}{t}
     \end{cases}
-\end{equation*}
+     \label{eq:sist_eq}
+\end{equation}
 
 en cambio, en la figura \ref{fig:modeloTrafo2}
 \begin{figure}[H]
@@ -134,9 +139,10 @@ $ M \leq \sqrt{L_1L_2}$, pues no todo el campo magnético generado por cada bobi
 Esto sucede por la no idealidad de los materiales, y porque es imposible asegurar que ambos bobinados se
 mantengan perfectamente alineados. Para describir que tanto se acercan las condiciones del experimento a
 las ideales, se define el acoplamiento K
-\begin{equation*}
+\begin{equation}
   K = \frac{M}{\sqrt{L_1L_2}}
-\end{equation*}
+   \label{eq:coef_acop}
+\end{equation}
 Como $ M \leq \sqrt{L_1L_2} \quad \Rightarrow \quad 0 \leq K \leq 1$. Las condiciones ideales en las que
 K = 1 se denominan \textbf{acoplamiento perfecto}.
 
