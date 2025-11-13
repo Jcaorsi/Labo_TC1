@@ -8,9 +8,164 @@
 
 	
 	\begin{itemize}
-	\item En la primera sección se midieron los parámetros del inductor. Para ello, primero se midieron los valores de inductancia de ambos lados del inductor. Eso realizo mediante el medidor LRC configurándolo a 50kHz. Seguido a eso, midió la tensión de salida de cada lado, al conectar un generador de señal senoidal de 1,5V pico con una frecuencia de 50kHz en el lado opuesto. 
-	\item En la segunda parte se conectó una resistencia adicional 47 $\Omega$ entre el generador y la entrada del transformador del lado elevador. Seguidamente, se varió el offset (se tomaron valores de -5v a 5v) a la señal usada en la primera sección y se midió la tensión de salida. La salida se considero como circuito abierto.
-	\item En la tercera parte (COMPLETA)
+	
+	\begin{figure}[h!]
+    \centering
+
+    %-------------------------
+    %   FIGURA 1
+    %-------------------------
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+\begin{tikzpicture}
+	% Paths, nodes and wires:
+	\node[transformer core, cute] at (16.55, -14.05){};
+	\node[circ] at (16, -13.25){};
+	\node[circ] at (17.25, -13.25){};
+	\node[oscillator, xscale=0.71, yscale=0.71] at (12.49, -14.01){};
+	\draw (12.142, -14.358) |- (15.5, -15.1);
+	\draw (12.142, -13.662) |- (12.75, -13);
+	\draw (17.6, -13) -| (19, -13);
+	\draw (17.6, -15.1) -| (19, -15);
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=1.465cm] at (17.6, -15.1){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (17.1, -14.35){L2};
+	\node[shape=rectangle, minimum width=1.215cm, minimum height=0.715cm] at (15.875, -14.75){} node[anchor=north west, align=left, text width=0.827cm, inner sep=6pt] at (15.25, -14.375){L1};
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.59cm] at (16, -12.25){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (15.5, -11.937){Ch1};
+	\draw[-latex] (16, -12.563) -- (16, -13);
+	\node[shape=rectangle, minimum width=1.715cm, minimum height=0.84cm] at (20.5, -13.188){} node[anchor=north west, align=left, text width=1.327cm, inner sep=6pt] at (19.625, -12.75){Ch2};
+	\draw[-latex] (19.75, -13) -- (19, -13);
+	\node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm](N1) at (12.74, -14.01){} node[anchor=center] at (N1.text){$V_s$} node[anchor=north west, align=left, text width=0.077cm, inner sep=6pt] at (12.49, -13.76){};
+	\draw (12.75, -13) -- (15.5, -13);
+\end{tikzpicture}
+        \caption{Generador conectado a L1}
+        \label{fig:circ1}
+    \end{minipage}
+    \hfill
+    %-------------------------
+    %   FIGURA 2
+    %-------------------------
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+      \begin{tikzpicture}
+	% Paths, nodes and wires:
+	\node[transformer core, cute] at (16.55, -14.05){};
+	\node[circ] at (16, -13.25){};
+	\node[circ] at (17.25, -13.25){};
+	\node[oscillator, xscale=0.71, yscale=0.71] at (12.49, -14.01){};
+	\draw (12.142, -14.358) |- (15.5, -15.1);
+	\draw (12.142, -13.662) |- (12.75, -13);
+	\draw (17.6, -13) -| (19, -13);
+	\draw (17.6, -15.1) -| (19, -15);
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=1.465cm] at (17.6, -15.1){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (17.1, -14.35){L1};
+	\node[shape=rectangle, minimum width=1.215cm, minimum height=0.715cm] at (15.875, -14.75){} node[anchor=north west, align=left, text width=0.827cm, inner sep=6pt] at (15.25, -14.375){L2};
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.59cm] at (16, -12.25){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (15.5, -11.937){Ch1};
+	\draw[-latex] (16, -12.563) -- (16, -13);
+	\node[shape=rectangle, minimum width=1.715cm, minimum height=0.84cm] at (20.5, -13.188){} node[anchor=north west, align=left, text width=1.327cm, inner sep=6pt] at (19.625, -12.75){Ch2};
+	\draw[-latex] (19.75, -13) -- (19, -13);
+	\node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm](N1) at (12.74, -14.01){} node[anchor=center] at (N1.text){$V_s$} node[anchor=north west, align=left, text width=0.077cm, inner sep=6pt] at (12.49, -13.76){};
+	\draw (12.75, -13) -- (15.5, -13);
+\end{tikzpicture}
+        \caption{Generador conectado a L2}
+        \label{fig:circ2}
+    \end{minipage}
+
+\end{figure}
+
+	
+	\item En la primera sección se midieron los parámetros del inductor. Para ello, primero se midieron los valores de inductancia de ambos lados del inductor. Eso realizo mediante el medidor LRC configurándolo a 50kHz. Seguido a eso, midió la tensión de salida de cada lado, al conectar un generador de señal senoidal de 1,5V pico con una frecuencia de 50kHz en ambos lado opuesto (Observar figuras \ref{fig:circ1} y \ref{fig:circ2}).  
+	
+	\begin{figure}[h!]
+    \centering
+	\begin{tikzpicture}
+	% Paths, nodes and wires:
+	\node[transformer core, cute] at (16.55, -14.05){};
+	\node[circ] at (16, -13.25){};
+	\node[circ] at (17.25, -13.25){};
+	\node[oscillator, xscale=0.71, yscale=0.71] at (12.49, -14.01){};
+	\draw (12.142, -14.358) |- (15.5, -15.1);
+	\draw (15.5, -13) to[american resistor, /tikz/circuitikz/bipoles/length=1.11cm, l={$R_m$}] (12.75, -13);
+	\draw (12.142, -13.662) |- (12.75, -13);
+	\draw (17.6, -13) -| (19, -13);
+	\draw (17.6, -15.1) -| (19, -15);
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=1.465cm] at (17.6, -15.1){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (17.1, -14.35){L2};
+	\node[shape=rectangle, minimum width=1.215cm, minimum height=0.715cm] at (15.875, -14.75){} node[anchor=north west, align=left, text width=0.827cm, inner sep=6pt] at (15.25, -14.375){L1};
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.59cm] at (16, -12.25){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (15.5, -11.937){Ch1};
+	\draw[-latex] (16, -12.563) -- (16, -13);
+	\node[shape=rectangle, minimum width=1.715cm, minimum height=0.84cm] at (20.5, -13.188){} node[anchor=north west, align=left, text width=1.327cm, inner sep=6pt] at (19.625, -12.75){Ch2};
+	\draw[-latex] (19.75, -13) -- (19, -13);
+	\node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm](N1) at (12.74, -14.01){} node[anchor=center] at (N1.text){$V_s$} node[anchor=north west, align=left, text width=0.077cm, inner sep=6pt] at (12.49, -13.76){};
+	\end{tikzpicture}
+    \caption{Conexionado segunda parte}
+    \label{fig:Circuito_segunda_parte}
+\end{figure}
+
+	
+	\item En la segunda parte se conectó una resistencia adicional $R_m$ = 47 $\Omega$ entre el generador y la entrada del transformador del lado elevador. Seguidamente, se varió el offset (se tomaron valores de -5v a 5v) a la señal usada en la primera sección y se midió la tensión de salida. La salida se considero como circuito abierto.
+	
+\begin{figure}[h!]
+    \centering
+
+    %-------------------------
+    %   FIGURA 1
+    %-------------------------
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \begin{tikzpicture}
+	% Paths, nodes and wires:
+	\node[transformer core, cute] at (16.55, -14.05){};
+	\node[circ] at (16, -13.25){};
+	\node[circ] at (17.25, -13.25){};
+	\node[oscillator, xscale=0.71, yscale=0.71] at (12.49, -14.01){};
+	\draw (12.142, -14.358) |- (15.5, -15.1);
+	\draw (15.5, -13) to[american resistor, /tikz/circuitikz/bipoles/length=1.11cm, l={$R_m$}] (12.75, -13);
+	\draw (12.142, -13.662) |- (12.75, -13);
+	\draw (17.6, -13) -| (19, -13);
+	\draw (19, -13) to[american resistor, /tikz/circuitikz/bipoles/length=1.11cm, l={$R_L$}] (19, -15);
+	\draw (17.6, -15.1) -| (19, -15);
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=1.465cm] at (16, -15){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (15.5, -14.25){L1};
+	\node[shape=rectangle, minimum width=1.215cm, minimum height=0.715cm] at (17.5, -14.625){} node[anchor=north west, align=left, text width=0.827cm, inner sep=6pt] at (16.875, -14.25){L2};
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.59cm] at (13.25, -12.25){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (12.75, -11.937){Ch1};
+	\draw[-latex] (13.25, -12.563) -- (13.25, -13);
+	\node[shape=rectangle, minimum width=1.715cm, minimum height=0.84cm] at (15.375, -12.313){} node[anchor=north west, align=left, text width=1.327cm, inner sep=6pt] at (14.5, -11.875){Ch2};
+	\draw[-latex] (15, -12.5) -- (15, -13);
+	\node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm](N1) at (12.74, -14.01){} node[anchor=center] at (N1.text){$V_s$} node[anchor=north west, align=left, text width=0.077cm, inner sep=6pt] at (12.49, -13.76){};
+\end{tikzpicture}
+        \caption{Generador conectado a L1}
+        \label{fig:circp3.1}
+    \end{minipage}
+    \hfill
+    %-------------------------
+    %   FIGURA 2
+    %-------------------------
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \begin{tikzpicture}
+	% Paths, nodes and wires:
+	\node[transformer core, cute] at (16.55, -14.05){};
+	\node[circ] at (16, -13.25){};
+	\node[circ] at (17.25, -13.25){};
+	\node[oscillator, xscale=0.71, yscale=0.71] at (12.49, -14.01){};
+	\draw (12.142, -14.358) |- (15.5, -15.1);
+	\draw (15.5, -13) to[american resistor, /tikz/circuitikz/bipoles/length=1.11cm, l={$R_m$}] (12.75, -13);
+	\draw (12.142, -13.662) |- (12.75, -13);
+	\draw (17.6, -13) -| (19, -13);
+	\draw (19, -13) to[american resistor, /tikz/circuitikz/bipoles/length=1.11cm, l={$R_L$}] (19, -15);
+	\draw (17.6, -15.1) -| (19, -15);
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=1.465cm] at (16, -15){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (15.5, -14.25){L2};
+	\node[shape=rectangle, minimum width=1.215cm, minimum height=0.715cm] at (17.5, -14.625){} node[anchor=north west, align=left, text width=0.827cm, inner sep=6pt] at (16.875, -14.25){L1};
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.59cm] at (13.25, -12.25){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (12.75, -11.937){Ch1};
+	\draw[-latex] (13.25, -12.563) -- (13.25, -13);
+	\node[shape=rectangle, minimum width=1.715cm, minimum height=0.84cm] at (15.375, -12.313){} node[anchor=north west, align=left, text width=1.327cm, inner sep=6pt] at (14.5, -11.875){Ch2};
+	\draw[-latex] (15, -12.5) -- (15, -13);
+	\node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm](N1) at (12.74, -14.01){} node[anchor=center] at (N1.text){$V_s$} node[anchor=north west, align=left, text width=0.077cm, inner sep=6pt] at (12.49, -13.76){};
+\end{tikzpicture}
+        \caption{Generador conectado a L2}
+        \label{fig:circp3.2}
+    \end{minipage}
+
+\end{figure}
+
+	
+	\item En la tercera parte se estudió la impedancia reflejada por el transformador. Para ello, manteniendo la resistencia adicional ($R_m$) de 47 $\Omega$ en el entrada del transformado y manteniendo la señal original sin offset, se añadió una resistencia de carga ($R_L$) a la salida del transformador de 1 $k\Omega$ (Observar figura \ref{fig:circp3.1}). Con esto, se midió la caída de tensión sobre la resistencia de 47 $\Omega$ y se calculó la corriente del generador. Con el cociente de la tensión de la fuente y la corriente, se obtuvo la impedancia vista por la fuente. Se repitió el mismo procedimiento, pero conectado al segundo bobinado (Observar figura \ref{fig:circp3.2}).
 	\end{itemize}
 	
 
@@ -52,7 +207,7 @@ $V_{L2}$\ como entrada
 
  \subsubsection*{Fuente de tensión con offset}
  
- 	En la segunda parte al analizar variar el offset, se obtuvieron las siguientes mediciones:
+ 	En la segunda parte al analizar variar el offset, se obtuvieron las siguientes mediciones variando el offset a la señal usada en el apartado anterior:
 
 \begin{center}
 
@@ -99,9 +254,46 @@ $V_{L2}$\ como entrada
 \end{minipage}
 
 \end{center}
+
+	En las imagenes se puede observar las dos señales (entrada y salida). La señal marrón es la señal capturada en la entrada del transformador. La señal verde es la salida del transformador.
 	
+\subsubsection*{Conexión de carga a la salida}
+
+	En esta sección se realizaron estas dos mediciones.
 	
-\subsubsection*{Salida con carga}
+	\begin{center}
+	
+		\begin{minipage}[b]{0.45\textwidth}
+  		\centering
+  		\includegraphics[width=\textwidth]{tp6_part3_l1_1.png}
+  		\captionof{figure}{Caída de tensión medida sobre $R_m$. Conexión lado elevador}
+  		\label{fig:Corriente_elevador}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.45\textwidth}
+  		\centering
+  		\includegraphics[width=\textwidth]{tp6_maqt2_l3.png}
+  		\captionof{figure}{Caída de tensión medida sobre $R_m$. Conexión lado reductor}
+  		\label{fig:Corriente_reductor}
+		\end{minipage}
+		\vspace{1.5em}
+	
+	\end{center}
+	
+	En ambas figuras \ref{fig:Corriente_elevador} \ref{fig:Corriente_reductor}, el Ch1 (marrón) es la señal de la fuente, Ch2 (verde oscuro) es la señal a la salida de la resistencia $R_m$ y M es caída de tensión entre Ch1 y Ch2.
+	
+	En el caso del generador conectado al lado elevador de tensión (L1), se obtuvieron los siguientes valores de tensión (Observar figura \ref{fig:Corriente_elevador}):
+	
+	\begin{itemize}
+		\item Caída de tensión sobre $ R_m$ : $1,398 V_{pp} \angle -42^\circ $ 
+	\end{itemize}
+
+	En el caso del generador conectado al lado reductor de tensión (L2), se obtuvieron los siguientes valores de tensión (Observar figura \ref{fig:Corriente_reductor}):
+	
+	\begin{itemize}
+		\item Caída de tensión sobre $ R_m$ : $241,4 mV_{pp} \angle 272^\circ $ 
+	\end{itemize}
+
 
 \subsection{Cálculos}
 
@@ -158,6 +350,19 @@ Otro valor que se trabajo fue el factor de relación de vueltas para un transfor
 \item Mediante la ecuacion \ref{eq:trafo_v} con $V_2$ la entrada de $L_2$: $\frac{1}{n}$ = 0,145 $\implies$ n = 6,89
 \item Mediante la ecuación \ref{eq:rel_vuelta} : n= 3,78
 \end{itemize}
+
+\subsubsection*{Carga reflejada por el inductor}
+
+	Mediante la ley de Ohm se consiguieron los siguientes valores de impedancia:
+	
+	\begin{itemize}
+\item Con $R_L$ conectada a L2: $I_s = 14{,}87\text{ mA}\,\angle -42^\circ \implies Z_s = 101{,}35\,\Omega\,\angle 42^\circ$
+\item Con $R_L$ conectada a L1: $I_s = 2{,}568\text{ mA}\,\angle -88^\circ \implies Z_s = 584{,}112\,\Omega\,\angle 88^\circ$
+\end{itemize}
+
+	
+
+
 
 
 	

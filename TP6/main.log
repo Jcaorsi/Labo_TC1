@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.14)  13 NOV 2025 12:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.14)  13 NOV 2025 16:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -878,72 +878,149 @@ Overfull \hbox (9.5186pt too wide) in paragraph at lines 177--177
  []
 
 ) (./desarrolloSinAnalisis.tex
+Overfull \hbox (1.3607pt too wide) in paragraph at lines 32--32
+[][]\OT1/cmr/m/n/10 Ch1  
+ []
+
+
+Overfull \hbox (73.55533pt too wide) in paragraph at lines 38--39
+ [][] 
+ []
+
+
+Overfull \hbox (1.3607pt too wide) in paragraph at lines 60--60
+[][]\OT1/cmr/m/n/10 Ch1  
+ []
+
+
+Overfull \hbox (73.55533pt too wide) in paragraph at lines 66--67
+ [][] 
+ []
+
+
 
 [5]
-<imagenes/tp6_part2_1.png, id=109, 803.0pt x 504.88625pt>
-File: imagenes/tp6_part2_1.png Graphic file (type png)
-<use imagenes/tp6_part2_1.png>
-Package pdftex.def Info: imagenes/tp6_part2_1.png  used on input line 62.
-(pdftex.def)             Requested size: 199.60895pt x 125.50478pt.
+Overfull \hbox (1.3607pt too wide) in paragraph at lines 91--91
+[][]\OT1/cmr/m/n/10 Ch1  
+ []
 
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 63.
-See the caption package documentation for explanation.
+Overfull \hbox (1.3607pt too wide) in paragraph at lines 126--126
+[][]\OT1/cmr/m/n/10 Ch1  
+ []
 
-<imagenes/tp6_part2_3.png, id=110, 803.0pt x 504.88625pt>
-File: imagenes/tp6_part2_3.png Graphic file (type png)
-<use imagenes/tp6_part2_3.png>
-Package pdftex.def Info: imagenes/tp6_part2_3.png  used on input line 69.
-(pdftex.def)             Requested size: 199.60895pt x 125.50478pt.
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 70.
-See the caption package documentation for explanation.
+Overfull \hbox (27.83507pt too wide) in paragraph at lines 131--132
+ [][] 
+ []
+
+
+Overfull \hbox (1.3607pt too wide) in paragraph at lines 155--155
+[][]\OT1/cmr/m/n/10 Ch1  
+ []
+
+
+Overfull \hbox (27.83507pt too wide) in paragraph at lines 160--161
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
 [6]
-<imagenes/tp6_part2_4.png, id=118, 803.0pt x 504.88625pt>
+<imagenes/tp6_part2_1.png, id=120, 803.0pt x 504.88625pt>
+File: imagenes/tp6_part2_1.png Graphic file (type png)
+<use imagenes/tp6_part2_1.png>
+Package pdftex.def Info: imagenes/tp6_part2_1.png  used on input line 217.
+(pdftex.def)             Requested size: 199.60895pt x 125.50478pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 218.
+See the caption package documentation for explanation.
+
+<imagenes/tp6_part2_3.png, id=121, 803.0pt x 504.88625pt>
+File: imagenes/tp6_part2_3.png Graphic file (type png)
+<use imagenes/tp6_part2_3.png>
+Package pdftex.def Info: imagenes/tp6_part2_3.png  used on input line 224.
+(pdftex.def)             Requested size: 199.60895pt x 125.50478pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 225.
+See the caption package documentation for explanation.
+
+
+
+[7]
+<imagenes/tp6_part2_4.png, id=129, 803.0pt x 504.88625pt>
 File: imagenes/tp6_part2_4.png Graphic file (type png)
 <use imagenes/tp6_part2_4.png>
-Package pdftex.def Info: imagenes/tp6_part2_4.png  used on input line 79.
+Package pdftex.def Info: imagenes/tp6_part2_4.png  used on input line 234.
 (pdftex.def)             Requested size: 221.78923pt x 139.4489pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 80.
+(caption)                particular \caption on input line 235.
 See the caption package documentation for explanation.
 
-<imagenes/tp6_part2_5.png, id=119, 803.0pt x 504.88625pt>
+<imagenes/tp6_part2_5.png, id=130, 803.0pt x 504.88625pt>
 File: imagenes/tp6_part2_5.png Graphic file (type png)
 <use imagenes/tp6_part2_5.png>
-Package pdftex.def Info: imagenes/tp6_part2_5.png  used on input line 89.
+Package pdftex.def Info: imagenes/tp6_part2_5.png  used on input line 244.
 (pdftex.def)             Requested size: 199.60895pt x 125.50478pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 90.
+(caption)                particular \caption on input line 245.
 See the caption package documentation for explanation.
 
-<imagenes/tp6_part2_6.png, id=120, 803.0pt x 504.88625pt>
+<imagenes/tp6_part2_6.png, id=131, 803.0pt x 504.88625pt>
 File: imagenes/tp6_part2_6.png Graphic file (type png)
 <use imagenes/tp6_part2_6.png>
-Package pdftex.def Info: imagenes/tp6_part2_6.png  used on input line 96.
+Package pdftex.def Info: imagenes/tp6_part2_6.png  used on input line 251.
 (pdftex.def)             Requested size: 199.60895pt x 125.50478pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 97.
+(caption)                particular \caption on input line 252.
 See the caption package documentation for explanation.
 
 
 
-[7 <./imagenes/tp6_part2_1.png (PNG copy)> <./imagenes/tp6_part2_3.png (PNG cop
+[8 <./imagenes/tp6_part2_1.png (PNG copy)> <./imagenes/tp6_part2_3.png (PNG cop
 y)> <./imagenes/tp6_part2_4.png (PNG copy)> <./imagenes/tp6_part2_5.png (PNG co
-py)> <./imagenes/tp6_part2_6.png (PNG copy)>]) (./desarrolloAnalisis.tex
+py)> <./imagenes/tp6_part2_6.png (PNG copy)>]
+<imagenes/tp6_part3_l1_1.png, id=141, 803.0pt x 504.88625pt>
+File: imagenes/tp6_part3_l1_1.png Graphic file (type png)
+<use imagenes/tp6_part3_l1_1.png>
+Package pdftex.def Info: imagenes/tp6_part3_l1_1.png  used on input line 268.
+(pdftex.def)             Requested size: 199.60895pt x 125.50478pt.
 
-[8])
 
-[9] (./main.aux
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 269.
+See the caption package documentation for explanation.
+
+<imagenes/tp6_maqt2_l3.png, id=142, 803.0pt x 504.88625pt>
+File: imagenes/tp6_maqt2_l3.png Graphic file (type png)
+<use imagenes/tp6_maqt2_l3.png>
+Package pdftex.def Info: imagenes/tp6_maqt2_l3.png  used on input line 275.
+(pdftex.def)             Requested size: 199.60895pt x 125.50478pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 276.
+See the caption package documentation for explanation.
+
+
+
+[9 <./imagenes/tp6_part3_l1_1.png (PNG copy)> <./imagenes/tp6_maqt2_l3.png (PNG
+ copy)>]) (./desarrolloAnalisis.tex
+
+[10]
+
+[11])
+
+[12] (./main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -959,32 +1036,33 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6EC6B4876EAC8941F285A6D82373DAFD;1005.
  ) 
 Here is how much of TeX's memory you used:
- 42739 strings out of 473190
- 1001904 string characters out of 5715800
- 1647167 words of memory out of 5000000
- 65514 multiletter control sequences out of 15000+600000
+ 43090 strings out of 473190
+ 1011619 string characters out of 5715800
+ 1683003 words of memory out of 5000000
+ 65855 multiletter control sequences out of 15000+600000
  564210 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,105p,678b,1089s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,16n,105p,759b,1284s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
-/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
-xlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
-ve/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
-2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/20
-25/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb>
-Output written on main.pdf (10 pages, 384614 bytes).
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
+ive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
+/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
+25/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025
+/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb>
+Output written on main.pdf (13 pages, 484170 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 

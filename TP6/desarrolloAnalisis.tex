@@ -16,3 +16,12 @@
 	En esta parte, al observar las figuras \ref{fig:off1} a la \ref{fig:off5}, se pudo observar que la tensión de salida no varió al modificar el offset. Esto se puede explicar de la siguiente manera. Al añadir un offset a una señal, se añade una corriente continua a la misma. Debido a que el transformador funciona como un filtro pasa altos, el mismo filtra la señal dc del offset dejando solo la señal senoidal original. Todo esto sin importar el valor del offset.\par
 	 Por tal motivo, al observar las mediciones en todos los casos, se puede observar que la salida es la misma para todos los casos y concuerda con la señal original sin offset agregado.
 	 
+\subsubsection*{Carga en la salida del transformador}
+
+	Finalmente en esta parte se consiguieron los siguientes resultados. Al trabajar con el transformador conectado al lado elevador, al conectar una carga de 1 $k\Omega$ a la salida, se midió una impedancia en la fuente de 101,35 $\Omega$ $\angle 42 ^\circ$. Por otro lado, al trabajar la carga de lado reductor, se observó una impedancia de 584,112 $\Omega$ $\angle 88^\circ$.\par
+	
+	Lo observado aquí difiere totalmente de lo que se esperaría de un inductor ideal. En un inductor ideal, al trabajar en modo elevador, uno esperaría que la carga cumpla $Z_s = \frac{Z_l}{n^2} $, mientras que uno esperaría $Z_s = Z_l \cdot n$ para el lado reductor. \par
+	
+	Si bien esto se podría explicar mencionando errores en las mediciones (las cuales se pueden apreciar en los picos de la función math en la figura \ref{fig:Corriente_reductor}), también se podría explicar de la siguiente manera. Al conectar el generador a la entrada reductora implica que la fuente está conectada al bobinado que posee mayor inductancia, por lo que habrá una mayor carga inductiva. Esto es apreciable ya que la fase vista en la impedancia es de 88 grados, lo que concuerda con una predominancia inductiva. \par
+	Por el lado contrario al trabajar con el lado elevador, el generador se encuentra conectado al bobinado más pequeño con menor carga inductiva, de aquí a que se vea una fase de 42 grados, donde muestra una impedancia inductiva y resistiva.
+	 

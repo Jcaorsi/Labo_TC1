@@ -4,8 +4,8 @@
 \contentsline {subsection}{\numberline {1.2}Marco teórico}{3}{subsection.1.2}%
 \contentsline {section}{\numberline {2.}Desarrollo}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Procedimiento}{6}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Datos recolectados}{6}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Cálculos}{8}{subsection.2.3}%
-\contentsline {section}{\numberline {3.}Análisis}{9}{section.3}%
-\contentsline {section}{\numberline {4.}Conclusiones}{9}{section.4}%
+\contentsline {subsection}{\numberline {2.2}Datos recolectados}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Cálculos}{9}{subsection.2.3}%
+\contentsline {section}{\numberline {3.}Análisis}{10}{section.3}%
+\contentsline {section}{\numberline {4.}Conclusiones}{12}{section.4}%
 \contentsfinish 
