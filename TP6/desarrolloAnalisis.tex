@@ -7,9 +7,10 @@
 	El primer valor calculado fue M y se calculó a partir de las dos mediciones indicadas en la tabla \ref{tab:mediciones_tensiones_bobinas}. En ambos casos, se llego a un M casi idéntico, el cuyos módulo difiere en 0,001 mH. Esto concuerda con la teoría, puesto a que el coeficiente de inductancia mutua, debe ser el mismo para ambos bobinados. Al mismo tiempo, esto sugiere que las mediciones de tensión fueron bastante confiables. \par
 	Otro aspecto observado en los resultados obtenidos de M, fue que el valor de la constante fue negativo. Aun así, esto no debería ser un problema, ya que estaría ligado al sistema de referencia usado para despejar las ecuaciones. En este caso se usó el indicado en la figura \ref{fig:modeloTrafo1}.\par
 	
-	A partir del módulo de M y los valores de inductancia obtenidos se consiguió la constante de acoplamiento k. Este dió un valor bajo de $\approx$ 0,55. Esto indica que las bobinas del transformador no estaban idealmente acopladas. Más aun, al querer estimar la realción de vueltas del transformador, se consiguieron valores muy distintos según el método utilizado. 
-	\par Para el cálculo de errores, se tomó como referencia el n conseguido a partir de L1 y L2. Este valor nos permitiría indicar que este transformador tendría una relación aproximada de 1:3 o 1:4 vueltas. Con esto en cuenta, se obtuvieron valores que diferían en un 45,5\% para el caso en el que se calculaba n a partir de los valores medidos a partir de excitar la entrada L1 del transformador y un 82,28 \% al calcular n a partir de los valores obtenidos al excitar la entrada L2 del transformador. \par
-	Con esto se puede concluir que el transformador no estaba perfectamente acoplado, y esto se podría atribuir a fugas en el campo magnetico inducido por las bobinas. Si bien el material de la estructura del transformador era de ferrite, el mismo no era ideal, por lo que existen perdidas de flujo magnético. Al mismo tiempo, también es importante considerar las corrientes de eddy generadas en el interior del núcleo las cuales, a mayor frecuencia de cambio, aumentan las perdidas de energía. Es muy importante considerar esto, ya que en este trabajo, se utilizó una señal de frecuencia muy alta (50kHz). \par
+	A partir del módulo de M y los valores de inductancia obtenidos se consiguió la constante de acoplamiento k. Este dió un valor bajo de aproximadamente 0,55. Esto indica que las bobinas del transformador no estaban idealmente acopladas. Más aun, al querer estimar la realción de vueltas del transformador, se observó que dos de los valores obtenidos eran idénticos entre sí, mientras que el tercero difería ampliamente en un 92\%, probablemente como resultado de mediciones mal realizadas.
+    El n=3,78 permitiría indicar que este transformador tendría una relación aproximada de 1:3 o 1:4 vueltas.
+	
+	%también es importante considerar las corrientes de eddy generadas en el interior del núcleo las cuales, a mayor frecuencia de cambio, aumentan las perdidas de energía. Es muy importante considerar esto, ya que en este trabajo, se utilizó una señal de frecuencia muy alta (50kHz). \par
 
  \subsubsection*{Fuente de tensión con offset}
  
@@ -18,10 +19,20 @@
 	 
 \subsubsection*{Carga en la salida del transformador}
 
-	Finalmente en esta parte se consiguieron los siguientes resultados. Al trabajar con el transformador conectado al lado elevador, al conectar una carga de 1 $k\Omega$ a la salida, se midió una impedancia en la fuente de 101,35 $\Omega$ $\angle 42 ^\circ$. Por otro lado, al trabajar la carga de lado reductor, se observó una impedancia de 584,112 $\Omega$ $\angle 88^\circ$.\par
+	Finalmente en esta parte, al trabajar con el transformador conectado al lado elevador, se conectó una 
+	carga de 1 $k\Omega$ a la salida y se midió una impedancia en la fuente de 101,35 $\Omega$ $\angle 42 ^\circ$.
+	Por otro lado, al trabajar la carga de lado reductor, se observó una impedancia de 584,112
+	$\Omega$ $\angle 88^\circ$.\par
 	
-	Lo observado aquí difiere totalmente de lo que se esperaría de un inductor ideal. En un inductor ideal, al trabajar en modo elevador, uno esperaría que la carga cumpla $Z_s = \frac{Z_l}{n^2} $, mientras que uno esperaría $Z_s = Z_l \cdot n$ para el lado reductor. \par
+	Lo observado aquí difiere totalmente de lo que se esperaría de un inductor ideal. En un inductor ideal,
+	uno esperaría que la carga cumpla $Z_s = \frac{Z_L \cdot K^2}{n^2} + R_m = 67,86 \Omega $.\par
 	
-	Si bien esto se podría explicar mencionando errores en las mediciones (las cuales se pueden apreciar en los picos de la función math en la figura \ref{fig:Corriente_reductor}), también se podría explicar de la siguiente manera. Al conectar el generador a la entrada reductora implica que la fuente está conectada al bobinado que posee mayor inductancia, por lo que habrá una mayor carga inductiva. Esto es apreciable ya que la fase vista en la impedancia es de 88 grados, lo que concuerda con una predominancia inductiva. \par
-	Por el lado contrario al trabajar con el lado elevador, el generador se encuentra conectado al bobinado más pequeño con menor carga inductiva, de aquí a que se vea una fase de 42 grados, donde muestra una impedancia inductiva y resistiva.
+	Si bien esto se podría explicar mencionando errores en las mediciones (las cuales se pueden apreciar en
+	los picos de la función math en la figura \ref{fig:Corriente_reductor}), también se podría explicar de
+	la siguiente manera: conectar el generador a la entrada reductora implica que la fuente está
+	conectada al bobinado que posee mayor inductancia, por lo que habrá una mayor carga inductiva. Esto es
+	apreciable ya que la fase vista en la impedancia es de 88 grados, lo que concuerda con una 
+	predominancia inductiva. Por el contrario, al trabajar con el lado elevador el generador se encuentra
+	conectado al bobinado más pequeño con menor carga inductiva, de aquí a que se vea una fase de 42 grados,
+	donde muestra una impedancia inductiva y resistiva.
 	 

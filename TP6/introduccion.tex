@@ -36,14 +36,13 @@ potencia que no es aprovechada. Es por esto que se busca que $\mu$ sea muy grand
 Los materiales que tienen $\mu$ grande se denominan materiales mu-magnéticos.
 
 \par Defino la constante $n = \frac{N_2}{N_1}$ que establece una relación entre el número de vueltas de
-ambos bobinados. Las 3 relaciones de transformación son:
-\begin{align}
-V_2 &= n V_1 \label{eq:trafo_v} \\
-I_2 &= \frac{-I_1}{n} \label{eq:trafo_i} \\
-S_2 &= -S_1 \label{eq:trafo_s}\\
-n &= \sqrt{\frac{L_2}{L_1}} \label{eq:rel_vuelta}
-\end{align}
-
+ambos bobinados. Las 3 relaciones de transformación para un transformador ideal son:
+\begin{equation*}
+  V_2 = nV_1 \qquad
+  I_2 = \frac{-I_1}{n} \quad
+  S_2 = -S_1 \qquad
+  n = \sqrt{\frac{L_2}{L_1}}
+\end{equation*}
 
 Nótese que si $N_2 > N_1 \quad \Rightarrow \quad n > 1 \quad \Rightarrow \quad V_2 > V_1  \ \  \wedge \ \  I_2 < -I_1  $
 es decir, si el bobinado secundario tiene mayor cantidad de vueltas que el primario, la caída de tensión en
@@ -144,7 +143,28 @@ las ideales, se define el acoplamiento K
    \label{eq:coef_acop}
 \end{equation}
 Como $ M \leq \sqrt{L_1L_2} \quad \Rightarrow \quad 0 \leq K \leq 1$. Las condiciones ideales en las que
-K = 1 se denominan \textbf{acoplamiento perfecto}.
+K = 1 se denominan \textbf{acoplamiento perfecto}. En la práctica, las relaciones de transformación son
+
+\begin{equation}
+  V_2 = n k V_1
+  \label{eq:trafo_v}
+\end{equation}
+
+\begin{equation}
+  I_2 = \frac{-I_1}{nk}
+  \label{eq:trafo_i}
+\end{equation}
+
+\begin{equation}
+  S_2 = -S_1
+  \label{eq:trafo_s}
+\end{equation}
+
+\begin{equation}
+  n = \sqrt{\frac{L_2}{L_1}}
+  \label{eq:rel_vuelta}
+\end{equation}
+
 
 \par Una ventaja escencial del uso de transformadores es el aislamiento eléctrico. Esto quiere decir que si 
 por ejemplo en la figura \ref{fig:circuitoEjemplo} se quema la resistencia $R_1$, esto no afectaría a $R_2$,
@@ -187,3 +207,40 @@ sino que simplemente dejaría de circular corriente a traves del transformador.
 bobinado primario del esquema, como el offset es escencialmmente una señal que continua que se superpone
 con la alterna, y los inductores se comportan como cortocircuitos en régimen de continua, esa tensión
 adicional no afecta al acoplamiento, y no se transmite al bobinado secundario.
+
+\par Finalmente, vale la pena aclarar que, si se modela el transformador de la figura \ref{fig:circuitoEjemplo}
+(con las corrientes I1 e I2 entrantes al mismo, V1 la tensión que cae en L1 y V2 la tensión que cae en L2) se pueden obtener las siguientes ecuaciones:
+
+\begin{equation*}
+  \begin{cases}
+  V_{gen}-I_1 \cdot R_1 - V_1 = 0 \\
+  V_2 = nKV_1 \\
+  V_2 = - i_2 R_2 \\
+  I_2 = \frac{-I_1}{nK}
+  \end{cases}
+\end{equation*}
+de donde se obtiene el citcuito equivalente
+
+\begin{figure}[H]
+  \begin{equation*}
+    \begin{tikzpicture}
+    \draw (5.5, 3) -- (4, 3);
+    \draw[-latex] (5, 5) -- (5.5, 5);
+    \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (4.823, 5.118){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (4.448, 5.368){\small I1};
+    \node[shape=rectangle, draw, line width=1pt, minimum width=0.715cm, minimum height=0.215cm] at (3.625, 4.759){};
+    \node[shape=rectangle, draw, line width=1pt, minimum width=0.215cm, minimum height=0.715cm] at (5.5, 3.875){};
+    \node[oscillator, xscale=0.6, yscale=0.6] at (3.293, 3.921){};
+    \draw (3, 4.25) -| (3, 4.75) -- (3.25, 4.75);
+    \draw (2.999, 3.627) -| (3, 3) -- (4, 3);
+    \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (3.647, 5.151){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (3.272, 5.401){\small R1};
+    \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (5.919, 3.941){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (5.544, 4.191){\small Z3};
+    \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (2.131, 3.987){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (1.756, 4.237){\small Vgen};
+    \draw (4, 4.759) -| (5.5, 4.75) -| (5.5, 4.25);
+    \draw (5.5, 3.5) -| (5.5, 3);
+  \end{tikzpicture}
+  \end{equation*}
+  \caption{Circuito equivalente reducido.}
+  \label{fig:circuitoEquivalente}
+\end{figure}
+
+donde $ Z_3 = \frac{R2}{n^2} \cdot K^2 $

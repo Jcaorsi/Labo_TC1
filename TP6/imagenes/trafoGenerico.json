@@ -1,0 +1,439 @@
+{
+    "version": "0.1",
+    "components": [
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 207.874,
+                    "y": -179.528
+                },
+                {
+                    "x": 207.874,
+                    "y": -113.386
+                }
+            ],
+            "id": "cute inductor",
+            "scale": {
+                "x": 0.8,
+                "y": 0.8
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 247.676,
+                "y": -149.732
+            },
+            "stroke": {
+                "opacity": 0,
+                "width": "0pt"
+            },
+            "size": {
+                "x": 28.346,
+                "y": 18.898
+            },
+            "text": {
+                "text": "L2",
+                "fontSize": "small",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 230.503,
+                    "y": -113.386
+                },
+                {
+                    "x": 230.503,
+                    "y": -179.528
+                }
+            ],
+            "id": "cute inductor",
+            "scale": {
+                "x": 0.8,
+                "y": 0.8
+            }
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 207.874,
+                    "y": -179.528
+                },
+                {
+                    "x": 151.181,
+                    "y": -179.528
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 207.874,
+                    "y": -113.386
+                },
+                {
+                    "x": 151.181,
+                    "y": -113.386
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 230.503,
+                    "y": -113.386
+                },
+                {
+                    "x": 285.509,
+                    "y": -113.386
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 230.503,
+                    "y": -179.528
+                },
+                {
+                    "x": 283.823,
+                    "y": -179.528
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 193.701,
+                "y": -149.681
+            },
+            "stroke": {
+                "opacity": 0,
+                "width": "0pt"
+            },
+            "size": {
+                "x": 28.346,
+                "y": 18.898
+            },
+            "text": {
+                "text": "L1",
+                "fontSize": "small",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 188.976,
+                    "y": -188.976
+                },
+                {
+                    "x": 207.874,
+                    "y": -188.976
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 249.401,
+                    "y": -188.976
+                },
+                {
+                    "x": 230.503,
+                    "y": -188.976
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 182.303,
+                "y": -193.425
+            },
+            "stroke": {
+                "opacity": 0,
+                "width": "0pt"
+            },
+            "size": {
+                "x": 28.346,
+                "y": 18.898
+            },
+            "text": {
+                "text": "I1",
+                "fontSize": "small",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 266.298,
+                "y": -193.425
+            },
+            "stroke": {
+                "opacity": 0,
+                "width": "0pt"
+            },
+            "size": {
+                "x": 28.346,
+                "y": 18.898
+            },
+            "text": {
+                "text": "I2",
+                "fontSize": "small",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 137.008,
+                "y": -179.858
+            },
+            "size": {
+                "x": 28.346,
+                "y": 9.449
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 285.509,
+                "y": -146.457
+            },
+            "size": {
+                "x": 9.449,
+                "y": 28.346
+            }
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 124.445,
+                "y": -148.186
+            },
+            "scale": {
+                "x": 0.6,
+                "y": 0.6
+            },
+            "id": "oscillator"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 113.386,
+                    "y": -160.63
+                },
+                {
+                    "x": 113.386,
+                    "y": -179.528
+                },
+                {
+                    "x": 122.835,
+                    "y": -179.528
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 113.333,
+                    "y": -137.075
+                },
+                {
+                    "x": 113.386,
+                    "y": -113.386
+                },
+                {
+                    "x": 151.181,
+                    "y": -113.386
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 285.509,
+                    "y": -132.283
+                },
+                {
+                    "x": 285.509,
+                    "y": -113.386
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 285.509,
+                    "y": -160.63
+                },
+                {
+                    "x": 283.823,
+                    "y": -179.528
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 137.844,
+                "y": -194.666
+            },
+            "stroke": {
+                "opacity": 0,
+                "width": "0pt"
+            },
+            "size": {
+                "x": 28.346,
+                "y": 18.898
+            },
+            "text": {
+                "text": "R1",
+                "fontSize": "small",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 301.353,
+                "y": -148.963
+            },
+            "stroke": {
+                "opacity": 0,
+                "width": "0pt"
+            },
+            "size": {
+                "x": 28.346,
+                "y": 18.898
+            },
+            "text": {
+                "text": "R2",
+                "fontSize": "small",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 80.53,
+                "y": -150.693
+            },
+            "stroke": {
+                "opacity": 0,
+                "width": "0pt"
+            },
+            "size": {
+                "x": 28.346,
+                "y": 18.898
+            },
+            "text": {
+                "text": "Vgen",
+                "fontSize": "small",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "ellipse",
+            "position": {
+                "x": 198.296,
+                "y": -170.367
+            },
+            "size": {
+                "x": 9.448818897637807,
+                "y": 9.448818897637778
+            }
+        },
+        {
+            "type": "ellipse",
+            "position": {
+                "x": 239.274,
+                "y": -170.785
+            },
+            "size": {
+                "x": 9.448818897637807,
+                "y": 9.448818897637778
+            }
+        }
+    ]
+}
