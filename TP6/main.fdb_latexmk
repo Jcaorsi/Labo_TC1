@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1763331238.38373 "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/TC1/repos/Labo_TC1/TP6/main.tex" "main.pdf" "main" 1763331244.07797 0
+["pdflatex"] 1763333737.99538 "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/TC1/repos/Labo_TC1/TP6/main.tex" "main.pdf" "main" 1763333744.04408 0
   "C:/Users/ritam/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762978332 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/ritam/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1440.pk" 1755438494 18748 2822502a5d65f882009fdd7f32795fd1 ""
   "C:/Users/ritam/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx2074.pk" 1755438496 28420 9c8b253034f91495cc0ea426149bd669 ""
@@ -176,8 +176,8 @@
   "C:/Users/ritam/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titletoc.sty" 1736608268 16594 e070b7268023b1ec1b45c44617ea64f9 ""
   "C:/Users/ritam/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/ritam/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/TC1/repos/Labo_TC1/TP6/main.tex" 1762983241 3102 5524a35f042b2f3236b76dbd97a5d5c2 ""
-  "desarrolloAnalisis.tex" 1763328035 4177 0b9eb3d9f5eb222f5368643178a9b357 ""
+  "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/TC1/repos/Labo_TC1/TP6/main.tex" 1763333736 4172 9f50624c826aa66fd49b983926e32013 ""
+  "desarrolloAnalisis.tex" 1763333736 4115 fb3f6d974a8eac8875dada2e3889ae90 ""
   "desarrolloSinAnalisis.tex" 1763328035 17381 586ddeb270da5b9f723fe32b1d6703d5 ""
   "imagenes/Logo_ITBA.png" 1762977743 34082 18565f2ade26fe38705e2ad93c029b27 ""
   "imagenes/tp6_maqt2_l3.png" 1763314708 35120 dbe86650e177ccb5f7db9ea8f9f8fd16 ""
@@ -188,10 +188,10 @@
   "imagenes/tp6_part2_6.png" 1762977743 33842 2c784e5810e3efb415de17df3cb13912 ""
   "imagenes/tp6_part3_l1_1.png" 1763314708 44261 519a4814274b0db45c86dd2811e9c89f ""
   "introduccion.tex" 1763331237 14830 dd9fc17a7f20eceafee200c67d8e1056 ""
-  "main.aux" 1763331243 6441 6553bce6c25c1b5fb2dca6c0149ae5dd "pdflatex"
-  "main.out" 1763331243 1005 6ec6b4876eac8941f285a6d82373dafd "pdflatex"
-  "main.tex" 1762983241 3102 5524a35f042b2f3236b76dbd97a5d5c2 ""
-  "main.toc" 1763331243 718 c689738631cc44b65bc2815cc7304ac5 "pdflatex"
+  "main.aux" 1763333742 6441 6553bce6c25c1b5fb2dca6c0149ae5dd "pdflatex"
+  "main.out" 1763333743 1005 6ec6b4876eac8941f285a6d82373dafd "pdflatex"
+  "main.tex" 1763333736 4172 9f50624c826aa66fd49b983926e32013 ""
+  "main.toc" 1763333743 718 c689738631cc44b65bc2815cc7304ac5 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
