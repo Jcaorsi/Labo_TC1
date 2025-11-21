@@ -97,12 +97,12 @@ Si por ejemplo se quisiera obtener el parámetro $ Z_{11} $, anulando $ I_2$ y d
 \end{equation*}
 
 \par Otro aspecto que se buscó estudiar es si un cuadripolo era simétrico o recíproco. Se dice que un cuadripolo es \textbf{simétrico} si
- al alimentarlo por el puerto 1 se obtiene, en el puerto 2, la misma respuesta que se 
- obtendría en el puerto 1 si se alimentara por el puerto 2. Esto es si se cumplen las siguientes ecuaciones en simultáneo:
+ al alimentarlo por el puerto 1 se obtiene, en el puerto 2, la misma respuesta que se obtendría en el puerto 1 si se alimentara por el 
+ puerto 2. En ese caso, se cumplen las 3 ecuaciones equivalentes a continuación:
 \begin{equation*}
-    Z_{11}=Z_{22} \quad \wedge \quad Y_{11}=Y_{22} \quad \wedge \quad A=D
+    Z_{11}=Z_{22}, \quad Y_{11}=Y_{22}, \quad A=D
 \end{equation*}
-Luego, un cuadripolo es \textbf{recíproco} si es simétrico y solo tiene elementos pasivos (resistencias, inductores o capacitores). En estos casos, se puede afirmar
+Luego, un cuadripolo es \textbf{recíproco} si solo tiene elementos pasivos (resistencias, inductores o capacitores). En estos casos, se puede afirmar
 \begin{equation*}
     Z_{12}=Z_{21} \quad \wedge \quad Y_{12}=Y_{21} \quad \wedge \quad AD-BC=1
 \end{equation*}
@@ -113,7 +113,7 @@ utilizados en esta práctica son los siguientes:
     Y =
     \begin{pmatrix}
         \frac{Z_{22}}{\Delta z} & \frac{-Z_{12}}{\Delta z} \\ \\
-        \frac{-Z_{21}}{\Delta z} & \frac{-Z_{11}}{\Delta z}
+        \frac{-Z_{21}}{\Delta z} & \frac{Z_{11}}{\Delta z}
     \end{pmatrix}
     \qquad \qquad T =
     \begin{pmatrix}
@@ -243,35 +243,51 @@ obtener la matriz Z de la manera explicada.
 \begin{figure}[H]
     \begin{equation*}
         \begin{tikzpicture}
-            \node[shape=rectangle, draw, line width=1pt, minimum width=1.965cm, minimum height=1.965cm] at (5, 5){};
-            \draw (4.25, 5.5) -- (4.25, 5.75);
-            \draw (4.5, 5.5) -- (4.5, 5.75);
-            \draw (4.75, 5.75) -- (4.75, 5.5);
-            \draw (4, 5.75) -- (2.5, 5.75);
-            \draw (4, 3) -- (2.5, 3);
-            \draw (6, 5.75) -- (7.5, 5.75);
-            \draw (6, 3) -- (7.5, 3);
-            \draw[-latex] (2.5, 6) -- (3.25, 6);
-            \draw[-latex] (3.25, 3.261) -- (2.5, 3.261);
-            \draw[-latex] (7.5, 6) -- (6.75, 6);
-            \draw[-latex] (6.739, 3.272) -- (7.489, 3.272);
-            \node[plain crossing] at (1.879, 5.75){};
-            \node[plain crossing] at (8.14, 5.75){};
-            \node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm] at (2.5, 6.25){} node[anchor=center, align=center, text width=0.077cm, inner sep=6pt] at (2.5, 6.25){\scriptsize I1};
-            \node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm] at (2.5, 3.5){} node[anchor=center, align=center, text width=0.077cm, inner sep=6pt] at (2.5, 3.5){\scriptsize I1};
-            \node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm] at (7.5, 6.25){} node[anchor=center, align=center, text width=0.077cm, inner sep=6pt] at (7.5, 6.25){\scriptsize I2};
-            \node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm] at (7.489, 3.489){} node[anchor=center, align=center, text width=0.077cm, inner sep=6pt] at (7.489, 3.489){\scriptsize I2};
-            \node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm] at (1.75, 4.5){} node[anchor=center, align=center, text width=0.077cm, inner sep=6pt] at (1.75, 4.5){\scriptsize V1};
-            \node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm] at (8.25, 4.5){} node[anchor=center, align=center, text width=0.077cm, inner sep=6pt] at (8.25, 4.5){\scriptsize V2};
-            \node[shape=rectangle, draw, line width=1pt, minimum width=1.965cm, minimum height=1.965cm] at (5, 2.5){};
-            \draw (4.25, 3.25) -| (4.25, 3);
-            \draw (4.5, 3.25) -| (4.5, 3);
-            \draw (4.75, 3.25) -| (4.75, 3);
-            \draw (4, 4.25) -- (3.5, 4.25) -- (3.5, 1.75) -| (4, 3.25);
-            \draw (6, 4.25) -- (6.5, 4.25) -- (6.5, 1.75) -| (6, 3.25);
-            \draw (2, 3.25) -- (1.75, 3.25);
-            \draw (7.989, 3.239) -- (8.239, 3.239);
-        \end{tikzpicture}
+        \draw (5.5, 3) -- (4, 3);
+        \draw[-latex] (5, 5) -- (5.5, 5);
+        \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (4.823, 5.118){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (4.448, 5.368){\small I1};
+        \node[shape=rectangle, draw, line width=1pt, minimum width=0.715cm, minimum height=0.215cm] at (3.625, 4.759){};
+        \node[shape=rectangle, draw, line width=1pt, minimum width=0.215cm, minimum height=0.715cm] at (5.5, 3.875){};
+        \node[oscillator, xscale=0.6, yscale=0.6] at (3.293, 3.921){};
+        \draw (3, 4.25) -| (3, 4.75) -- (3.25, 4.75);
+        \draw (2.999, 3.627) -| (3, 3) -- (4, 3);
+        \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (3.647, 5.151){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (3.272, 5.401){\small R1};
+        \node[shape=rectangle, minimum width=0.75cm, minimum height=0.5cm] at (2.131, 3.987){} node[anchor=north west, align=left, text width=0.397cm, inner sep=5pt] at (1.756, 4.237){\small Vgen};
+        \draw (4, 4.759) -| (5.5, 4.75) -| (5.5, 4.25);
+        \draw (5.5, 3.5) -| (5.5, 3);
+        \node[shape=rectangle, draw, line width=1pt, minimum width=1.965cm, minimum height=1.965cm] at (5, 5){};
+        \draw (4.25, 5.5) -- (4.25, 5.75);
+        \draw (4.5, 5.5) -- (4.5, 5.75);
+        \draw (4.75, 5.75) -- (4.75, 5.5);
+        \draw (4, 5.75) -- (2.5, 5.75);
+        \draw (4, 3) -- (2.5, 3);
+        \draw (6, 5.75) -- (7.5, 5.75);
+        \draw (6, 3) -- (7.5, 3);
+        \draw[-latex] (2.5, 6) -- (3.25, 6);
+        \draw[-latex] (3.25, 3.261) -- (2.5, 3.261);
+        \draw[-latex] (7.5, 6) -- (6.75, 6);
+        \draw[-latex] (6.739, 3.272) -- (7.489, 3.272);
+        \node[plain crossing] at (1.879, 5.75){};
+        \node[plain crossing] at (8.14, 5.75){};
+        \node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm] at (2.5, 6.25){} node[anchor=center, align=center, text width=0.077cm, inner sep=6pt] at (2.5, 6.25){\scriptsize I1};
+        \node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm] at (2.5, 3.5){} node[anchor=center, align=center, text width=0.077cm, inner sep=6pt] at (2.5, 3.5){\scriptsize I1};
+        \node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm] at (7.5, 6.25){} node[anchor=center, align=center, text width=0.077cm, inner sep=6pt] at (7.5, 6.25){\scriptsize I2};
+        \node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm] at (7.489, 3.489){} node[anchor=center, align=center, text width=0.077cm, inner sep=6pt] at (7.489, 3.489){\scriptsize I2};
+        \node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm] at (1.75, 4.5){} node[anchor=center, align=center, text width=0.077cm, inner sep=6pt] at (1.75, 4.5){\scriptsize V1};
+        \node[shape=rectangle, minimum width=0.465cm, minimum height=0.465cm] at (8.25, 4.5){} node[anchor=center, align=center, text width=0.077cm, inner sep=6pt] at (8.25, 4.5){\scriptsize V2};
+        \node[shape=rectangle, draw, line width=1pt, minimum width=1.965cm, minimum height=1.965cm] at (5, 2.5){};
+        \draw (4.25, 3.25) -| (4.25, 3);
+        \draw (4.5, 3.25) -| (4.5, 3);
+        \draw (4.75, 3.25) -| (4.75, 3);
+        \draw (2, 3.25) -- (1.75, 3.25);
+        \draw (7.989, 3.239) -- (8.239, 3.239);
+        \node[iecsocketL] at (3.36, 3){};
+        \node[iecsocketR] at (6.5, 3){};
+        \draw (4, 4.25) -- (3.5, 4.25) -- (3.5, 3.131);
+        \draw (3.5, 2.872) -- (3.5, 1.75) -- (4, 1.75);
+        \draw (6, 4.25) -- (6.5, 4.25) -- (6.5, 3.126);
+        \draw (6, 1.75) -- (6.5, 1.75) -- (6.5, 2.867);
+    \end{tikzpicture}
     \end{equation*}
 \caption{Dos cuadripolos conectados en paralelo.}
 \label{fig: conexionParalelo}
@@ -286,37 +302,36 @@ siendo $ Y_A $ e $ Y_B $ las matrices admitancia de los respectivos cuadripolos.
 De forma análoga al conexionado serie, no siempre se cumple esta relación. El esquema de conexionado del \textbf{Test de Brune} en este caso es
 
 \begin{figure}[h]
-\centering
-\captionsetup{justification=centering, margin=1.5cm}
-\begin{minipage}{0.45\textwidth}
     \centering
-    \begin{equation*}
-        \begin{tikzpicture}
-            \node[shape=rectangle, draw, line width=1pt, minimum width=1.965cm, minimum height=1.965cm] at (5.529, 1.971){};
-            \draw (4.779, 2.721) -| (4.779, 2.471);
-            \draw (5.029, 2.721) -| (5.029, 2.471);
-            \draw (5.279, 2.721) -| (5.279, 2.471);
-            \node[shape=rectangle, draw, line width=1pt, minimum width=1.965cm, minimum height=1.965cm] at (5.5, 4.5){};
-            \draw (4.75, 5.25) -| (4.75, 5);
-            \draw (5, 5.25) -| (5, 5);
-            \draw (5.25, 5.25) -| (5.25, 5);
-            \draw (4.5, 5.25) -- (4, 5.25) -| (4, 3.75) -- (4.5, 3.75);
-            \draw (4.5, 2.75) -- (4, 2.75) -| (4, 1.25) -- (4.5, 1.25);
-            \draw (6.5, 5.25) -- (8.5, 5.25);
-            \draw (6.5, 1.25) -- (8.5, 1.25);
-            \draw (6.5, 3.75) -- (7.75, 3.75) -- (7.75, 1.25);
-            \draw (6.5, 2.75) -- (7, 2.75) -- (7, 5.25);
-            \node[circ] at (7, 5.25){};
-            \node[circ] at (7.75, 1.25){};
-            \draw (8.5, 5.25) to[american resistor, /tikz/circuitikz/bipoles/length=0.840cm] (8.5, 3.088);
-            \node[oscillator, xscale=0.6, yscale=0.6] at (8.794, 2.794){};
-            \draw (8.5, 2.5) -| (8.5, 1.25);
-        \end{tikzpicture}
-    \end{equation*}
-\end{minipage}%
-
-\caption{Test de Brune para el conexionado en Paralelo. Se mide la tensión entre los puertos cortocircuitados de la figura y se verifica si es cero. También se realiza el mismo procedimiento invirtiendo la conexión del generador y el cortocircuito.}
-\label{fig:testBruneParalelo}
+    \captionsetup{justification=centering, margin=1.5cm}
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \begin{equation*}
+            \begin{tikzpicture}
+                \node[shape=rectangle, draw, line width=1pt, minimum width=1.965cm, minimum height=1.965cm] at (5.529, 1.971){};
+                \draw (4.779, 2.721) -| (4.779, 2.471);
+                \draw (5.029, 2.721) -| (5.029, 2.471);
+                \draw (5.279, 2.721) -| (5.279, 2.471);
+                \node[shape=rectangle, draw, line width=1pt, minimum width=1.965cm, minimum height=1.965cm] at (5.5, 4.5){};
+                \draw (4.75, 5.25) -| (4.75, 5);
+                \draw (5, 5.25) -| (5, 5);
+                \draw (5.25, 5.25) -| (5.25, 5);
+                \draw (4.5, 5.25) -- (4, 5.25) -| (4, 3.75) -- (4.5, 3.75);
+                \draw (4.5, 2.75) -- (4, 2.75) -| (4, 1.25) -- (4.5, 1.25);
+                \draw (6.5, 5.25) -- (8.5, 5.25);
+                \draw (6.5, 1.25) -- (8.5, 1.25);
+                \draw (6.5, 3.75) -- (7.75, 3.75) -- (7.75, 1.25);
+                \draw (6.5, 2.75) -- (7, 2.75) -- (7, 5.25);
+                \node[circ] at (7, 5.25){};
+                \node[circ] at (7.75, 1.25){};
+                \draw (8.5, 5.25) to[american resistor, /tikz/circuitikz/bipoles/length=0.840cm] (8.5, 3.088);
+                \node[oscillator, xscale=0.6, yscale=0.6] at (8.794, 2.794){};
+                \draw (8.5, 2.5) -| (8.5, 1.25);
+            \end{tikzpicture}
+        \end{equation*}
+    \end{minipage}
+    \caption{Test de Brune para el conexionado en Paralelo. Se mide la tensión entre los puertos cortocircuitados de la figura y se verifica si es cero. También se realiza el mismo procedimiento invirtiendo la conexión del generador y el cortocircuito.}
+    \label{fig:testBruneParalelo}
 \end{figure}
 
 Si se cumple que la tensión del voltímetro es cero o cercana a cero en ambos casos, entonces se cumple la condición de puertos y se puede 
@@ -330,7 +345,6 @@ obtener la matriz Y de la manera explicada.
 \captionsetup{justification=centering, margin=1.5cm}
     \begin{equation*}
         \begin{tikzpicture}
-        % Paths, nodes and wires:
         \node[shape=rectangle, draw, line width=1pt, minimum width=1.965cm, minimum height=1.965cm] at (5, 5){};
         \draw (4.25, 5.5) -- (4.25, 5.75);
         \draw (4.5, 5.5) -- (4.5, 5.75);
