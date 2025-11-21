@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1763759853.82287 "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/TC1/repos/Labo_TC1/TP4_Cuadripolos/main.tex" "main.pdf" "main" 1763759856.02679 0
+["pdflatex"] 1763762057.51162 "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/TC1/repos/Labo_TC1/TP4_Cuadripolos/main.tex" "main.pdf" "main" 1763762059.57176 0
   "C:/Users/ritam/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762978332 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/ritam/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1440.pk" 1755438494 18748 2822502a5d65f882009fdd7f32795fd1 ""
   "C:/Users/ritam/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx2074.pk" 1755438496 28420 9c8b253034f91495cc0ea426149bd669 ""
@@ -187,14 +187,14 @@
   "c:/Users/ritam/OneDrive/Documentos/ITBA/2025-2C/TC1/repos/Labo_TC1/TP4_Cuadripolos/main.tex" 1762977743 3994 749cccd9137fae829e0b2be3bd8e601c ""
   "conclusiones.tex" 1762977743 862 b07be25a1276b54a44ff22aa2a47a1ae ""
   "desarrolloAnalisis.tex" 1762977743 4944 a716f6bb90209d122609e7ba8297a5ff ""
-  "desarrolloSinAnalisis.tex" 1763759852 18019 79451a24b9c84ad5ffb2e81d06db7250 ""
+  "desarrolloSinAnalisis.tex" 1763762056 18042 be5728249b3f42b78f629fb6b2ae0fe8 ""
   "imagenesFiguras/Logo_ITBA.png" 1762977743 34082 18565f2ade26fe38705e2ad93c029b27 ""
   "imagenesFiguras/V2=0.png" 1762977743 2190927 e34512096dada32b954e0e47ce8fa31c ""
   "introduccion.tex" 1763759263 22253 61f5d8c1858cf7346cec0a5b515f4197 ""
-  "main.aux" 1763759855 14125 00c472af7e39410475c078358283cd61 "pdflatex"
-  "main.out" 1763759855 1864 3a8ef661c62c483c2fe25a5798fde3fb "pdflatex"
+  "main.aux" 1763762059 14125 00c472af7e39410475c078358283cd61 "pdflatex"
+  "main.out" 1763762059 1864 3a8ef661c62c483c2fe25a5798fde3fb "pdflatex"
   "main.tex" 1762977743 3994 749cccd9137fae829e0b2be3bd8e601c ""
-  "main.toc" 1763759855 1205 92a92c64c36ac6100e71f76937a1c996 "pdflatex"
+  "main.toc" 1763762059 1205 92a92c64c36ac6100e71f76937a1c996 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
