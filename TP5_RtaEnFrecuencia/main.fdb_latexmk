@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1762966601.83602 "c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP5_RtaEnFrecuencia/main.tex" "main.pdf" "main" 1762966605.08665 0
-  "C:/Users/caorsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762784903 82047 f453b55ebb61edd127187c166946b504 ""
+["pdflatex"] 1763163098.01307 "c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP5_RtaEnFrecuencia/main.tex" "main.pdf" "main" 1763163100.98788 0
+  "C:/Users/caorsi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1763137934 82047 f453b55ebb61edd127187c166946b504 ""
   "C:/Users/caorsi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1000.pk" 1762785804 12124 f540abaac4f41a9038dbeb9554fdc67c ""
   "C:/Users/caorsi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1440.pk" 1755787232 18748 faf8ce1ff2bbf2571d449f4bcf9cc49f ""
   "C:/Users/caorsi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx2074.pk" 1755787235 28420 b088c4556d4ba2557f8f41b00bbbda39 ""
@@ -199,13 +199,13 @@
   "C:/Users/caorsi/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/caorsi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "Logo_ITBA.png" 1758038543 34082 18565f2ade26fe38705e2ad93c029b27 ""
-  "c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP5_RtaEnFrecuencia/main.tex" 1762966596 23723 b8486104b954d29a01f35d4378062762 ""
+  "c:/Users/caorsi/source/repos/Jcaorsi/Labo_TC1/Labo_TC1/TP5_RtaEnFrecuencia/main.tex" 1763163097 23722 61d1c36a0c229350a5db1119b2355dbf ""
   "capbode.png" 1762228890 24348 af87ba17197af65202af8d94767335c9 ""
   "indbodex5.png" 1762233232 24563 a5ea037495a7085c6079604ee3a53d74 ""
-  "main.aux" 1762966604 6030 d93864fd0f93f0f890e484906389c0ca "pdflatex"
-  "main.out" 1762966604 2491 f521d7cc015c481956da0b6373451829 "pdflatex"
-  "main.tex" 1762966596 23723 b8486104b954d29a01f35d4378062762 ""
-  "main.toc" 1762966604 1440 d6b3e9fd1af9c17c47581486a94366fe "pdflatex"
+  "main.aux" 1763163100 6030 d93864fd0f93f0f890e484906389c0ca "pdflatex"
+  "main.out" 1763163100 2491 f521d7cc015c481956da0b6373451829 "pdflatex"
+  "main.tex" 1763163097 23722 61d1c36a0c229350a5db1119b2355dbf ""
+  "main.toc" 1763163100 1440 d6b3e9fd1af9c17c47581486a94366fe "pdflatex"
   "resbodex3.png" 1762232132 25997 e1544e2711b47c5aa049b190f0c16465 ""
   "triacapa.png" 1762910568 29256 718735e2f46682df80a689f06d27ef11 ""
   "triacapa2.png" 1762941748 41022 97bcba64467f7c4cb39503940e328311 ""
